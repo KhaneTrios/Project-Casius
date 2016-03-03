@@ -77,26 +77,27 @@ Partial Class frmMain
         Me.lblAuto5Val = New System.Windows.Forms.Label()
         Me.lblAuto4Val = New System.Windows.Forms.Label()
         Me.lblGPPS = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar7 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar6 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar3 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar4 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar5 = New System.Windows.Forms.ProgressBar()
+        Me.bar3 = New System.Windows.Forms.ProgressBar()
+        Me.bar1 = New System.Windows.Forms.ProgressBar()
+        Me.bar2 = New System.Windows.Forms.ProgressBar()
+        Me.bar4 = New System.Windows.Forms.ProgressBar()
+        Me.bar5 = New System.Windows.Forms.ProgressBar()
+        Me.bar6 = New System.Windows.Forms.ProgressBar()
+        Me.bar7 = New System.Windows.Forms.ProgressBar()
         Me.tabSkill = New System.Windows.Forms.TabPage()
         Me.lblCity2 = New System.Windows.Forms.Label()
-        Me.lblGamblingXP = New System.Windows.Forms.Label()
+        Me.lblWalls = New System.Windows.Forms.Label()
         Me.lblGamblingText = New System.Windows.Forms.Label()
-        Me.lblSlayerXP = New System.Windows.Forms.Label()
-        Me.lblMagicXP = New System.Windows.Forms.Label()
-        Me.lblCraftingXP = New System.Windows.Forms.Label()
+        Me.lblShops = New System.Windows.Forms.Label()
+        Me.lblGuards = New System.Windows.Forms.Label()
+        Me.lblhomes = New System.Windows.Forms.Label()
         Me.lblSlayerText = New System.Windows.Forms.Label()
         Me.lblMagicText = New System.Windows.Forms.Label()
         Me.lblCraftingText = New System.Windows.Forms.Label()
-        Me.lblCombatXP = New System.Windows.Forms.Label()
+        Me.lblCivilians = New System.Windows.Forms.Label()
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
         Me.TabControl1.SuspendLayout()
         Me.tabGains.SuspendLayout()
         Me.tabSkill.SuspendLayout()
@@ -542,13 +543,13 @@ Partial Class frmMain
         Me.tabGains.Controls.Add(Me.btnAuto8)
         Me.tabGains.Controls.Add(Me.btnAuto9)
         Me.tabGains.Controls.Add(Me.lblAuto1N)
-        Me.tabGains.Controls.Add(Me.ProgressBar1)
-        Me.tabGains.Controls.Add(Me.ProgressBar7)
-        Me.tabGains.Controls.Add(Me.ProgressBar6)
-        Me.tabGains.Controls.Add(Me.ProgressBar2)
-        Me.tabGains.Controls.Add(Me.ProgressBar3)
-        Me.tabGains.Controls.Add(Me.ProgressBar4)
-        Me.tabGains.Controls.Add(Me.ProgressBar5)
+        Me.tabGains.Controls.Add(Me.bar3)
+        Me.tabGains.Controls.Add(Me.bar1)
+        Me.tabGains.Controls.Add(Me.bar2)
+        Me.tabGains.Controls.Add(Me.bar4)
+        Me.tabGains.Controls.Add(Me.bar5)
+        Me.tabGains.Controls.Add(Me.bar6)
+        Me.tabGains.Controls.Add(Me.bar7)
         Me.tabGains.Location = New System.Drawing.Point(4, 22)
         Me.tabGains.Name = "tabGains"
         Me.tabGains.Padding = New System.Windows.Forms.Padding(3)
@@ -648,67 +649,74 @@ Partial Class frmMain
         Me.lblGPPS.TabIndex = 38
         Me.lblGPPS.Text = "0"
         '
-        'ProgressBar1
+        'bar3
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(304, 160)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar1.TabIndex = 48
+        Me.bar3.Location = New System.Drawing.Point(304, 160)
+        Me.bar3.Maximum = 1000
+        Me.bar3.Name = "bar3"
+        Me.bar3.Size = New System.Drawing.Size(144, 16)
+        Me.bar3.TabIndex = 48
         '
-        'ProgressBar7
+        'bar1
         '
-        Me.ProgressBar7.Location = New System.Drawing.Point(304, 80)
-        Me.ProgressBar7.Name = "ProgressBar7"
-        Me.ProgressBar7.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar7.TabIndex = 54
+        Me.bar1.Location = New System.Drawing.Point(304, 80)
+        Me.bar1.Maximum = 1000
+        Me.bar1.Name = "bar1"
+        Me.bar1.Size = New System.Drawing.Size(144, 16)
+        Me.bar1.TabIndex = 54
         '
-        'ProgressBar6
+        'bar2
         '
-        Me.ProgressBar6.Location = New System.Drawing.Point(304, 120)
-        Me.ProgressBar6.Name = "ProgressBar6"
-        Me.ProgressBar6.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar6.TabIndex = 53
+        Me.bar2.Location = New System.Drawing.Point(304, 120)
+        Me.bar2.Maximum = 1000
+        Me.bar2.Name = "bar2"
+        Me.bar2.Size = New System.Drawing.Size(144, 16)
+        Me.bar2.TabIndex = 53
         '
-        'ProgressBar2
+        'bar4
         '
-        Me.ProgressBar2.Location = New System.Drawing.Point(304, 200)
-        Me.ProgressBar2.Name = "ProgressBar2"
-        Me.ProgressBar2.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar2.TabIndex = 49
+        Me.bar4.Location = New System.Drawing.Point(304, 200)
+        Me.bar4.Maximum = 1000
+        Me.bar4.Name = "bar4"
+        Me.bar4.Size = New System.Drawing.Size(144, 16)
+        Me.bar4.TabIndex = 49
         '
-        'ProgressBar3
+        'bar5
         '
-        Me.ProgressBar3.Location = New System.Drawing.Point(304, 240)
-        Me.ProgressBar3.Name = "ProgressBar3"
-        Me.ProgressBar3.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar3.TabIndex = 50
+        Me.bar5.Location = New System.Drawing.Point(304, 240)
+        Me.bar5.Maximum = 1000
+        Me.bar5.Name = "bar5"
+        Me.bar5.Size = New System.Drawing.Size(144, 16)
+        Me.bar5.TabIndex = 50
         '
-        'ProgressBar4
+        'bar6
         '
-        Me.ProgressBar4.Location = New System.Drawing.Point(304, 280)
-        Me.ProgressBar4.Name = "ProgressBar4"
-        Me.ProgressBar4.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar4.TabIndex = 51
+        Me.bar6.Location = New System.Drawing.Point(304, 280)
+        Me.bar6.Maximum = 1000
+        Me.bar6.Name = "bar6"
+        Me.bar6.Size = New System.Drawing.Size(144, 16)
+        Me.bar6.TabIndex = 51
         '
-        'ProgressBar5
+        'bar7
         '
-        Me.ProgressBar5.Location = New System.Drawing.Point(304, 320)
-        Me.ProgressBar5.Name = "ProgressBar5"
-        Me.ProgressBar5.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar5.TabIndex = 52
+        Me.bar7.Location = New System.Drawing.Point(304, 320)
+        Me.bar7.Maximum = 1000
+        Me.bar7.Name = "bar7"
+        Me.bar7.Size = New System.Drawing.Size(144, 16)
+        Me.bar7.TabIndex = 52
         '
         'tabSkill
         '
         Me.tabSkill.Controls.Add(Me.lblCity2)
-        Me.tabSkill.Controls.Add(Me.lblGamblingXP)
+        Me.tabSkill.Controls.Add(Me.lblWalls)
         Me.tabSkill.Controls.Add(Me.lblGamblingText)
-        Me.tabSkill.Controls.Add(Me.lblSlayerXP)
-        Me.tabSkill.Controls.Add(Me.lblMagicXP)
-        Me.tabSkill.Controls.Add(Me.lblCraftingXP)
+        Me.tabSkill.Controls.Add(Me.lblShops)
+        Me.tabSkill.Controls.Add(Me.lblGuards)
+        Me.tabSkill.Controls.Add(Me.lblhomes)
         Me.tabSkill.Controls.Add(Me.lblSlayerText)
         Me.tabSkill.Controls.Add(Me.lblMagicText)
         Me.tabSkill.Controls.Add(Me.lblCraftingText)
-        Me.tabSkill.Controls.Add(Me.lblCombatXP)
+        Me.tabSkill.Controls.Add(Me.lblCivilians)
         Me.tabSkill.Controls.Add(Me.lblCombatText)
         Me.tabSkill.Location = New System.Drawing.Point(4, 22)
         Me.tabSkill.Name = "tabSkill"
@@ -728,15 +736,15 @@ Partial Class frmMain
         Me.lblCity2.TabIndex = 10
         Me.lblCity2.Text = "City Name"
         '
-        'lblGamblingXP
+        'lblWalls
         '
-        Me.lblGamblingXP.AutoSize = True
-        Me.lblGamblingXP.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGamblingXP.Location = New System.Drawing.Point(168, 304)
-        Me.lblGamblingXP.Name = "lblGamblingXP"
-        Me.lblGamblingXP.Size = New System.Drawing.Size(18, 20)
-        Me.lblGamblingXP.TabIndex = 9
-        Me.lblGamblingXP.Text = "0"
+        Me.lblWalls.AutoSize = True
+        Me.lblWalls.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWalls.Location = New System.Drawing.Point(168, 304)
+        Me.lblWalls.Name = "lblWalls"
+        Me.lblWalls.Size = New System.Drawing.Size(18, 20)
+        Me.lblWalls.TabIndex = 9
+        Me.lblWalls.Text = "0"
         '
         'lblGamblingText
         '
@@ -748,35 +756,35 @@ Partial Class frmMain
         Me.lblGamblingText.TabIndex = 8
         Me.lblGamblingText.Text = "Wall finished"
         '
-        'lblSlayerXP
+        'lblShops
         '
-        Me.lblSlayerXP.AutoSize = True
-        Me.lblSlayerXP.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSlayerXP.Location = New System.Drawing.Point(168, 248)
-        Me.lblSlayerXP.Name = "lblSlayerXP"
-        Me.lblSlayerXP.Size = New System.Drawing.Size(18, 20)
-        Me.lblSlayerXP.TabIndex = 7
-        Me.lblSlayerXP.Text = "0"
+        Me.lblShops.AutoSize = True
+        Me.lblShops.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblShops.Location = New System.Drawing.Point(168, 248)
+        Me.lblShops.Name = "lblShops"
+        Me.lblShops.Size = New System.Drawing.Size(18, 20)
+        Me.lblShops.TabIndex = 7
+        Me.lblShops.Text = "0"
         '
-        'lblMagicXP
+        'lblGuards
         '
-        Me.lblMagicXP.AutoSize = True
-        Me.lblMagicXP.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMagicXP.Location = New System.Drawing.Point(168, 192)
-        Me.lblMagicXP.Name = "lblMagicXP"
-        Me.lblMagicXP.Size = New System.Drawing.Size(18, 20)
-        Me.lblMagicXP.TabIndex = 6
-        Me.lblMagicXP.Text = "0"
+        Me.lblGuards.AutoSize = True
+        Me.lblGuards.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGuards.Location = New System.Drawing.Point(168, 192)
+        Me.lblGuards.Name = "lblGuards"
+        Me.lblGuards.Size = New System.Drawing.Size(18, 20)
+        Me.lblGuards.TabIndex = 6
+        Me.lblGuards.Text = "0"
         '
-        'lblCraftingXP
+        'lblhomes
         '
-        Me.lblCraftingXP.AutoSize = True
-        Me.lblCraftingXP.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCraftingXP.Location = New System.Drawing.Point(168, 136)
-        Me.lblCraftingXP.Name = "lblCraftingXP"
-        Me.lblCraftingXP.Size = New System.Drawing.Size(18, 20)
-        Me.lblCraftingXP.TabIndex = 5
-        Me.lblCraftingXP.Text = "0"
+        Me.lblhomes.AutoSize = True
+        Me.lblhomes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblhomes.Location = New System.Drawing.Point(168, 136)
+        Me.lblhomes.Name = "lblhomes"
+        Me.lblhomes.Size = New System.Drawing.Size(18, 20)
+        Me.lblhomes.TabIndex = 5
+        Me.lblhomes.Text = "0"
         '
         'lblSlayerText
         '
@@ -808,15 +816,15 @@ Partial Class frmMain
         Me.lblCraftingText.TabIndex = 2
         Me.lblCraftingText.Text = "Homes rebuilt"
         '
-        'lblCombatXP
+        'lblCivilians
         '
-        Me.lblCombatXP.AutoSize = True
-        Me.lblCombatXP.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCombatXP.Location = New System.Drawing.Point(168, 80)
-        Me.lblCombatXP.Name = "lblCombatXP"
-        Me.lblCombatXP.Size = New System.Drawing.Size(18, 20)
-        Me.lblCombatXP.TabIndex = 1
-        Me.lblCombatXP.Text = "0"
+        Me.lblCivilians.AutoSize = True
+        Me.lblCivilians.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivilians.Location = New System.Drawing.Point(168, 80)
+        Me.lblCivilians.Name = "lblCivilians"
+        Me.lblCivilians.Size = New System.Drawing.Size(18, 20)
+        Me.lblCivilians.TabIndex = 1
+        Me.lblCivilians.Text = "0"
         '
         'lblCombatText
         '
@@ -831,6 +839,10 @@ Partial Class frmMain
         'tmrSucFail
         '
         Me.tmrSucFail.Interval = 500
+        '
+        'tmrBar
+        '
+        Me.tmrBar.Interval = 10000
         '
         'frmMain
         '
@@ -898,13 +910,13 @@ Partial Class frmMain
     Friend WithEvents lblSlayerText As System.Windows.Forms.Label
     Friend WithEvents lblMagicText As System.Windows.Forms.Label
     Friend WithEvents lblCraftingText As System.Windows.Forms.Label
-    Friend WithEvents lblCombatXP As System.Windows.Forms.Label
+    Friend WithEvents lblCivilians As System.Windows.Forms.Label
     Friend WithEvents lblCombatText As System.Windows.Forms.Label
-    Friend WithEvents lblSlayerXP As System.Windows.Forms.Label
-    Friend WithEvents lblMagicXP As System.Windows.Forms.Label
-    Friend WithEvents lblCraftingXP As System.Windows.Forms.Label
+    Friend WithEvents lblShops As System.Windows.Forms.Label
+    Friend WithEvents lblGuards As System.Windows.Forms.Label
+    Friend WithEvents lblhomes As System.Windows.Forms.Label
     Friend WithEvents lblGPPS As System.Windows.Forms.Label
-    Friend WithEvents lblGamblingXP As System.Windows.Forms.Label
+    Friend WithEvents lblWalls As System.Windows.Forms.Label
     Friend WithEvents lblGamblingText As System.Windows.Forms.Label
     Friend WithEvents lblAuto9Val As System.Windows.Forms.Label
     Friend WithEvents lblAuto8Val As System.Windows.Forms.Label
@@ -917,12 +929,13 @@ Partial Class frmMain
     Friend WithEvents lblCity2 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents lblGamble As System.Windows.Forms.Label
-    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
-    Friend WithEvents ProgressBar7 As System.Windows.Forms.ProgressBar
-    Friend WithEvents ProgressBar6 As System.Windows.Forms.ProgressBar
-    Friend WithEvents ProgressBar2 As System.Windows.Forms.ProgressBar
-    Friend WithEvents ProgressBar3 As System.Windows.Forms.ProgressBar
-    Friend WithEvents ProgressBar4 As System.Windows.Forms.ProgressBar
-    Friend WithEvents ProgressBar5 As System.Windows.Forms.ProgressBar
+    Friend WithEvents bar3 As System.Windows.Forms.ProgressBar
+    Friend WithEvents bar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents bar2 As System.Windows.Forms.ProgressBar
+    Friend WithEvents bar4 As System.Windows.Forms.ProgressBar
+    Friend WithEvents bar5 As System.Windows.Forms.ProgressBar
+    Friend WithEvents bar6 As System.Windows.Forms.ProgressBar
+    Friend WithEvents bar7 As System.Windows.Forms.ProgressBar
+    Friend WithEvents tmrBar As System.Windows.Forms.Timer
 
 End Class
