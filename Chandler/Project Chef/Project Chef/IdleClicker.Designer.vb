@@ -69,6 +69,7 @@ Partial Class frmMain
         Me.tabGains = New System.Windows.Forms.TabPage()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblSucFail = New System.Windows.Forms.Label()
+        Me.lblGamble = New System.Windows.Forms.Label()
         Me.lblAuto9Val = New System.Windows.Forms.Label()
         Me.lblAuto8Val = New System.Windows.Forms.Label()
         Me.lblAuto7Val = New System.Windows.Forms.Label()
@@ -76,6 +77,13 @@ Partial Class frmMain
         Me.lblAuto5Val = New System.Windows.Forms.Label()
         Me.lblAuto4Val = New System.Windows.Forms.Label()
         Me.lblGPPS = New System.Windows.Forms.Label()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar7 = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar6 = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar3 = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar4 = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar5 = New System.Windows.Forms.ProgressBar()
         Me.tabSkill = New System.Windows.Forms.TabPage()
         Me.lblCity2 = New System.Windows.Forms.Label()
         Me.lblGamblingXP = New System.Windows.Forms.Label()
@@ -89,14 +97,6 @@ Partial Class frmMain
         Me.lblCombatXP = New System.Windows.Forms.Label()
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar3 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar4 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar5 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar6 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar7 = New System.Windows.Forms.ProgressBar()
-        Me.lblGamble = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.tabGains.SuspendLayout()
         Me.tabSkill.SuspendLayout()
@@ -576,6 +576,15 @@ Partial Class frmMain
         Me.lblSucFail.TabIndex = 46
         Me.lblSucFail.Text = "Label2"
         '
+        'lblGamble
+        '
+        Me.lblGamble.AutoSize = True
+        Me.lblGamble.Location = New System.Drawing.Point(160, 176)
+        Me.lblGamble.Name = "lblGamble"
+        Me.lblGamble.Size = New System.Drawing.Size(39, 13)
+        Me.lblGamble.TabIndex = 45
+        Me.lblGamble.Text = "Label2"
+        '
         'lblAuto9Val
         '
         Me.lblAuto9Val.AutoSize = True
@@ -638,6 +647,55 @@ Partial Class frmMain
         Me.lblGPPS.Size = New System.Drawing.Size(13, 13)
         Me.lblGPPS.TabIndex = 38
         Me.lblGPPS.Text = "0"
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(304, 160)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(144, 16)
+        Me.ProgressBar1.TabIndex = 48
+        '
+        'ProgressBar7
+        '
+        Me.ProgressBar7.Location = New System.Drawing.Point(304, 80)
+        Me.ProgressBar7.Name = "ProgressBar7"
+        Me.ProgressBar7.Size = New System.Drawing.Size(144, 16)
+        Me.ProgressBar7.TabIndex = 54
+        '
+        'ProgressBar6
+        '
+        Me.ProgressBar6.Location = New System.Drawing.Point(304, 120)
+        Me.ProgressBar6.Name = "ProgressBar6"
+        Me.ProgressBar6.Size = New System.Drawing.Size(144, 16)
+        Me.ProgressBar6.TabIndex = 53
+        '
+        'ProgressBar2
+        '
+        Me.ProgressBar2.Location = New System.Drawing.Point(304, 200)
+        Me.ProgressBar2.Name = "ProgressBar2"
+        Me.ProgressBar2.Size = New System.Drawing.Size(144, 16)
+        Me.ProgressBar2.TabIndex = 49
+        '
+        'ProgressBar3
+        '
+        Me.ProgressBar3.Location = New System.Drawing.Point(304, 240)
+        Me.ProgressBar3.Name = "ProgressBar3"
+        Me.ProgressBar3.Size = New System.Drawing.Size(144, 16)
+        Me.ProgressBar3.TabIndex = 50
+        '
+        'ProgressBar4
+        '
+        Me.ProgressBar4.Location = New System.Drawing.Point(304, 280)
+        Me.ProgressBar4.Name = "ProgressBar4"
+        Me.ProgressBar4.Size = New System.Drawing.Size(144, 16)
+        Me.ProgressBar4.TabIndex = 51
+        '
+        'ProgressBar5
+        '
+        Me.ProgressBar5.Location = New System.Drawing.Point(304, 320)
+        Me.ProgressBar5.Name = "ProgressBar5"
+        Me.ProgressBar5.Size = New System.Drawing.Size(144, 16)
+        Me.ProgressBar5.TabIndex = 52
         '
         'tabSkill
         '
@@ -774,64 +832,6 @@ Partial Class frmMain
         '
         Me.tmrSucFail.Interval = 500
         '
-        'ProgressBar1
-        '
-        Me.ProgressBar1.Location = New System.Drawing.Point(304, 160)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar1.TabIndex = 48
-        '
-        'ProgressBar2
-        '
-        Me.ProgressBar2.Location = New System.Drawing.Point(304, 200)
-        Me.ProgressBar2.Name = "ProgressBar2"
-        Me.ProgressBar2.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar2.TabIndex = 49
-        '
-        'ProgressBar3
-        '
-        Me.ProgressBar3.Location = New System.Drawing.Point(304, 240)
-        Me.ProgressBar3.Name = "ProgressBar3"
-        Me.ProgressBar3.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar3.TabIndex = 50
-        '
-        'ProgressBar4
-        '
-        Me.ProgressBar4.Location = New System.Drawing.Point(304, 280)
-        Me.ProgressBar4.Name = "ProgressBar4"
-        Me.ProgressBar4.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar4.TabIndex = 51
-        '
-        'ProgressBar5
-        '
-        Me.ProgressBar5.Location = New System.Drawing.Point(304, 320)
-        Me.ProgressBar5.Name = "ProgressBar5"
-        Me.ProgressBar5.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar5.TabIndex = 52
-        '
-        'ProgressBar6
-        '
-        Me.ProgressBar6.Location = New System.Drawing.Point(304, 120)
-        Me.ProgressBar6.Name = "ProgressBar6"
-        Me.ProgressBar6.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar6.TabIndex = 53
-        '
-        'ProgressBar7
-        '
-        Me.ProgressBar7.Location = New System.Drawing.Point(304, 80)
-        Me.ProgressBar7.Name = "ProgressBar7"
-        Me.ProgressBar7.Size = New System.Drawing.Size(144, 16)
-        Me.ProgressBar7.TabIndex = 54
-        '
-        'lblGamble
-        '
-        Me.lblGamble.AutoSize = True
-        Me.lblGamble.Location = New System.Drawing.Point(160, 176)
-        Me.lblGamble.Name = "lblGamble"
-        Me.lblGamble.Size = New System.Drawing.Size(39, 13)
-        Me.lblGamble.TabIndex = 45
-        Me.lblGamble.Text = "Label2"
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -841,6 +841,7 @@ Partial Class frmMain
         Me.Location = New System.Drawing.Point(200, 200)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Project Casius"
         Me.TabControl1.ResumeLayout(False)
         Me.tabGains.ResumeLayout(False)
         Me.tabGains.PerformLayout()
