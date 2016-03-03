@@ -29,4 +29,12 @@
     Structure Fight
 
     End Structure
+
+    Structure Movement
+
+    End Structure
+
+    Structure Overall
+
+    End Structure
 End Class
