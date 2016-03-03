@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Movement_Form_Test", "Movement_Form_Test\Movement_Form_Test.vbproj", "{4906E2C1-FC8E-4825-83E7-EB66F7A69735}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4906E2C1-FC8E-4825-83E7-EB66F7A69735}.Debug|x86.ActiveCfg = Debug|x86
+		{4906E2C1-FC8E-4825-83E7-EB66F7A69735}.Debug|x86.Build.0 = Debug|x86
+		{4906E2C1-FC8E-4825-83E7-EB66F7A69735}.Release|x86.ActiveCfg = Release|x86
+		{4906E2C1-FC8E-4825-83E7-EB66F7A69735}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
