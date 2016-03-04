@@ -1,21 +1,27 @@
-﻿''Grid movement form by Tony Dougal
+﻿'Grid movement form by Tony Dougal
 
 Public Class MovementFormNew
 
-    'Variables
-    'Dim x As Integer = 0 'x coordinate
-    'Dim y As Integer = 0 'y coordinate
-    'Dim bx As Integer = 0 'Previous x coordinate, used incase a boundary is hit
-    'Dim by As Integer = 0 'Previous y coordinate, used incase a boundary is hit
+    'Declare Variables.
+    Dim x As Integer 'x coordinate
+    Dim y As Integer 'y coordinate
+    Dim bx As Integer 'last x coordinate
+    Dim by As Integer 'last y coordinate
 
     'Dim spawn As Integer = 0 'Variable randomised for enemy encounter chance.
 
     'When the window loads
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
         'Have a message box pop up with text
         Call MsgBox("Sample Text")
-        'Load the variables from the Variables Structures
 
+        'Load variables from the Variables Movement Structure
+        'Make the local variables equal to the variables saved in the structure
+        Dim x As Integer = Variables.Movement.cordx
+        Dim y As Integer = Variables.Movement.cordy
+        Dim bx As Integer = Variables.Movement.cordbx
+        Dim by As Integer = Variables.Movement.cordby
 
     End Sub
 
