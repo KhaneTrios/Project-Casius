@@ -97,6 +97,7 @@ Partial Class MovementFormNew
         Me.x8y2 = New System.Windows.Forms.PictureBox()
         Me.x8y1 = New System.Windows.Forms.PictureBox()
         Me.x8y0 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.avatar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.clear, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x0y0, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -767,11 +768,21 @@ Partial Class MovementFormNew
         Me.x8y0.TabIndex = 66
         Me.x8y0.TabStop = False
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(7, 148)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(22, 117)
+        Me.Button1.TabIndex = 74
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'MovementFormNew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(340, 330)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.x8y7)
         Me.Controls.Add(Me.x8y6)
         Me.Controls.Add(Me.x8y5)
@@ -999,4 +1010,5 @@ Partial Class MovementFormNew
     Friend WithEvents x8y2 As System.Windows.Forms.PictureBox
     Friend WithEvents x8y1 As System.Windows.Forms.PictureBox
     Friend WithEvents x8y0 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

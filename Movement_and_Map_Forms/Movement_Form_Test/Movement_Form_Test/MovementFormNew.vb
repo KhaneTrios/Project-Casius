@@ -5589,4 +5589,10 @@ Public Class MovementFormNew
 
         End If
     End Sub
+
+    'When button1 is clicked
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        'open up Test_Form and close 
+        Test_Form.Show() : Me.Close()
+    End Sub
 End Class
