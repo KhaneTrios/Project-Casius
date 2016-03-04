@@ -54,7 +54,7 @@ Public Class MovementFormNew
                 ' avatar.Image = avatarU.Image
                 by = y
                 bx = x
-                y += 1
+                y -= 1
                 'Label6.Text = y
                 'Label4.Text = by
                 e.Handled = True
@@ -66,7 +66,7 @@ Public Class MovementFormNew
                 ' avatar.Image = avatarD.Image
                 by = y
                 bx = x
-                y -= 1
+                y += 1
                 ' Label6.Text = y
                 ' Label4.Text = by
                 e.Handled = True
@@ -131,8 +131,16 @@ Public Class MovementFormNew
         'BEHIND these image boxes.
         'This code is trash, I don't recomend using it ever again.
 
+        '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         If x = 0 And y = 0 Then         '0, 0
             x0y0.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -140,16 +148,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -163,7 +164,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -206,16 +207,16 @@ Public Class MovementFormNew
             x8y7.Image = clear.Image
         End If
         If x = 0 And y = 1 Then         '0, 1
-            x1y0.Image = avatar.Image
+            x0y1.Image = avatar.Image
             x0y0.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
+            x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -223,7 +224,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -237,7 +238,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -278,18 +279,21 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
+
+
         End If
         If x = 0 And y = 2 Then         '0, 2
-            x2y0.Image = avatar.Image
-            x1y0.Image = clear.Image
-            x0y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
+            x0y2.Image = avatar.Image
             x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
+            x0y0.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
+            x1y0.Image = clear.Image
+            x2y0.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -297,7 +301,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -311,7 +315,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -352,18 +356,19 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 0 And y = 3 Then         '0, 3
-            x3y0.Image = avatar.Image
+            x0y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y0.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x0y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -371,7 +376,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -385,7 +390,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -426,18 +431,19 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 0 And y = 4 Then         '0, 4
-            x4y0.Image = avatar.Image
+            x0y4.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y0.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x0y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -445,7 +451,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -459,7 +465,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -501,8 +507,17 @@ Public Class MovementFormNew
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
         End If
+
+
         If x = 0 And y = 5 Then         '0, 5
-            x5y0.Image = avatar.Image
+            x0y5.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y0.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -510,16 +525,9 @@ Public Class MovementFormNew
             x0y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x0y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -533,7 +541,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -574,18 +582,20 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
+
         If x = 0 And y = 6 Then         '0, 6
-            x6y0.Image = avatar.Image
+            x0y6.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y0.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x0y0.Image = clear.Image
-            x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -593,7 +603,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -607,7 +617,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -648,18 +658,20 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
+
         If x = 0 And y = 7 Then         '0, 7
-            x7y0.Image = avatar.Image
+            x0y7.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y0.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x0y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -667,7 +679,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -681,7 +693,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -722,18 +734,19 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 1 And y = 0 Then         '1, 0
-            x0y1.Image = avatar.Image
-            x1y0.Image = clear.Image
-            x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
+            x1y0.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x0y0.Image = clear.Image
-            x1y1.Image = clear.Image
+            x2y0.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -741,7 +754,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -755,7 +768,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -796,17 +809,18 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 2 And y = 0 Then         '2, 0
-            x1y1.Image = avatar.Image
-            x1y0.Image = clear.Image
-            x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
+            x2y0.Image = avatar.Image
             x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
+            x1y0.Image = clear.Image
             x0y0.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
@@ -815,7 +829,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -829,7 +843,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -870,18 +884,19 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 3 And y = 0 Then         '3, 0
             x3y0.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x0y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -889,7 +904,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -903,7 +918,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -944,18 +959,19 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 4 And y = 0 Then         '4, 0
             x4y0.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x3y0.Image = clear.Image
             x0y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -963,7 +979,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -977,7 +993,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1018,18 +1034,20 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
+
         If x = 5 And y = 0 Then         '5, 0
             x5y0.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x0y0.Image = clear.Image
@@ -1037,7 +1055,7 @@ Public Class MovementFormNew
             x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1051,7 +1069,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1092,9 +1110,18 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
+
         If x = 6 And y = 0 Then         '6, 0
             x6y0.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y0.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1102,16 +1129,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x0y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x0y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1125,7 +1145,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1166,18 +1186,20 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
+
         If x = 7 And y = 0 Then         '7, 0
             x7y0.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -1185,7 +1207,7 @@ Public Class MovementFormNew
             x0y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1199,7 +1221,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1240,9 +1262,19 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
+
         End If
+
         If x = 8 And y = 0 Then         '8, 0
             x8y0.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1250,16 +1282,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x0y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1273,7 +1298,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1314,9 +1339,17 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 1 And y = 1 Then         '1, 1
             x1y1.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1324,16 +1357,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x0y0.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1347,7 +1373,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1388,18 +1414,21 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
+
         End If
+
         If x = 1 And y = 2 Then         '1, 2
-            x2y0.Image = avatar.Image
+            x1y2.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
             x3y0.Image = clear.Image
             x4y0.Image = clear.Image
             x5y0.Image = clear.Image
@@ -1421,7 +1450,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1462,9 +1491,17 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 1 And y = 3 Then         '1, 3
             x1y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1472,16 +1509,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x0y0.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1495,7 +1525,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1536,9 +1566,17 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 1 And y = 4 Then         '1, 4
             x1y4.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1546,16 +1584,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x0y0.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1569,7 +1600,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1610,9 +1641,19 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
+
         End If
+
         If x = 1 And y = 5 Then         '1, 5
             x1y5.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1620,16 +1661,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x0y0.Image = clear.Image
@@ -1643,7 +1677,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1687,6 +1721,13 @@ Public Class MovementFormNew
         End If
         If x = 1 And y = 6 Then         '1, 6
             x1y6.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1694,16 +1735,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1717,7 +1751,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1761,6 +1795,13 @@ Public Class MovementFormNew
         End If
         If x = 1 And y = 7 Then         '1, 7
             x1y7.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1768,16 +1809,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1791,7 +1825,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1833,8 +1867,17 @@ Public Class MovementFormNew
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
         End If
+
+
         If x = 2 And y = 1 Then         '2, 1
             x2y1.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1842,16 +1885,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1865,7 +1901,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1906,9 +1942,18 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
+
         End If
         If x = 2 And y = 2 Then         '2, 2
             x2y2.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1916,16 +1961,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -1939,7 +1977,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -1980,9 +2018,17 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 2 And y = 3 Then         '2, 3
             x2y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -1990,16 +2036,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2013,7 +2052,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2054,9 +2093,17 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 2 And y = 4 Then         '2, 4
             x2y4.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2064,16 +2111,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2087,7 +2127,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2128,9 +2168,18 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
+
         If x = 2 And y = 5 Then         '2, 5
             x2y5.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2138,16 +2187,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2161,7 +2203,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2203,8 +2245,16 @@ Public Class MovementFormNew
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
         End If
+
         If x = 2 And y = 6 Then         '2, 6
             x2y6.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2212,16 +2262,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2235,7 +2278,7 @@ Public Class MovementFormNew
             x0y0.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2279,6 +2322,13 @@ Public Class MovementFormNew
         End If
         If x = 2 And y = 7 Then         '2,7
             x2y7.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2286,16 +2336,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2309,7 +2352,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x0y0.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2351,8 +2394,16 @@ Public Class MovementFormNew
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
         End If
+
         If x = 3 And y = 1 Then         '3, 1
             x3y1.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2360,16 +2411,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2383,7 +2427,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x0y0.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2425,8 +2469,16 @@ Public Class MovementFormNew
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
         End If
+
         If x = 3 And y = 2 Then         '3, 2
-            x3y1.Image = avatar.Image
+            x3y2.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2434,16 +2486,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2501,6 +2546,13 @@ Public Class MovementFormNew
         End If
         If x = 3 And y = 3 Then         '3, 3
             x3y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2508,16 +2560,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2531,7 +2576,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x0y0.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2575,6 +2620,13 @@ Public Class MovementFormNew
         End If
         If x = 3 And y = 4 Then         '3, 4
             x3y4.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2582,16 +2634,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2605,7 +2650,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x0y0.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2649,6 +2694,13 @@ Public Class MovementFormNew
         End If
         If x = 3 And y = 5 Then         '3, 5
             x3y5.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2656,16 +2708,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2679,7 +2724,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x0y0.Image = clear.Image
@@ -2723,6 +2768,13 @@ Public Class MovementFormNew
         End If
         If x = 3 And y = 6 Then         '3, 6
             x3y6.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2730,16 +2782,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2753,7 +2798,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2797,6 +2842,13 @@ Public Class MovementFormNew
         End If
         If x = 3 And y = 7 Then         '3, 7
             x3y7.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2804,16 +2856,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2827,7 +2872,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2871,6 +2916,13 @@ Public Class MovementFormNew
         End If
         If x = 4 And y = 1 Then         '4, 1
             x4y1.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2878,16 +2930,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2901,7 +2946,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -2945,6 +2990,13 @@ Public Class MovementFormNew
         End If
         If x = 4 And y = 2 Then         '4, 2
             x4y2.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -2952,16 +3004,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -2975,7 +3020,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3019,6 +3064,13 @@ Public Class MovementFormNew
         End If
         If x = 4 And y = 3 Then         '4, 3
             x4y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3026,16 +3078,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3049,7 +3094,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3093,6 +3138,13 @@ Public Class MovementFormNew
         End If
         If x = 4 And y = 4 Then         '4, 4
             x4y4.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3100,16 +3152,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3123,7 +3168,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3167,6 +3212,13 @@ Public Class MovementFormNew
         End If
         If x = 4 And y = 5 Then         '4, 5
             x4y5.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3174,16 +3226,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3197,7 +3242,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3241,6 +3286,13 @@ Public Class MovementFormNew
         End If
         If x = 4 And y = 6 Then         '4, 6
             x4y6.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3248,16 +3300,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3271,7 +3316,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3315,6 +3360,13 @@ Public Class MovementFormNew
         End If
         If x = 4 And y = 7 Then         '4, 7
             x4y7.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3322,16 +3374,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3345,7 +3390,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3389,6 +3434,13 @@ Public Class MovementFormNew
         End If
         If x = 5 And y = 1 Then         '5, 1
             x5y1.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3396,16 +3448,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3419,7 +3464,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3463,6 +3508,13 @@ Public Class MovementFormNew
         End If
         If x = 5 And y = 2 Then         '5, 2
             x5y2.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3470,16 +3522,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3493,7 +3538,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3537,6 +3582,13 @@ Public Class MovementFormNew
         End If
         If x = 5 And y = 3 Then         '5, 3
             x5y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3544,16 +3596,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3567,7 +3612,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3611,6 +3656,13 @@ Public Class MovementFormNew
         End If
         If x = 5 And y = 4 Then         '5, 4
             x5y4.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3618,16 +3670,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3641,7 +3686,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3685,6 +3730,13 @@ Public Class MovementFormNew
         End If
         If x = 5 And y = 5 Then         '5, 5
             x5y5.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3692,16 +3744,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3715,7 +3760,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3759,6 +3804,13 @@ Public Class MovementFormNew
         End If
         If x = 5 And y = 6 Then         '5, 6
             x5y6.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3766,16 +3818,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3789,7 +3834,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3833,6 +3878,13 @@ Public Class MovementFormNew
         End If
         If x = 5 And y = 7 Then         '5, 7
             x5y7.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3840,16 +3892,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3863,7 +3908,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3907,6 +3952,13 @@ Public Class MovementFormNew
         End If
         If x = 6 And y = 1 Then         '6, 1
             x6y1.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3914,16 +3966,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -3937,7 +3982,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -3981,6 +4026,13 @@ Public Class MovementFormNew
         End If
         If x = 6 And y = 2 Then         '6, 2
             x6y2.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -3988,16 +4040,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4011,7 +4056,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4055,6 +4100,13 @@ Public Class MovementFormNew
         End If
         If x = 6 And y = 3 Then         '6, 3
             x6y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4062,16 +4114,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4085,7 +4130,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4129,6 +4174,13 @@ Public Class MovementFormNew
         End If
         If x = 6 And y = 4 Then         '6, 3
             x6y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4136,16 +4188,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4159,7 +4204,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4203,6 +4248,13 @@ Public Class MovementFormNew
         End If
         If x = 6 And y = 4 Then         '0, 0
             x6y4.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4210,16 +4262,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4233,7 +4278,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4277,6 +4322,13 @@ Public Class MovementFormNew
         End If
         If x = 6 And y = 5 Then         '6, 5
             x6y5.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4284,16 +4336,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4307,7 +4352,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4351,6 +4396,13 @@ Public Class MovementFormNew
         End If
         If x = 6 And y = 6 Then         '6, 6
             x6y6.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4358,16 +4410,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4381,7 +4426,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4425,6 +4470,13 @@ Public Class MovementFormNew
         End If
         If x = 6 And y = 7 Then         '6, 7
             x6y7.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4432,16 +4484,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4455,7 +4500,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4499,6 +4544,13 @@ Public Class MovementFormNew
         End If
         If x = 7 And y = 1 Then         '7, 1
             x7y1.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4506,16 +4558,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4529,7 +4574,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4573,6 +4618,13 @@ Public Class MovementFormNew
         End If
         If x = 7 And y = 2 Then         '7, 2
             x7y2.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4580,16 +4632,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4603,7 +4648,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4647,6 +4692,13 @@ Public Class MovementFormNew
         End If
         If x = 7 And y = 3 Then         '7, 3
             x7y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4654,16 +4706,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4677,7 +4722,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4721,6 +4766,13 @@ Public Class MovementFormNew
         End If
         If x = 7 And y = 4 Then         '7, 4
             x7y4.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4728,16 +4780,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4751,7 +4796,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4795,6 +4840,13 @@ Public Class MovementFormNew
         End If
         If x = 7 And y = 5 Then         '7, 5
             x7y5.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4802,16 +4854,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4825,7 +4870,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4869,6 +4914,13 @@ Public Class MovementFormNew
         End If
         If x = 7 And y = 6 Then         '7, 6
             x7y6.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4876,16 +4928,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4899,7 +4944,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -4943,6 +4988,13 @@ Public Class MovementFormNew
         End If
         If x = 7 And y = 7 Then         '0, 0
             x7y7.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -4950,16 +5002,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -4973,7 +5018,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -5017,6 +5062,13 @@ Public Class MovementFormNew
         End If
         If x = 8 And y = 1 Then         '8, 1
             x8y1.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -5024,16 +5076,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -5047,7 +5092,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -5091,6 +5136,13 @@ Public Class MovementFormNew
         End If
         If x = 8 And y = 2 Then         '8, 2
             x8y2.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -5098,16 +5150,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -5121,7 +5166,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -5165,6 +5210,13 @@ Public Class MovementFormNew
         End If
         If x = 8 And y = 3 Then         '8, 3
             x8y3.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -5172,16 +5224,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -5195,7 +5240,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -5239,6 +5284,13 @@ Public Class MovementFormNew
         End If
         If x = 8 And y = 4 Then         '8, 4
             x8y4.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -5246,16 +5298,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -5269,7 +5314,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -5313,6 +5358,13 @@ Public Class MovementFormNew
         End If
         If x = 8 And y = 5 Then         '8, 5
             x8y5.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -5320,16 +5372,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -5343,7 +5388,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -5387,6 +5432,13 @@ Public Class MovementFormNew
         End If
         If x = 8 And y = 6 Then         '8, 6
             x8y6.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -5394,16 +5446,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -5417,7 +5462,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -5461,6 +5506,13 @@ Public Class MovementFormNew
         End If
         If x = 8 And y = 7 Then         '8, 7
             x8y7.Image = avatar.Image
+            x0y1.Image = clear.Image
+            x0y2.Image = clear.Image
+            x0y3.Image = clear.Image
+            x0y4.Image = clear.Image
+            x0y5.Image = clear.Image
+            x0y6.Image = clear.Image
+            x0y7.Image = clear.Image
             x1y0.Image = clear.Image
             x2y0.Image = clear.Image
             x3y0.Image = clear.Image
@@ -5468,16 +5520,9 @@ Public Class MovementFormNew
             x5y0.Image = clear.Image
             x6y0.Image = clear.Image
             x7y0.Image = clear.Image
-            x0y1.Image = clear.Image
-            x1y1.Image = clear.Image
-            x3y0.Image = clear.Image
-            x4y0.Image = clear.Image
-            x5y0.Image = clear.Image
-            x6y0.Image = clear.Image
-            x7y0.Image = clear.Image
             x8y0.Image = clear.Image
             x1y1.Image = clear.Image
-            x2y0.Image = clear.Image
+            x1y2.Image = clear.Image
             x1y3.Image = clear.Image
             x1y4.Image = clear.Image
             x1y5.Image = clear.Image
@@ -5491,7 +5536,7 @@ Public Class MovementFormNew
             x2y6.Image = clear.Image
             x2y7.Image = clear.Image
             x3y1.Image = clear.Image
-            x3y1.Image = clear.Image
+            x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
             x3y5.Image = clear.Image
@@ -5532,6 +5577,7 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x0y0.Image = clear.Image
+
         End If
     End Sub
 End Class
