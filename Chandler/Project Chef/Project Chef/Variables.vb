@@ -20,11 +20,14 @@
         Public Shared add As Integer                ' Amount of clicks gained by the action taken.
         Public Shared addamount As Integer          ' Amount that is being added into the total amount (add variable)
         Public Shared GPPS As Integer               ' Total Points gained per second.
+        ' Variables for the auto clicker buttons to be enabled or not.
+        Public Shared auto2Off As Boolean : Public Shared auto3Off As Boolean : Public Shared auto4Off As Boolean : Public Shared auto5Off As Boolean : Public Shared auto6Off As Boolean : Public Shared auto7Off As Boolean : Public Shared auto8Off As Boolean : Public Shared auto9Off As Boolean
+        Public Shared auto1Bought As Boolean : Public Shared auto2Bought As Boolean : Public Shared auto3Bought As Boolean : Public Shared auto4Bought As Boolean : Public Shared auto5Bought As Boolean : Public Shared auto6Bought As Boolean : Public Shared auto7Bought As Boolean : Public Shared auto8Bought As Boolean
         'Public Shared vararry(Variables.auto1, Variables.auto2, Variables.auto3, Variables.auto4, Variables.auto5, Variables.auto6, Variables.auto7, Variables.auto8)
-        ' --- Skills Variables
-        ' Variables for the total amounts of skill experience you gained
+        ' --- Rebuilding Stat Variables ---
+        ' Variables for the total amounts of rebuilding stats
         Public Shared home As Integer : Public Shared guard As Integer : Public Shared civ As Integer : Public Shared church As Integer : Public Shared shop As Integer : Public Shared wall As Integer
-        Public Shared gamble As Integer
+        Public Shared gamble As Integer 'Used for Auto clicker 9
     End Structure
     Structure Fight
 

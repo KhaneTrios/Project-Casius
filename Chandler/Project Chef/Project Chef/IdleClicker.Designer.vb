@@ -32,15 +32,12 @@ Partial Class frmMain
         Me.lblAuto2N = New System.Windows.Forms.Label()
         Me.lblAuto3N = New System.Windows.Forms.Label()
         Me.lblAuto4N = New System.Windows.Forms.Label()
-        Me.TmrAdd = New System.Windows.Forms.Timer(Me.components)
-        Me.lblAdd = New System.Windows.Forms.Label()
         Me.tmrAmount = New System.Windows.Forms.Timer(Me.components)
         Me.lblTmrAmount = New System.Windows.Forms.Label()
         Me.btnAuto5 = New System.Windows.Forms.Button()
         Me.btnAuto6 = New System.Windows.Forms.Button()
         Me.btnAuto7 = New System.Windows.Forms.Button()
         Me.lblAuto5N = New System.Windows.Forms.Label()
-        Me.lblGPXP = New System.Windows.Forms.Label()
         Me.lblAuto6N = New System.Windows.Forms.Label()
         Me.lblAuto7N = New System.Windows.Forms.Label()
         Me.btnAuto8 = New System.Windows.Forms.Button()
@@ -66,7 +63,7 @@ Partial Class frmMain
         Me.lblAuto3Val = New System.Windows.Forms.Label()
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.tabGains = New System.Windows.Forms.TabPage()
+        Me.tabRebuild = New System.Windows.Forms.TabPage()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblSucFail = New System.Windows.Forms.Label()
         Me.lblGamble = New System.Windows.Forms.Label()
@@ -77,14 +74,14 @@ Partial Class frmMain
         Me.lblAuto5Val = New System.Windows.Forms.Label()
         Me.lblAuto4Val = New System.Windows.Forms.Label()
         Me.lblGPPS = New System.Windows.Forms.Label()
-        Me.bar3 = New System.Windows.Forms.ProgressBar()
-        Me.bar1 = New System.Windows.Forms.ProgressBar()
-        Me.bar2 = New System.Windows.Forms.ProgressBar()
-        Me.bar4 = New System.Windows.Forms.ProgressBar()
-        Me.bar5 = New System.Windows.Forms.ProgressBar()
-        Me.bar6 = New System.Windows.Forms.ProgressBar()
-        Me.bar7 = New System.Windows.Forms.ProgressBar()
-        Me.tabSkill = New System.Windows.Forms.TabPage()
+        Me.barAuto4 = New System.Windows.Forms.ProgressBar()
+        Me.barAuto2 = New System.Windows.Forms.ProgressBar()
+        Me.barAuto3 = New System.Windows.Forms.ProgressBar()
+        Me.barAuto5 = New System.Windows.Forms.ProgressBar()
+        Me.barAuto6 = New System.Windows.Forms.ProgressBar()
+        Me.barAuto7 = New System.Windows.Forms.ProgressBar()
+        Me.barAuto8 = New System.Windows.Forms.ProgressBar()
+        Me.tabStats = New System.Windows.Forms.TabPage()
         Me.lblCity2 = New System.Windows.Forms.Label()
         Me.lblWalls = New System.Windows.Forms.Label()
         Me.lblGamblingText = New System.Windows.Forms.Label()
@@ -99,8 +96,8 @@ Partial Class frmMain
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
         Me.TabControl1.SuspendLayout()
-        Me.tabGains.SuspendLayout()
-        Me.tabSkill.SuspendLayout()
+        Me.tabRebuild.SuspendLayout()
+        Me.tabStats.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnClick
@@ -110,7 +107,7 @@ Partial Class frmMain
         Me.btnClick.Name = "btnClick"
         Me.btnClick.Size = New System.Drawing.Size(258, 136)
         Me.btnClick.TabIndex = 0
-        Me.btnClick.Text = "Heal civilians"
+        Me.btnClick.Text = "Help civilians"
         Me.btnClick.UseVisualStyleBackColor = True
         '
         'btnAuto1
@@ -190,20 +187,6 @@ Partial Class frmMain
         Me.lblAuto4N.TabIndex = 9
         Me.lblAuto4N.Text = "0"
         '
-        'TmrAdd
-        '
-        Me.TmrAdd.Enabled = True
-        Me.TmrAdd.Interval = 1000
-        '
-        'lblAdd
-        '
-        Me.lblAdd.AutoSize = True
-        Me.lblAdd.Location = New System.Drawing.Point(24, 96)
-        Me.lblAdd.Name = "lblAdd"
-        Me.lblAdd.Size = New System.Drawing.Size(13, 13)
-        Me.lblAdd.TabIndex = 10
-        Me.lblAdd.Text = "0"
-        '
         'tmrAmount
         '
         Me.tmrAmount.Enabled = True
@@ -256,15 +239,6 @@ Partial Class frmMain
         Me.lblAuto5N.Size = New System.Drawing.Size(13, 13)
         Me.lblAuto5N.TabIndex = 15
         Me.lblAuto5N.Text = "0"
-        '
-        'lblGPXP
-        '
-        Me.lblGPXP.AutoSize = True
-        Me.lblGPXP.Location = New System.Drawing.Point(24, 128)
-        Me.lblGPXP.Name = "lblGPXP"
-        Me.lblGPXP.Size = New System.Drawing.Size(13, 13)
-        Me.lblGPXP.TabIndex = 16
-        Me.lblGPXP.Text = "0"
         '
         'lblAuto6N
         '
@@ -485,78 +459,76 @@ Partial Class frmMain
         '
         'TabControl1
         '
-        Me.TabControl1.Controls.Add(Me.tabGains)
-        Me.TabControl1.Controls.Add(Me.tabSkill)
+        Me.TabControl1.Controls.Add(Me.tabRebuild)
+        Me.TabControl1.Controls.Add(Me.tabStats)
         Me.TabControl1.Location = New System.Drawing.Point(8, 16)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(640, 480)
         Me.TabControl1.TabIndex = 38
         '
-        'tabGains
+        'tabRebuild
         '
-        Me.tabGains.Controls.Add(Me.Label2)
-        Me.tabGains.Controls.Add(Me.lblSucFail)
-        Me.tabGains.Controls.Add(Me.lblGamble)
-        Me.tabGains.Controls.Add(Me.lblAuto9Val)
-        Me.tabGains.Controls.Add(Me.lblAuto8Val)
-        Me.tabGains.Controls.Add(Me.lblAuto7Val)
-        Me.tabGains.Controls.Add(Me.lblAuto6Val)
-        Me.tabGains.Controls.Add(Me.lblAuto5Val)
-        Me.tabGains.Controls.Add(Me.lblAuto4Val)
-        Me.tabGains.Controls.Add(Me.lblGPPS)
-        Me.tabGains.Controls.Add(Me.lblTmrAmount)
-        Me.tabGains.Controls.Add(Me.lblGPXP)
-        Me.tabGains.Controls.Add(Me.lblAuto6N)
-        Me.tabGains.Controls.Add(Me.lblAuto5N)
-        Me.tabGains.Controls.Add(Me.lblAdd)
-        Me.tabGains.Controls.Add(Me.lblAuto7N)
-        Me.tabGains.Controls.Add(Me.lblAuto2N)
-        Me.tabGains.Controls.Add(Me.lblAuto3N)
-        Me.tabGains.Controls.Add(Me.lblAuto4N)
-        Me.tabGains.Controls.Add(Me.lblAuto8N)
-        Me.tabGains.Controls.Add(Me.lblauto9Cost)
-        Me.tabGains.Controls.Add(Me.lblAuto9N)
-        Me.tabGains.Controls.Add(Me.lblAuto3Val)
-        Me.tabGains.Controls.Add(Me.lblauto8Cost)
-        Me.tabGains.Controls.Add(Me.lblCity1)
-        Me.tabGains.Controls.Add(Me.lblauto7Cost)
-        Me.tabGains.Controls.Add(Me.lblAuto2Val)
-        Me.tabGains.Controls.Add(Me.lblauto6Cost)
-        Me.tabGains.Controls.Add(Me.btnCheat)
-        Me.tabGains.Controls.Add(Me.lblauto5Cost)
-        Me.tabGains.Controls.Add(Me.lblAuto1Val)
-        Me.tabGains.Controls.Add(Me.lblauto4Cost)
-        Me.tabGains.Controls.Add(Me.btnClick)
-        Me.tabGains.Controls.Add(Me.txtCheat)
-        Me.tabGains.Controls.Add(Me.lblauto3Cost)
-        Me.tabGains.Controls.Add(Me.lblAmount)
-        Me.tabGains.Controls.Add(Me.btnAuto1)
-        Me.tabGains.Controls.Add(Me.btnAuto2)
-        Me.tabGains.Controls.Add(Me.btnAuto3)
-        Me.tabGains.Controls.Add(Me.btnAuto4)
-        Me.tabGains.Controls.Add(Me.lblauto2Cost)
-        Me.tabGains.Controls.Add(Me.btnAuto5)
-        Me.tabGains.Controls.Add(Me.lblauto1Cost)
-        Me.tabGains.Controls.Add(Me.btnAuto6)
-        Me.tabGains.Controls.Add(Me.btnAuto7)
-        Me.tabGains.Controls.Add(Me.btnAuto8)
-        Me.tabGains.Controls.Add(Me.btnAuto9)
-        Me.tabGains.Controls.Add(Me.lblAuto1N)
-        Me.tabGains.Controls.Add(Me.bar3)
-        Me.tabGains.Controls.Add(Me.bar1)
-        Me.tabGains.Controls.Add(Me.bar2)
-        Me.tabGains.Controls.Add(Me.bar4)
-        Me.tabGains.Controls.Add(Me.bar5)
-        Me.tabGains.Controls.Add(Me.bar6)
-        Me.tabGains.Controls.Add(Me.bar7)
-        Me.tabGains.Location = New System.Drawing.Point(4, 22)
-        Me.tabGains.Name = "tabGains"
-        Me.tabGains.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabGains.Size = New System.Drawing.Size(632, 454)
-        Me.tabGains.TabIndex = 0
-        Me.tabGains.Text = "Make Gains"
-        Me.tabGains.UseVisualStyleBackColor = True
+        Me.tabRebuild.Controls.Add(Me.Label2)
+        Me.tabRebuild.Controls.Add(Me.lblSucFail)
+        Me.tabRebuild.Controls.Add(Me.lblGamble)
+        Me.tabRebuild.Controls.Add(Me.lblAuto9Val)
+        Me.tabRebuild.Controls.Add(Me.lblAuto8Val)
+        Me.tabRebuild.Controls.Add(Me.lblAuto7Val)
+        Me.tabRebuild.Controls.Add(Me.lblAuto6Val)
+        Me.tabRebuild.Controls.Add(Me.lblAuto5Val)
+        Me.tabRebuild.Controls.Add(Me.lblAuto4Val)
+        Me.tabRebuild.Controls.Add(Me.lblGPPS)
+        Me.tabRebuild.Controls.Add(Me.lblTmrAmount)
+        Me.tabRebuild.Controls.Add(Me.lblAuto6N)
+        Me.tabRebuild.Controls.Add(Me.lblAuto5N)
+        Me.tabRebuild.Controls.Add(Me.lblAuto7N)
+        Me.tabRebuild.Controls.Add(Me.lblAuto2N)
+        Me.tabRebuild.Controls.Add(Me.lblAuto3N)
+        Me.tabRebuild.Controls.Add(Me.lblAuto4N)
+        Me.tabRebuild.Controls.Add(Me.lblAuto8N)
+        Me.tabRebuild.Controls.Add(Me.lblauto9Cost)
+        Me.tabRebuild.Controls.Add(Me.lblAuto9N)
+        Me.tabRebuild.Controls.Add(Me.lblAuto3Val)
+        Me.tabRebuild.Controls.Add(Me.lblauto8Cost)
+        Me.tabRebuild.Controls.Add(Me.lblCity1)
+        Me.tabRebuild.Controls.Add(Me.lblauto7Cost)
+        Me.tabRebuild.Controls.Add(Me.lblAuto2Val)
+        Me.tabRebuild.Controls.Add(Me.lblauto6Cost)
+        Me.tabRebuild.Controls.Add(Me.btnCheat)
+        Me.tabRebuild.Controls.Add(Me.lblauto5Cost)
+        Me.tabRebuild.Controls.Add(Me.lblAuto1Val)
+        Me.tabRebuild.Controls.Add(Me.lblauto4Cost)
+        Me.tabRebuild.Controls.Add(Me.btnClick)
+        Me.tabRebuild.Controls.Add(Me.txtCheat)
+        Me.tabRebuild.Controls.Add(Me.lblauto3Cost)
+        Me.tabRebuild.Controls.Add(Me.lblAmount)
+        Me.tabRebuild.Controls.Add(Me.btnAuto1)
+        Me.tabRebuild.Controls.Add(Me.btnAuto2)
+        Me.tabRebuild.Controls.Add(Me.btnAuto3)
+        Me.tabRebuild.Controls.Add(Me.btnAuto4)
+        Me.tabRebuild.Controls.Add(Me.lblauto2Cost)
+        Me.tabRebuild.Controls.Add(Me.btnAuto5)
+        Me.tabRebuild.Controls.Add(Me.lblauto1Cost)
+        Me.tabRebuild.Controls.Add(Me.btnAuto6)
+        Me.tabRebuild.Controls.Add(Me.btnAuto7)
+        Me.tabRebuild.Controls.Add(Me.btnAuto8)
+        Me.tabRebuild.Controls.Add(Me.btnAuto9)
+        Me.tabRebuild.Controls.Add(Me.lblAuto1N)
+        Me.tabRebuild.Controls.Add(Me.barAuto4)
+        Me.tabRebuild.Controls.Add(Me.barAuto2)
+        Me.tabRebuild.Controls.Add(Me.barAuto3)
+        Me.tabRebuild.Controls.Add(Me.barAuto5)
+        Me.tabRebuild.Controls.Add(Me.barAuto6)
+        Me.tabRebuild.Controls.Add(Me.barAuto7)
+        Me.tabRebuild.Controls.Add(Me.barAuto8)
+        Me.tabRebuild.Location = New System.Drawing.Point(4, 22)
+        Me.tabRebuild.Name = "tabRebuild"
+        Me.tabRebuild.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabRebuild.Size = New System.Drawing.Size(632, 454)
+        Me.tabRebuild.TabIndex = 0
+        Me.tabRebuild.Text = "Rebuild"
+        Me.tabRebuild.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -580,7 +552,7 @@ Partial Class frmMain
         'lblGamble
         '
         Me.lblGamble.AutoSize = True
-        Me.lblGamble.Location = New System.Drawing.Point(160, 176)
+        Me.lblGamble.Location = New System.Drawing.Point(395, 411)
         Me.lblGamble.Name = "lblGamble"
         Me.lblGamble.Size = New System.Drawing.Size(39, 13)
         Me.lblGamble.TabIndex = 45
@@ -649,82 +621,82 @@ Partial Class frmMain
         Me.lblGPPS.TabIndex = 38
         Me.lblGPPS.Text = "0"
         '
-        'bar3
+        'barAuto4
         '
-        Me.bar3.Location = New System.Drawing.Point(304, 160)
-        Me.bar3.Maximum = 1000
-        Me.bar3.Name = "bar3"
-        Me.bar3.Size = New System.Drawing.Size(144, 16)
-        Me.bar3.TabIndex = 48
+        Me.barAuto4.Location = New System.Drawing.Point(304, 160)
+        Me.barAuto4.Maximum = 1000
+        Me.barAuto4.Name = "barAuto4"
+        Me.barAuto4.Size = New System.Drawing.Size(144, 16)
+        Me.barAuto4.TabIndex = 48
         '
-        'bar1
+        'barAuto2
         '
-        Me.bar1.Location = New System.Drawing.Point(304, 80)
-        Me.bar1.Maximum = 1000
-        Me.bar1.Name = "bar1"
-        Me.bar1.Size = New System.Drawing.Size(144, 16)
-        Me.bar1.TabIndex = 54
+        Me.barAuto2.Location = New System.Drawing.Point(304, 80)
+        Me.barAuto2.Maximum = 1000
+        Me.barAuto2.Name = "barAuto2"
+        Me.barAuto2.Size = New System.Drawing.Size(144, 16)
+        Me.barAuto2.TabIndex = 54
         '
-        'bar2
+        'barAuto3
         '
-        Me.bar2.Location = New System.Drawing.Point(304, 120)
-        Me.bar2.Maximum = 1000
-        Me.bar2.Name = "bar2"
-        Me.bar2.Size = New System.Drawing.Size(144, 16)
-        Me.bar2.TabIndex = 53
+        Me.barAuto3.Location = New System.Drawing.Point(304, 120)
+        Me.barAuto3.Maximum = 1000
+        Me.barAuto3.Name = "barAuto3"
+        Me.barAuto3.Size = New System.Drawing.Size(144, 16)
+        Me.barAuto3.TabIndex = 53
         '
-        'bar4
+        'barAuto5
         '
-        Me.bar4.Location = New System.Drawing.Point(304, 200)
-        Me.bar4.Maximum = 1000
-        Me.bar4.Name = "bar4"
-        Me.bar4.Size = New System.Drawing.Size(144, 16)
-        Me.bar4.TabIndex = 49
+        Me.barAuto5.Location = New System.Drawing.Point(304, 200)
+        Me.barAuto5.Maximum = 1000
+        Me.barAuto5.Name = "barAuto5"
+        Me.barAuto5.Size = New System.Drawing.Size(144, 16)
+        Me.barAuto5.TabIndex = 49
         '
-        'bar5
+        'barAuto6
         '
-        Me.bar5.Location = New System.Drawing.Point(304, 240)
-        Me.bar5.Maximum = 1000
-        Me.bar5.Name = "bar5"
-        Me.bar5.Size = New System.Drawing.Size(144, 16)
-        Me.bar5.TabIndex = 50
+        Me.barAuto6.Location = New System.Drawing.Point(304, 240)
+        Me.barAuto6.Maximum = 1000
+        Me.barAuto6.Name = "barAuto6"
+        Me.barAuto6.Size = New System.Drawing.Size(144, 16)
+        Me.barAuto6.TabIndex = 50
         '
-        'bar6
+        'barAuto7
         '
-        Me.bar6.Location = New System.Drawing.Point(304, 280)
-        Me.bar6.Maximum = 1000
-        Me.bar6.Name = "bar6"
-        Me.bar6.Size = New System.Drawing.Size(144, 16)
-        Me.bar6.TabIndex = 51
+        Me.barAuto7.Location = New System.Drawing.Point(304, 280)
+        Me.barAuto7.Maximum = 1000
+        Me.barAuto7.Name = "barAuto7"
+        Me.barAuto7.Size = New System.Drawing.Size(144, 16)
+        Me.barAuto7.TabIndex = 51
         '
-        'bar7
+        'barAuto8
         '
-        Me.bar7.Location = New System.Drawing.Point(304, 320)
-        Me.bar7.Maximum = 1000
-        Me.bar7.Name = "bar7"
-        Me.bar7.Size = New System.Drawing.Size(144, 16)
-        Me.bar7.TabIndex = 52
+        Me.barAuto8.Location = New System.Drawing.Point(304, 320)
+        Me.barAuto8.Maximum = 1000
+        Me.barAuto8.Name = "barAuto8"
+        Me.barAuto8.Size = New System.Drawing.Size(144, 16)
+        Me.barAuto8.TabIndex = 52
         '
-        'tabSkill
+        'tabStats
         '
-        Me.tabSkill.Controls.Add(Me.lblCity2)
-        Me.tabSkill.Controls.Add(Me.lblWalls)
-        Me.tabSkill.Controls.Add(Me.lblGamblingText)
-        Me.tabSkill.Controls.Add(Me.lblShops)
-        Me.tabSkill.Controls.Add(Me.lblGuards)
-        Me.tabSkill.Controls.Add(Me.lblhomes)
-        Me.tabSkill.Controls.Add(Me.lblSlayerText)
-        Me.tabSkill.Controls.Add(Me.lblMagicText)
-        Me.tabSkill.Controls.Add(Me.lblCraftingText)
-        Me.tabSkill.Controls.Add(Me.lblCivilians)
-        Me.tabSkill.Controls.Add(Me.lblCombatText)
-        Me.tabSkill.Location = New System.Drawing.Point(4, 22)
-        Me.tabSkill.Name = "tabSkill"
-        Me.tabSkill.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabSkill.Size = New System.Drawing.Size(632, 454)
-        Me.tabSkill.TabIndex = 1
-        Me.tabSkill.Text = "Skillz"
-        Me.tabSkill.UseVisualStyleBackColor = True
+        Me.tabStats.Controls.Add(Me.lblCity2)
+        Me.tabStats.Controls.Add(Me.lblWalls)
+        Me.tabStats.Controls.Add(Me.lblGamblingText)
+        Me.tabStats.Controls.Add(Me.lblShops)
+        Me.tabStats.Controls.Add(Me.lblGuards)
+        Me.tabStats.Controls.Add(Me.lblhomes)
+        Me.tabStats.Controls.Add(Me.lblSlayerText)
+        Me.tabStats.Controls.Add(Me.lblMagicText)
+        Me.tabStats.Controls.Add(Me.lblCraftingText)
+        Me.tabStats.Controls.Add(Me.lblCivilians)
+        Me.tabStats.Controls.Add(Me.lblCombatText)
+        Me.tabStats.Location = New System.Drawing.Point(4, 22)
+        Me.tabStats.Name = "tabStats"
+        Me.tabStats.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabStats.Size = New System.Drawing.Size(632, 454)
+        Me.tabStats.TabIndex = 1
+        Me.tabStats.Text = "Stats"
+        Me.tabStats.UseVisualStyleBackColor = True
         '
         'lblCity2
         '
@@ -834,7 +806,7 @@ Partial Class frmMain
         Me.lblCombatText.Name = "lblCombatText"
         Me.lblCombatText.Size = New System.Drawing.Size(117, 20)
         Me.lblCombatText.TabIndex = 0
-        Me.lblCombatText.Text = "Civilians healed"
+        Me.lblCombatText.Text = "Civilians helped"
         '
         'tmrSucFail
         '
@@ -855,10 +827,10 @@ Partial Class frmMain
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Project Casius"
         Me.TabControl1.ResumeLayout(False)
-        Me.tabGains.ResumeLayout(False)
-        Me.tabGains.PerformLayout()
-        Me.tabSkill.ResumeLayout(False)
-        Me.tabSkill.PerformLayout()
+        Me.tabRebuild.ResumeLayout(False)
+        Me.tabRebuild.PerformLayout()
+        Me.tabStats.ResumeLayout(False)
+        Me.tabStats.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -871,15 +843,12 @@ Partial Class frmMain
     Friend WithEvents lblAuto2N As System.Windows.Forms.Label
     Friend WithEvents lblAuto3N As System.Windows.Forms.Label
     Friend WithEvents lblAuto4N As System.Windows.Forms.Label
-    Friend WithEvents TmrAdd As System.Windows.Forms.Timer
-    Friend WithEvents lblAdd As System.Windows.Forms.Label
     Friend WithEvents tmrAmount As System.Windows.Forms.Timer
     Friend WithEvents lblTmrAmount As System.Windows.Forms.Label
     Friend WithEvents btnAuto5 As System.Windows.Forms.Button
     Friend WithEvents btnAuto6 As System.Windows.Forms.Button
     Friend WithEvents btnAuto7 As System.Windows.Forms.Button
     Friend WithEvents lblAuto5N As System.Windows.Forms.Label
-    Friend WithEvents lblGPXP As System.Windows.Forms.Label
     Friend WithEvents lblAuto6N As System.Windows.Forms.Label
     Friend WithEvents lblAuto7N As System.Windows.Forms.Label
     Friend WithEvents btnAuto8 As System.Windows.Forms.Button
@@ -904,9 +873,9 @@ Partial Class frmMain
     Friend WithEvents lblAuto3Val As System.Windows.Forms.Label
     Friend WithEvents lblCity1 As System.Windows.Forms.Label
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
-    Friend WithEvents tabGains As System.Windows.Forms.TabPage
+    Friend WithEvents tabRebuild As System.Windows.Forms.TabPage
     Friend WithEvents lblAmount As System.Windows.Forms.Label
-    Friend WithEvents tabSkill As System.Windows.Forms.TabPage
+    Friend WithEvents tabStats As System.Windows.Forms.TabPage
     Friend WithEvents lblSlayerText As System.Windows.Forms.Label
     Friend WithEvents lblMagicText As System.Windows.Forms.Label
     Friend WithEvents lblCraftingText As System.Windows.Forms.Label
@@ -929,13 +898,13 @@ Partial Class frmMain
     Friend WithEvents lblCity2 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents lblGamble As System.Windows.Forms.Label
-    Friend WithEvents bar3 As System.Windows.Forms.ProgressBar
-    Friend WithEvents bar1 As System.Windows.Forms.ProgressBar
-    Friend WithEvents bar2 As System.Windows.Forms.ProgressBar
-    Friend WithEvents bar4 As System.Windows.Forms.ProgressBar
-    Friend WithEvents bar5 As System.Windows.Forms.ProgressBar
-    Friend WithEvents bar6 As System.Windows.Forms.ProgressBar
-    Friend WithEvents bar7 As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto4 As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto2 As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto3 As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto5 As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto6 As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto7 As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto8 As System.Windows.Forms.ProgressBar
     Friend WithEvents tmrBar As System.Windows.Forms.Timer
 
 End Class

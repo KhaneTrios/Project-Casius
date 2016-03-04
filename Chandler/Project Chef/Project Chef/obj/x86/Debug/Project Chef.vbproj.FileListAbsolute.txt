@@ -25,3 +25,13 @@
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\bin\Debug\Project Chef.exe
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\bin\Debug\Project Chef.pdb
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\bin\Debug\Project Chef.xml
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.exe
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.xml
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.pdb
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\bin\Debug\Project Chef.exe
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\bin\Debug\Project Chef.pdb
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\bin\Debug\Project Chef.xml
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.vbprojResolveAssemblyReference.cache
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.frmMain.resources
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.Resources.resources
+C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.vbproj.GenerateResource.Cache

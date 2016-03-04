@@ -13,15 +13,18 @@
         lblAuto1N.Text = Variables.Auto.auto1        'Setting the label for the number of the first auto-clickers you have bought
         Variables.Auto.auto1 = Val(0)                'Setting the number of the first auto-clickers to 0 on load
         Variables.Auto.auto1Val = Val(1)             'Setting the value-gain the first auto clicker has.
-        Variables.Auto.auto1Item = 0                   'Setting the experience value the first auto clicker gains.
+        Variables.Auto.auto1Item = 0                 'Setting the experience value the first auto clicker gains.
         Variables.Auto.auto1Cost = Val(50)           'Setting the cost of the item to purchase.
+        Variables.Auto.auto1Bought = False
 
         '2: Picking Up Ashes At GE
         lblAuto2N.Text = Variables.Auto.auto2        'Setting the label for the number of the second auto-clickers you have bought
         Variables.Auto.auto2 = Val(0)                'Setting the number of the second auto-clickers to 0 on load
         Variables.Auto.auto2Val = Val(10)            'Setting the value-gain the second auto clicker has.
-        Variables.Auto.auto2Item = 1                   'Setting the experience value the second auto clicker gains
+        Variables.Auto.auto2Item = 1                 'Setting the experience value the second auto clicker gains
         Variables.Auto.auto2Cost = Val(100)          'Setting the cost of the item to purchase.
+        Variables.Auto.auto2Off = False              'Setting if the button should be disabled yet
+        Variables.Auto.auto2Bought = False           'Setting if the user has bought at least one of the item yet
 
         '3: Selling Goblin Mail
         lblAuto3N.Text = Variables.Auto.auto3        'Setting the label for the number of the third auto-clickers you have bought
@@ -30,6 +33,8 @@
         Variables.Auto.auto3Item = 1                   'Setting the experience value the third auto clicker gains
         Variables.Auto.auto3Skill = "Combat"         'Setting the skill category
         Variables.Auto.auto3Cost = Val(1000)         'Setting the cost of the item to purchase.
+        Variables.Auto.auto3Off = False
+        Variables.Auto.auto3Bought = False
 
         '4: Spinning Flax
         lblAuto4N.Text = Variables.Auto.auto4        'Setting the label for the number of the third auto-clickers you have bought
@@ -38,6 +43,8 @@
         Variables.Auto.auto4Item = 1                   'Setting the experience value the third auto clicker gains
         Variables.Auto.auto4Skill = "Crafting"       'Setting the skill category
         Variables.Auto.auto4Cost = Val(6000)         'Setting the cost of the item to purchase.
+        Variables.Auto.auto4Off = False
+        Variables.Auto.auto4Bought = False
 
         '5: Low Alching
         lblAuto5N.Text = Variables.Auto.auto5        'Setting the label for the number of the third auto-clickers you have bought
@@ -46,6 +53,8 @@
         Variables.Auto.auto5Item = 1                  'Setting the experience value the third auto clicker gains
         Variables.Auto.auto5Skill = "Magic"          'Setting the skill category
         Variables.Auto.auto5Cost = Val(15000)        'Setting the cost of the item to purchase.
+        Variables.Auto.auto5Off = False
+        Variables.Auto.auto5Bought = False
 
         '6: Low-Level Slayer
         lblAuto4N.Text = Variables.Auto.auto6        'Setting the label for the number of the third auto-clickers you have bought
@@ -54,6 +63,8 @@
         Variables.Auto.auto6Item = 1                  'Setting the experience value the third auto clicker gains
         Variables.Auto.auto6Skill = "Slayer"         'Setting the skill category
         Variables.Auto.auto6Cost = Val(50000)        'Setting the cost of the item to purchase.
+        Variables.Auto.auto6Off = False
+        Variables.Auto.auto6Bought = False
 
         '7: Cammy Spamming
         lblAuto7N.Text = Variables.Auto.auto7        'Setting the label for the number of the third auto-clickers you have bought
@@ -62,6 +73,8 @@
         Variables.Auto.auto7Item = 1                  'Setting the experience value the third auto clicker gains
         Variables.Auto.auto7Skill = "Magic"          'Setting the skill category
         Variables.Auto.auto7Cost = Val(50000)        'Setting the cost of the item to purchase.
+        Variables.Auto.auto7Off = False
+        Variables.Auto.auto7Bought = False
 
         '8: Green Dragons
         lblAuto8N.Text = Variables.Auto.auto8        'Setting the label for the number of the third auto-clickers you have bought
@@ -70,6 +83,8 @@
         Variables.Auto.auto8Item = 1                  'Setting the experience value the third auto clicker gains
         Variables.Auto.auto8Skill = "Combat"         'Setting the skill category
         Variables.Auto.auto8Cost = Val(100000)       'Setting the cost of the item to purchase.
+        Variables.Auto.auto8Off = False
+        Variables.Auto.auto8Bought = False
 
         '9: Frosty Flowers
         lblAuto9N.Text = Variables.Auto.auto9        'Setting the label for the number of the third auto-clickers you have bought
@@ -78,24 +93,18 @@
         Variables.Auto.auto9Item = 1000000             'Setting the experience value the third auto clicker gains
         Variables.Auto.auto9Skill = "Gambling"       'Setting the skill category
         Variables.Auto.auto9Cost = Val(100000000)    'Setting the cost of the item to purchase.
+        Variables.Auto.auto9Off = False
     End Sub
     Private Sub btn1_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto1.Click
         'Auto Clicker 1
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto1Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto1 = Val((Variables.Auto.auto1) + (1))          'The number of first autoclicker owned 
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto1Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
-            Variables.Auto.auto1Cost = Val((Variables.Auto.auto1) * (Variables.Auto.auto1Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
+            Variables.Auto.auto1Cost = Val((Variables.Auto.auto1) + (Variables.Auto.auto1Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto1Val = Val((Variables.Auto.auto1Val) + (1))    'Scaling the gain value by adding
+            Variables.Auto.auto1Bought = True                                  'The user has bought at least one of this item now.
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
-
-        If Val(((Variables.Auto.auto1) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto2Cost))) Then     'If you own at least one or more of the first auto clicker, and your total score is equal to or greater than the cost of the second auto clicker then
-            btnAuto2.Enabled = True             ' The auto clicker button becomes enabled to click on and use
-        Else : btnAuto2.Enabled = False         ' If that absolute condition is not met then the button remains disabled and can't be used.
-        End If                                  ' End of if statement
-
-        'Variables.Auto.GPPS = Val(Variables.Auto.GPPS + Variables.Auto.auto1Val)
-        Application.DoEvents()
     End Sub
     Private Sub btn1_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto1.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -108,9 +117,9 @@
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto2Cost))
             Variables.Auto.auto2Cost = Val((Variables.Auto.auto2) + (Variables.Auto.auto2Cost) + (2))
             Variables.Auto.auto2Val = Val((Variables.Auto.auto2Val) + (5))    'Scaling the gain value by adding
+            Variables.Auto.auto2Bought = True
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-        Application.DoEvents()
     End Sub
     Private Sub btn2_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto2.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -121,11 +130,15 @@
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto3Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto3 = Val((Variables.Auto.auto3) + (1))
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto3Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
-            Variables.Auto.auto3Cost = Val((Variables.Auto.auto3) * (Variables.Auto.auto3Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
+            Variables.Auto.auto3Cost = Val((Variables.Auto.auto3) + (Variables.Auto.auto3Cost) + (3))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto3Val = Val((Variables.Auto.auto3Val) + (10))
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
-        Application.DoEvents()
+
+        If Val(((Variables.Auto.auto3) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto4Cost))) Then
+            btnAuto4.Enabled = True
+        Else : btnAuto4.Enabled = False
+        End If
     End Sub
     Private Sub btn3_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto3.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -141,7 +154,11 @@
             Variables.Auto.auto4Val = Val((Variables.Auto.auto4Val) + (20))
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-        Application.DoEvents()
+
+        If Val(((Variables.Auto.auto4) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto5Cost))) Then
+            btnAuto5.Enabled = True
+        Else : btnAuto5.Enabled = False
+        End If
     End Sub
     Private Sub btn4_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto4.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -156,7 +173,11 @@
             Variables.Auto.auto5Val = Val((Variables.Auto.auto5Val) + (50))
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
-        Application.DoEvents()
+
+        If Val(((Variables.Auto.auto5) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto6Cost))) Then
+            btnAuto6.Enabled = True
+        Else : btnAuto6.Enabled = False
+        End If
     End Sub
     Private Sub btn5_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto5.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -171,7 +192,11 @@
             Variables.Auto.auto6Val = Val((Variables.Auto.auto6Val) + (100))
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
-        Application.DoEvents()
+
+        If Val(((Variables.Auto.auto6) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto7Cost))) Then
+            btnAuto7.Enabled = True
+        Else : btnAuto7.Enabled = False
+        End If
     End Sub
     Private Sub btn6_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto6.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -186,7 +211,12 @@
             Variables.Auto.auto7Val = Val((Variables.Auto.auto7Val) + (500))
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
-        Application.DoEvents()
+
+
+        If Val(((Variables.Auto.auto7) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto8Cost))) Then
+            btnAuto8.Enabled = True
+        Else : btnAuto8.Enabled = False
+        End If
     End Sub
     Private Sub btn7_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto7.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -201,7 +231,11 @@
             Variables.Auto.auto8Val = Val((Variables.Auto.auto8Val) + (1000))
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
-        Application.DoEvents()
+
+        If Val(((Variables.Auto.auto8) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto9Cost))) Then
+            btnAuto9.Enabled = True
+        Else : btnAuto9.Enabled = False
+        End If
     End Sub
     Private Sub btn8_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto8.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -210,15 +244,12 @@
     Private Sub btn9_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto9.Click
         'Auto Clicker 9
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto9Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
-            ' Variables.Auto.auto9 = Val((Variables.Auto.auto9) + (1))
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto9Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
-            'Variables.Auto.auto9Cost = Val((Variables.Auto.auto9) * (Variables.Auto.auto9Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
-            'Variables.Auto.auto9Val = Val((Variables.Auto.auto9Val) + (100000))
 
-            Randomize()
-            Variables.Auto.gamble = (Int((5 * Rnd()) + 1))
+            Randomize()                                             'Initializxing the random number generator function
+            Variables.Auto.gamble = (Int((5 * Rnd()) + 1))          'The variable is a random integer between 5 and 1.
 
-            tmrSucFail.Enabled = True
+            tmrSucFail.Enabled = True                               'Begin the success/fail message timer
 
             If Variables.Auto.gamble = 5 Then
                 Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto9Val) * (2))
@@ -226,22 +257,12 @@
                 Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto9Val) * (2))
             End If
 
-            ' If Variables.Auto.gamble = 1 Or 2 Then
-            'Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto9Cost))
-            ' End If
-
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
-        Application.DoEvents()
     End Sub
     Private Sub btn9_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto9.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
         ToolTip.SetToolTip(Me.btnAuto9, " | Cost: " & Variables.Auto.auto9Cost & " | Gain Per Second: " & Variables.Auto.auto9Val & " |")
-    End Sub
-    Private Sub TmrAdd_Tick(sender As System.Object, e As System.EventArgs) Handles TmrAdd.Tick
-        If (TmrAdd.Interval = 1000) Then
-            lblAdd.ResetText()
-        End If
     End Sub
     Private Sub tmrAmount_Tick(sender As System.Object, e As System.EventArgs) Handles tmrAmount.Tick
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto1 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
@@ -254,8 +275,8 @@
         End If
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto3 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
-            Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto3Val * Variables.Auto.auto3))     'The total final score amount equals the current final amount added to the product of the value of the auto clicker and the number owned.
-            Variables.Auto.wall = Val(Variables.Auto.wall + (Variables.Auto.auto3Item * Variables.Auto.auto3))
+            Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto3Val + Variables.Auto.auto3))     'The total final score amount equals the current final amount added to the product of the value of the auto clicker and the number owned.
+            Variables.Auto.wall = Val(Variables.Auto.wall + (Variables.Auto.auto3Item * +Variables.Auto.auto3))
         End If
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto4 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
@@ -294,7 +315,6 @@
 
         If (tmrUpdate.Interval <= 1) Then
             ' Constant updating all auto clicker labels
-            lblAdd.Text = Variables.Auto.add
             lblAmount.Text = Variables.Auto.amount               ' Setting the label to display your total score
             lblauto1Cost.Text = Variables.Auto.auto1Cost         ' Setting the label to display the total cost of that auto clicker
             lblAuto1N.Text = Variables.Auto.auto1                ' Setting the label to display the total amount of that auto clicker that you own
@@ -332,25 +352,38 @@
             lblShops.Text = Variables.Auto.shop
             lblWalls.Text = Variables.Auto.wall
 
-
+            ' --- Bars Stopping when maxed, disabling buttons and variables ---
             If Variables.Auto.home >= 1000 Then
-                bar1.Enabled = False
+                barAuto2.Enabled = False
                 lblhomes.Enabled = False
                 Variables.Auto.home = 1000
                 btnAuto2.Enabled = False
                 Variables.Auto.auto2 = 0
+                Variables.Auto.auto2Off = True
+            End If
+            If Variables.Auto.wall >= 1000 Then
+                barAuto3.Enabled = False
+                lblWalls.Enabled = False
+                Variables.Auto.wall = 1000
+                btnAuto3.Enabled = False
+                Variables.Auto.auto3 = 0
+                Variables.Auto.auto3Off = True
+            End If
+            If Variables.Auto.guard >= 1000 Then
+                barAuto4.Enabled = False
+                lblGuards.Enabled = False
+                Variables.Auto.guard = 1000
+                btnAuto4.Enabled = False
+                Variables.Auto.auto4 = 0
             End If
 
-            If bar1.Value >= 1000 Then
-                bar1.Enabled = False
-                lblhomes.Enabled = False
-                Variables.Auto.home = 1000
-                btnAuto2.Enabled = False
-            End If
 
             ' --- Bars ---
-            bar1.Value = Variables.Auto.home
-
+            barAuto2.Value = Variables.Auto.home
+            barAuto3.Value = Variables.Auto.wall
+            barAuto4.Value = Variables.Auto.guard
+            barAuto5.Value = Variables.Auto.church
+            barAuto6.Value = Variables.Auto.shop
 
             ' --- Button-enabling check ---
             ' Constant check for the conditions to be met to enable the next auto clicker button in order
@@ -359,45 +392,16 @@
             Else : btnAuto1.Enabled = False                         ' If that absolute condition is not met then the button remains disabled and can't be used.
             End If                                                  ' End of if statement
 
-            ' If Val(((Variables.Auto.auto1) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto2Cost))) Then     'If you own at least one or more of the first auto clicker, and your total score is equal to or greater than the cost of the second auto clicker then
-            'btnAuto2.Enabled = True             ' The auto clicker button becomes enabled to click on and use
-            'Else : btnAuto2.Enabled = False         ' If that absolute condition is not met then the button remains disabled and can't be used.
-            ' End If                                  ' End of if statement
+            If Val((Variables.Auto.auto1Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto2Cost) And Variables.Auto.auto2Off = False)) Then     'If you own at least one or more of the second auto clicker, and your total score is equal to or greater than the cost of the third auto clicker then
+                btnAuto2.Enabled = True             ' The auto clicker button becomes enabled to click on and use
+            Else : btnAuto2.Enabled = False         ' If that absolute condition is not met then the button remains disabled and can't be used.
+            End If                                  ' End of if statement
 
-            If Val(((Variables.Auto.auto2) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto3Cost))) Then     'If you own at least one or more of the second auto clicker, and your total score is equal to or greater than the cost of the third auto clicker then
+            If Val((Variables.Auto.auto2Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto3Cost) And Variables.Auto.auto3Off = False)) Then     'If you own at least one or more of the second auto clicker, and your total score is equal to or greater than the cost of the third auto clicker then
                 btnAuto3.Enabled = True             ' The auto clicker button becomes enabled to click on and use
             Else : btnAuto3.Enabled = False         ' If that absolute condition is not met then the button remains disabled and can't be used.
             End If                                  ' End of if statement
 
-            If Val(((Variables.Auto.auto3) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto4Cost))) Then
-                btnAuto4.Enabled = True
-            Else : btnAuto4.Enabled = False
-            End If
-
-            If Val(((Variables.Auto.auto4) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto5Cost))) Then
-                btnAuto5.Enabled = True
-            Else : btnAuto5.Enabled = False
-            End If
-
-            If Val(((Variables.Auto.auto5) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto6Cost))) Then
-                btnAuto6.Enabled = True
-            Else : btnAuto6.Enabled = False
-            End If
-
-            If Val(((Variables.Auto.auto6) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto7Cost))) Then
-                btnAuto7.Enabled = True
-            Else : btnAuto7.Enabled = False
-            End If
-
-            If Val(((Variables.Auto.auto7) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto8Cost))) Then
-                btnAuto8.Enabled = True
-            Else : btnAuto8.Enabled = False
-            End If
-
-            If Val(((Variables.Auto.auto8) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto9Cost))) Then
-                btnAuto9.Enabled = True
-            Else : btnAuto9.Enabled = False
-            End If
         End If
     End Sub
     Private Sub btnCheat_Click(sender As System.Object, e As System.EventArgs) Handles btnCheat.Click
@@ -431,6 +435,10 @@
             'lblSucFail.ResetText()
             tmrSucFail.Enabled = False
         End If
+    End Sub
+
+    Private Sub tabGains_Click(sender As Object, e As EventArgs) Handles tabRebuild.Click
+
     End Sub
 End Class
 
