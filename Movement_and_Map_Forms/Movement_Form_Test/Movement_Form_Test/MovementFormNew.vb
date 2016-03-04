@@ -29,31 +29,30 @@ Public Class MovementFormNew
         'See line 67 for more on this.
 
         Select Case e.KeyCode
+
             'If the right arrow key is hit
             Case Keys.Right
-                bx = x
-                by = y
+                'Save the latest coordinages
+                bx = x : by = y
+                'Make the move
                 x += 1
                 e.Handled = True
 
                 'If the left arrow key is hit
             Case Keys.Left
-                bx = x
-                by = y
+                bx = x : by = y
                 x -= 1
                 e.Handled = True
 
                 'If the up arrow key is hit
             Case Keys.Up
-                by = y
-                bx = x
+                by = y : bx = x
                 y -= 1
                 e.Handled = True
 
                 'If the down arrow key is hit
             Case Keys.Down
-                by = y
-                bx = x
+                by = y : bx = x
                 y += 1
                 e.Handled = True
 

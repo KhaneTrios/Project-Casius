@@ -1,0 +1,6 @@
+[ ] Make the map bigger
+[ ] Code town tiles and how they react
+[ ] Integrate the global variable form
+[ ] Have coordinates be saved when forms translate or the game is reloaded
+[ ] RNG events triggered by real time
+[ ] RNG encounters triggered by movement
