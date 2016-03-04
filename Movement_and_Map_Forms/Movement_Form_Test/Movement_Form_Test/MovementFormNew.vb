@@ -46,24 +46,44 @@ Public Class MovementFormNew
                 'Make the move
                 x += 1
                 e.Handled = True
+                'Save the coordinates to the Structure
+                Variables.Movement.cordx = x
+                Variables.Movement.cordy = y
+                Variables.Movement.cordbx = bx
+                Variables.Movement.cordby = by
 
                 'If the left arrow key is hit
             Case Keys.Left
                 bx = x : by = y
                 x -= 1
                 e.Handled = True
+                'Save the coordinates to the Structure
+                Variables.Movement.cordx = x
+                Variables.Movement.cordy = y
+                Variables.Movement.cordbx = bx
+                Variables.Movement.cordby = by
 
                 'If the up arrow key is hit
             Case Keys.Up
                 by = y : bx = x
                 y -= 1
                 e.Handled = True
+                'Save the coordinates to the Structure
+                Variables.Movement.cordx = x
+                Variables.Movement.cordy = y
+                Variables.Movement.cordbx = bx
+                Variables.Movement.cordby = by
 
                 'If the down arrow key is hit
             Case Keys.Down
                 by = y : bx = x
                 y += 1
                 e.Handled = True
+                'Save the coordinates to the Structure
+                Variables.Movement.cordx = x
+                Variables.Movement.cordy = y
+                Variables.Movement.cordbx = bx
+                Variables.Movement.cordby = by
 
         End Select 'End select/switch
 
