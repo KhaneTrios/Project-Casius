@@ -132,13 +132,11 @@
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto3Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
             Variables.Auto.auto3Cost = Val((Variables.Auto.auto3) + (Variables.Auto.auto3Cost) + (3))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto3Val = Val((Variables.Auto.auto3Val) + (10))
+            Variables.Auto.auto3Bought = True
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
 
-        If Val(((Variables.Auto.auto3) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto4Cost))) Then
-            btnAuto4.Enabled = True
-        Else : btnAuto4.Enabled = False
-        End If
+        
     End Sub
     Private Sub btn3_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto3.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -152,13 +150,12 @@
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto4Cost))
             Variables.Auto.auto4Cost = Val((Variables.Auto.auto4) * (Variables.Auto.auto4Cost))
             Variables.Auto.auto4Val = Val((Variables.Auto.auto4Val) + (20))
+            Variables.Auto.auto4Bought = True
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
-        If Val(((Variables.Auto.auto4) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto5Cost))) Then
-            btnAuto5.Enabled = True
-        Else : btnAuto5.Enabled = False
-        End If
+        
+
     End Sub
     Private Sub btn4_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto4.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -171,6 +168,7 @@
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto5Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
             Variables.Auto.auto5Cost = Val((Variables.Auto.auto5) * (Variables.Auto.auto5Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto5Val = Val((Variables.Auto.auto5Val) + (50))
+            Variables.Auto.auto5Bought = True
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
 
@@ -190,6 +188,7 @@
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto6Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
             Variables.Auto.auto6Cost = Val((Variables.Auto.auto6) * (Variables.Auto.auto6Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto6Val = Val((Variables.Auto.auto6Val) + (100))
+            Variables.Auto.auto6Bought = True
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
 
@@ -209,6 +208,7 @@
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto7Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
             Variables.Auto.auto7Cost = Val((Variables.Auto.auto7) * (Variables.Auto.auto7Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto7Val = Val((Variables.Auto.auto7Val) + (500))
+            Variables.Auto.auto7Bought = True
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
 
@@ -229,6 +229,7 @@
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto8Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
             Variables.Auto.auto8Cost = Val((Variables.Auto.auto8) * (Variables.Auto.auto8Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto8Val = Val((Variables.Auto.auto8Val) + (1000))
+            Variables.Auto.auto8Bought = True
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
 
@@ -351,6 +352,7 @@
             lblhomes.Text = Variables.Auto.home
             lblShops.Text = Variables.Auto.shop
             lblWalls.Text = Variables.Auto.wall
+            lblChurch.Text = Variables.Auto.church
 
             ' --- Bars Stopping when maxed, disabling buttons and variables ---
             If Variables.Auto.home >= 1000 Then
@@ -376,13 +378,20 @@
                 btnAuto4.Enabled = False
                 Variables.Auto.auto4 = 0
             End If
+            If Variables.Auto.auto5 >= 5 Then
+                barAuto5.Enabled = False
+                lblChurch.Enabled = False
+                Variables.Auto.church = 5
+                btnAuto5.Enabled = False
+                Variables.Auto.auto5 = 5
+            End If
 
 
             ' --- Bars ---
             barAuto2.Value = Variables.Auto.home
             barAuto3.Value = Variables.Auto.wall
             barAuto4.Value = Variables.Auto.guard
-            barAuto5.Value = Variables.Auto.church
+            barAuto5.Value = Variables.Auto.auto5
             barAuto6.Value = Variables.Auto.shop
 
             ' --- Button-enabling check ---
@@ -402,6 +411,20 @@
             Else : btnAuto3.Enabled = False         ' If that absolute condition is not met then the button remains disabled and can't be used.
             End If                                  ' End of if statement
 
+            If Val((Variables.Auto.auto3Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto4Cost) And Variables.Auto.auto4Off = False)) Then
+                btnAuto4.Enabled = True
+            Else : btnAuto4.Enabled = False
+            End If
+
+            If Val((Variables.Auto.auto4Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto5Cost) And Variables.Auto.auto5Off = False)) Then
+                btnAuto5.Enabled = True
+            Else : btnAuto5.Enabled = False
+            End If
+
+            If Val((Variables.Auto.auto5Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto6Cost) And Variables.Auto.auto6Off = False)) Then
+                btnAuto6.Enabled = True
+            Else : btnAuto6.Enabled = False
+            End If
         End If
     End Sub
     Private Sub btnCheat_Click(sender As System.Object, e As System.EventArgs) Handles btnCheat.Click

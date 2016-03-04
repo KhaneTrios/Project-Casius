@@ -35,3 +35,4 @@ C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Proj
 C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.frmMain.resources
 C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.Resources.resources
 C:\Users\thedr\Desktop\Project-Casius-master\Project-Casius-master\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.vbproj.GenerateResource.Cache
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.vbprojResolveAssemblyReference.cache
