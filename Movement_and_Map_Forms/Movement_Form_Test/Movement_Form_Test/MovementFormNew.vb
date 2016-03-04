@@ -3,17 +3,20 @@
 Public Class MovementFormNew
 
     'Variables
-    Dim x As Integer = 0 'x coordinate
-    Dim y As Integer = 0 'y coordinate
-    Dim bx As Integer = 0 'Previous x coordinate, used incase a boundary is hit
-    Dim by As Integer = 0 'Previous y coordinate, used incase a boundary is hit
-    Dim spawn As Integer = 0 'Variable randomised for enemy encounter chance.
+    'Dim x As Integer = 0 'x coordinate
+    'Dim y As Integer = 0 'y coordinate
+    'Dim bx As Integer = 0 'Previous x coordinate, used incase a boundary is hit
+    'Dim by As Integer = 0 'Previous y coordinate, used incase a boundary is hit
 
+    'Dim spawn As Integer = 0 'Variable randomised for enemy encounter chance.
 
     'When the window loads
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'Have a message box pop up with text
         Call MsgBox("Sample Text")
+        'Load the variables from the Variables Structures
+
+
     End Sub
 
     'Navigation
@@ -187,6 +190,7 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
+
         End If
         If x = 0 And y = 1 Then         '0, 1
             x0y1.Image = avatar.Image
@@ -261,8 +265,6 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
-
-
 
         End If
         If x = 0 And y = 2 Then         '0, 2
@@ -488,8 +490,8 @@ Public Class MovementFormNew
             x8y5.Image = clear.Image
             x8y6.Image = clear.Image
             x8y7.Image = clear.Image
-        End If
 
+        End If
 
         If x = 0 And y = 5 Then         '0, 5
             x0y5.Image = avatar.Image
@@ -566,7 +568,6 @@ Public Class MovementFormNew
             x8y7.Image = clear.Image
 
         End If
-
         If x = 0 And y = 6 Then         '0, 6
             x0y6.Image = avatar.Image
             x0y1.Image = clear.Image

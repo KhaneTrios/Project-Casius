@@ -31,7 +31,10 @@
     End Structure
 
     Structure Movement
-
+        Public Shared cordx As Integer
+        Public Shared cordy As Integer
+        Public Shared cordbx As Integer
+        Public Shared cordby As Integer
     End Structure
 
     Structure Overall
