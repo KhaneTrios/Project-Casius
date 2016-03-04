@@ -7,11 +7,8 @@ Public Class MovementFormNew
     Dim y As Integer = 0 'y coordinate
     Dim bx As Integer = 0 'Previous x coordinate, used incase a boundary is hit
     Dim by As Integer = 0 'Previous y coordinate, used incase a boundary is hit
+    Dim spawn As Integer = 0 'Variable randomised for enemy encounter chance.
 
-    'Wtf do these do? =-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-    Dim spawn As Integer = 0 'I don't remember (Figure this out) <------------
-    Dim lock As Integer = 0 'Still don't remember (Figure this out) <------------
-    '=-=-=-=-=-=-=-=-=--=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
     'When the window loads
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -24,54 +21,42 @@ Public Class MovementFormNew
     'If a key is hit
     Private Sub Form1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
         Dim bHandled As Boolean = False
+
+        'Example of random events
+        'If we wanted to have a chance of triggering an enemy encounter every time we move, like in traditional
+        'JRPG games, we would put this line of code in each movement case.
+        'spawn = CInt(Int((30 * Rnd()) + 1))
+        'See line 67 for more on this.
+
         Select Case e.KeyCode
-            ''If the right arrow key is hit
+            'If the right arrow key is hit
             Case Keys.Right
-                ' avatar.Image = avatarR.Image
                 bx = x
                 by = y
                 x += 1
-                'Label1.Text = x
-                'Label3.Text = bx
                 e.Handled = True
-                spawn = CInt(Int((10 * Rnd()) + 0))
-                'Label5.Text = spawn
 
                 'If the left arrow key is hit
             Case Keys.Left
-                'avatar.Image = avatarL.Image
                 bx = x
                 by = y
                 x -= 1
-                'Label1.Text = x
-                ' Label3.Text = bx
                 e.Handled = True
-                spawn = CInt(Int((20 * Rnd()) + 1))
-                'Label5.Text = spawn
 
                 'If the up arrow key is hit
             Case Keys.Up
-                ' avatar.Image = avatarU.Image
                 by = y
                 bx = x
                 y -= 1
-                'Label6.Text = y
-                'Label4.Text = by
                 e.Handled = True
-                spawn = CInt(Int((20 * Rnd()) + 1))
-                'Label5.Text = spawn
 
                 'If the down arrow key is hit
             Case Keys.Down
-                ' avatar.Image = avatarD.Image
                 by = y
                 bx = x
                 y += 1
-                ' Label6.Text = y
-                ' Label4.Text = by
                 e.Handled = True
-                spawn = CInt(Int((30 * Rnd()) + 1))
-                'Label5.Text = spawn
+
         End Select 'End select/switch
 
         'random enemy encounter examples
@@ -93,9 +78,8 @@ Public Class MovementFormNew
         '   frmbattle.Show()
         'End If
 
-        'events ------------------------------------------------------------------------
 
-        'boundaries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        'boundaries ~~~~~~~~~~~~~~Do not modify for any reason~~~~~~~~~~~~~~~~~~~
         If x < 0 Or x > 8 Or y < 0 Or y > 7 Then
             x = bx
             y = by
@@ -131,7 +115,6 @@ Public Class MovementFormNew
         'BEHIND these image boxes.
         'This code is trash, I don't recomend using it ever again.
 
-        '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         If x = 0 And y = 0 Then         '0, 0
             x0y0.Image = avatar.Image
             x0y1.Image = clear.Image
