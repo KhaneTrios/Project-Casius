@@ -9,7 +9,7 @@
         Variables.Auto.amount = Val(0)               'Setting the amount variable to 0 on load.
 
         'Auto Clicker linking and loading
-        '1: Dancing For GP
+        'Auto 1
         lblAuto1N.Text = Variables.Auto.auto1        'Setting the label for the number of the first auto-clickers you have bought
         Variables.Auto.auto1 = Val(0)                'Setting the number of the first auto-clickers to 0 on load
         Variables.Auto.auto1Val = Val(1)             'Setting the value-gain the first auto clicker has.
@@ -17,7 +17,7 @@
         Variables.Auto.auto1Cost = Val(50)           'Setting the cost of the item to purchase.
         Variables.Auto.auto1Bought = False
 
-        '2: Picking Up Ashes At GE
+        'Auto 2
         lblAuto2N.Text = Variables.Auto.auto2        'Setting the label for the number of the second auto-clickers you have bought
         Variables.Auto.auto2 = Val(0)                'Setting the number of the second auto-clickers to 0 on load
         Variables.Auto.auto2Val = Val(10)            'Setting the value-gain the second auto clicker has.
@@ -26,71 +26,71 @@
         Variables.Auto.auto2Off = False              'Setting if the button should be disabled yet
         Variables.Auto.auto2Bought = False           'Setting if the user has bought at least one of the item yet
 
-        '3: Selling Goblin Mail
+        'Auto 3
         lblAuto3N.Text = Variables.Auto.auto3        'Setting the label for the number of the third auto-clickers you have bought
         Variables.Auto.auto3 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto3Val = Val(25)            'Setting the value-gain the third auto clicker has.
-        Variables.Auto.auto3Item = 1                   'Setting the experience value the third auto clicker gains
+        Variables.Auto.auto3Item = 1                 'Setting the experience value the third auto clicker gains
         Variables.Auto.auto3Skill = "Combat"         'Setting the skill category
         Variables.Auto.auto3Cost = Val(1000)         'Setting the cost of the item to purchase.
         Variables.Auto.auto3Off = False
         Variables.Auto.auto3Bought = False
 
-        '4: Spinning Flax
+        'Auto 4
         lblAuto4N.Text = Variables.Auto.auto4        'Setting the label for the number of the third auto-clickers you have bought
         Variables.Auto.auto4 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto4Val = Val(50)            'Setting the value-gain the third auto clicker has.
-        Variables.Auto.auto4Item = 1                   'Setting the experience value the third auto clicker gains
+        Variables.Auto.auto4Item = 1                 'Setting the experience value the third auto clicker gains
         Variables.Auto.auto4Skill = "Crafting"       'Setting the skill category
         Variables.Auto.auto4Cost = Val(6000)         'Setting the cost of the item to purchase.
         Variables.Auto.auto4Off = False
         Variables.Auto.auto4Bought = False
 
-        '5: Low Alching
+        'Auto 5
         lblAuto5N.Text = Variables.Auto.auto5        'Setting the label for the number of the third auto-clickers you have bought
         Variables.Auto.auto5 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto5Val = Val(100)           'Setting the value-gain the third auto clicker has.
-        Variables.Auto.auto5Item = 1                  'Setting the experience value the third auto clicker gains
+        Variables.Auto.auto5Item = 1                 'Setting the experience value the third auto clicker gains
         Variables.Auto.auto5Skill = "Magic"          'Setting the skill category
         Variables.Auto.auto5Cost = Val(15000)        'Setting the cost of the item to purchase.
         Variables.Auto.auto5Off = False
         Variables.Auto.auto5Bought = False
 
-        '6: Low-Level Slayer
+        'Auto 6
         lblAuto4N.Text = Variables.Auto.auto6        'Setting the label for the number of the third auto-clickers you have bought
         Variables.Auto.auto6 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto6Val = Val(200)           'Setting the value-gain the third auto clicker has.
-        Variables.Auto.auto6Item = 1                  'Setting the experience value the third auto clicker gains
+        Variables.Auto.auto6Item = 1                 'Setting the experience value the third auto clicker gains
         Variables.Auto.auto6Skill = "Slayer"         'Setting the skill category
         Variables.Auto.auto6Cost = Val(50000)        'Setting the cost of the item to purchase.
         Variables.Auto.auto6Off = False
         Variables.Auto.auto6Bought = False
 
-        '7: Cammy Spamming
+        'Auto 7
         lblAuto7N.Text = Variables.Auto.auto7        'Setting the label for the number of the third auto-clickers you have bought
         Variables.Auto.auto7 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto7Val = Val(500)           'Setting the value-gain the third auto clicker has.
-        Variables.Auto.auto7Item = 1                  'Setting the experience value the third auto clicker gains
+        Variables.Auto.auto7Item = 1                 'Setting the experience value the third auto clicker gains
         Variables.Auto.auto7Skill = "Magic"          'Setting the skill category
         Variables.Auto.auto7Cost = Val(50000)        'Setting the cost of the item to purchase.
         Variables.Auto.auto7Off = False
         Variables.Auto.auto7Bought = False
 
-        '8: Green Dragons
+        'Auto 8
         lblAuto8N.Text = Variables.Auto.auto8        'Setting the label for the number of the third auto-clickers you have bought
         Variables.Auto.auto8 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto8Val = Val(1000)          'Setting the value-gain the third auto clicker has.
-        Variables.Auto.auto8Item = 1                  'Setting the experience value the third auto clicker gains
+        Variables.Auto.auto8Item = 1                 'Setting the experience value the third auto clicker gains
         Variables.Auto.auto8Skill = "Combat"         'Setting the skill category
         Variables.Auto.auto8Cost = Val(100000)       'Setting the cost of the item to purchase.
         Variables.Auto.auto8Off = False
         Variables.Auto.auto8Bought = False
 
-        '9: Frosty Flowers
+        'Auto 9
         lblAuto9N.Text = Variables.Auto.auto9        'Setting the label for the number of the third auto-clickers you have bought
         Variables.Auto.auto9 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto9Val = Val(100000000)     'Setting the value-gain the third auto clicker has.
-        Variables.Auto.auto9Item = 1000000             'Setting the experience value the third auto clicker gains
+        Variables.Auto.auto9Item = 1000000           'Setting the experience value the third auto clicker gains
         Variables.Auto.auto9Skill = "Gambling"       'Setting the skill category
         Variables.Auto.auto9Cost = Val(100000000)    'Setting the cost of the item to purchase.
         Variables.Auto.auto9Off = False
@@ -108,7 +108,7 @@
     End Sub
     Private Sub btn1_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto1.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
-        ToolTip.SetToolTip(Me.btnAuto1, "Dance for GP. | GP Cost: " & Variables.Auto.auto1Cost & " | GP Gain Per Second: " & Variables.Auto.auto1Val & " |")
+        ToolTip.SetToolTip(Me.btnAuto1, " | Cost: " & Variables.Auto.auto1Cost & " | Gain Per Second: " & Variables.Auto.auto1Val & " |")
     End Sub
     Private Sub btn2_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto2.Click
         'Auto Clicker 2
@@ -118,12 +118,12 @@
             Variables.Auto.auto2Cost = Val((Variables.Auto.auto2) + (Variables.Auto.auto2Cost) + (2))
             Variables.Auto.auto2Val = Val((Variables.Auto.auto2Val) + (5))    'Scaling the gain value by adding
             Variables.Auto.auto2Bought = True
-        Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
     Private Sub btn2_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto2.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
-        ToolTip.SetToolTip(Me.btnAuto2, "Pick up ashes at the GE. | GP Cost: " & Variables.Auto.auto2Cost & " | GP Gain Per Second: " & Variables.Auto.auto2Val & " |")
+        ToolTip.SetToolTip(Me.btnAuto2, " | Cost: " & Variables.Auto.auto2Cost & " | Gain Per Second: " & Variables.Auto.auto2Val & " |")
     End Sub
     Private Sub btn3_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto3.Click
         'Auto Clicker 3
@@ -133,14 +133,12 @@
             Variables.Auto.auto3Cost = Val((Variables.Auto.auto3) + (Variables.Auto.auto3Cost) + (3))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto3Val = Val((Variables.Auto.auto3Val) + (10))
             Variables.Auto.auto3Bought = True
-        Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
+        Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
-
-        
     End Sub
     Private Sub btn3_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto3.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
-        ToolTip.SetToolTip(Me.btnAuto3, "Sell Goblin Mail. | GP Cost: " & Variables.Auto.auto3Cost & " | GP Gain Per Second: " & Variables.Auto.auto3Val & " |")
+        ToolTip.SetToolTip(Me.btnAuto3, " | Cost: " & Variables.Auto.auto3Cost & " | Gain Per Second: " & Variables.Auto.auto3Val & " |")
     End Sub
 
     Private Sub btn4_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto4.Click
@@ -151,15 +149,12 @@
             Variables.Auto.auto4Cost = Val((Variables.Auto.auto4) * (Variables.Auto.auto4Cost))
             Variables.Auto.auto4Val = Val((Variables.Auto.auto4Val) + (20))
             Variables.Auto.auto4Bought = True
-        Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-
-        
-
     End Sub
     Private Sub btn4_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto4.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
-        ToolTip.SetToolTip(Me.btnAuto4, "Spin Flax. | GP Cost: " & Variables.Auto.auto4Cost & " | GP Gain Per Second: " & Variables.Auto.auto4Val & " |")
+        ToolTip.SetToolTip(Me.btnAuto4, " | Cost: " & Variables.Auto.auto4Cost & " | Gain Per Second: " & Variables.Auto.auto4Val & " |")
     End Sub
     Private Sub btn5_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto5.Click
         'Auto Clicker 5
@@ -169,7 +164,7 @@
             Variables.Auto.auto5Cost = Val((Variables.Auto.auto5) * (Variables.Auto.auto5Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto5Val = Val((Variables.Auto.auto5Val) + (50))
             Variables.Auto.auto5Bought = True
-        Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
+        Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
 
         If Val(((Variables.Auto.auto5) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto6Cost))) Then
@@ -179,7 +174,7 @@
     End Sub
     Private Sub btn5_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto5.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
-        ToolTip.SetToolTip(Me.btnAuto5, "Sit at the GE and low alch. | GP Cost: " & Variables.Auto.auto5Cost & " | GP Gain Per Second: " & Variables.Auto.auto5Val & " |")
+        ToolTip.SetToolTip(Me.btnAuto5, " | Cost: " & Variables.Auto.auto5Cost & " | Gain Per Second: " & Variables.Auto.auto5Val & " |")
     End Sub
     Private Sub btn6_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto6.Click
         'Auto Clicker 6
@@ -189,7 +184,7 @@
             Variables.Auto.auto6Cost = Val((Variables.Auto.auto6) * (Variables.Auto.auto6Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto6Val = Val((Variables.Auto.auto6Val) + (100))
             Variables.Auto.auto6Bought = True
-        Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
+        Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
 
         If Val(((Variables.Auto.auto6) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto7Cost))) Then
@@ -199,7 +194,7 @@
     End Sub
     Private Sub btn6_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto6.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
-        ToolTip.SetToolTip(Me.btnAuto6, "Complete low-level Slayer tasks and sell the loot. | GP Cost: " & Variables.Auto.auto6Cost & " | GP Gain Per Second: " & Variables.Auto.auto6Val & " |")
+        ToolTip.SetToolTip(Me.btnAuto6, " | Cost: " & Variables.Auto.auto6Cost & " | Gain Per Second: " & Variables.Auto.auto6Val & " |")
     End Sub
     Private Sub btn7_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto7.Click
         'Auto Clicker 7
@@ -209,7 +204,7 @@
             Variables.Auto.auto7Cost = Val((Variables.Auto.auto7) * (Variables.Auto.auto7Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto7Val = Val((Variables.Auto.auto7Val) + (500))
             Variables.Auto.auto7Bought = True
-        Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
+        Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
 
 
@@ -220,7 +215,7 @@
     End Sub
     Private Sub btn7_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto7.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
-        ToolTip.SetToolTip(Me.btnAuto7, "Spam Camelot teleport. | GP Cost: " & Variables.Auto.auto7Cost & " | GP Gain Per Second: " & Variables.Auto.auto7Val & " |")
+        ToolTip.SetToolTip(Me.btnAuto7, " | Cost: " & Variables.Auto.auto7Cost & " | Gain Per Second: " & Variables.Auto.auto7Val & " |")
     End Sub
     Private Sub btn8_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto8.Click
         'Auto Clicker 8
@@ -230,7 +225,7 @@
             Variables.Auto.auto8Cost = Val((Variables.Auto.auto8) * (Variables.Auto.auto8Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto8Val = Val((Variables.Auto.auto8Val) + (1000))
             Variables.Auto.auto8Bought = True
-        Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
+        Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
 
         If Val(((Variables.Auto.auto8) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto9Cost))) Then
@@ -240,7 +235,7 @@
     End Sub
     Private Sub btn8_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto8.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
-        ToolTip.SetToolTip(Me.btnAuto8, "Kill Green Dragons and sell the scales and hide. | GP Cost: " & Variables.Auto.auto8Cost & " | GP Gain Per Second: " & Variables.Auto.auto8Val & " |")
+        ToolTip.SetToolTip(Me.btnAuto8, " | Cost: " & Variables.Auto.auto8Cost & " | Gain Per Second: " & Variables.Auto.auto8Val & " |")
     End Sub
     Private Sub btn9_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto9.Click
         'Auto Clicker 9
