@@ -82,6 +82,8 @@ Partial Class frmMain
         Me.barAuto7 = New System.Windows.Forms.ProgressBar()
         Me.barAuto8 = New System.Windows.Forms.ProgressBar()
         Me.tabStats = New System.Windows.Forms.TabPage()
+        Me.lblChurch = New System.Windows.Forms.Label()
+        Me.lblChurchText = New System.Windows.Forms.Label()
         Me.lblCity2 = New System.Windows.Forms.Label()
         Me.lblWalls = New System.Windows.Forms.Label()
         Me.lblGamblingText = New System.Windows.Forms.Label()
@@ -95,8 +97,8 @@ Partial Class frmMain
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
-        Me.lblChurch = New System.Windows.Forms.Label()
-        Me.lblChurchText = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblBanks = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -681,6 +683,8 @@ Partial Class frmMain
         '
         'tabStats
         '
+        Me.tabStats.Controls.Add(Me.lblBanks)
+        Me.tabStats.Controls.Add(Me.Label1)
         Me.tabStats.Controls.Add(Me.lblChurch)
         Me.tabStats.Controls.Add(Me.lblChurchText)
         Me.tabStats.Controls.Add(Me.lblCity2)
@@ -701,6 +705,26 @@ Partial Class frmMain
         Me.tabStats.TabIndex = 1
         Me.tabStats.Text = "Stats"
         Me.tabStats.UseVisualStyleBackColor = True
+        '
+        'lblChurch
+        '
+        Me.lblChurch.AutoSize = True
+        Me.lblChurch.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChurch.Location = New System.Drawing.Point(168, 368)
+        Me.lblChurch.Name = "lblChurch"
+        Me.lblChurch.Size = New System.Drawing.Size(18, 20)
+        Me.lblChurch.TabIndex = 12
+        Me.lblChurch.Text = "0"
+        '
+        'lblChurchText
+        '
+        Me.lblChurchText.AutoSize = True
+        Me.lblChurchText.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChurchText.Location = New System.Drawing.Point(8, 368)
+        Me.lblChurchText.Name = "lblChurchText"
+        Me.lblChurchText.Size = New System.Drawing.Size(124, 20)
+        Me.lblChurchText.TabIndex = 11
+        Me.lblChurchText.Text = "Churches rebuilt"
         '
         'lblCity2
         '
@@ -820,25 +844,25 @@ Partial Class frmMain
         '
         Me.tmrBar.Interval = 10000
         '
-        'lblChurch
+        'Label1
         '
-        Me.lblChurch.AutoSize = True
-        Me.lblChurch.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblChurch.Location = New System.Drawing.Point(168, 368)
-        Me.lblChurch.Name = "lblChurch"
-        Me.lblChurch.Size = New System.Drawing.Size(18, 20)
-        Me.lblChurch.TabIndex = 12
-        Me.lblChurch.Text = "0"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(262, 136)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(101, 20)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Banks rebuilt"
         '
-        'lblChurchText
+        'lblBanks
         '
-        Me.lblChurchText.AutoSize = True
-        Me.lblChurchText.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblChurchText.Location = New System.Drawing.Point(8, 368)
-        Me.lblChurchText.Name = "lblChurchText"
-        Me.lblChurchText.Size = New System.Drawing.Size(124, 20)
-        Me.lblChurchText.TabIndex = 11
-        Me.lblChurchText.Text = "Churches rebuilt"
+        Me.lblBanks.AutoSize = True
+        Me.lblBanks.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBanks.Location = New System.Drawing.Point(400, 136)
+        Me.lblBanks.Name = "lblBanks"
+        Me.lblBanks.Size = New System.Drawing.Size(18, 20)
+        Me.lblBanks.TabIndex = 14
+        Me.lblBanks.Text = "0"
         '
         'frmMain
         '
@@ -932,5 +956,6 @@ Partial Class frmMain
     Friend WithEvents tmrBar As System.Windows.Forms.Timer
     Friend WithEvents lblChurch As System.Windows.Forms.Label
     Friend WithEvents lblChurchText As System.Windows.Forms.Label
-
+    Friend WithEvents lblBanks As Label
+    Friend WithEvents Label1 As Label
 End Class
