@@ -770,6 +770,8 @@ Partial Class MovementFormNew
         '
         'Button1
         '
+        Me.Button1.CausesValidation = False
+        Me.Button1.Enabled = False
         Me.Button1.Location = New System.Drawing.Point(7, 148)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(22, 117)

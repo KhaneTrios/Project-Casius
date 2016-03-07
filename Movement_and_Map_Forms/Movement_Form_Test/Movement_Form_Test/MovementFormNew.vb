@@ -3,29 +3,18 @@
 Public Class MovementFormNew
 
     'Declare Variables.
-    Dim x As Integer 'x coordinate
-    Dim y As Integer 'y coordinate
-    Dim bx As Integer 'last x coordinate
-    Dim by As Integer 'last y coordinate
+    Dim x As Integer = 0 'x coordinate
+    Dim y As Integer = 0 'y coordinate
+    Dim bx As Integer = 0 'last x coordinate
+    Dim by As Integer = 0 'last y coordinate
 
     'Dim spawn As Integer = 0 'Variable randomised for enemy encounter chance.
 
     'When the window loads
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
         'Have a message box pop up with text
         Call MsgBox("Sample Text")
-
-        'Load variables from the Variables Movement Structure
-        'Make the local variables equal to the variables saved in the structure
-        Dim x As Integer = Variables.Movement.cordx
-        Dim y As Integer = Variables.Movement.cordy
-        Dim bx As Integer = Variables.Movement.cordbx
-        Dim by As Integer = Variables.Movement.cordby
-
     End Sub
-
-    'Navigation
 
     'If a key is hit
     Private Sub Form1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
@@ -35,55 +24,33 @@ Public Class MovementFormNew
         'If we wanted to have a chance of triggering an enemy encounter every time we move, like in traditional
         'JRPG games, we would put this line of code in each movement case.
         'spawn = CInt(Int((30 * Rnd()) + 1))
-        'See line 67 for more on this.
+        'See line 67 and line 11 for more on this.
 
         Select Case e.KeyCode
 
-            'If the right arrow key is hit
+            'If the arrow key is hit
             Case Keys.Right
                 'Save the latest coordinages
                 bx = x : by = y
                 'Make the move
                 x += 1
-                e.Handled = True
-                'Save the coordinates to the Structure
-                Variables.Movement.cordx = x
-                Variables.Movement.cordy = y
-                Variables.Movement.cordbx = bx
-                Variables.Movement.cordby = by
+                e.Handled = True 'Idk what this is but its needed. Do not remove this line.
 
-                'If the left arrow key is hit
             Case Keys.Left
                 bx = x : by = y
                 x -= 1
                 e.Handled = True
-                'Save the coordinates to the Structure
-                Variables.Movement.cordx = x
-                Variables.Movement.cordy = y
-                Variables.Movement.cordbx = bx
-                Variables.Movement.cordby = by
 
-                'If the up arrow key is hit
             Case Keys.Up
                 by = y : bx = x
                 y -= 1
                 e.Handled = True
-                'Save the coordinates to the Structure
-                Variables.Movement.cordx = x
-                Variables.Movement.cordy = y
-                Variables.Movement.cordbx = bx
-                Variables.Movement.cordby = by
 
-                'If the down arrow key is hit
             Case Keys.Down
                 by = y : bx = x
                 y += 1
                 e.Handled = True
-                'Save the coordinates to the Structure
-                Variables.Movement.cordx = x
-                Variables.Movement.cordy = y
-                Variables.Movement.cordbx = bx
-                Variables.Movement.cordby = by
+
 
         End Select 'End select/switch
 
@@ -5592,7 +5559,7 @@ Public Class MovementFormNew
 
     'When button1 is clicked
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        'open up Test_Form and close 
+        'open up Test_Form and close the Movement Form
         Test_Form.Show() : Me.Close()
     End Sub
 End Class
