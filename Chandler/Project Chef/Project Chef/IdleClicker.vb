@@ -282,7 +282,7 @@
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto5 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
             Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto5Val * Variables.Auto.auto5))     'The total final score amount equals the current final amount added to the product of the value of the auto clicker and the number owned.
-            Variables.Auto.church = Val(Variables.Auto.church + (Variables.Auto.auto5Item * Variables.Auto.auto5))
+            'Variables.Auto.church = Val(Variables.Auto.church + (Variables.Auto.auto5Item * Variables.Auto.auto5))
         End If
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto6 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
@@ -292,6 +292,7 @@
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto7 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
             Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto7Val * Variables.Auto.auto7))     'The total final score amount equals the current final amount added to the product of the value of the auto clicker and the number owned.
+            'Variables.Auto.bank = Val(Variables.Auto.bank + (Variables.Auto.auto7Item * Variables.Auto.auto7))
         End If
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto8 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
@@ -344,15 +345,16 @@
             ' --- Skills text display ---
             ' Constant updating all skill labels
             lblCivilians.Text = Variables.Auto.civ
-            lblhomes.Text = Variables.Auto.home
+            lblHomes.Text = Variables.Auto.home
             lblShops.Text = Variables.Auto.shop
             lblWalls.Text = Variables.Auto.wall
-            lblChurch.Text = Variables.Auto.church
+            lblChurch.Text = Variables.Auto.auto5
+            lblBanks.Text = Variables.Auto.auto7
 
             ' --- Bars Stopping when maxed, disabling buttons and variables ---
             If Variables.Auto.home >= 1000 Then     'If the variable for the item amount built, is greater than or equal to the maximum amount you can have then
                 barAuto2.Enabled = False            'The progress bar is disabled
-                lblhomes.Enabled = False            'The label for the variable of the item owned is disabled
+                lblHomes.Enabled = False            'The label for the variable of the item owned is disabled
                 Variables.Auto.home = 1000          'Catch to make sure the variable doesn't go over the max amount, if it does, it gets reset to exactly the amount of the max
                 btnAuto2.Enabled = False            'The button is disabled and can't be clicked on
                 Variables.Auto.auto2 = 0            'The amount of the item purchased is reset to zero and locked there which in turn stops profit coming in from that item
@@ -372,21 +374,37 @@
                 Variables.Auto.guard = 1000
                 btnAuto4.Enabled = False
                 Variables.Auto.auto4 = 0
+                Variables.Auto.auto4Off = True
             End If
             If Variables.Auto.auto5 >= 5 Then
                 barAuto5.Enabled = False
+                barAuto5.Value = 5
                 lblChurch.Enabled = False
                 Variables.Auto.church = 5
                 btnAuto5.Enabled = False
-                Variables.Auto.auto5 = 5
+                Variables.Auto.auto5Off = True
             End If
             If Variables.Auto.shop >= 1000 Then
                 barAuto6.Enabled = False
                 lblShops.Enabled = False
-                Variables.Auto.church = 1000
+                Variables.Auto.shop = 1000
                 btnAuto6.Enabled = False
                 Variables.Auto.auto6 = 0
                 Variables.Auto.auto6Off = True
+            End If
+            If Variables.Auto.auto7 >= 10 Then
+                barAuto7.Enabled = False
+                lblBanks.Enabled = False
+                Variables.Auto.bank = 5
+                btnAuto7.Enabled = False
+                Variables.Auto.auto7Off = True
+            End If
+            If Variables.Auto.hall >= 10 Then
+                barAuto7.Enabled = False
+                lblBanks.Enabled = False
+                Variables.Auto.bank = 5
+                btnAuto7.Enabled = False
+                Variables.Auto.auto7Off = True
             End If
 
 
@@ -397,6 +415,7 @@
             barAuto4.Value = Variables.Auto.guard
             barAuto5.Value = Variables.Auto.auto5
             barAuto6.Value = Variables.Auto.shop
+            barAuto7.Value = Variables.Auto.auto7
 
             ' --- Button-enabling check ---
             ' Constant check for the conditions to be met to enable the next auto clicker button in order

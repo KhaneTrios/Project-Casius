@@ -82,6 +82,8 @@ Partial Class frmMain
         Me.barAuto7 = New System.Windows.Forms.ProgressBar()
         Me.barAuto8 = New System.Windows.Forms.ProgressBar()
         Me.tabStats = New System.Windows.Forms.TabPage()
+        Me.lblBanks = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.lblChurch = New System.Windows.Forms.Label()
         Me.lblChurchText = New System.Windows.Forms.Label()
         Me.lblCity2 = New System.Windows.Forms.Label()
@@ -89,7 +91,7 @@ Partial Class frmMain
         Me.lblGamblingText = New System.Windows.Forms.Label()
         Me.lblShops = New System.Windows.Forms.Label()
         Me.lblGuards = New System.Windows.Forms.Label()
-        Me.lblhomes = New System.Windows.Forms.Label()
+        Me.lblHomes = New System.Windows.Forms.Label()
         Me.lblSlayerText = New System.Windows.Forms.Label()
         Me.lblMagicText = New System.Windows.Forms.Label()
         Me.lblCraftingText = New System.Windows.Forms.Label()
@@ -97,8 +99,8 @@ Partial Class frmMain
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblBanks = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblHall = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -668,7 +670,7 @@ Partial Class frmMain
         'barAuto7
         '
         Me.barAuto7.Location = New System.Drawing.Point(304, 280)
-        Me.barAuto7.Maximum = 1000
+        Me.barAuto7.Maximum = 10
         Me.barAuto7.Name = "barAuto7"
         Me.barAuto7.Size = New System.Drawing.Size(144, 16)
         Me.barAuto7.TabIndex = 51
@@ -683,6 +685,8 @@ Partial Class frmMain
         '
         'tabStats
         '
+        Me.tabStats.Controls.Add(Me.lblHall)
+        Me.tabStats.Controls.Add(Me.Label3)
         Me.tabStats.Controls.Add(Me.lblBanks)
         Me.tabStats.Controls.Add(Me.Label1)
         Me.tabStats.Controls.Add(Me.lblChurch)
@@ -692,7 +696,7 @@ Partial Class frmMain
         Me.tabStats.Controls.Add(Me.lblGamblingText)
         Me.tabStats.Controls.Add(Me.lblShops)
         Me.tabStats.Controls.Add(Me.lblGuards)
-        Me.tabStats.Controls.Add(Me.lblhomes)
+        Me.tabStats.Controls.Add(Me.lblHomes)
         Me.tabStats.Controls.Add(Me.lblSlayerText)
         Me.tabStats.Controls.Add(Me.lblMagicText)
         Me.tabStats.Controls.Add(Me.lblCraftingText)
@@ -705,6 +709,26 @@ Partial Class frmMain
         Me.tabStats.TabIndex = 1
         Me.tabStats.Text = "Stats"
         Me.tabStats.UseVisualStyleBackColor = True
+        '
+        'lblBanks
+        '
+        Me.lblBanks.AutoSize = True
+        Me.lblBanks.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBanks.Location = New System.Drawing.Point(400, 136)
+        Me.lblBanks.Name = "lblBanks"
+        Me.lblBanks.Size = New System.Drawing.Size(18, 20)
+        Me.lblBanks.TabIndex = 14
+        Me.lblBanks.Text = "0"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(262, 136)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(101, 20)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Banks rebuilt"
         '
         'lblChurch
         '
@@ -776,15 +800,15 @@ Partial Class frmMain
         Me.lblGuards.TabIndex = 6
         Me.lblGuards.Text = "0"
         '
-        'lblhomes
+        'lblHomes
         '
-        Me.lblhomes.AutoSize = True
-        Me.lblhomes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblhomes.Location = New System.Drawing.Point(168, 136)
-        Me.lblhomes.Name = "lblhomes"
-        Me.lblhomes.Size = New System.Drawing.Size(18, 20)
-        Me.lblhomes.TabIndex = 5
-        Me.lblhomes.Text = "0"
+        Me.lblHomes.AutoSize = True
+        Me.lblHomes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHomes.Location = New System.Drawing.Point(168, 136)
+        Me.lblHomes.Name = "lblHomes"
+        Me.lblHomes.Size = New System.Drawing.Size(18, 20)
+        Me.lblHomes.TabIndex = 5
+        Me.lblHomes.Text = "0"
         '
         'lblSlayerText
         '
@@ -844,25 +868,25 @@ Partial Class frmMain
         '
         Me.tmrBar.Interval = 10000
         '
-        'Label1
+        'Label3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(262, 136)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(101, 20)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Banks rebuilt"
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(264, 192)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(125, 20)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Town Hall rebuilt"
         '
-        'lblBanks
+        'lblHall
         '
-        Me.lblBanks.AutoSize = True
-        Me.lblBanks.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBanks.Location = New System.Drawing.Point(400, 136)
-        Me.lblBanks.Name = "lblBanks"
-        Me.lblBanks.Size = New System.Drawing.Size(18, 20)
-        Me.lblBanks.TabIndex = 14
-        Me.lblBanks.Text = "0"
+        Me.lblHall.AutoSize = True
+        Me.lblHall.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHall.Location = New System.Drawing.Point(400, 192)
+        Me.lblHall.Name = "lblHall"
+        Me.lblHall.Size = New System.Drawing.Size(18, 20)
+        Me.lblHall.TabIndex = 16
+        Me.lblHall.Text = "0"
         '
         'frmMain
         '
@@ -931,7 +955,7 @@ Partial Class frmMain
     Friend WithEvents lblCombatText As System.Windows.Forms.Label
     Friend WithEvents lblShops As System.Windows.Forms.Label
     Friend WithEvents lblGuards As System.Windows.Forms.Label
-    Friend WithEvents lblhomes As System.Windows.Forms.Label
+    Friend WithEvents lblHomes As System.Windows.Forms.Label
     Friend WithEvents lblGPPS As System.Windows.Forms.Label
     Friend WithEvents lblWalls As System.Windows.Forms.Label
     Friend WithEvents lblGamblingText As System.Windows.Forms.Label
@@ -958,4 +982,6 @@ Partial Class frmMain
     Friend WithEvents lblChurchText As System.Windows.Forms.Label
     Friend WithEvents lblBanks As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents lblHall As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

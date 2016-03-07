@@ -26,7 +26,7 @@
         'Public Shared vararry(Variables.auto1, Variables.auto2, Variables.auto3, Variables.auto4, Variables.auto5, Variables.auto6, Variables.auto7, Variables.auto8)
         ' --- Rebuilding Stat Variables ---
         ' Variables for the total amounts of rebuilding stats
-        Public Shared home As Integer : Public Shared guard As Integer : Public Shared civ As Integer : Public Shared church As Integer : Public Shared shop As Integer : Public Shared wall As Integer
+        Public Shared home As Integer : Public Shared guard As Integer : Public Shared civ As Integer : Public Shared church As Integer : Public Shared shop As Integer : Public Shared wall As Integer : Public Shared bank As Integer : Public Shared hall As Integer
         Public Shared gamble As Integer 'Used for Auto clicker 9
     End Structure
     Structure Fight
