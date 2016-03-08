@@ -82,6 +82,8 @@ Partial Class frmMain
         Me.barAuto7 = New System.Windows.Forms.ProgressBar()
         Me.barAuto8 = New System.Windows.Forms.ProgressBar()
         Me.tabStats = New System.Windows.Forms.TabPage()
+        Me.lblHall = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.lblBanks = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblChurch = New System.Windows.Forms.Label()
@@ -99,8 +101,8 @@ Partial Class frmMain
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblHall = New System.Windows.Forms.Label()
+        Me.tmrHall = New System.Windows.Forms.Timer(Me.components)
+        Me.btnDone = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -201,7 +203,7 @@ Partial Class frmMain
         'lblTmrAmount
         '
         Me.lblTmrAmount.AutoSize = True
-        Me.lblTmrAmount.Location = New System.Drawing.Point(360, 432)
+        Me.lblTmrAmount.Location = New System.Drawing.Point(416, 432)
         Me.lblTmrAmount.Name = "lblTmrAmount"
         Me.lblTmrAmount.Size = New System.Drawing.Size(13, 13)
         Me.lblTmrAmount.TabIndex = 11
@@ -475,6 +477,7 @@ Partial Class frmMain
         '
         'tabRebuild
         '
+        Me.tabRebuild.Controls.Add(Me.btnDone)
         Me.tabRebuild.Controls.Add(Me.Label2)
         Me.tabRebuild.Controls.Add(Me.lblSucFail)
         Me.tabRebuild.Controls.Add(Me.lblGamble)
@@ -678,7 +681,7 @@ Partial Class frmMain
         'barAuto8
         '
         Me.barAuto8.Location = New System.Drawing.Point(304, 320)
-        Me.barAuto8.Maximum = 1000
+        Me.barAuto8.Maximum = 60000
         Me.barAuto8.Name = "barAuto8"
         Me.barAuto8.Size = New System.Drawing.Size(144, 16)
         Me.barAuto8.TabIndex = 52
@@ -709,6 +712,26 @@ Partial Class frmMain
         Me.tabStats.TabIndex = 1
         Me.tabStats.Text = "Stats"
         Me.tabStats.UseVisualStyleBackColor = True
+        '
+        'lblHall
+        '
+        Me.lblHall.AutoSize = True
+        Me.lblHall.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHall.Location = New System.Drawing.Point(400, 192)
+        Me.lblHall.Name = "lblHall"
+        Me.lblHall.Size = New System.Drawing.Size(18, 20)
+        Me.lblHall.TabIndex = 16
+        Me.lblHall.Text = "0"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(264, 192)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(125, 20)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Town Hall rebuilt"
         '
         'lblBanks
         '
@@ -868,25 +891,18 @@ Partial Class frmMain
         '
         Me.tmrBar.Interval = 10000
         '
-        'Label3
+        'tmrHall
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(264, 192)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(125, 20)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Town Hall rebuilt"
+        Me.tmrHall.Interval = 60000
         '
-        'lblHall
+        'btnDone
         '
-        Me.lblHall.AutoSize = True
-        Me.lblHall.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHall.Location = New System.Drawing.Point(400, 192)
-        Me.lblHall.Name = "lblHall"
-        Me.lblHall.Size = New System.Drawing.Size(18, 20)
-        Me.lblHall.TabIndex = 16
-        Me.lblHall.Text = "0"
+        Me.btnDone.Location = New System.Drawing.Point(296, 392)
+        Me.btnDone.Name = "btnDone"
+        Me.btnDone.Size = New System.Drawing.Size(91, 47)
+        Me.btnDone.TabIndex = 55
+        Me.btnDone.Text = "Complete"
+        Me.btnDone.UseVisualStyleBackColor = True
         '
         'frmMain
         '
@@ -984,4 +1000,6 @@ Partial Class frmMain
     Friend WithEvents Label1 As Label
     Friend WithEvents lblHall As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents tmrHall As System.Windows.Forms.Timer
+    Friend WithEvents btnDone As System.Windows.Forms.Button
 End Class
