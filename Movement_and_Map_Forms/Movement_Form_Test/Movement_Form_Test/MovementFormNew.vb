@@ -8,6 +8,8 @@ Public Class MovementFormNew
     Dim bx As Integer = 0 'last x coordinate
     Dim by As Integer = 0 'last y coordinate
 
+    Dim encounterChance As Integer = 0 'chance of an encounter after moving tiles
+
     'Dim spawn As Integer = 0 'Variable randomised for enemy encounter chance.
 
     'When the window loads
@@ -53,6 +55,20 @@ Public Class MovementFormNew
 
 
         End Select 'End select/switch
+
+        'Calculate a value to determine if the player will encounter something and what they encounter
+        encounterChance = CInt(Int((30 * Rnd()) + 1))
+        If encounterChance = 8 Then
+            Call MsgBox("You encounter an enemy")
+        End If
+        If encounterChance = 9 Then
+            Call MsgBox("You encounter a friendly")
+        End If
+        If encounterChance = 10 Then
+            Call MsgBox("You encounter an item")
+        End If
+
+
 
         'random enemy encounter examples
         'If spawn = 8 Then
@@ -5555,6 +5571,8 @@ Public Class MovementFormNew
             x0y0.Image = clear.Image
 
         End If
+
+        '
     End Sub
 
     'When button1 is clicked
