@@ -82,7 +82,7 @@
         Variables.Auto.auto8Val = Val(1000)          'Setting the value-gain the third auto clicker has.
         Variables.Auto.auto8Item = 1                 'Setting the experience value the third auto clicker gains
         Variables.Auto.auto8Skill = "Combat"         'Setting the skill category
-        Variables.Auto.auto8Cost = Val(50000)       'Setting the cost of the item to purchase.
+        Variables.Auto.auto8Cost = Val(50000)        'Setting the cost of the item to purchase.
         Variables.Auto.auto8Off = False
         Variables.Auto.auto8Bought = False
 
