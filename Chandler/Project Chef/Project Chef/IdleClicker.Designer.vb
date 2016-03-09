@@ -64,6 +64,7 @@ Partial Class frmMain
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabRebuild = New System.Windows.Forms.TabPage()
+        Me.btnDone = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblSucFail = New System.Windows.Forms.Label()
         Me.lblGamble = New System.Windows.Forms.Label()
@@ -80,7 +81,6 @@ Partial Class frmMain
         Me.barAuto5 = New System.Windows.Forms.ProgressBar()
         Me.barAuto6 = New System.Windows.Forms.ProgressBar()
         Me.barAuto7 = New System.Windows.Forms.ProgressBar()
-        Me.barAuto8 = New System.Windows.Forms.ProgressBar()
         Me.tabStats = New System.Windows.Forms.TabPage()
         Me.lblHall = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -102,7 +102,7 @@ Partial Class frmMain
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
         Me.tmrHall = New System.Windows.Forms.Timer(Me.components)
-        Me.btnDone = New System.Windows.Forms.Button()
+        Me.barAuto8 = New System.Windows.Forms.ProgressBar()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -539,6 +539,15 @@ Partial Class frmMain
         Me.tabRebuild.Text = "Rebuild"
         Me.tabRebuild.UseVisualStyleBackColor = True
         '
+        'btnDone
+        '
+        Me.btnDone.Location = New System.Drawing.Point(296, 392)
+        Me.btnDone.Name = "btnDone"
+        Me.btnDone.Size = New System.Drawing.Size(91, 47)
+        Me.btnDone.TabIndex = 55
+        Me.btnDone.Text = "Complete"
+        Me.btnDone.UseVisualStyleBackColor = True
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -677,14 +686,6 @@ Partial Class frmMain
         Me.barAuto7.Name = "barAuto7"
         Me.barAuto7.Size = New System.Drawing.Size(144, 16)
         Me.barAuto7.TabIndex = 51
-        '
-        'barAuto8
-        '
-        Me.barAuto8.Location = New System.Drawing.Point(304, 320)
-        Me.barAuto8.Maximum = 60000
-        Me.barAuto8.Name = "barAuto8"
-        Me.barAuto8.Size = New System.Drawing.Size(144, 16)
-        Me.barAuto8.TabIndex = 52
         '
         'tabStats
         '
@@ -895,14 +896,13 @@ Partial Class frmMain
         '
         Me.tmrHall.Interval = 60000
         '
-        'btnDone
+        'barAuto8
         '
-        Me.btnDone.Location = New System.Drawing.Point(296, 392)
-        Me.btnDone.Name = "btnDone"
-        Me.btnDone.Size = New System.Drawing.Size(91, 47)
-        Me.btnDone.TabIndex = 55
-        Me.btnDone.Text = "Complete"
-        Me.btnDone.UseVisualStyleBackColor = True
+        Me.barAuto8.Location = New System.Drawing.Point(304, 320)
+        Me.barAuto8.Maximum = 60000
+        Me.barAuto8.Name = "barAuto8"
+        Me.barAuto8.Size = New System.Drawing.Size(144, 16)
+        Me.barAuto8.TabIndex = 56
         '
         'frmMain
         '
@@ -992,7 +992,6 @@ Partial Class frmMain
     Friend WithEvents barAuto5 As System.Windows.Forms.ProgressBar
     Friend WithEvents barAuto6 As System.Windows.Forms.ProgressBar
     Friend WithEvents barAuto7 As System.Windows.Forms.ProgressBar
-    Friend WithEvents barAuto8 As System.Windows.Forms.ProgressBar
     Friend WithEvents tmrBar As System.Windows.Forms.Timer
     Friend WithEvents lblChurch As System.Windows.Forms.Label
     Friend WithEvents lblChurchText As System.Windows.Forms.Label
@@ -1002,4 +1001,5 @@ Partial Class frmMain
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents tmrHall As System.Windows.Forms.Timer
     Friend WithEvents btnDone As System.Windows.Forms.Button
+    Friend WithEvents barAuto8 As System.Windows.Forms.ProgressBar
 End Class

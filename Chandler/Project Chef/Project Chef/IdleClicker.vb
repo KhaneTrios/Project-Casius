@@ -380,13 +380,13 @@
                 btnAuto7.Enabled = False
                 Variables.Auto.auto7Off = True
             End If
-            If Variables.Auto.hall >= 1 Then
-                barAuto8.Enabled = False
-                lblHall.Enabled = False
-                Variables.Auto.hall = 1
-                btnAuto8.Enabled = False
-                Variables.Auto.auto8Off = True
-            End If
+            'If Variables.Auto.hall >= 1 Then
+            ' barAuto8.Enabled = False
+            ' lblHall.Enabled = False
+            ' Variables.Auto.hall = 1
+            '  btnAuto8.Enabled = False
+            ' Variables.Auto.auto8Off = True
+            ' End If
 
 
             ' --- Bars ---
