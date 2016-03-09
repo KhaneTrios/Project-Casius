@@ -65,7 +65,7 @@ Public Class MovementFormNew
             Call MsgBox("You encounter a friendly")
         End If
         If encounterChance = 10 Then
-            Call MsgBox("You encounter an item")
+            Call MsgBox("You encounter an item/situation")
         End If
 
 
@@ -90,13 +90,17 @@ Public Class MovementFormNew
         'End If
 
 
-        'boundaries ~~~~~~~~~~~~~~Do not modify for any reason~~~~~~~~~~~~~~~~~~~
+        'boundaries ~~~~~~~~~~~~~~Do not modify for any reason for now~~~~~~~~~~~~~~~~~~~
         If x < 0 Or x > 8 Or y < 0 Or y > 7 Then
             x = bx
             y = by
         End If
         '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+        'scenery events ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        If x = 6 And y = 7 Then
+            Call MsgBox("The gates unlock")
+        End If
         'wall example ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         'If x = 7 And y = 0 Or x = 0 And y = 1 Or x = 2 And y = 1 Or x = 4 And y = 1 Or x = 8 And y = 1 Or x = 7 And y = 3 Or x = 5 And y = 3 Or x = 3 And y = 3 Or x = 1 And y = 3 Or x = 0 And y = 5 Or x = 2 And y = 5 Or x = 4 And y = 5 Or x = 6 And y = 5 Or x = 8 And y = 5 Or x = 7 And y = 7 Or x = 5 And y = 7 Or x = 3 And y = 7 Or x = 1 And y = 7 Then
         '    x = bx
@@ -107,7 +111,6 @@ Public Class MovementFormNew
         'trigger examples ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         'If x = 6 And y = 7 Then
         '    Call MsgBox("The gates unlock")
-        '    lock = 1
         'End If
 
         'If x = 7 And y = 1 And lock = 1 Then
