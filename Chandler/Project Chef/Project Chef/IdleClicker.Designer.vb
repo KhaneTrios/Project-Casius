@@ -81,6 +81,7 @@ Partial Class frmMain
         Me.barAuto5 = New System.Windows.Forms.ProgressBar()
         Me.barAuto6 = New System.Windows.Forms.ProgressBar()
         Me.barAuto7 = New System.Windows.Forms.ProgressBar()
+        Me.barAuto8 = New System.Windows.Forms.ProgressBar()
         Me.tabStats = New System.Windows.Forms.TabPage()
         Me.lblHall = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -101,8 +102,6 @@ Partial Class frmMain
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
-        Me.tmrHall = New System.Windows.Forms.Timer(Me.components)
-        Me.barAuto8 = New System.Windows.Forms.ProgressBar()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -687,6 +686,14 @@ Partial Class frmMain
         Me.barAuto7.Size = New System.Drawing.Size(144, 16)
         Me.barAuto7.TabIndex = 51
         '
+        'barAuto8
+        '
+        Me.barAuto8.Location = New System.Drawing.Point(304, 320)
+        Me.barAuto8.Maximum = 60000
+        Me.barAuto8.Name = "barAuto8"
+        Me.barAuto8.Size = New System.Drawing.Size(144, 16)
+        Me.barAuto8.TabIndex = 56
+        '
         'tabStats
         '
         Me.tabStats.Controls.Add(Me.lblHall)
@@ -892,18 +899,6 @@ Partial Class frmMain
         '
         Me.tmrBar.Interval = 10000
         '
-        'tmrHall
-        '
-        Me.tmrHall.Interval = 60000
-        '
-        'barAuto8
-        '
-        Me.barAuto8.Location = New System.Drawing.Point(304, 320)
-        Me.barAuto8.Maximum = 60000
-        Me.barAuto8.Name = "barAuto8"
-        Me.barAuto8.Size = New System.Drawing.Size(144, 16)
-        Me.barAuto8.TabIndex = 56
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -999,7 +994,6 @@ Partial Class frmMain
     Friend WithEvents Label1 As Label
     Friend WithEvents lblHall As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents tmrHall As System.Windows.Forms.Timer
     Friend WithEvents btnDone As System.Windows.Forms.Button
     Friend WithEvents barAuto8 As System.Windows.Forms.ProgressBar
 End Class

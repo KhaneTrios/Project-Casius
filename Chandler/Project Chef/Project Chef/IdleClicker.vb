@@ -209,7 +209,6 @@
             Variables.Auto.auto8Cost = Val((11) + (Variables.Auto.auto8Cost) * (2))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto8Val = Val((Variables.Auto.auto8Val) + (1000))
             Variables.Auto.auto8Bought = True
-            tmrHall.Enabled = True
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
     End Sub
@@ -380,72 +379,72 @@
                 btnAuto7.Enabled = False
                 Variables.Auto.auto7Off = True
             End If
-            'If Variables.Auto.hall >= 1 Then
-            ' barAuto8.Enabled = False
-            ' lblHall.Enabled = False
-            ' Variables.Auto.hall = 1
-            '  btnAuto8.Enabled = False
-            ' Variables.Auto.auto8Off = True
-            ' End If
+            If Variables.Auto.auto8 >= 1 Then
+                barAuto8.Enabled = False
+                lblHall.Enabled = False
+                Variables.Auto.auto8 = 1
+                btnAuto8.Enabled = False
+                Variables.Auto.auto8Off = True
+            End If
 
 
             ' --- Bars ---
             ' The bar progression is linked to the variable value of how many of the item has been "built"
-            barAuto2.Value = Variables.Auto.home
-            barAuto3.Value = Variables.Auto.wall
-            barAuto4.Value = Variables.Auto.guard
-            barAuto5.Value = Variables.Auto.auto5
-            barAuto6.Value = Variables.Auto.shop
-            barAuto7.Value = Variables.Auto.auto7
-            barAuto8.Value = tmrHall.Interval
+                barAuto2.Value = Variables.Auto.home
+                barAuto3.Value = Variables.Auto.wall
+                barAuto4.Value = Variables.Auto.guard
+                barAuto5.Value = Variables.Auto.auto5
+                barAuto6.Value = Variables.Auto.shop
+                barAuto7.Value = Variables.Auto.auto7
+                barAuto8.Value = Variables.Auto.auto8
 
-            ' --- Button-enabling check ---
-            ' Constant check for the conditions to be met to enable the next auto clicker button in order
-            If (Variables.Auto.amount >= Variables.Auto.auto1Cost) Then       ' If your total score is higher or equal to the cost of the first auto clicker, then 
-                btnAuto1.Enabled = True                             ' The first auto clicker button becomes enabled to click on and use
-            Else : btnAuto1.Enabled = False                         ' If that absolute condition is not met then the button remains disabled and can't be used.
-            End If                                                  ' End of if statement
+                ' --- Button-enabling check ---
+                ' Constant check for the conditions to be met to enable the next auto clicker button in order
+                If (Variables.Auto.amount >= Variables.Auto.auto1Cost) Then       ' If your total score is higher or equal to the cost of the first auto clicker, then 
+                    btnAuto1.Enabled = True                             ' The first auto clicker button becomes enabled to click on and use
+                Else : btnAuto1.Enabled = False                         ' If that absolute condition is not met then the button remains disabled and can't be used.
+                End If                                                  ' End of if statement
 
-            If Val((Variables.Auto.auto1Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto2Cost) And Variables.Auto.auto2Off = False)) Then     'If you own at least one or more of the second auto clicker, and your total score is equal to or greater than the cost of the third auto clicker then
-                btnAuto2.Enabled = True             ' The auto clicker button becomes enabled to click on and use
-            Else : btnAuto2.Enabled = False         ' If that absolute condition is not met then the button remains disabled and can't be used.
-            End If                                  ' End of if statement
+                If Val((Variables.Auto.auto1Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto2Cost) And Variables.Auto.auto2Off = False)) Then     'If you own at least one or more of the second auto clicker, and your total score is equal to or greater than the cost of the third auto clicker then
+                    btnAuto2.Enabled = True             ' The auto clicker button becomes enabled to click on and use
+                Else : btnAuto2.Enabled = False         ' If that absolute condition is not met then the button remains disabled and can't be used.
+                End If                                  ' End of if statement
 
-            If Val((Variables.Auto.auto2Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto3Cost) And Variables.Auto.auto3Off = False)) Then     'If you own at least one or more of the second auto clicker, and your total score is equal to or greater than the cost of the third auto clicker then
-                btnAuto3.Enabled = True             ' The auto clicker button becomes enabled to click on and use
-            Else : btnAuto3.Enabled = False         ' If that absolute condition is not met then the button remains disabled and can't be used.
-            End If                                  ' End of if statement
+                If Val((Variables.Auto.auto2Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto3Cost) And Variables.Auto.auto3Off = False)) Then     'If you own at least one or more of the second auto clicker, and your total score is equal to or greater than the cost of the third auto clicker then
+                    btnAuto3.Enabled = True             ' The auto clicker button becomes enabled to click on and use
+                Else : btnAuto3.Enabled = False         ' If that absolute condition is not met then the button remains disabled and can't be used.
+                End If                                  ' End of if statement
 
-            If Val((Variables.Auto.auto3Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto4Cost) And Variables.Auto.auto4Off = False)) Then
-                btnAuto4.Enabled = True
-            Else : btnAuto4.Enabled = False
+                If Val((Variables.Auto.auto3Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto4Cost) And Variables.Auto.auto4Off = False)) Then
+                    btnAuto4.Enabled = True
+                Else : btnAuto4.Enabled = False
+                End If
+
+                If Val((Variables.Auto.auto4Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto5Cost) And Variables.Auto.auto5Off = False)) Then
+                    btnAuto5.Enabled = True
+                Else : btnAuto5.Enabled = False
+                End If
+
+                If Val((Variables.Auto.auto5Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto6Cost) And Variables.Auto.auto6Off = False)) Then
+                    btnAuto6.Enabled = True
+                Else : btnAuto6.Enabled = False
+                End If
+
+                If Val((Variables.Auto.auto6Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto7Cost) And Variables.Auto.auto7Off = False)) Then
+                    btnAuto7.Enabled = True
+                Else : btnAuto7.Enabled = False
+                End If
+
+                If Val((Variables.Auto.auto7Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto8Cost) And Variables.Auto.auto8Off = False)) Then
+                    btnAuto8.Enabled = True
+                Else : btnAuto8.Enabled = False
+                End If
+
+                If Val((Variables.Auto.auto8Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto9Cost) And Variables.Auto.auto9Off = False)) Then
+                    btnAuto9.Enabled = True
+                Else : btnAuto9.Enabled = False
+                End If
             End If
-
-            If Val((Variables.Auto.auto4Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto5Cost) And Variables.Auto.auto5Off = False)) Then
-                btnAuto5.Enabled = True
-            Else : btnAuto5.Enabled = False
-            End If
-
-            If Val((Variables.Auto.auto5Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto6Cost) And Variables.Auto.auto6Off = False)) Then
-                btnAuto6.Enabled = True
-            Else : btnAuto6.Enabled = False
-            End If
-
-            If Val((Variables.Auto.auto6Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto7Cost) And Variables.Auto.auto7Off = False)) Then
-                btnAuto7.Enabled = True
-            Else : btnAuto7.Enabled = False
-            End If
-
-            If Val((Variables.Auto.auto7Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto8Cost) And Variables.Auto.auto8Off = False)) Then
-                btnAuto8.Enabled = True
-            Else : btnAuto8.Enabled = False
-            End If
-
-            If Val((Variables.Auto.auto8Bought = True And (Variables.Auto.amount) >= (Variables.Auto.auto9Cost) And Variables.Auto.auto9Off = False)) Then
-                btnAuto9.Enabled = True
-            Else : btnAuto9.Enabled = False
-            End If
-        End If
     End Sub
     Private Sub btnCheat_Click(sender As System.Object, e As System.EventArgs) Handles btnCheat.Click
         ' --- Development cheat box ---
@@ -482,12 +481,6 @@
 
     Private Sub tabGains_Click(sender As Object, e As EventArgs) Handles tabRebuild.Click
 
-    End Sub
-
-    Private Sub tmrHall_Tick(sender As System.Object, e As System.EventArgs) Handles tmrHall.Tick
-        If tmrHall.Interval = 60000 Then
-            Variables.Auto.auto8 = 1
-        End If
     End Sub
 End Class
 
