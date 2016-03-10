@@ -19,7 +19,6 @@
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.exe
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.xml
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.pdb
-\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.frmMain.resources
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.Resources.resources
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.vbproj.GenerateResource.Cache
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\bin\Debug\Project Chef.exe
@@ -46,3 +45,5 @@ C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Project Chef\Project Che
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.frmMain.resources
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.Resources.resources
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.vbproj.GenerateResource.Cache
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.DevConsole.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.frmIdle.resources

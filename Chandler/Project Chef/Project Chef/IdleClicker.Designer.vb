@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmMain
+Partial Class frmIdle
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -102,6 +102,7 @@ Partial Class frmMain
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
+        Me.lblSize = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -476,6 +477,7 @@ Partial Class frmMain
         '
         'tabRebuild
         '
+        Me.tabRebuild.Controls.Add(Me.lblSize)
         Me.tabRebuild.Controls.Add(Me.btnDone)
         Me.tabRebuild.Controls.Add(Me.Label2)
         Me.tabRebuild.Controls.Add(Me.lblSucFail)
@@ -540,11 +542,13 @@ Partial Class frmMain
         '
         'btnDone
         '
+        Me.btnDone.Enabled = False
         Me.btnDone.Location = New System.Drawing.Point(296, 392)
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(91, 47)
         Me.btnDone.TabIndex = 55
         Me.btnDone.Text = "Complete"
+        Me.ToolTip.SetToolTip(Me.btnDone, "Finish building.")
         Me.btnDone.UseVisualStyleBackColor = True
         '
         'Label2
@@ -689,7 +693,7 @@ Partial Class frmMain
         'barAuto8
         '
         Me.barAuto8.Location = New System.Drawing.Point(304, 320)
-        Me.barAuto8.Maximum = 60000
+        Me.barAuto8.Maximum = 1
         Me.barAuto8.Name = "barAuto8"
         Me.barAuto8.Size = New System.Drawing.Size(144, 16)
         Me.barAuto8.TabIndex = 56
@@ -899,14 +903,24 @@ Partial Class frmMain
         '
         Me.tmrBar.Interval = 10000
         '
-        'frmMain
+        'lblSize
+        '
+        Me.lblSize.AutoSize = True
+        Me.lblSize.Location = New System.Drawing.Point(16, 96)
+        Me.lblSize.Name = "lblSize"
+        Me.lblSize.Size = New System.Drawing.Size(27, 13)
+        Me.lblSize.TabIndex = 58
+        Me.lblSize.Text = "Size"
+        Me.ToolTip.SetToolTip(Me.lblSize, "City size")
+        '
+        'frmIdle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(648, 498)
         Me.Controls.Add(Me.TabControl1)
         Me.Location = New System.Drawing.Point(200, 200)
-        Me.Name = "frmMain"
+        Me.Name = "frmIdle"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Project Casius"
         Me.TabControl1.ResumeLayout(False)
@@ -996,4 +1010,5 @@ Partial Class frmMain
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents btnDone As System.Windows.Forms.Button
     Friend WithEvents barAuto8 As System.Windows.Forms.ProgressBar
+    Friend WithEvents lblSize As System.Windows.Forms.Label
 End Class
