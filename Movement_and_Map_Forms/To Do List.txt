@@ -3,6 +3,6 @@
 [ ] Integrate the global variable form
 [ ] Have coordinates be saved when forms translate or the game is reloaded
 [ ] RNG events triggered by real time
-[ ] Add variables for townname and townsize.
+[X] Add variables for townname and townsize.
 [X] RNG encounters triggered by movement
 [ ] Add RNG town spawns and shit
