@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DevConsole.Designer.vb">
+      <DependentUpon>DevConsole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DevConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Variables.vb" />
     <Compile Include="IdleClicker.vb">
       <SubType>Form</SubType>
@@ -97,6 +103,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DevConsole.resx">
+      <DependentUpon>DevConsole.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IdleClicker.resx">
       <DependentUpon>IdleClicker.vb</DependentUpon>
     </EmbeddedResource>

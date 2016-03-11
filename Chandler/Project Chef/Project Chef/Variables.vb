@@ -26,15 +26,21 @@
         'Public Shared vararry(Variables.auto1, Variables.auto2, Variables.auto3, Variables.auto4, Variables.auto5, Variables.auto6, Variables.auto7, Variables.auto8)
         ' --- Rebuilding Stat Variables ---
         ' Variables for the total amounts of rebuilding stats
-        Public Shared home As Integer : Public Shared guard As Integer : Public Shared civ As Integer : Public Shared church As Integer : Public Shared shop As Integer : Public Shared wall As Integer
+        Public Shared home As Integer : Public Shared guard As Integer : Public Shared civ As Integer : Public Shared church As Integer : Public Shared shop As Integer : Public Shared wall As Integer : Public Shared bank As Integer : Public Shared hall As Integer
         Public Shared gamble As Integer 'Used for Auto clicker 9
+        Public Shared auto1Max As Integer : Public Shared auto2Max As Integer : Public Shared auto3Max As Integer : Public Shared auto4Max As Integer : Public Shared auto5Max As Integer : Public Shared auto6Max As Integer : Public Shared auto7Max As Integer : Public Shared auto8Max As Integer
     End Structure
     Structure Fight
 
     End Structure
 
     Structure Movement
-
+        Public Shared cordx As Integer = 0 'player x coordinate 
+        Public Shared cordy As Integer = 0 'player y coordinate 
+        Public Shared cordbx As Integer = 0 'player's last x coordinate 
+        Public Shared cordby As Integer = 0 'player's last y coordinate 
+        Public Shared townName As String 'Town name 
+        Public Shared townSize As Integer 'Town size 
     End Structure
 
     Structure Overall

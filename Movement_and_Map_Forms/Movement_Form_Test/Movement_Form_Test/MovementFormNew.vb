@@ -3,29 +3,34 @@
 Public Class MovementFormNew
 
     'Declare Variables.
-    Dim x As Integer 'x coordinate
-    Dim y As Integer 'y coordinate
-    Dim bx As Integer 'last x coordinate
-    Dim by As Integer 'last y coordinate
+    Dim x As Integer = 0 'x coordinate
+    Dim y As Integer = 0 'y coordinate
+    Dim bx As Integer = 0 'last x coordinate
+    Dim by As Integer = 0 'last y coordinate
+    Dim encounterChance As Integer = 0 'chance of an encounter after moving tiles
+    Dim town1x As Integer = 0 'Town 1 x coordinate
+    Dim town1y As Integer = 0 'Town 1 y coordinate
+    Dim banditx As Integer = 0 'Bandit x coordinate
+    Dim bandity As Integer = 0 'Bandint y coordinate
 
     'Dim spawn As Integer = 0 'Variable randomised for enemy encounter chance.
 
-    'When the window loads
+    'When the form1 loads
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        'Have a message box pop up with text
+        'Have a message box pop up with text.
         Call MsgBox("Sample Text")
 
-        'Load variables from the Variables Movement Structure
-        'Make the local variables equal to the variables saved in the structure
-        Dim x As Integer = Variables.Movement.cordx
-        Dim y As Integer = Variables.Movement.cordy
-        Dim bx As Integer = Variables.Movement.cordbx
-        Dim by As Integer = Variables.Movement.cordby
+        'Randomise the x and y coordinate of the towns
+        town1x = CInt(Int((30 * Rnd()) + 1))
+        town1y = CInt(Int((30 * Rnd()) + 1))
+
+        'Randomise the x and y coordinates of the bandits
+        banditx = CInt(Int((30 * Rnd()) + 1))
+        bandity = CInt(Int((30 * Rnd()) + 1))
 
     End Sub
 
-    'Navigation
 
     'If a key is hit
     Private Sub Form1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
@@ -35,57 +40,53 @@ Public Class MovementFormNew
         'If we wanted to have a chance of triggering an enemy encounter every time we move, like in traditional
         'JRPG games, we would put this line of code in each movement case.
         'spawn = CInt(Int((30 * Rnd()) + 1))
-        'See line 67 for more on this.
+        'See line 67 and line 11 for more on this.
 
         Select Case e.KeyCode
 
-            'If the right arrow key is hit
+            'If the arrow key is hit
             Case Keys.Right
+
                 'Save the latest coordinages
                 bx = x : by = y
+
                 'Make the move
                 x += 1
-                e.Handled = True
-                'Save the coordinates to the Structure
-                Variables.Movement.cordx = x
-                Variables.Movement.cordy = y
-                Variables.Movement.cordbx = bx
-                Variables.Movement.cordby = by
 
-                'If the left arrow key is hit
+                'Idk what this is but its needed. Do not remove this line
+                e.Handled = True
+
             Case Keys.Left
                 bx = x : by = y
                 x -= 1
                 e.Handled = True
-                'Save the coordinates to the Structure
-                Variables.Movement.cordx = x
-                Variables.Movement.cordy = y
-                Variables.Movement.cordbx = bx
-                Variables.Movement.cordby = by
 
-                'If the up arrow key is hit
             Case Keys.Up
                 by = y : bx = x
                 y -= 1
                 e.Handled = True
-                'Save the coordinates to the Structure
-                Variables.Movement.cordx = x
-                Variables.Movement.cordy = y
-                Variables.Movement.cordbx = bx
-                Variables.Movement.cordby = by
 
-                'If the down arrow key is hit
             Case Keys.Down
                 by = y : bx = x
                 y += 1
                 e.Handled = True
-                'Save the coordinates to the Structure
-                Variables.Movement.cordx = x
-                Variables.Movement.cordy = y
-                Variables.Movement.cordbx = bx
-                Variables.Movement.cordby = by
 
         End Select 'End select/switch
+
+        'Calculate a value to determine if the player will encounter something and what they encounter
+        encounterChance = CInt(Int((30 * Rnd()) + 1))
+
+        If encounterChance = 8 Then
+            Call MsgBox("You encounter an enemy")
+        End If
+
+        If encounterChance = 9 Then
+            Call MsgBox("You encounter a friendly")
+        End If
+
+        If encounterChance = 10 Then
+            Call MsgBox("You encounter an item/situation")
+        End If
 
         'random enemy encounter examples
         'If spawn = 8 Then
@@ -106,35 +107,27 @@ Public Class MovementFormNew
         '   frmbattle.Show()
         'End If
 
-
-        'boundaries ~~~~~~~~~~~~~~Do not modify for any reason~~~~~~~~~~~~~~~~~~~
+        'Borders
+        'XXXXXXXXXXXXXXXXXXXXXXXXXDo not modify for any reason for nowXXXXXXXXXXXXXXXXXXXX
         If x < 0 Or x > 8 Or y < 0 Or y > 7 Then
             x = bx
             y = by
         End If
-        '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-        'wall example ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        'coordinate specific events example
+        'If x = 6 And y = 7 Then
+        'Call MsgBox("The gates unlock")
+        'End If
+
+        'wall example 
         'If x = 7 And y = 0 Or x = 0 And y = 1 Or x = 2 And y = 1 Or x = 4 And y = 1 Or x = 8 And y = 1 Or x = 7 And y = 3 Or x = 5 And y = 3 Or x = 3 And y = 3 Or x = 1 And y = 3 Or x = 0 And y = 5 Or x = 2 And y = 5 Or x = 4 And y = 5 Or x = 6 And y = 5 Or x = 8 And y = 5 Or x = 7 And y = 7 Or x = 5 And y = 7 Or x = 3 And y = 7 Or x = 1 And y = 7 Then
         '    x = bx
         '    y = by
         'End If
-        '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-        'trigger examples ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        'If x = 6 And y = 7 Then
-        '    Call MsgBox("The gates unlock")
-        '    lock = 1
-        'End If
-
-        'If x = 7 And y = 1 And lock = 1 Then
-        '    Call MsgBox("You enter the sewer")
-        'End If
-
-        '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
         'This is the programming for the 8,7 grid itself.
-        'This shouldn't have to be touched ever again.
+        'This shouldn't have to be touched ever again. Thank God.
         'As long as you have an image box called avatar, and 
         'another image box that is clear, named clear.
         'Make sure you have an image box for each respective
@@ -143,6 +136,7 @@ Public Class MovementFormNew
         'BEHIND these image boxes.
         'This code is trash, I don't recomend using it ever again.
 
+        'DONT MODIFY BELOW THIS LINE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
         If x = 0 And y = 0 Then         '0, 0
             x0y0.Image = avatar.Image
             x0y1.Image = clear.Image
@@ -5588,11 +5582,16 @@ Public Class MovementFormNew
             x0y0.Image = clear.Image
 
         End If
+        ' YOU ARE SAFE NOW. VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
+        'Load in the town tiles generated when the form was loaded.
+
+
     End Sub
 
     'When button1 is clicked
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        'open up Test_Form and close 
+        'open up Test_Form and close the Movement Form
         Test_Form.Show() : Me.Close()
     End Sub
 End Class

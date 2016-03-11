@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MovementFormNew.Designer.vb">
       <DependentUpon>MovementFormNew.vb</DependentUpon>
     </Compile>
@@ -103,6 +109,9 @@
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MovementFormNew.resx">
       <DependentUpon>MovementFormNew.vb</DependentUpon>
     </EmbeddedResource>

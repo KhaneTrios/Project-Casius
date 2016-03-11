@@ -1,11 +1,56 @@
-﻿Public Class frmMain
+﻿Public Class frmIdle
     Private Sub btnClick_Click(sender As System.Object, e As System.EventArgs) Handles btnClick.Click
         Variables.Auto.amount = Val(Variables.Auto.amount + (1))
         Variables.Auto.civ += 1
     End Sub
     Private Sub frmMain_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+        lblCity1.Text = Variables.Movement.townName         'Looking for the name of the town and setting the Rebuild tab town name label to it
+        lblCity2.Text = Variables.Movement.townSize         'Looking for the size of the town to determine the variable values needed for the rest of the autoclicker.
+        lblSize.Text = Variables.Movement.townSize
+
+        Variables.Auto.auto8Max = 1              'Total amount needed to max out the 8th auto clicker which is town hall and there is only ever one in any city so this variable remains constant and therefore doesn't need to be put in with the if-statements
+
+        If Variables.Movement.townSize = 1 Then  'Check for the size of the town, the lower the number the smaller the town
+            Variables.Auto.auto2Max = 150        'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto3Max = 500        'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto4Max = 300        'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto5Max = 5          'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto6Max = 20         'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto7Max = 10         'The total amount needed to max out and complete the building of this item
+        End If
+
+        If Variables.Movement.townSize = 2 Then
+            Variables.Auto.auto2Max = 500
+            Variables.Auto.auto3Max = 1000
+            Variables.Auto.auto4Max = 600
+            Variables.Auto.auto5Max = 10
+            Variables.Auto.auto6Max = 50
+            Variables.Auto.auto7Max = 50
+        End If
+
+        If Variables.Movement.townSize = 3 Then
+            Variables.Auto.auto2Max = 1500
+            Variables.Auto.auto3Max = 5000
+            Variables.Auto.auto4Max = 1200
+            Variables.Auto.auto5Max = 100
+            Variables.Auto.auto6Max = 300
+            Variables.Auto.auto7Max = 100
+        End If
+
+
+
+        barAuto2.Maximum = Variables.Auto.auto2Max
+        barAuto3.Maximum = Variables.Auto.auto3Max
+        barAuto4.Maximum = Variables.Auto.auto4Max
+        barAuto5.Maximum = Variables.Auto.auto5Max
+        barAuto6.Maximum = Variables.Auto.auto6Max
+        barAuto7.Maximum = Variables.Auto.auto7Max
+        barAuto8.Maximum = Variables.Auto.auto8Max
+
+
+
         'Amount of clicks gained linking and loading
-        lblAmount.Text = Variables.Auto.amount       'Declaring that the Label for the amount of clicks is linked to the amount variable
         Variables.Auto.amount = Val(0)               'Setting the amount variable to 0 on load.
 
         'Auto Clicker linking and loading
@@ -82,7 +127,7 @@
         Variables.Auto.auto8Val = Val(1000)          'Setting the value-gain the third auto clicker has.
         Variables.Auto.auto8Item = 1                 'Setting the experience value the third auto clicker gains
         Variables.Auto.auto8Skill = "Combat"         'Setting the skill category
-        Variables.Auto.auto8Cost = Val(50000)       'Setting the cost of the item to purchase.
+        Variables.Auto.auto8Cost = Val(50000)        'Setting the cost of the item to purchase.
         Variables.Auto.auto8Off = False
         Variables.Auto.auto8Bought = False
 
@@ -100,7 +145,7 @@
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto1Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto1 = Val((Variables.Auto.auto1) + (1))          'The number of first autoclicker owned 
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto1Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
-            Variables.Auto.auto1Cost = Val((Variables.Auto.auto1) + (Variables.Auto.auto1Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
+            Variables.Auto.auto1Cost = Val((50) + (Variables.Auto.auto1Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto1Val = Val((Variables.Auto.auto1Val) + (5))    'Scaling the gain value by adding
             Variables.Auto.auto1Bought = True                                  'The user has bought at least one of this item now.
         Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
@@ -115,8 +160,8 @@
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto2Cost)) Then ' Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto2 = Val((Variables.Auto.auto2) + (1))               ' 
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto2Cost))
-            Variables.Auto.auto2Cost = Val((Variables.Auto.auto2) + (Variables.Auto.auto2Cost) + (2))
-            Variables.Auto.auto2Val = Val((Variables.Auto.auto2Val) + (5))    'Scaling the gain value by adding
+            Variables.Auto.auto2Cost = Val((5) + (Variables.Auto.auto2Cost) * (2))
+            Variables.Auto.auto2Val = Val((Variables.Auto.auto2Val) + (10))    'Scaling the gain value by adding
             Variables.Auto.auto2Bought = True
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
@@ -130,8 +175,8 @@
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto3Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto3 = Val((Variables.Auto.auto3) + (1))
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto3Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
-            Variables.Auto.auto3Cost = Val((Variables.Auto.auto3) + (Variables.Auto.auto3Cost) + (3))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
-            Variables.Auto.auto3Val = Val((Variables.Auto.auto3Val) + (10))
+            Variables.Auto.auto3Cost = Val((6) + (Variables.Auto.auto3Cost) * (2))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
+            Variables.Auto.auto3Val = Val((Variables.Auto.auto3Val) + (50))
             Variables.Auto.auto3Bought = True
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
@@ -146,8 +191,8 @@
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto4Cost)) Then ' Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto4 = Val((Variables.Auto.auto4) + (1))
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto4Cost))
-            Variables.Auto.auto4Cost = Val((Variables.Auto.auto4) + (Variables.Auto.auto4Cost))
-            Variables.Auto.auto4Val = Val((Variables.Auto.auto4Val) + (20))
+            Variables.Auto.auto4Cost = Val((7) + (Variables.Auto.auto4Cost) * (2))
+            Variables.Auto.auto4Val = Val((Variables.Auto.auto4Val) + (100))
             Variables.Auto.auto4Bought = True
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
@@ -161,15 +206,10 @@
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto5Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto5 = Val((Variables.Auto.auto5) + (1))
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto5Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
-            Variables.Auto.auto5Cost = Val((Variables.Auto.auto5) + (Variables.Auto.auto5Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
+            Variables.Auto.auto5Cost = Val((8) + (Variables.Auto.auto5Cost) * (2))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto5Val = Val((Variables.Auto.auto5Val) + (50))
             Variables.Auto.auto5Bought = True
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
-        End If
-
-        If Val(((Variables.Auto.auto5) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto6Cost))) Then
-            btnAuto6.Enabled = True
-        Else : btnAuto6.Enabled = False
         End If
     End Sub
     Private Sub btn5_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto5.MouseHover
@@ -181,15 +221,10 @@
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto6Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto6 = Val((Variables.Auto.auto6) + (1))
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto6Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
-            Variables.Auto.auto6Cost = Val((Variables.Auto.auto6) + (Variables.Auto.auto6Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
+            Variables.Auto.auto6Cost = Val((9) + (Variables.Auto.auto6Cost) * (2))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto6Val = Val((Variables.Auto.auto6Val) + (100))
             Variables.Auto.auto6Bought = True
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
-        End If
-
-        If Val(((Variables.Auto.auto6) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto7Cost))) Then
-            btnAuto7.Enabled = True
-        Else : btnAuto7.Enabled = False
         End If
     End Sub
     Private Sub btn6_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto6.MouseHover
@@ -201,16 +236,10 @@
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto7Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto7 = Val((Variables.Auto.auto7) + (1))
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto7Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
-            Variables.Auto.auto7Cost = Val((Variables.Auto.auto7) + (Variables.Auto.auto7Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
+            Variables.Auto.auto7Cost = Val((10) + (Variables.Auto.auto7Cost) * (2))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto7Val = Val((Variables.Auto.auto7Val) + (500))
             Variables.Auto.auto7Bought = True
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
-        End If
-
-
-        If Val(((Variables.Auto.auto7) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto8Cost))) Then
-            btnAuto8.Enabled = True
-        Else : btnAuto8.Enabled = False
         End If
     End Sub
     Private Sub btn7_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto7.MouseHover
@@ -222,15 +251,10 @@
         If Val((Variables.Auto.amount) >= (Variables.Auto.auto8Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
             Variables.Auto.auto8 = Val((Variables.Auto.auto8) + (1))
             Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto8Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
-            Variables.Auto.auto8Cost = Val((Variables.Auto.auto8) + (Variables.Auto.auto8Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
+            Variables.Auto.auto8Cost = Val((11) + (Variables.Auto.auto8Cost) * (2))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto8Val = Val((Variables.Auto.auto8Val) + (1000))
             Variables.Auto.auto8Bought = True
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
-        End If
-
-        If Val(((Variables.Auto.auto8) >= (1) And (Variables.Auto.amount) >= (Variables.Auto.auto9Cost))) Then
-            btnAuto9.Enabled = True
-        Else : btnAuto9.Enabled = False
         End If
     End Sub
     Private Sub btn8_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto8.MouseHover
@@ -282,7 +306,7 @@
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto5 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
             Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto5Val * Variables.Auto.auto5))     'The total final score amount equals the current final amount added to the product of the value of the auto clicker and the number owned.
-            Variables.Auto.church = Val(Variables.Auto.church + (Variables.Auto.auto5Item * Variables.Auto.auto5))
+            'Variables.Auto.church = Val(Variables.Auto.church + (Variables.Auto.auto5Item * Variables.Auto.auto5))
         End If
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto6 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
@@ -292,6 +316,7 @@
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto7 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
             Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto7Val * Variables.Auto.auto7))     'The total final score amount equals the current final amount added to the product of the value of the auto clicker and the number owned.
+            'Variables.Auto.bank = Val(Variables.Auto.bank + (Variables.Auto.auto7Item * Variables.Auto.auto7))
         End If
 
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto8 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
@@ -308,7 +333,6 @@
         ' is less than or equal to 1. The only two possible intervals are 0 and 1, 
         ' so every millisecond or less the function performs its tasks, 
         ' such as keeping labels updated at all times.
-
         If (tmrUpdate.Interval <= 1) Then
             ' Constant updating all auto clicker labels
             lblAmount.Text = Variables.Auto.amount               ' Setting the label to display your total score
@@ -344,49 +368,67 @@
             ' --- Skills text display ---
             ' Constant updating all skill labels
             lblCivilians.Text = Variables.Auto.civ
-            lblhomes.Text = Variables.Auto.home
+            lblHomes.Text = Variables.Auto.home
             lblShops.Text = Variables.Auto.shop
             lblWalls.Text = Variables.Auto.wall
-            lblChurch.Text = Variables.Auto.church
+            lblChurch.Text = Variables.Auto.auto5
+            lblBanks.Text = Variables.Auto.auto7
+            lblHall.Text = Variables.Auto.auto8
 
             ' --- Bars Stopping when maxed, disabling buttons and variables ---
-            If Variables.Auto.home >= 1000 Then     'If the variable for the item amount built, is greater than or equal to the maximum amount you can have then
+            If Variables.Auto.home >= Variables.Auto.auto2Max Then     'If the variable for the item amount built, is greater than or equal to the maximum amount you can have then
                 barAuto2.Enabled = False            'The progress bar is disabled
-                lblhomes.Enabled = False            'The label for the variable of the item owned is disabled
-                Variables.Auto.home = 1000          'Catch to make sure the variable doesn't go over the max amount, if it does, it gets reset to exactly the amount of the max
+                lblHomes.Enabled = False            'The label for the variable of the item owned is disabled
+                Variables.Auto.home = Variables.Auto.auto2Max       'Catch to make sure the variable doesn't go over the max amount, if it does, it gets reset to exactly the amount of the max
                 btnAuto2.Enabled = False            'The button is disabled and can't be clicked on
                 Variables.Auto.auto2 = 0            'The amount of the item purchased is reset to zero and locked there which in turn stops profit coming in from that item
                 Variables.Auto.auto2Off = True      'Switching the variable that turns the clicker off, to true. This is because the update function will not allow the button to be disabled without the use of this bool variable to catch another condition being met.
             End If                                  'End of if statement
-            If Variables.Auto.wall >= 1000 Then
+            If Variables.Auto.wall >= Variables.Auto.auto3Max Then
                 barAuto3.Enabled = False
                 lblWalls.Enabled = False
-                Variables.Auto.wall = 1000
+                Variables.Auto.wall = Variables.Auto.auto3Max
                 btnAuto3.Enabled = False
                 Variables.Auto.auto3 = 0
                 Variables.Auto.auto3Off = True
             End If
-            If Variables.Auto.guard >= 1000 Then
+            If Variables.Auto.guard >= Variables.Auto.auto4Max Then
                 barAuto4.Enabled = False
                 lblGuards.Enabled = False
-                Variables.Auto.guard = 1000
+                Variables.Auto.guard = Variables.Auto.auto4Max
                 btnAuto4.Enabled = False
                 Variables.Auto.auto4 = 0
+                Variables.Auto.auto4Off = True
             End If
-            If Variables.Auto.auto5 >= 5 Then
+            If Variables.Auto.auto5 >= Variables.Auto.auto5Max Then
                 barAuto5.Enabled = False
+                barAuto5.Value = 5
                 lblChurch.Enabled = False
-                Variables.Auto.church = 5
+                Variables.Auto.church = Variables.Auto.auto5Max
                 btnAuto5.Enabled = False
-                Variables.Auto.auto5 = 5
+                Variables.Auto.auto5Off = True
             End If
-            If Variables.Auto.shop >= 1000 Then
+            If Variables.Auto.shop >= Variables.Auto.auto6Max Then
                 barAuto6.Enabled = False
                 lblShops.Enabled = False
-                Variables.Auto.church = 1000
+                Variables.Auto.shop = Variables.Auto.auto6Max
                 btnAuto6.Enabled = False
                 Variables.Auto.auto6 = 0
                 Variables.Auto.auto6Off = True
+            End If
+            If Variables.Auto.auto7 >= Variables.Auto.auto7Max Then
+                barAuto7.Enabled = False
+                lblBanks.Enabled = False
+                Variables.Auto.bank = Variables.Auto.auto7Max
+                btnAuto7.Enabled = False
+                Variables.Auto.auto7Off = True
+            End If
+            If Variables.Auto.auto8 >= Variables.Auto.auto8Max Then
+                barAuto8.Enabled = False
+                lblHall.Enabled = False
+                Variables.Auto.auto8 = Variables.Auto.auto8Max
+                btnAuto8.Enabled = False
+                Variables.Auto.auto8Off = True
             End If
 
 
@@ -397,6 +439,8 @@
             barAuto4.Value = Variables.Auto.guard
             barAuto5.Value = Variables.Auto.auto5
             barAuto6.Value = Variables.Auto.shop
+            barAuto7.Value = Variables.Auto.auto7
+            barAuto8.Value = Variables.Auto.auto8
 
             ' --- Button-enabling check ---
             ' Constant check for the conditions to be met to enable the next auto clicker button in order
@@ -444,6 +488,10 @@
                 btnAuto9.Enabled = True
             Else : btnAuto9.Enabled = False
             End If
+
+            If Variables.Auto.auto2Off And Variables.Auto.auto3Off And Variables.Auto.auto4Off And Variables.Auto.auto5Off And Variables.Auto.auto6Off And Variables.Auto.auto7Off And Variables.Auto.auto8Off Then
+                btnDone.Enabled = True
+            End If
         End If
     End Sub
     Private Sub btnCheat_Click(sender As System.Object, e As System.EventArgs) Handles btnCheat.Click
@@ -461,6 +509,11 @@
             txtCheat.Visible = True
             btnCheat.Enabled = True
             btnCheat.Visible = True
+        End If
+
+        If e.KeyCode = Keys.Oemtilde Then
+            DevConsole.Show()
+            Me.Close()
         End If
     End Sub
 
@@ -480,6 +533,24 @@
     End Sub
 
     Private Sub tabGains_Click(sender As Object, e As EventArgs) Handles tabRebuild.Click
+
+    End Sub
+
+    Private Sub btnDone_Click(sender As System.Object, e As System.EventArgs) Handles btnDone.Click
+
+    End Sub
+
+    Private Sub cmboxSize_SelectedIndexChanged(sender As System.Object, e As System.EventArgs)
+        'If cmboxSize.SelectedItem = 1 Then
+        'Variables.Movement.townSize = 1
+        'ElseIf cmboxSize.SelectedItem = 2 Then
+        'Variables.Movement.townSize = 2
+        'ElseIf cmboxSize.SelectedItem = 3 Then
+        'Variables.Movement.townSize = 3
+        ' End If
+    End Sub
+
+    Private Sub txtCheat_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtCheat.TextChanged
 
     End Sub
 End Class
