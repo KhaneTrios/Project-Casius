@@ -72,10 +72,22 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Choice.Designer.vb">
+      <DependentUpon>Choice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Choice.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DevConsole.Designer.vb">
       <DependentUpon>DevConsole.vb</DependentUpon>
     </Compile>
     <Compile Include="DevConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recruit.Designer.vb">
+      <DependentUpon>Recruit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recruit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Variables.vb" />
@@ -103,6 +115,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Choice.resx">
+      <DependentUpon>Choice.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DevConsole.resx">
       <DependentUpon>DevConsole.vb</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +129,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recruit.resx">
+      <DependentUpon>Recruit.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

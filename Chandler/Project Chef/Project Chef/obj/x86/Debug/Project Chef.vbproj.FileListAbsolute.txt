@@ -47,3 +47,5 @@ C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Project Chef\Project Che
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.vbproj.GenerateResource.Cache
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.DevConsole.resources
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.frmIdle.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.frmChoice.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.Recruit.resources

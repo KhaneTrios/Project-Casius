@@ -30,11 +30,12 @@ Partial Class DevConsole
         Me.txtSet = New System.Windows.Forms.TextBox()
         Me.ToolTipDev = New System.Windows.Forms.ToolTip(Me.components)
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'btnLoad
         '
-        Me.btnLoad.Location = New System.Drawing.Point(32, 176)
+        Me.btnLoad.Location = New System.Drawing.Point(32, 208)
         Me.btnLoad.Name = "btnLoad"
         Me.btnLoad.Size = New System.Drawing.Size(80, 24)
         Me.btnLoad.TabIndex = 1
@@ -44,7 +45,7 @@ Partial Class DevConsole
         '
         'btnEnd
         '
-        Me.btnEnd.Location = New System.Drawing.Point(160, 176)
+        Me.btnEnd.Location = New System.Drawing.Point(160, 208)
         Me.btnEnd.Name = "btnEnd"
         Me.btnEnd.Size = New System.Drawing.Size(80, 24)
         Me.btnEnd.TabIndex = 2
@@ -59,7 +60,7 @@ Partial Class DevConsole
         Me.btnSet.Size = New System.Drawing.Size(72, 24)
         Me.btnSet.TabIndex = 3
         Me.btnSet.Text = "Set"
-        Me.ToolTipDev.SetToolTip(Me.btnSet, "Sets the City size, to test all city sizes")
+        Me.ToolTipDev.SetToolTip(Me.btnSet, "Sets the City size, to test all city sizes. Must be 1, 2, or 3.")
         Me.btnSet.UseVisualStyleBackColor = True
         '
         'txtSet
@@ -69,6 +70,7 @@ Partial Class DevConsole
         Me.txtSet.Size = New System.Drawing.Size(96, 20)
         Me.txtSet.TabIndex = 4
         Me.txtSet.Text = "City Size"
+        Me.ToolTipDev.SetToolTip(Me.txtSet, "Set the city size to 1, 2, or 3. The higher the number the larger the city.")
         '
         'RichTextBox1
         '
@@ -79,11 +81,22 @@ Partial Class DevConsole
         Me.RichTextBox1.TabIndex = 5
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(32, 160)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(95, 17)
+        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.Text = "Pre-Completed"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'DevConsole
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(260, 246)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.txtSet)
         Me.Controls.Add(Me.btnSet)
@@ -101,4 +114,5 @@ Partial Class DevConsole
     Friend WithEvents txtSet As System.Windows.Forms.TextBox
     Friend WithEvents ToolTipDev As System.Windows.Forms.ToolTip
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
 End Class

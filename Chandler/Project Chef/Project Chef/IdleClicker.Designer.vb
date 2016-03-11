@@ -46,6 +46,8 @@ Partial Class frmIdle
         Me.lblAuto8N = New System.Windows.Forms.Label()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.lblAmount = New System.Windows.Forms.Label()
+        Me.btnDone = New System.Windows.Forms.Button()
+        Me.lblSize = New System.Windows.Forms.Label()
         Me.lblauto1Cost = New System.Windows.Forms.Label()
         Me.lblauto2Cost = New System.Windows.Forms.Label()
         Me.tmrUpdate = New System.Windows.Forms.Timer(Me.components)
@@ -64,7 +66,6 @@ Partial Class frmIdle
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabRebuild = New System.Windows.Forms.TabPage()
-        Me.btnDone = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblSucFail = New System.Windows.Forms.Label()
         Me.lblGamble = New System.Windows.Forms.Label()
@@ -102,7 +103,9 @@ Partial Class frmIdle
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
-        Me.lblSize = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -322,6 +325,27 @@ Partial Class frmIdle
         Me.lblAmount.Text = "0"
         Me.ToolTip.SetToolTip(Me.lblAmount, "City strength")
         '
+        'btnDone
+        '
+        Me.btnDone.Enabled = False
+        Me.btnDone.Location = New System.Drawing.Point(296, 392)
+        Me.btnDone.Name = "btnDone"
+        Me.btnDone.Size = New System.Drawing.Size(91, 47)
+        Me.btnDone.TabIndex = 55
+        Me.btnDone.Text = "Complete"
+        Me.ToolTip.SetToolTip(Me.btnDone, "Finish building.")
+        Me.btnDone.UseVisualStyleBackColor = True
+        '
+        'lblSize
+        '
+        Me.lblSize.AutoSize = True
+        Me.lblSize.Location = New System.Drawing.Point(16, 96)
+        Me.lblSize.Name = "lblSize"
+        Me.lblSize.Size = New System.Drawing.Size(27, 13)
+        Me.lblSize.TabIndex = 58
+        Me.lblSize.Text = "Size"
+        Me.ToolTip.SetToolTip(Me.lblSize, "City size")
+        '
         'lblauto1Cost
         '
         Me.lblauto1Cost.AutoSize = True
@@ -357,7 +381,7 @@ Partial Class frmIdle
         'lblauto4Cost
         '
         Me.lblauto4Cost.AutoSize = True
-        Me.lblauto4Cost.Location = New System.Drawing.Point(376, 152)
+        Me.lblauto4Cost.Location = New System.Drawing.Point(376, 160)
         Me.lblauto4Cost.Name = "lblauto4Cost"
         Me.lblauto4Cost.Size = New System.Drawing.Size(13, 13)
         Me.lblauto4Cost.TabIndex = 26
@@ -477,6 +501,9 @@ Partial Class frmIdle
         '
         'tabRebuild
         '
+        Me.tabRebuild.Controls.Add(Me.Label6)
+        Me.tabRebuild.Controls.Add(Me.Label5)
+        Me.tabRebuild.Controls.Add(Me.Label4)
         Me.tabRebuild.Controls.Add(Me.lblSize)
         Me.tabRebuild.Controls.Add(Me.btnDone)
         Me.tabRebuild.Controls.Add(Me.Label2)
@@ -539,17 +566,6 @@ Partial Class frmIdle
         Me.tabRebuild.TabIndex = 0
         Me.tabRebuild.Text = "Rebuild"
         Me.tabRebuild.UseVisualStyleBackColor = True
-        '
-        'btnDone
-        '
-        Me.btnDone.Enabled = False
-        Me.btnDone.Location = New System.Drawing.Point(296, 392)
-        Me.btnDone.Name = "btnDone"
-        Me.btnDone.Size = New System.Drawing.Size(91, 47)
-        Me.btnDone.TabIndex = 55
-        Me.btnDone.Text = "Complete"
-        Me.ToolTip.SetToolTip(Me.btnDone, "Finish building.")
-        Me.btnDone.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -627,7 +643,7 @@ Partial Class frmIdle
         'lblAuto4Val
         '
         Me.lblAuto4Val.AutoSize = True
-        Me.lblAuto4Val.Location = New System.Drawing.Point(320, 152)
+        Me.lblAuto4Val.Location = New System.Drawing.Point(320, 160)
         Me.lblAuto4Val.Name = "lblAuto4Val"
         Me.lblAuto4Val.Size = New System.Drawing.Size(13, 13)
         Me.lblAuto4Val.TabIndex = 39
@@ -903,15 +919,32 @@ Partial Class frmIdle
         '
         Me.tmrBar.Interval = 10000
         '
-        'lblSize
+        'Label4
         '
-        Me.lblSize.AutoSize = True
-        Me.lblSize.Location = New System.Drawing.Point(16, 96)
-        Me.lblSize.Name = "lblSize"
-        Me.lblSize.Size = New System.Drawing.Size(27, 13)
-        Me.lblSize.TabIndex = 58
-        Me.lblSize.Text = "Size"
-        Me.ToolTip.SetToolTip(Me.lblSize, "City size")
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(312, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(29, 13)
+        Me.Label4.TabIndex = 59
+        Me.Label4.Text = "Gain"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(368, 16)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(28, 13)
+        Me.Label5.TabIndex = 60
+        Me.Label5.Text = "Cost"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(416, 16)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(41, 13)
+        Me.Label6.TabIndex = 61
+        Me.Label6.Text = "Owned"
         '
         'frmIdle
         '
@@ -1011,4 +1044,7 @@ Partial Class frmIdle
     Friend WithEvents btnDone As System.Windows.Forms.Button
     Friend WithEvents barAuto8 As System.Windows.Forms.ProgressBar
     Friend WithEvents lblSize As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class
