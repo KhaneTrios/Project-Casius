@@ -31,10 +31,13 @@
     End Structure
 
     Structure Movement
-        Public Shared cordx As Integer = 0
-        Public Shared cordy As Integer = 0
-        Public Shared cordbx As Integer = 0
-        Public Shared cordby As Integer = 0
+        Public Shared cordx As Integer = 0 'player x coordinate
+        Public Shared cordy As Integer = 0 'player y coordinate
+        Public Shared cordbx As Integer = 0 'player's last x coordinate
+        Public Shared cordby As Integer = 0 'player's last y coordinate
+        Public Shared townName As String 'Town name
+        Public Shared townSize As Integer 'Town size
+        Public Shared BreadQuest2 As String = "Confirmed?!"
     End Structure
 
     Structure Overall
