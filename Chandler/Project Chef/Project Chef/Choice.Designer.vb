@@ -38,7 +38,7 @@ Partial Class frmChoice
         Me.btnLeave.Size = New System.Drawing.Size(96, 40)
         Me.btnLeave.TabIndex = 0
         Me.btnLeave.Text = "Leave"
-        Me.ToolTipChoice.SetToolTip(Me.btnLeave, "Leave the city as it is, to return to later and use as a place to resupply and se" & _
+        Me.ToolTipChoice.SetToolTip(Me.btnLeave, "Leave the city as it is, to return to later and use as a place to resupply and se" &
         "ek refuge")
         Me.btnLeave.UseVisualStyleBackColor = True
         '
@@ -49,7 +49,7 @@ Partial Class frmChoice
         Me.btnDestroy.Size = New System.Drawing.Size(104, 40)
         Me.btnDestroy.TabIndex = 1
         Me.btnDestroy.Text = "Destroy"
-        Me.ToolTipChoice.SetToolTip(Me.btnDestroy, "Destroy the city and gain its valuable resources to make you stronger to take on " & _
+        Me.ToolTipChoice.SetToolTip(Me.btnDestroy, "Destroy the city and gain its valuable resources to make you stronger to take on " &
         "the Evil")
         Me.btnDestroy.UseVisualStyleBackColor = True
         '

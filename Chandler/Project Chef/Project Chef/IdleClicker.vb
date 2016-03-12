@@ -40,7 +40,7 @@
 
 
 
-        barAuto2.Maximum = Variables.Auto.auto2Max
+        barAuto2.Maximum = Variables.Auto.auto2Max              'Setting the progress bar maximum value to the value of the maximum variable due to varying city sizes.
         barAuto3.Maximum = Variables.Auto.auto3Max
         barAuto4.Maximum = Variables.Auto.auto4Max
         barAuto5.Maximum = Variables.Auto.auto5Max
@@ -262,7 +262,27 @@
         ToolTip.SetToolTip(Me.btnAuto8, " | Cost: " & Variables.Auto.auto8Cost & " | Gain Per Second: " & Variables.Auto.auto8Val & " |")
     End Sub
     Private Sub btn9_Click(sender As System.Object, e As System.EventArgs) Handles btnAuto9.Click
-        frmChoice.Show()
+        If Variables.Auto.recAsk = False Then
+            Recruit.Show()
+        End If
+
+        If Variables.Auto.recAsk = True Then
+            If Val((Variables.Auto.amount) >= (Variables.Auto.auto9Cost)) Then        'Checking if the amount of GP you have is greater than or equal to the cost of the item.
+                Variables.Auto.amount = Val((Variables.Auto.amount) - (Variables.Auto.auto9Cost))  'The final amount score gets subtracted by the cost of the clicker's price, thus buying the clicker
+
+                Randomize()                                             'Initializxing the random number generator function
+                Variables.Auto.gamble = (Int((5 * Rnd()) + 1))          'The variable is a random integer between 5 and 1.
+
+                tmrSucFail.Enabled = True                       'Begin the success/fail message timer
+
+                If Variables.Auto.gamble = 5 Then
+                    Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto9Val) * (2))
+                ElseIf Variables.Auto.gamble = 4 Then
+                    Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto9Val) * (2))
+                End If
+            Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
+            End If
+        End If
     End Sub
     Private Sub btn9_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto9.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.Auto.
@@ -511,7 +531,7 @@
         End If
 
         If tmrSucFail.Interval = 500 Then
-            '  tmrSucFail.Interval = 0
+            'tmrSucFail.Interval = 0
             'lblSucFail.ResetText()
             tmrSucFail.Enabled = False
         End If

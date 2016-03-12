@@ -66,6 +66,9 @@ Partial Class frmIdle
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabRebuild = New System.Windows.Forms.TabPage()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblSucFail = New System.Windows.Forms.Label()
         Me.lblGamble = New System.Windows.Forms.Label()
@@ -103,9 +106,6 @@ Partial Class frmIdle
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -318,7 +318,7 @@ Partial Class frmIdle
         Me.lblAmount.AutoSize = True
         Me.lblAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAmount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lblAmount.Location = New System.Drawing.Point(88, 32)
+        Me.lblAmount.Location = New System.Drawing.Point(47, 32)
         Me.lblAmount.Name = "lblAmount"
         Me.lblAmount.Size = New System.Drawing.Size(39, 42)
         Me.lblAmount.TabIndex = 5
@@ -483,7 +483,7 @@ Partial Class frmIdle
         '
         Me.lblCity1.AutoSize = True
         Me.lblCity1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCity1.Location = New System.Drawing.Point(184, 8)
+        Me.lblCity1.Location = New System.Drawing.Point(148, 11)
         Me.lblCity1.Name = "lblCity1"
         Me.lblCity1.Size = New System.Drawing.Size(86, 18)
         Me.lblCity1.TabIndex = 37
@@ -566,6 +566,33 @@ Partial Class frmIdle
         Me.tabRebuild.TabIndex = 0
         Me.tabRebuild.Text = "Rebuild"
         Me.tabRebuild.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(416, 16)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(41, 13)
+        Me.Label6.TabIndex = 61
+        Me.Label6.Text = "Owned"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(368, 16)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(28, 13)
+        Me.Label5.TabIndex = 60
+        Me.Label5.Text = "Cost"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(312, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(29, 13)
+        Me.Label4.TabIndex = 59
+        Me.Label4.Text = "Gain"
         '
         'Label2
         '
@@ -918,33 +945,6 @@ Partial Class frmIdle
         'tmrBar
         '
         Me.tmrBar.Interval = 10000
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(312, 16)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(29, 13)
-        Me.Label4.TabIndex = 59
-        Me.Label4.Text = "Gain"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(368, 16)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(28, 13)
-        Me.Label5.TabIndex = 60
-        Me.Label5.Text = "Cost"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(416, 16)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(41, 13)
-        Me.Label6.TabIndex = 61
-        Me.Label6.Text = "Owned"
         '
         'frmIdle
         '

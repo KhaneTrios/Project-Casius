@@ -34,4 +34,10 @@
     Private Sub TextBox1_TextChanged(sender As System.Object, e As System.EventArgs) Handles TextBox1.TextChanged
 
     End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chkRecAsk.CheckedChanged
+        If chkRecAsk.Checked Then
+            Variables.Auto.recAsk = True
+        End If
+    End Sub
 End Class

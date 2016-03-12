@@ -25,7 +25,7 @@ Partial Class Recruit
         Me.components = New System.ComponentModel.Container()
         Me.btnRec = New System.Windows.Forms.Button()
         Me.btnRecCancel = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.chkRecAsk = New System.Windows.Forms.CheckBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
@@ -48,24 +48,25 @@ Partial Class Recruit
         Me.btnRecCancel.Text = "Cancel"
         Me.btnRecCancel.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'chkRecAsk
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(0, 88)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(108, 17)
-        Me.CheckBox1.TabIndex = 2
-        Me.CheckBox1.Text = "Don't show again"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chkRecAsk.AutoSize = True
+        Me.chkRecAsk.Location = New System.Drawing.Point(0, 88)
+        Me.chkRecAsk.Name = "chkRecAsk"
+        Me.chkRecAsk.Size = New System.Drawing.Size(108, 17)
+        Me.chkRecAsk.TabIndex = 2
+        Me.chkRecAsk.Text = "Don't show again"
+        Me.chkRecAsk.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(8, 8)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(320, 32)
         Me.TextBox1.TabIndex = 3
-        Me.TextBox1.Text = "You can attempt to recruit civilians to aid your cause but you can risk losing ci" & _
+        Me.TextBox1.Text = "You can attempt to recruit civilians to aid your cause but you can risk losing ci" &
     "ty strength if you fail to recruit civilians"
         '
         'Recruit
@@ -74,7 +75,7 @@ Partial Class Recruit
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(338, 114)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.chkRecAsk)
         Me.Controls.Add(Me.btnRecCancel)
         Me.Controls.Add(Me.btnRec)
         Me.Name = "Recruit"
@@ -85,7 +86,7 @@ Partial Class Recruit
     End Sub
     Friend WithEvents btnRec As System.Windows.Forms.Button
     Friend WithEvents btnRecCancel As System.Windows.Forms.Button
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRecAsk As System.Windows.Forms.CheckBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

@@ -14,4 +14,9 @@
         Me.Top = frmIdle.Top + 150
         Me.Left = frmIdle.Left + frmIdle.Width - Me.Width - 175
     End Sub
+
+    Private Sub btnLeave_Click(sender As Object, e As EventArgs) Handles btnLeave.Click
+        Me.Close()
+        frmIdle.Close()
+    End Sub
 End Class

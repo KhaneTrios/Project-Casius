@@ -23,18 +23,34 @@
     End Sub
 
     Private Sub btnSet_Click(sender As System.Object, e As System.EventArgs) Handles btnSet.Click
-        Variables.Movement.townSize = txtSet.Text
+        'If txtSet.Text = 1 Then
+        'Variables.Movement.townSize = txtSet.Text
+        'lseIf Variables.Movement.townSize = 2 Then
+        ' Variables.Movement.townSize = txtSet.Text
+        'ElseIf Variables.Movement.townSize = 3 Then
+        'Variables.Movement.townSize = txtSet.Text
+        'Else : MessageBox.Show("You must set the city size to 1, 2, or 3.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        'End If
+
+        Variables.Movement.townSize = cmboSize.Text
     End Sub
 
-    Private Sub txtSet_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtSet.Click
-        txtSet.Clear()
+    Private Sub txtSet_TextChanged(sender As System.Object, e As System.EventArgs)
+
     End Sub
 
     Private Sub Label1_Click(sender As System.Object, e As System.EventArgs)
 
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles CheckBox1.CheckedChanged
-        frmIdle.btnDone.Enabled = True
+    Private Sub CheckBox1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkComplete.CheckedChanged
+        If chkComplete.Checked Then
+            frmIdle.btnDone.Enabled = True
+        End If
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles chkRecruit.CheckedChanged
+        'Variables.Auto.amount = 10000000000
+        'frmIdle.btnAuto9.Enabled = True
     End Sub
 End Class
