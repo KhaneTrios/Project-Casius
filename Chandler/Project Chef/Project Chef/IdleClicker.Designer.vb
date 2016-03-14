@@ -66,6 +66,10 @@ Partial Class frmIdle
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabRebuild = New System.Windows.Forms.TabPage()
+        Me.barAuto6Col = New System.Windows.Forms.ProgressBar()
+        Me.barAuto4Col = New System.Windows.Forms.ProgressBar()
+        Me.barAuto3Col = New System.Windows.Forms.ProgressBar()
+        Me.barAuto2Col = New System.Windows.Forms.ProgressBar()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -105,7 +109,10 @@ Partial Class frmIdle
         Me.lblCivilians = New System.Windows.Forms.Label()
         Me.lblCombatText = New System.Windows.Forms.Label()
         Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
-        Me.tmrBar = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrAuto2 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrAuto3 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrAuto4 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrAuto6 = New System.Windows.Forms.Timer(Me.components)
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -123,6 +130,7 @@ Partial Class frmIdle
         '
         'btnAuto1
         '
+        Me.btnAuto1.BackColor = System.Drawing.Color.Transparent
         Me.btnAuto1.Enabled = False
         Me.btnAuto1.Location = New System.Drawing.Point(464, 32)
         Me.btnAuto1.Name = "btnAuto1"
@@ -130,7 +138,7 @@ Partial Class frmIdle
         Me.btnAuto1.TabIndex = 1
         Me.btnAuto1.Tag = ""
         Me.btnAuto1.Text = "Gather building material"
-        Me.btnAuto1.UseVisualStyleBackColor = True
+        Me.btnAuto1.UseVisualStyleBackColor = False
         '
         'btnAuto2
         '
@@ -501,6 +509,11 @@ Partial Class frmIdle
         '
         'tabRebuild
         '
+        Me.tabRebuild.BackColor = System.Drawing.Color.Transparent
+        Me.tabRebuild.Controls.Add(Me.barAuto6Col)
+        Me.tabRebuild.Controls.Add(Me.barAuto4Col)
+        Me.tabRebuild.Controls.Add(Me.barAuto3Col)
+        Me.tabRebuild.Controls.Add(Me.barAuto2Col)
         Me.tabRebuild.Controls.Add(Me.Label6)
         Me.tabRebuild.Controls.Add(Me.Label5)
         Me.tabRebuild.Controls.Add(Me.Label4)
@@ -565,7 +578,34 @@ Partial Class frmIdle
         Me.tabRebuild.Size = New System.Drawing.Size(632, 454)
         Me.tabRebuild.TabIndex = 0
         Me.tabRebuild.Text = "Rebuild"
-        Me.tabRebuild.UseVisualStyleBackColor = True
+        '
+        'barAuto6Col
+        '
+        Me.barAuto6Col.Location = New System.Drawing.Point(464, 224)
+        Me.barAuto6Col.Name = "barAuto6Col"
+        Me.barAuto6Col.Size = New System.Drawing.Size(152, 8)
+        Me.barAuto6Col.TabIndex = 67
+        '
+        'barAuto4Col
+        '
+        Me.barAuto4Col.Location = New System.Drawing.Point(464, 144)
+        Me.barAuto4Col.Name = "barAuto4Col"
+        Me.barAuto4Col.Size = New System.Drawing.Size(152, 8)
+        Me.barAuto4Col.TabIndex = 65
+        '
+        'barAuto3Col
+        '
+        Me.barAuto3Col.Location = New System.Drawing.Point(464, 104)
+        Me.barAuto3Col.Name = "barAuto3Col"
+        Me.barAuto3Col.Size = New System.Drawing.Size(152, 8)
+        Me.barAuto3Col.TabIndex = 64
+        '
+        'barAuto2Col
+        '
+        Me.barAuto2Col.Location = New System.Drawing.Point(464, 64)
+        Me.barAuto2Col.Name = "barAuto2Col"
+        Me.barAuto2Col.Size = New System.Drawing.Size(152, 8)
+        Me.barAuto2Col.TabIndex = 63
         '
         'Label6
         '
@@ -942,9 +982,21 @@ Partial Class frmIdle
         '
         Me.tmrSucFail.Interval = 500
         '
-        'tmrBar
+        'tmrAuto2
         '
-        Me.tmrBar.Interval = 10000
+        Me.tmrAuto2.Interval = 5000
+        '
+        'tmrAuto3
+        '
+        Me.tmrAuto3.Interval = 10000
+        '
+        'tmrAuto4
+        '
+        Me.tmrAuto4.Interval = 15000
+        '
+        'tmrAuto6
+        '
+        Me.tmrAuto6.Interval = 20000
         '
         'frmIdle
         '
@@ -1034,7 +1086,6 @@ Partial Class frmIdle
     Friend WithEvents barAuto5 As System.Windows.Forms.ProgressBar
     Friend WithEvents barAuto6 As System.Windows.Forms.ProgressBar
     Friend WithEvents barAuto7 As System.Windows.Forms.ProgressBar
-    Friend WithEvents tmrBar As System.Windows.Forms.Timer
     Friend WithEvents lblChurch As System.Windows.Forms.Label
     Friend WithEvents lblChurchText As System.Windows.Forms.Label
     Friend WithEvents lblBanks As Label
@@ -1047,4 +1098,12 @@ Partial Class frmIdle
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents barAuto6Col As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto4Col As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto3Col As System.Windows.Forms.ProgressBar
+    Friend WithEvents barAuto2Col As System.Windows.Forms.ProgressBar
+    Friend WithEvents tmrAuto2 As System.Windows.Forms.Timer
+    Friend WithEvents tmrAuto3 As System.Windows.Forms.Timer
+    Friend WithEvents tmrAuto4 As System.Windows.Forms.Timer
+    Friend WithEvents tmrAuto6 As System.Windows.Forms.Timer
 End Class

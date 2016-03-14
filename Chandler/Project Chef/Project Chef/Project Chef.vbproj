@@ -123,6 +123,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IdleClicker.resx">
       <DependentUpon>IdleClicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

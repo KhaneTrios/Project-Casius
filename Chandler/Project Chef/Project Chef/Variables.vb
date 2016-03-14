@@ -2,7 +2,6 @@
 
     Structure Auto
         'Globally declaring variables to use anywhere
-        'Public Shared profile As String             ' Username.
         Public Shared amount As Long                ' Total amount of clicks (score), data type "Long" so the score can get very very large.
         Public Shared auto1 As Integer              ' Number of first auto clicker owned.
         Public Shared auto1Val As Integer           ' Value of first auto clicker.
@@ -23,13 +22,13 @@
         ' Variables for the auto clicker buttons to be enabled or not.
         Public Shared auto2Off As Boolean : Public Shared auto3Off As Boolean : Public Shared auto4Off As Boolean : Public Shared auto5Off As Boolean : Public Shared auto6Off As Boolean : Public Shared auto7Off As Boolean : Public Shared auto8Off As Boolean : Public Shared auto9Off As Boolean
         Public Shared auto1Bought As Boolean : Public Shared auto2Bought As Boolean : Public Shared auto3Bought As Boolean : Public Shared auto4Bought As Boolean : Public Shared auto5Bought As Boolean : Public Shared auto6Bought As Boolean : Public Shared auto7Bought As Boolean : Public Shared auto8Bought As Boolean
-        'Public Shared vararry(Variables.auto1, Variables.auto2, Variables.auto3, Variables.auto4, Variables.auto5, Variables.auto6, Variables.auto7, Variables.auto8)
         ' --- Rebuilding Stat Variables ---
         ' Variables for the total amounts of rebuilding stats
         Public Shared home As Integer : Public Shared guard As Integer : Public Shared civ As Integer : Public Shared church As Integer : Public Shared shop As Integer : Public Shared wall As Integer : Public Shared bank As Integer : Public Shared hall As Integer
         Public Shared gamble As Integer 'Used for Auto clicker 9
         Public Shared auto1Max As Integer : Public Shared auto2Max As Integer : Public Shared auto3Max As Integer : Public Shared auto4Max As Integer : Public Shared auto5Max As Integer : Public Shared auto6Max As Integer : Public Shared auto7Max As Integer : Public Shared auto8Max As Integer
         Public Shared recAsk As Boolean = False
+        Public Shared auto2Col As Boolean = False : Public Shared auto3Col As Boolean = False : Public Shared auto4Col As Boolean = False : Public Shared auto6Col As Boolean = False
     End Structure
     Structure Fight
 
