@@ -22,8 +22,10 @@ Public Class MovementFormNew
         Call MsgBox("Sample Text")
 
         'Randomise the x and y coordinate of the towns
-        town1x = CInt(Int((30 * Rnd()) + 1))
-        town1y = CInt(Int((30 * Rnd()) + 1))
+        'town1x = CInt(Int((7 * Rnd()) + 1)) TEMPORARILY COMMENTED FOR TESTING.
+        town1y = CInt(Int((6 * Rnd()) + 1))
+
+        town1x = 1 'Temp value for testing.
 
         'Randomise the x and y coordinates of the bandits
         banditx = CInt(Int((30 * Rnd()) + 1))
@@ -5583,9 +5585,242 @@ Public Class MovementFormNew
 
         End If
         ' YOU ARE SAFE NOW. VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+        ' JUST KIDDING, DONT TOUCH THIS STUFF EITHER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
         'Load in the town tiles generated when the form was loaded.
+        If town1x = 1 And town1y = 1 Then
+            x1y1.Image = town1.Image
+            x1y2.Image = clear.Image
+            x1y3.Image = clear.Image
+            x1y4.Image = clear.Image
+            x1y5.Image = clear.Image
+            x1y6.Image = clear.Image
+            x2y1.Image = clear.Image
+            x3y2.Image = clear.Image
+            x3y3.Image = clear.Image
+            x3y4.Image = clear.Image
+            x3y5.Image = clear.Image
+            x3y6.Image = clear.Image
+            x4y1.Image = clear.Image
+            x4y2.Image = clear.Image
+            x4y3.Image = clear.Image
+            x4y4.Image = clear.Image
+            x4y5.Image = clear.Image
+            x4y6.Image = clear.Image
+            x5y1.Image = clear.Image
+            x5y2.Image = clear.Image
+            x5y3.Image = clear.Image
+            x5y4.Image = clear.Image
+            x5y5.Image = clear.Image
+            x5y6.Image = clear.Image
+            x6y1.Image = clear.Image
+            x6y2.Image = clear.Image
+            x6y3.Image = clear.Image
+            x6y4.Image = clear.Image
+            x6y5.Image = clear.Image
+            x6y6.Image = clear.Image
+            x7y1.Image = clear.Image
+            x7y2.Image = clear.Image
+            x7y3.Image = clear.Image
+            x7y4.Image = clear.Image
+            x7y5.Image = clear.Image
+            x7y6.Image = clear.Image
+        End If
 
+        If town1x = 1 And town1y = 2 Then
+            x1y1.Image = clear.Image
+            x1y2.Image = town1.Image
+            x1y3.Image = clear.Image
+            x1y4.Image = clear.Image
+            x1y5.Image = clear.Image
+            x1y6.Image = clear.Image
+            x2y1.Image = clear.Image
+            x3y2.Image = clear.Image
+            x3y3.Image = clear.Image
+            x3y4.Image = clear.Image
+            x3y5.Image = clear.Image
+            x3y6.Image = clear.Image
+            x4y1.Image = clear.Image
+            x4y2.Image = clear.Image
+            x4y3.Image = clear.Image
+            x4y4.Image = clear.Image
+            x4y5.Image = clear.Image
+            x4y6.Image = clear.Image
+            x5y1.Image = clear.Image
+            x5y2.Image = clear.Image
+            x5y3.Image = clear.Image
+            x5y4.Image = clear.Image
+            x5y5.Image = clear.Image
+            x5y6.Image = clear.Image
+            x6y1.Image = clear.Image
+            x6y2.Image = clear.Image
+            x6y3.Image = clear.Image
+            x6y4.Image = clear.Image
+            x6y5.Image = clear.Image
+            x6y6.Image = clear.Image
+            x7y1.Image = clear.Image
+            x7y2.Image = clear.Image
+            x7y3.Image = clear.Image
+            x7y4.Image = clear.Image
+            x7y5.Image = clear.Image
+            x7y6.Image = clear.Image
+        End If
+
+        If town1x = 1 And town1y = 3 Then
+            x1y1.Image = clear.Image
+            x1y2.Image = clear.Image
+            x1y3.Image = town1.Image
+            x1y4.Image = clear.Image
+            x1y5.Image = clear.Image
+            x1y6.Image = clear.Image
+            x2y1.Image = clear.Image
+            x3y2.Image = clear.Image
+            x3y3.Image = clear.Image
+            x3y4.Image = clear.Image
+            x3y5.Image = clear.Image
+            x3y6.Image = clear.Image
+            x4y1.Image = clear.Image
+            x4y2.Image = clear.Image
+            x4y3.Image = clear.Image
+            x4y4.Image = clear.Image
+            x4y5.Image = clear.Image
+            x4y6.Image = clear.Image
+            x5y1.Image = clear.Image
+            x5y2.Image = clear.Image
+            x5y3.Image = clear.Image
+            x5y4.Image = clear.Image
+            x5y5.Image = clear.Image
+            x5y6.Image = clear.Image
+            x6y1.Image = clear.Image
+            x6y2.Image = clear.Image
+            x6y3.Image = clear.Image
+            x6y4.Image = clear.Image
+            x6y5.Image = clear.Image
+            x6y6.Image = clear.Image
+            x7y1.Image = clear.Image
+            x7y2.Image = clear.Image
+            x7y3.Image = clear.Image
+            x7y4.Image = clear.Image
+            x7y5.Image = clear.Image
+            x7y6.Image = clear.Image
+        End If
+
+        If town1x = 1 And town1y = 4 Then
+            x1y1.Image = clear.Image
+            x1y2.Image = clear.Image
+            x1y3.Image = clear.Image
+            x1y4.Image = town1.Image
+            x1y5.Image = clear.Image
+            x1y6.Image = clear.Image
+            x2y1.Image = clear.Image
+            x3y2.Image = clear.Image
+            x3y3.Image = clear.Image
+            x3y4.Image = clear.Image
+            x3y5.Image = clear.Image
+            x3y6.Image = clear.Image
+            x4y1.Image = clear.Image
+            x4y2.Image = clear.Image
+            x4y3.Image = clear.Image
+            x4y4.Image = clear.Image
+            x4y5.Image = clear.Image
+            x4y6.Image = clear.Image
+            x5y1.Image = clear.Image
+            x5y2.Image = clear.Image
+            x5y3.Image = clear.Image
+            x5y4.Image = clear.Image
+            x5y5.Image = clear.Image
+            x5y6.Image = clear.Image
+            x6y1.Image = clear.Image
+            x6y2.Image = clear.Image
+            x6y3.Image = clear.Image
+            x6y4.Image = clear.Image
+            x6y5.Image = clear.Image
+            x6y6.Image = clear.Image
+            x7y1.Image = clear.Image
+            x7y2.Image = clear.Image
+            x7y3.Image = clear.Image
+            x7y4.Image = clear.Image
+            x7y5.Image = clear.Image
+            x7y6.Image = clear.Image
+        End If
+
+        If town1x = 1 And town1y = 5 Then
+            x1y1.Image = clear.Image
+            x1y2.Image = clear.Image
+            x1y3.Image = clear.Image
+            x1y4.Image = clear.Image
+            x1y5.Image = town1.Image
+            x1y6.Image = clear.Image
+            x2y1.Image = clear.Image
+            x3y2.Image = clear.Image
+            x3y3.Image = clear.Image
+            x3y4.Image = clear.Image
+            x3y5.Image = clear.Image
+            x3y6.Image = clear.Image
+            x4y1.Image = clear.Image
+            x4y2.Image = clear.Image
+            x4y3.Image = clear.Image
+            x4y4.Image = clear.Image
+            x4y5.Image = clear.Image
+            x4y6.Image = clear.Image
+            x5y1.Image = clear.Image
+            x5y2.Image = clear.Image
+            x5y3.Image = clear.Image
+            x5y4.Image = clear.Image
+            x5y5.Image = clear.Image
+            x5y6.Image = clear.Image
+            x6y1.Image = clear.Image
+            x6y2.Image = clear.Image
+            x6y3.Image = clear.Image
+            x6y4.Image = clear.Image
+            x6y5.Image = clear.Image
+            x6y6.Image = clear.Image
+            x7y1.Image = clear.Image
+            x7y2.Image = clear.Image
+            x7y3.Image = clear.Image
+            x7y4.Image = clear.Image
+            x7y5.Image = clear.Image
+            x7y6.Image = clear.Image
+        End If
+
+        If town1x = 1 And town1y = 6 Then
+            x1y1.Image = clear.Image
+            x1y2.Image = clear.Image
+            x1y3.Image = clear.Image
+            x1y4.Image = clear.Image
+            x1y5.Image = clear.Image
+            x1y6.Image = town1.Image
+            x2y1.Image = clear.Image
+            x3y2.Image = clear.Image
+            x3y3.Image = clear.Image
+            x3y4.Image = clear.Image
+            x3y5.Image = clear.Image
+            x3y6.Image = clear.Image
+            x4y1.Image = clear.Image
+            x4y2.Image = clear.Image
+            x4y3.Image = clear.Image
+            x4y4.Image = clear.Image
+            x4y5.Image = clear.Image
+            x4y6.Image = clear.Image
+            x5y1.Image = clear.Image
+            x5y2.Image = clear.Image
+            x5y3.Image = clear.Image
+            x5y4.Image = clear.Image
+            x5y5.Image = clear.Image
+            x5y6.Image = clear.Image
+            x6y1.Image = clear.Image
+            x6y2.Image = clear.Image
+            x6y3.Image = clear.Image
+            x6y4.Image = clear.Image
+            x6y5.Image = clear.Image
+            x6y6.Image = clear.Image
+            x7y1.Image = clear.Image
+            x7y2.Image = clear.Image
+            x7y3.Image = clear.Image
+            x7y4.Image = clear.Image
+            x7y5.Image = clear.Image
+            x7y6.Image = clear.Image
+        End If
 
     End Sub
 

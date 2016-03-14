@@ -98,6 +98,7 @@ Partial Class MovementFormNew
         Me.x8y1 = New System.Windows.Forms.PictureBox()
         Me.x8y0 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.town1 = New System.Windows.Forms.PictureBox()
         CType(Me.avatar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.clear, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x0y0, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -172,6 +173,7 @@ Partial Class MovementFormNew
         CType(Me.x8y2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x8y1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x8y0, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.town1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'avatar
@@ -779,11 +781,21 @@ Partial Class MovementFormNew
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'town1
+        '
+        Me.town1.Image = CType(resources.GetObject("town1.Image"), System.Drawing.Image)
+        Me.town1.Location = New System.Drawing.Point(7, 86)
+        Me.town1.Name = "town1"
+        Me.town1.Size = New System.Drawing.Size(22, 31)
+        Me.town1.TabIndex = 75
+        Me.town1.TabStop = False
+        '
         'MovementFormNew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(333, 321)
+        Me.Controls.Add(Me.town1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.x8y7)
         Me.Controls.Add(Me.x8y6)
@@ -935,6 +947,7 @@ Partial Class MovementFormNew
         CType(Me.x8y2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x8y1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x8y0, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.town1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1013,4 +1026,5 @@ Partial Class MovementFormNew
     Friend WithEvents x8y1 As System.Windows.Forms.PictureBox
     Friend WithEvents x8y0 As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents town1 As System.Windows.Forms.PictureBox
 End Class

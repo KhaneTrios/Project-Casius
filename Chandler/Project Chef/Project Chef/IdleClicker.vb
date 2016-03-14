@@ -4,7 +4,6 @@
         Variables.Auto.civ += 1
     End Sub
     Private Sub frmMain_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
         lblCity1.Text = Variables.Movement.townName         'Looking for the name of the town and setting the Rebuild tab town name label to it
         lblCity2.Text = Variables.Movement.townSize         'Looking for the size of the town to determine the variable values needed for the rest of the autoclicker.
         lblSize.Text = Variables.Movement.townSize
@@ -47,6 +46,7 @@
         barAuto6.Maximum = Variables.Auto.auto6Max
         barAuto7.Maximum = Variables.Auto.auto7Max
         barAuto8.Maximum = Variables.Auto.auto8Max
+        barAuto2Col.Maximum = tmrAuto2.Interval
 
 
 
@@ -326,10 +326,6 @@
         If (tmrAmount.Interval = 1000 And Variables.Auto.auto8 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
             Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto8Val * Variables.Auto.auto8))     'The total final score amount equals the current final amount added to the product of the value of the auto clicker and the number owned.
         End If
-
-        'If (tmrAmount.Interval = 1000 And Variables.Auto.auto9 > 0) Then     ' Checking for the timer reaching 1000 (1 second) milliseconds and if you own at least one auto clicker.
-        'Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto9Val * Variables.Auto.auto9))     'The total final score amount equals the current final amount added to the product of the value of the auto clicker and the number owned.
-        ' End If
     End Sub
     Private Sub tmrUpdate_Tick(sender As System.Object, e As System.EventArgs) Handles tmrUpdate.Tick
         ' --- Constant update function using a timer ---
@@ -388,6 +384,8 @@
                 btnAuto2.Enabled = False            'The button is disabled and can't be clicked on
                 Variables.Auto.auto2 = 0            'The amount of the item purchased is reset to zero and locked there which in turn stops profit coming in from that item
                 Variables.Auto.auto2Off = True      'Switching the variable that turns the clicker off, to true. This is because the update function will not allow the button to be disabled without the use of this bool variable to catch another condition being met.
+                tmrAuto2.Enabled = True
+                barAuto2.Increment(1)
             End If                                  'End of if statement
             If Variables.Auto.wall >= Variables.Auto.auto3Max Then
                 barAuto3.Enabled = False
@@ -437,6 +435,8 @@
             End If
 
 
+            
+
             ' --- Bars ---
             ' The bar progression is linked to the variable value of how many of the item has been "built"
             barAuto2.Value = Variables.Auto.home
@@ -446,6 +446,7 @@
             barAuto6.Value = Variables.Auto.shop
             barAuto7.Value = Variables.Auto.auto7
             barAuto8.Value = Variables.Auto.auto8
+            'barAuto2Col.Value = tmrAuto2.Interval
 
             ' --- Button-enabling check ---
             ' Constant check for the conditions to be met to enable the next auto clicker button in order
@@ -524,15 +525,13 @@
 
     Private Sub tmrSucFail_Tick(sender As System.Object, e As System.EventArgs) Handles tmrSucFail.Tick
         If Variables.Auto.gamble = 5 Then
-            lblSucFail.Text = "You win!"
+            lblSucFail.Text = "Successful Recruitment!"
         ElseIf Variables.Auto.gamble = 4 Then
-            lblSucFail.Text = "You win!"
-        Else : lblSucFail.Text = "You lose!"
+            lblSucFail.Text = "Successful Recruitment!"
+        Else : lblSucFail.Text = "Failed Recruitment."
         End If
 
         If tmrSucFail.Interval = 500 Then
-            'tmrSucFail.Interval = 0
-            'lblSucFail.ResetText()
             tmrSucFail.Enabled = False
         End If
     End Sub
@@ -544,18 +543,22 @@
     Private Sub btnDone_Click(sender As System.Object, e As System.EventArgs) Handles btnDone.Click
         frmChoice.Show()
     End Sub
+    Private Sub txtCheat_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtCheat.TextChanged
 
-    Private Sub cmboxSize_SelectedIndexChanged(sender As System.Object, e As System.EventArgs)
-        'If cmboxSize.SelectedItem = 1 Then
-        'Variables.Movement.townSize = 1
-        'ElseIf cmboxSize.SelectedItem = 2 Then
-        'Variables.Movement.townSize = 2
-        'ElseIf cmboxSize.SelectedItem = 3 Then
-        'Variables.Movement.townSize = 3
-        ' End If
     End Sub
 
-    Private Sub txtCheat_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtCheat.TextChanged
+    Private Sub tmrAuto2_Tick(sender As System.Object, e As System.EventArgs) Handles tmrAuto2.Tick
+        barAuto2.Increment(1)
+
+        If tmrAuto2.Interval = 5000 Then
+            btnAuto2.Enabled = True
+            btnAuto2.Text = "Collect"
+            Variables.Auto.auto2Col = True
+            Variables.Auto.auto2Off = False
+        End If
+    End Sub
+
+    Private Sub tmrBar_Tick(sender As System.Object, e As System.EventArgs)
 
     End Sub
 End Class
