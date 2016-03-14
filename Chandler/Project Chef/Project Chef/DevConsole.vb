@@ -23,15 +23,6 @@
     End Sub
 
     Private Sub btnSet_Click(sender As System.Object, e As System.EventArgs) Handles btnSet.Click
-        'If txtSet.Text = 1 Then
-        'Variables.Movement.townSize = txtSet.Text
-        'lseIf Variables.Movement.townSize = 2 Then
-        ' Variables.Movement.townSize = txtSet.Text
-        'ElseIf Variables.Movement.townSize = 3 Then
-        'Variables.Movement.townSize = txtSet.Text
-        'Else : MessageBox.Show("You must set the city size to 1, 2, or 3.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        'End If
-
         Variables.Movement.townSize = cmboSize.Text
     End Sub
 
