@@ -8,8 +8,8 @@ Public Class MovementFormNew
     Dim bx As Integer = 0 'last x coordinate
     Dim by As Integer = 0 'last y coordinate
     Dim encounterChance As Integer = 0 'chance of an encounter after moving tiles
-    Dim town1x As Integer = 0 'Town 1 x coordinate
-    Dim town1y As Integer = 0 'Town 1 y coordinate
+    Dim town1x As Integer 'Town 1 x coordinate
+    Dim town1y As Integer 'Town 1 y coordinate
     Dim banditx As Integer = 0 'Bandit x coordinate
     Dim bandity As Integer = 0 'Bandint y coordinate
 
@@ -25,6 +25,7 @@ Public Class MovementFormNew
         'town1x = CInt(Int((7 * Rnd()) + 1)) TEMPORARILY COMMENTED FOR TESTING.
         town1y = CInt(Int((6 * Rnd()) + 1))
 
+        'town1y = 1 'Temp value for testing.
         town1x = 1 'Temp value for testing.
 
         'Randomise the x and y coordinates of the bandits
@@ -74,6 +75,11 @@ Public Class MovementFormNew
                 e.Handled = True
 
         End Select 'End select/switch
+
+        'If the player has entered town1
+        If x = town1x And y = town1y Then
+            Call MsgBox("You have entered town1")
+        End If
 
         'Calculate a value to determine if the player will encounter something and what they encounter
         encounterChance = CInt(Int((30 * Rnd()) + 1))
