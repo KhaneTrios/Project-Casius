@@ -35,11 +35,11 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.WarriorBox = New System.Windows.Forms.CheckBox()
+        Me.UnBox = New System.Windows.Forms.CheckBox()
+        Me.RogueBox = New System.Windows.Forms.CheckBox()
+        Me.MageBox = New System.Windows.Forms.CheckBox()
+        Me.TactBox = New System.Windows.Forms.CheckBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -48,7 +48,13 @@ Partial Class Form1
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Updater = New System.Windows.Forms.Timer(Me.components)
-        Me.TheThing = New System.Windows.Forms.Timer(Me.components)
+        Me.ResetTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -101,7 +107,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(234, 166)
+        Me.Label4.Location = New System.Drawing.Point(139, 167)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(14, 15)
         Me.Label4.TabIndex = 12
@@ -110,7 +116,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(234, 181)
+        Me.Label5.Location = New System.Drawing.Point(139, 181)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(14, 15)
         Me.Label5.TabIndex = 13
@@ -119,7 +125,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(234, 196)
+        Me.Label6.Location = New System.Drawing.Point(139, 196)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(14, 15)
         Me.Label6.TabIndex = 14
@@ -128,7 +134,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(196, 166)
+        Me.Label7.Location = New System.Drawing.Point(90, 166)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(22, 15)
         Me.Label7.TabIndex = 15
@@ -138,7 +144,7 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(194, 181)
+        Me.Label8.Location = New System.Drawing.Point(90, 181)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(24, 15)
         Me.Label8.TabIndex = 16
@@ -147,73 +153,73 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(194, 196)
+        Me.Label9.Location = New System.Drawing.Point(90, 196)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(28, 15)
         Me.Label9.TabIndex = 17
         Me.Label9.Text = "Con"
         '
-        'CheckBox1
+        'WarriorBox
         '
-        Me.CheckBox1.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(74, 86)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(62, 25)
-        Me.CheckBox1.TabIndex = 22
-        Me.CheckBox1.Text = "Warrior"
-        Me.ToolTip1.SetToolTip(Me.CheckBox1, """You have the mark of a warrior, and youre not afraid to show off your skill in f" & _
+        Me.WarriorBox.Appearance = System.Windows.Forms.Appearance.Button
+        Me.WarriorBox.AutoSize = True
+        Me.WarriorBox.Location = New System.Drawing.Point(74, 86)
+        Me.WarriorBox.Name = "WarriorBox"
+        Me.WarriorBox.Size = New System.Drawing.Size(62, 25)
+        Me.WarriorBox.TabIndex = 22
+        Me.WarriorBox.Text = "Warrior"
+        Me.ToolTip1.SetToolTip(Me.WarriorBox, """You have the mark of a warrior, and youre not afraid to show off your skill in f" & _
         "ighting. The majority of your skill is put to the test with weapons and attack d" & _
         "amage.""" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.WarriorBox.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'UnBox
         '
-        Me.CheckBox2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(323, 86)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(58, 25)
-        Me.CheckBox2.TabIndex = 23
-        Me.CheckBox2.Text = "Unborn"
-        Me.ToolTip1.SetToolTip(Me.CheckBox2, resources.GetString("CheckBox2.ToolTip"))
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.UnBox.Appearance = System.Windows.Forms.Appearance.Button
+        Me.UnBox.AutoSize = True
+        Me.UnBox.Location = New System.Drawing.Point(323, 86)
+        Me.UnBox.Name = "UnBox"
+        Me.UnBox.Size = New System.Drawing.Size(58, 25)
+        Me.UnBox.TabIndex = 23
+        Me.UnBox.Text = "Unborn"
+        Me.ToolTip1.SetToolTip(Me.UnBox, resources.GetString("UnBox.ToolTip"))
+        Me.UnBox.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'RogueBox
         '
-        Me.CheckBox3.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(267, 86)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(50, 25)
-        Me.CheckBox3.TabIndex = 24
-        Me.CheckBox3.Text = "Rogue"
-        Me.ToolTip1.SetToolTip(Me.CheckBox3, resources.GetString("CheckBox3.ToolTip"))
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.RogueBox.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RogueBox.AutoSize = True
+        Me.RogueBox.Location = New System.Drawing.Point(267, 86)
+        Me.RogueBox.Name = "RogueBox"
+        Me.RogueBox.Size = New System.Drawing.Size(50, 25)
+        Me.RogueBox.TabIndex = 24
+        Me.RogueBox.Text = "Rogue"
+        Me.ToolTip1.SetToolTip(Me.RogueBox, resources.GetString("RogueBox.ToolTip"))
+        Me.RogueBox.UseVisualStyleBackColor = True
         '
-        'CheckBox4
+        'MageBox
         '
-        Me.CheckBox4.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(214, 86)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(47, 25)
-        Me.CheckBox4.TabIndex = 25
-        Me.CheckBox4.Text = "Mage"
-        Me.ToolTip1.SetToolTip(Me.CheckBox4, resources.GetString("CheckBox4.ToolTip"))
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.MageBox.Appearance = System.Windows.Forms.Appearance.Button
+        Me.MageBox.AutoSize = True
+        Me.MageBox.Location = New System.Drawing.Point(214, 86)
+        Me.MageBox.Name = "MageBox"
+        Me.MageBox.Size = New System.Drawing.Size(47, 25)
+        Me.MageBox.TabIndex = 25
+        Me.MageBox.Text = "Mage"
+        Me.ToolTip1.SetToolTip(Me.MageBox, resources.GetString("MageBox.ToolTip"))
+        Me.MageBox.UseVisualStyleBackColor = True
         '
-        'CheckBox5
+        'TactBox
         '
-        Me.CheckBox5.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(142, 86)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(66, 25)
-        Me.CheckBox5.TabIndex = 26
-        Me.CheckBox5.Text = "Tactician"
-        Me.ToolTip1.SetToolTip(Me.CheckBox5, resources.GetString("CheckBox5.ToolTip"))
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.TactBox.Appearance = System.Windows.Forms.Appearance.Button
+        Me.TactBox.AutoSize = True
+        Me.TactBox.Location = New System.Drawing.Point(142, 86)
+        Me.TactBox.Name = "TactBox"
+        Me.TactBox.Size = New System.Drawing.Size(66, 25)
+        Me.TactBox.TabIndex = 26
+        Me.TactBox.Text = "Tactician"
+        Me.ToolTip1.SetToolTip(Me.TactBox, resources.GetString("TactBox.ToolTip"))
+        Me.TactBox.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -227,7 +233,7 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(194, 151)
+        Me.Label10.Location = New System.Drawing.Point(90, 151)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(67, 15)
         Me.Label10.TabIndex = 28
@@ -236,7 +242,7 @@ Partial Class Form1
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(194, 211)
+        Me.Label11.Location = New System.Drawing.Point(90, 211)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(24, 15)
         Me.Label11.TabIndex = 29
@@ -245,7 +251,7 @@ Partial Class Form1
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(234, 211)
+        Me.Label12.Location = New System.Drawing.Point(139, 211)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(14, 15)
         Me.Label12.TabIndex = 30
@@ -254,7 +260,7 @@ Partial Class Form1
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(194, 226)
+        Me.Label13.Location = New System.Drawing.Point(90, 226)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(22, 15)
         Me.Label13.TabIndex = 31
@@ -263,7 +269,7 @@ Partial Class Form1
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(234, 226)
+        Me.Label14.Location = New System.Drawing.Point(139, 226)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(14, 15)
         Me.Label14.TabIndex = 32
@@ -274,26 +280,86 @@ Partial Class Form1
         Me.Updater.Enabled = True
         Me.Updater.Interval = 1
         '
-        'TheThing
+        'ResetTimer
         '
-        Me.TheThing.Interval = 2
+        Me.ResetTimer.Interval = 2
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(211, 151)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(41, 15)
+        Me.Label15.TabIndex = 33
+        Me.Label15.Text = "To Hit:"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(197, 181)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(21, 15)
+        Me.Label16.TabIndex = 34
+        Me.Label16.Text = "99"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(224, 181)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(10, 15)
+        Me.Label17.TabIndex = 35
+        Me.Label17.Text = ":"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(240, 181)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(21, 15)
+        Me.Label18.TabIndex = 36
+        Me.Label18.Text = "99"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(301, 151)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(80, 15)
+        Me.Label19.TabIndex = 37
+        Me.Label19.Text = "Base Damage"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(320, 181)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(21, 15)
+        Me.Label20.TabIndex = 38
+        Me.Label20.Text = "99"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(465, 387)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.TactBox)
+        Me.Controls.Add(Me.MageBox)
+        Me.Controls.Add(Me.RogueBox)
+        Me.Controls.Add(Me.UnBox)
+        Me.Controls.Add(Me.WarriorBox)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -323,11 +389,11 @@ Partial Class Form1
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
+    Friend WithEvents WarriorBox As System.Windows.Forms.CheckBox
+    Friend WithEvents UnBox As System.Windows.Forms.CheckBox
+    Friend WithEvents RogueBox As System.Windows.Forms.CheckBox
+    Friend WithEvents MageBox As System.Windows.Forms.CheckBox
+    Friend WithEvents TactBox As System.Windows.Forms.CheckBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
@@ -336,6 +402,12 @@ Partial Class Form1
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Updater As System.Windows.Forms.Timer
-    Friend WithEvents TheThing As System.Windows.Forms.Timer
+    Friend WithEvents ResetTimer As System.Windows.Forms.Timer
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
 
 End Class

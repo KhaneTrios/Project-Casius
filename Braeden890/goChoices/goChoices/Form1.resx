@@ -123,25 +123,25 @@
   <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="CheckBox2.ToolTip" xml:space="preserve">
+  <data name="UnBox.ToolTip" xml:space="preserve">
     <value>"The mark of the unborn is more of a burdern than anything. With the mark of the unborn you have no real skill at anything and have no attributes. You are the least fit to go out on an adventure, and you will recieve no mercy."</value>
   </data>
-  <data name="CheckBox3.ToolTip" xml:space="preserve">
+  <data name="RogueBox.ToolTip" xml:space="preserve">
     <value>"You are a thief, scoundrel, smuggler... a rogue. No matter the name, the game is always the same. Get in quitely, attack, run and hide, get in again. The majority of your skills will be used to be stealthy and make quick clean kills."
 </value>
   </data>
-  <data name="CheckBox4.ToolTip" xml:space="preserve">
+  <data name="MageBox.ToolTip" xml:space="preserve">
     <value>"Legends say that mages could use the elements to their advantage. Fire, Ice, and Earth spells flow through your hands and devistate your enemies. There has been rumor for centuries that the mages have a dark secret among them, an ancient evil. The majority of your skills will be directed towards using and casting spells to damage your opponent."
 </value>
   </data>
-  <data name="CheckBox5.ToolTip" xml:space="preserve">
+  <data name="TactBox.ToolTip" xml:space="preserve">
     <value>"You are labeled as someone who likes to plan out the entire attack before making a move, you are a tactician. And in being so, you have a great skill with many traps and items that will wear your opponent down."
 </value>
   </data>
   <metadata name="Updater.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>112, 17</value>
   </metadata>
-  <metadata name="TheThing.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="ResetTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>203, 17</value>
   </metadata>
 </root>

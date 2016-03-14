@@ -1,0 +1,6 @@
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Release\goChoices.begin.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Release\goChoices.Fight.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Release\goChoices.Form1.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Release\goChoices.Resources.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Release\goChoices.Start.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Release\goChoices.vbproj.GenerateResource.Cache
