@@ -155,4 +155,8 @@
     Private Sub Button10_Click(sender As System.Object, e As System.EventArgs) Handles Button10.Click
         MessageBox.Show("The tactician gathers and uses the data from the current battle to give him/her self a damage and agility boost.", "Over-Plan")
     End Sub
+
+    Private Sub Button16_Click(sender As System.Object, e As System.EventArgs) Handles Button16.Click
+
+    End Sub
 End Class

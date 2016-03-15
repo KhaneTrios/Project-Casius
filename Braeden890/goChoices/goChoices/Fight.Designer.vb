@@ -149,7 +149,7 @@ Partial Class Fight
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(276, 272)
+        Me.Button5.Location = New System.Drawing.Point(288, 315)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(130, 141)
         Me.Button5.TabIndex = 11
