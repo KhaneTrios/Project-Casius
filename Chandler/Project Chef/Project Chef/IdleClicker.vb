@@ -76,7 +76,6 @@
         Variables.Auto.auto3 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto3Val = Val(25)            'Setting the value-gain the third auto clicker has.
         Variables.Auto.auto3Item = 1                 'Setting the experience value the third auto clicker gains
-        Variables.Auto.auto3Skill = "Combat"         'Setting the skill category
         Variables.Auto.auto3Cost = Val(1000)         'Setting the cost of the item to purchase.
         Variables.Auto.auto3Off = False
         Variables.Auto.auto3Bought = False
@@ -86,7 +85,6 @@
         Variables.Auto.auto4 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto4Val = Val(50)            'Setting the value-gain the third auto clicker has.
         Variables.Auto.auto4Item = 1                 'Setting the experience value the third auto clicker gains
-        Variables.Auto.auto4Skill = "Crafting"       'Setting the skill category
         Variables.Auto.auto4Cost = Val(6000)         'Setting the cost of the item to purchase.
         Variables.Auto.auto4Off = False
         Variables.Auto.auto4Bought = False
@@ -96,7 +94,6 @@
         Variables.Auto.auto5 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto5Val = Val(100)           'Setting the value-gain the third auto clicker has.
         Variables.Auto.auto5Item = 1                 'Setting the experience value the third auto clicker gains
-        Variables.Auto.auto5Skill = "Magic"          'Setting the skill category
         Variables.Auto.auto5Cost = Val(10000)        'Setting the cost of the item to purchase.
         Variables.Auto.auto5Off = False
         Variables.Auto.auto5Bought = False
@@ -106,7 +103,6 @@
         Variables.Auto.auto6 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto6Val = Val(200)           'Setting the value-gain the third auto clicker has.
         Variables.Auto.auto6Item = 1                 'Setting the experience value the third auto clicker gains
-        Variables.Auto.auto6Skill = "Slayer"         'Setting the skill category
         Variables.Auto.auto6Cost = Val(17000)        'Setting the cost of the item to purchase.
         Variables.Auto.auto6Off = False
         Variables.Auto.auto6Bought = False
@@ -116,7 +112,6 @@
         Variables.Auto.auto7 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto7Val = Val(500)           'Setting the value-gain the third auto clicker has.
         Variables.Auto.auto7Item = 1                 'Setting the experience value the third auto clicker gains
-        Variables.Auto.auto7Skill = "Magic"          'Setting the skill category
         Variables.Auto.auto7Cost = Val(30000)        'Setting the cost of the item to purchase.
         Variables.Auto.auto7Off = False
         Variables.Auto.auto7Bought = False
@@ -126,7 +121,6 @@
         Variables.Auto.auto8 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto8Val = Val(1000)          'Setting the value-gain the third auto clicker has.
         Variables.Auto.auto8Item = 1                 'Setting the experience value the third auto clicker gains
-        Variables.Auto.auto8Skill = "Combat"         'Setting the skill category
         Variables.Auto.auto8Cost = Val(50000)        'Setting the cost of the item to purchase.
         Variables.Auto.auto8Off = False
         Variables.Auto.auto8Bought = False
@@ -136,7 +130,6 @@
         Variables.Auto.auto9 = Val(0)                'Setting the number of the third auto-clickers to 0 on load
         Variables.Auto.auto9Val = Val(100000000)     'Setting the value-gain the third auto clicker has.
         Variables.Auto.auto9Item = 1000000           'Setting the experience value the third auto clicker gains
-        Variables.Auto.auto9Skill = "Gambling"       'Setting the skill category
         Variables.Auto.auto9Cost = Val(100000000)    'Setting the cost of the item to purchase.
         Variables.Auto.auto9Off = False
     End Sub
@@ -148,7 +141,7 @@
             Variables.Auto.auto1Cost = Val((50) + (Variables.Auto.auto1Cost))    'The cost of the autoclicker scales up by multiplying the number owned by the cost.
             Variables.Auto.auto1Val = Val((Variables.Auto.auto1Val) + (5))    'Scaling the gain value by adding
             Variables.Auto.auto1Bought = True                                  'The user has bought at least one of this item now.
-        Else : MessageBox.Show("You do  not have enough GP.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
+        Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
         End If
     End Sub
     Private Sub btn1_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto1.MouseHover
@@ -164,6 +157,10 @@
             Variables.Auto.auto2Val = Val((Variables.Auto.auto2Val) + (10))    'Scaling the gain value by adding
             Variables.Auto.auto2Bought = True
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+
+        If Variables.Auto.auto2Col = True Then
+            Variables.Auto.amount += Variables.Auto.auto2Val
         End If
     End Sub
     Private Sub btn2_Hover(sender As System.Object, e As System.EventArgs) Handles btnAuto2.MouseHover
@@ -365,6 +362,8 @@
             lblAuto9Val.Text = Variables.Auto.auto9Val
             lblGamble.Text = Variables.Auto.gamble
 
+            
+
             ' --- Skills text display ---
             ' Constant updating all skill labels
             lblCivilians.Text = Variables.Auto.civ
@@ -376,16 +375,21 @@
             lblHall.Text = Variables.Auto.auto8
             lblGuards.Text = Variables.Auto.guard
 
+          
+
             ' --- Bars Stopping when maxed, disabling buttons and variables ---
-            If Variables.Auto.home >= Variables.Auto.auto2Max Then     'If the variable for the item amount built, is greater than or equal to the maximum amount you can have then
-                barAuto2.Enabled = False            'The progress bar is disabled
-                lblHomes.Enabled = False            'The label for the variable of the item owned is disabled
-                Variables.Auto.home = Variables.Auto.auto2Max       'Catch to make sure the variable doesn't go over the max amount, if it does, it gets reset to exactly the amount of the max
-                btnAuto2.Enabled = False            'The button is disabled and can't be clicked on
-                Variables.Auto.auto2 = 0            'The amount of the item purchased is reset to zero and locked there which in turn stops profit coming in from that item
-                Variables.Auto.auto2Off = True      'Switching the variable that turns the clicker off, to true. This is because the update function will not allow the button to be disabled without the use of this bool variable to catch another condition being met.
+            If Variables.Auto.home >= Variables.Auto.auto2Max Then      'If the variable for the item amount built, is greater than or equal to the maximum amount you can have then
+                barAuto2.Enabled = False                                'The progress bar is disabled
+                lblHomes.Enabled = False                                'The label for the variable of the item owned is disabled
+                Variables.Auto.home = Variables.Auto.auto2Max           'Catch to make sure the variable doesn't go over the max amount, if it does, it gets reset to exactly the amount of the max
+                'btnAuto2.Enabled = False                               'The button is disabled and can't be clicked on
+                Variables.Auto.auto2 = 1                                'The amount of the item purchased is reset to zero and locked there which in turn stops profit coming in from that item
+                'Variables.Auto.auto2Off = True                         'Switching the variable that turns the clicker off, to true. This is because the update function will not allow the button to be disabled without the use of this bool variable to catch another condition being met.
                 tmrAuto2.Enabled = True
-                barAuto2.Increment(1)
+                barAuto2Col.Increment(18)
+                System.Threading.Thread.VolatileRead(500)
+                Variables.Auto.auto2Col = True
+
             End If                                  'End of if statement
             If Variables.Auto.wall >= Variables.Auto.auto3Max Then
                 barAuto3.Enabled = False
@@ -434,8 +438,8 @@
                 Variables.Auto.auto8Off = True
             End If
 
-
-            
+           
+   
 
             ' --- Bars ---
             ' The bar progression is linked to the variable value of how many of the item has been "built"
@@ -446,7 +450,8 @@
             barAuto6.Value = Variables.Auto.shop
             barAuto7.Value = Variables.Auto.auto7
             barAuto8.Value = Variables.Auto.auto8
-            'barAuto2Col.Value = tmrAuto2.Interval
+
+          
 
             ' --- Button-enabling check ---
             ' Constant check for the conditions to be met to enable the next auto clicker button in order
@@ -505,9 +510,8 @@
         ' Allows to quickly gain any desired amount of score to check parts of the game
         Variables.Auto.amount = Val(Variables.Auto.amount) + (txtCheat.Text)          ' Adds the number you entered in the textbox to the total score variable
     End Sub
-
     'Public Event KeyDown As KeyEventHandler
-    Private Sub btnClick_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles btnClick.KeyDown
+    Public Sub frmIdle_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
 
         If e.KeyCode = Keys.F1 Then
             txtCheat.Select()
@@ -548,14 +552,7 @@
     End Sub
 
     Private Sub tmrAuto2_Tick(sender As System.Object, e As System.EventArgs) Handles tmrAuto2.Tick
-        barAuto2.Increment(1)
 
-        If tmrAuto2.Interval = 5000 Then
-            btnAuto2.Enabled = True
-            btnAuto2.Text = "Collect"
-            Variables.Auto.auto2Col = True
-            Variables.Auto.auto2Off = False
-        End If
     End Sub
 
     Private Sub tmrBar_Tick(sender As System.Object, e As System.EventArgs)

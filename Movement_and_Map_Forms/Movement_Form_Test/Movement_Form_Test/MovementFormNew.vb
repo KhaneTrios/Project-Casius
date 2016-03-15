@@ -5602,6 +5602,12 @@ Public Class MovementFormNew
             x1y5.Image = clear.Image
             x1y6.Image = clear.Image
             x2y1.Image = clear.Image
+            x2y2.Image = clear.Image
+            x2y3.Image = clear.Image
+            x2y4.Image = clear.Image
+            x2y5.Image = clear.Image
+            x2y6.Image = clear.Image
+            x3y1.Image = clear.Image
             x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
@@ -5641,6 +5647,12 @@ Public Class MovementFormNew
             x1y5.Image = clear.Image
             x1y6.Image = clear.Image
             x2y1.Image = clear.Image
+            x2y2.Image = clear.Image
+            x2y3.Image = clear.Image
+            x2y4.Image = clear.Image
+            x2y5.Image = clear.Image
+            x2y6.Image = clear.Image
+            x3y1.Image = clear.Image
             x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
@@ -5680,6 +5692,12 @@ Public Class MovementFormNew
             x1y5.Image = clear.Image
             x1y6.Image = clear.Image
             x2y1.Image = clear.Image
+            x2y2.Image = clear.Image
+            x2y3.Image = clear.Image
+            x2y4.Image = clear.Image
+            x2y5.Image = clear.Image
+            x2y6.Image = clear.Image
+            x3y1.Image = clear.Image
             x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
@@ -5719,6 +5737,12 @@ Public Class MovementFormNew
             x1y5.Image = clear.Image
             x1y6.Image = clear.Image
             x2y1.Image = clear.Image
+            x2y2.Image = clear.Image
+            x2y3.Image = clear.Image
+            x2y4.Image = clear.Image
+            x2y5.Image = clear.Image
+            x2y6.Image = clear.Image
+            x3y1.Image = clear.Image
             x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
@@ -5758,6 +5782,12 @@ Public Class MovementFormNew
             x1y5.Image = town1.Image
             x1y6.Image = clear.Image
             x2y1.Image = clear.Image
+            x2y2.Image = clear.Image
+            x2y3.Image = clear.Image
+            x2y4.Image = clear.Image
+            x2y5.Image = clear.Image
+            x2y6.Image = clear.Image
+            x3y1.Image = clear.Image
             x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
@@ -5797,6 +5827,12 @@ Public Class MovementFormNew
             x1y5.Image = clear.Image
             x1y6.Image = town1.Image
             x2y1.Image = clear.Image
+            x2y2.Image = clear.Image
+            x2y3.Image = clear.Image
+            x2y4.Image = clear.Image
+            x2y5.Image = clear.Image
+            x2y6.Image = clear.Image
+            x3y1.Image = clear.Image
             x3y2.Image = clear.Image
             x3y3.Image = clear.Image
             x3y4.Image = clear.Image
@@ -5835,4 +5871,5 @@ Public Class MovementFormNew
         'open up Test_Form and close the Movement Form
         Test_Form.Show() : Me.Close()
     End Sub
+
 End Class
