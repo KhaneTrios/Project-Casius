@@ -1,4 +1,3 @@
-\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\WepArmTest\WepArmTest\obj\x86\Debug\WepArmTest.Form1.resources
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\WepArmTest\WepArmTest\obj\x86\Debug\WepArmTest.Resources.resources
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\WepArmTest\WepArmTest\obj\x86\Debug\WepArmTest.vbproj.GenerateResource.Cache
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\WepArmTest\WepArmTest\bin\Debug\WepArmTest.exe
@@ -7,3 +6,4 @@
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\WepArmTest\WepArmTest\obj\x86\Debug\WepArmTest.exe
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\WepArmTest\WepArmTest\obj\x86\Debug\WepArmTest.xml
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\WepArmTest\WepArmTest\obj\x86\Debug\WepArmTest.pdb
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\WepArmTest\WepArmTest\obj\x86\Debug\WepArmTest.BrillTest.resources

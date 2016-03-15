@@ -330,7 +330,7 @@ Partial Class BrillTest
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 29
-        Me.Button10.Text = "Button10"
+        Me.Button10.Text = "Hit"
         Me.Button10.UseVisualStyleBackColor = True
         '
         'Button11
@@ -339,7 +339,7 @@ Partial Class BrillTest
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(75, 23)
         Me.Button11.TabIndex = 30
-        Me.Button11.Text = "Button11"
+        Me.Button11.Text = "Add Health"
         Me.Button11.UseVisualStyleBackColor = True
         '
         'Label11
