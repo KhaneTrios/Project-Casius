@@ -1,0 +1,12 @@
+C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\bin\Debug\MainMenu.exe
+C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\bin\Debug\MainMenu.pdb
+C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\bin\Debug\MainMenu.xml
+C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\obj\x86\Debug\MainMenu.frmMainMenu.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\obj\x86\Debug\MainMenu.Resources.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\obj\x86\Debug\MainMenu.vbproj.GenerateResource.Cache
+C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\obj\x86\Debug\MainMenu.exe
+C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\obj\x86\Debug\MainMenu.xml
+C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\obj\x86\Debug\MainMenu.pdb
+\\stcfs2\Student_Data\davisc\My Documents\CIS\Projects\MainMenu\MainMenu\obj\x86\Debug\MainMenu.exe
+\\stcfs2\Student_Data\davisc\My Documents\CIS\Projects\MainMenu\MainMenu\obj\x86\Debug\MainMenu.xml
+\\stcfs2\Student_Data\davisc\My Documents\CIS\Projects\MainMenu\MainMenu\obj\x86\Debug\MainMenu.pdb
