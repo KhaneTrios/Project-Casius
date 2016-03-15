@@ -27,6 +27,7 @@
     End Sub
 
     Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles Button5.Click
+        'this is the random fighting button
         Plugger.Enabled = True
 
     End Sub
