@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class begin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class begin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(begin))
@@ -37,28 +37,28 @@ Partial Class begin
         Me.Button3 = New System.Windows.Forms.Button()
         Me.skillcount = New System.Windows.Forms.Timer(Me.components)
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.chargez = New System.Windows.Forms.Button()
+        Me.backwardsLash = New System.Windows.Forms.Button()
+        Me.enrage = New System.Windows.Forms.Button()
+        Me.coreSlam = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.Button19 = New System.Windows.Forms.Button()
-        Me.Button20 = New System.Windows.Forms.Button()
-        Me.Button21 = New System.Windows.Forms.Button()
-        Me.Button22 = New System.Windows.Forms.Button()
-        Me.Button23 = New System.Windows.Forms.Button()
-        Me.Button24 = New System.Windows.Forms.Button()
+        Me.poisonBomb = New System.Windows.Forms.Button()
+        Me.overPlan = New System.Windows.Forms.Button()
+        Me.caltropLaunch = New System.Windows.Forms.Button()
+        Me.scout = New System.Windows.Forms.Button()
+        Me.arcaneWhirlwind = New System.Windows.Forms.Button()
+        Me.fireCage = New System.Windows.Forms.Button()
+        Me.lightningWave = New System.Windows.Forms.Button()
+        Me.shards = New System.Windows.Forms.Button()
+        Me.shadowStrike = New System.Windows.Forms.Button()
+        Me.invisible = New System.Windows.Forms.Button()
+        Me.parry = New System.Windows.Forms.Button()
+        Me.backstab = New System.Windows.Forms.Button()
+        Me.redmption = New System.Windows.Forms.Button()
+        Me.wild = New System.Windows.Forms.Button()
+        Me.craze = New System.Windows.Forms.Button()
+        Me.burden = New System.Windows.Forms.Button()
         Me.Button25 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -174,41 +174,41 @@ Partial Class begin
         Me.Button4.Text = "skill -1"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Button5
+        'chargez
         '
-        Me.Button5.Location = New System.Drawing.Point(12, 101)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 11
-        Me.Button5.Text = "Charge"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.chargez.Location = New System.Drawing.Point(12, 101)
+        Me.chargez.Name = "chargez"
+        Me.chargez.Size = New System.Drawing.Size(75, 23)
+        Me.chargez.TabIndex = 11
+        Me.chargez.Text = "Charge"
+        Me.chargez.UseVisualStyleBackColor = True
         '
-        'Button6
+        'backwardsLash
         '
-        Me.Button6.Location = New System.Drawing.Point(12, 130)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 35)
-        Me.Button6.TabIndex = 12
-        Me.Button6.Text = "Backwards Lash" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.backwardsLash.Location = New System.Drawing.Point(12, 130)
+        Me.backwardsLash.Name = "backwardsLash"
+        Me.backwardsLash.Size = New System.Drawing.Size(75, 35)
+        Me.backwardsLash.TabIndex = 12
+        Me.backwardsLash.Text = "Backwards Lash" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.backwardsLash.UseVisualStyleBackColor = True
         '
-        'Button7
+        'enrage
         '
-        Me.Button7.Location = New System.Drawing.Point(12, 171)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 13
-        Me.Button7.Text = "Enrage" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.enrage.Location = New System.Drawing.Point(12, 171)
+        Me.enrage.Name = "enrage"
+        Me.enrage.Size = New System.Drawing.Size(75, 23)
+        Me.enrage.TabIndex = 13
+        Me.enrage.Text = "Enrage" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.enrage.UseVisualStyleBackColor = True
         '
-        'Button8
+        'coreSlam
         '
-        Me.Button8.Location = New System.Drawing.Point(12, 200)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 14
-        Me.Button8.Text = "Core Slam"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.coreSlam.Location = New System.Drawing.Point(12, 200)
+        Me.coreSlam.Name = "coreSlam"
+        Me.coreSlam.Size = New System.Drawing.Size(75, 23)
+        Me.coreSlam.TabIndex = 14
+        Me.coreSlam.Text = "Core Slam"
+        Me.coreSlam.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -230,149 +230,149 @@ Partial Class begin
         Me.Label9.TabIndex = 16
         Me.Label9.Text = "Unborn:"
         '
-        'Button9
+        'poisonBomb
         '
-        Me.Button9.Location = New System.Drawing.Point(130, 200)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 51)
-        Me.Button9.TabIndex = 20
-        Me.Button9.Text = "Poison Bomb Barrage"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.poisonBomb.Location = New System.Drawing.Point(130, 200)
+        Me.poisonBomb.Name = "poisonBomb"
+        Me.poisonBomb.Size = New System.Drawing.Size(75, 51)
+        Me.poisonBomb.TabIndex = 20
+        Me.poisonBomb.Text = "Poison Bomb Barrage"
+        Me.poisonBomb.UseVisualStyleBackColor = True
         '
-        'Button10
+        'overPlan
         '
-        Me.Button10.Location = New System.Drawing.Point(130, 171)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 23)
-        Me.Button10.TabIndex = 19
-        Me.Button10.Text = "Over-Plan"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.overPlan.Location = New System.Drawing.Point(130, 171)
+        Me.overPlan.Name = "overPlan"
+        Me.overPlan.Size = New System.Drawing.Size(75, 23)
+        Me.overPlan.TabIndex = 19
+        Me.overPlan.Text = "Over-Plan"
+        Me.overPlan.UseVisualStyleBackColor = True
         '
-        'Button11
+        'caltropLaunch
         '
-        Me.Button11.Location = New System.Drawing.Point(130, 130)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 35)
-        Me.Button11.TabIndex = 18
-        Me.Button11.Text = "Caltrop Launch" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.caltropLaunch.Location = New System.Drawing.Point(130, 130)
+        Me.caltropLaunch.Name = "caltropLaunch"
+        Me.caltropLaunch.Size = New System.Drawing.Size(75, 35)
+        Me.caltropLaunch.TabIndex = 18
+        Me.caltropLaunch.Text = "Caltrop Launch" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.caltropLaunch.UseVisualStyleBackColor = True
         '
-        'Button12
+        'scout
         '
-        Me.Button12.Location = New System.Drawing.Point(130, 101)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(75, 23)
-        Me.Button12.TabIndex = 17
-        Me.Button12.Text = "Scout"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.scout.Location = New System.Drawing.Point(130, 101)
+        Me.scout.Name = "scout"
+        Me.scout.Size = New System.Drawing.Size(75, 23)
+        Me.scout.TabIndex = 17
+        Me.scout.Text = "Scout"
+        Me.scout.UseVisualStyleBackColor = True
         '
-        'Button13
+        'arcaneWhirlwind
         '
-        Me.Button13.Location = New System.Drawing.Point(254, 217)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(75, 34)
-        Me.Button13.TabIndex = 24
-        Me.Button13.Text = "Arcane Whirlwind"
-        Me.Button13.UseVisualStyleBackColor = True
+        Me.arcaneWhirlwind.Location = New System.Drawing.Point(254, 217)
+        Me.arcaneWhirlwind.Name = "arcaneWhirlwind"
+        Me.arcaneWhirlwind.Size = New System.Drawing.Size(75, 34)
+        Me.arcaneWhirlwind.TabIndex = 24
+        Me.arcaneWhirlwind.Text = "Arcane Whirlwind"
+        Me.arcaneWhirlwind.UseVisualStyleBackColor = True
         '
-        'Button14
+        'fireCage
         '
-        Me.Button14.Location = New System.Drawing.Point(254, 188)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(75, 23)
-        Me.Button14.TabIndex = 23
-        Me.Button14.Text = "Fire Cage"
-        Me.Button14.UseVisualStyleBackColor = True
+        Me.fireCage.Location = New System.Drawing.Point(254, 188)
+        Me.fireCage.Name = "fireCage"
+        Me.fireCage.Size = New System.Drawing.Size(75, 23)
+        Me.fireCage.TabIndex = 23
+        Me.fireCage.Text = "Fire Cage"
+        Me.fireCage.UseVisualStyleBackColor = True
         '
-        'Button15
+        'lightningWave
         '
-        Me.Button15.Location = New System.Drawing.Point(254, 142)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(75, 40)
-        Me.Button15.TabIndex = 22
-        Me.Button15.Text = "Lightning Wave"
-        Me.Button15.UseVisualStyleBackColor = True
+        Me.lightningWave.Location = New System.Drawing.Point(254, 142)
+        Me.lightningWave.Name = "lightningWave"
+        Me.lightningWave.Size = New System.Drawing.Size(75, 40)
+        Me.lightningWave.TabIndex = 22
+        Me.lightningWave.Text = "Lightning Wave"
+        Me.lightningWave.UseVisualStyleBackColor = True
         '
-        'Button16
+        'shards
         '
-        Me.Button16.Location = New System.Drawing.Point(254, 101)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(75, 35)
-        Me.Button16.TabIndex = 21
-        Me.Button16.Text = "Shards of Ice"
-        Me.Button16.UseVisualStyleBackColor = True
+        Me.shards.Location = New System.Drawing.Point(254, 101)
+        Me.shards.Name = "shards"
+        Me.shards.Size = New System.Drawing.Size(75, 35)
+        Me.shards.TabIndex = 21
+        Me.shards.Text = "Shards of Ice"
+        Me.shards.UseVisualStyleBackColor = True
         '
-        'Button17
+        'shadowStrike
         '
-        Me.Button17.Location = New System.Drawing.Point(371, 188)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(75, 35)
-        Me.Button17.TabIndex = 28
-        Me.Button17.Text = "Shadow Strike"
-        Me.Button17.UseVisualStyleBackColor = True
+        Me.shadowStrike.Location = New System.Drawing.Point(371, 188)
+        Me.shadowStrike.Name = "shadowStrike"
+        Me.shadowStrike.Size = New System.Drawing.Size(75, 35)
+        Me.shadowStrike.TabIndex = 28
+        Me.shadowStrike.Text = "Shadow Strike"
+        Me.shadowStrike.UseVisualStyleBackColor = True
         '
-        'Button18
+        'invisible
         '
-        Me.Button18.Location = New System.Drawing.Point(371, 159)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(75, 23)
-        Me.Button18.TabIndex = 27
-        Me.Button18.Text = "Invisible"
-        Me.Button18.UseVisualStyleBackColor = True
+        Me.invisible.Location = New System.Drawing.Point(371, 159)
+        Me.invisible.Name = "invisible"
+        Me.invisible.Size = New System.Drawing.Size(75, 23)
+        Me.invisible.TabIndex = 27
+        Me.invisible.Text = "Invisible"
+        Me.invisible.UseVisualStyleBackColor = True
         '
-        'Button19
+        'parry
         '
-        Me.Button19.Location = New System.Drawing.Point(371, 130)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(75, 23)
-        Me.Button19.TabIndex = 26
-        Me.Button19.Text = "Parry"
-        Me.Button19.UseVisualStyleBackColor = True
+        Me.parry.Location = New System.Drawing.Point(371, 130)
+        Me.parry.Name = "parry"
+        Me.parry.Size = New System.Drawing.Size(75, 23)
+        Me.parry.TabIndex = 26
+        Me.parry.Text = "Parry"
+        Me.parry.UseVisualStyleBackColor = True
         '
-        'Button20
+        'backstab
         '
-        Me.Button20.Location = New System.Drawing.Point(371, 101)
-        Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(75, 23)
-        Me.Button20.TabIndex = 25
-        Me.Button20.Text = "Backstab"
-        Me.Button20.UseVisualStyleBackColor = True
+        Me.backstab.Location = New System.Drawing.Point(371, 101)
+        Me.backstab.Name = "backstab"
+        Me.backstab.Size = New System.Drawing.Size(75, 23)
+        Me.backstab.TabIndex = 25
+        Me.backstab.Text = "Backstab"
+        Me.backstab.UseVisualStyleBackColor = True
         '
-        'Button21
+        'redmption
         '
-        Me.Button21.Location = New System.Drawing.Point(494, 188)
-        Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(75, 23)
-        Me.Button21.TabIndex = 32
-        Me.Button21.Text = "Redemption"
-        Me.Button21.UseVisualStyleBackColor = True
+        Me.redmption.Location = New System.Drawing.Point(494, 188)
+        Me.redmption.Name = "redmption"
+        Me.redmption.Size = New System.Drawing.Size(75, 23)
+        Me.redmption.TabIndex = 32
+        Me.redmption.Text = "Redemption"
+        Me.redmption.UseVisualStyleBackColor = True
         '
-        'Button22
+        'wild
         '
-        Me.Button22.Location = New System.Drawing.Point(494, 159)
-        Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(75, 23)
-        Me.Button22.TabIndex = 31
-        Me.Button22.Text = "Wild"
-        Me.Button22.UseVisualStyleBackColor = True
+        Me.wild.Location = New System.Drawing.Point(494, 159)
+        Me.wild.Name = "wild"
+        Me.wild.Size = New System.Drawing.Size(75, 23)
+        Me.wild.TabIndex = 31
+        Me.wild.Text = "Wild"
+        Me.wild.UseVisualStyleBackColor = True
         '
-        'Button23
+        'craze
         '
-        Me.Button23.Location = New System.Drawing.Point(494, 130)
-        Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(75, 23)
-        Me.Button23.TabIndex = 30
-        Me.Button23.Text = "Craze"
-        Me.Button23.UseVisualStyleBackColor = True
+        Me.craze.Location = New System.Drawing.Point(494, 130)
+        Me.craze.Name = "craze"
+        Me.craze.Size = New System.Drawing.Size(75, 23)
+        Me.craze.TabIndex = 30
+        Me.craze.Text = "Craze"
+        Me.craze.UseVisualStyleBackColor = True
         '
-        'Button24
+        'burden
         '
-        Me.Button24.Location = New System.Drawing.Point(494, 101)
-        Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(75, 23)
-        Me.Button24.TabIndex = 29
-        Me.Button24.Text = "Burden"
-        Me.Button24.UseVisualStyleBackColor = True
+        Me.burden.Location = New System.Drawing.Point(494, 101)
+        Me.burden.Name = "burden"
+        Me.burden.Size = New System.Drawing.Size(75, 23)
+        Me.burden.TabIndex = 29
+        Me.burden.Text = "Burden"
+        Me.burden.UseVisualStyleBackColor = True
         '
         'Button25
         '
@@ -389,28 +389,28 @@ Partial Class begin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(622, 384)
         Me.Controls.Add(Me.Button25)
-        Me.Controls.Add(Me.Button21)
-        Me.Controls.Add(Me.Button22)
-        Me.Controls.Add(Me.Button23)
-        Me.Controls.Add(Me.Button24)
-        Me.Controls.Add(Me.Button17)
-        Me.Controls.Add(Me.Button18)
-        Me.Controls.Add(Me.Button19)
-        Me.Controls.Add(Me.Button20)
-        Me.Controls.Add(Me.Button13)
-        Me.Controls.Add(Me.Button14)
-        Me.Controls.Add(Me.Button15)
-        Me.Controls.Add(Me.Button16)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button12)
+        Me.Controls.Add(Me.redmption)
+        Me.Controls.Add(Me.wild)
+        Me.Controls.Add(Me.craze)
+        Me.Controls.Add(Me.burden)
+        Me.Controls.Add(Me.shadowStrike)
+        Me.Controls.Add(Me.invisible)
+        Me.Controls.Add(Me.parry)
+        Me.Controls.Add(Me.backstab)
+        Me.Controls.Add(Me.arcaneWhirlwind)
+        Me.Controls.Add(Me.fireCage)
+        Me.Controls.Add(Me.lightningWave)
+        Me.Controls.Add(Me.shards)
+        Me.Controls.Add(Me.poisonBomb)
+        Me.Controls.Add(Me.overPlan)
+        Me.Controls.Add(Me.caltropLaunch)
+        Me.Controls.Add(Me.scout)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.coreSlam)
+        Me.Controls.Add(Me.enrage)
+        Me.Controls.Add(Me.backwardsLash)
+        Me.Controls.Add(Me.chargez)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -441,27 +441,27 @@ Partial Class begin
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents skillcount As System.Windows.Forms.Timer
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents chargez As System.Windows.Forms.Button
+    Friend WithEvents backwardsLash As System.Windows.Forms.Button
+    Friend WithEvents enrage As System.Windows.Forms.Button
+    Friend WithEvents coreSlam As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents Button12 As System.Windows.Forms.Button
-    Friend WithEvents Button13 As System.Windows.Forms.Button
-    Friend WithEvents Button14 As System.Windows.Forms.Button
-    Friend WithEvents Button15 As System.Windows.Forms.Button
-    Friend WithEvents Button16 As System.Windows.Forms.Button
-    Friend WithEvents Button17 As System.Windows.Forms.Button
-    Friend WithEvents Button18 As System.Windows.Forms.Button
-    Friend WithEvents Button19 As System.Windows.Forms.Button
-    Friend WithEvents Button20 As System.Windows.Forms.Button
-    Friend WithEvents Button21 As System.Windows.Forms.Button
-    Friend WithEvents Button22 As System.Windows.Forms.Button
-    Friend WithEvents Button23 As System.Windows.Forms.Button
-    Friend WithEvents Button24 As System.Windows.Forms.Button
+    Friend WithEvents poisonBomb As System.Windows.Forms.Button
+    Friend WithEvents overPlan As System.Windows.Forms.Button
+    Friend WithEvents caltropLaunch As System.Windows.Forms.Button
+    Friend WithEvents scout As System.Windows.Forms.Button
+    Friend WithEvents arcaneWhirlwind As System.Windows.Forms.Button
+    Friend WithEvents fireCage As System.Windows.Forms.Button
+    Friend WithEvents lightningWave As System.Windows.Forms.Button
+    Friend WithEvents shards As System.Windows.Forms.Button
+    Friend WithEvents shadowStrike As System.Windows.Forms.Button
+    Friend WithEvents invisible As System.Windows.Forms.Button
+    Friend WithEvents parry As System.Windows.Forms.Button
+    Friend WithEvents backstab As System.Windows.Forms.Button
+    Friend WithEvents redmption As System.Windows.Forms.Button
+    Friend WithEvents wild As System.Windows.Forms.Button
+    Friend WithEvents craze As System.Windows.Forms.Button
+    Friend WithEvents burden As System.Windows.Forms.Button
     Friend WithEvents Button25 As System.Windows.Forms.Button
 End Class
