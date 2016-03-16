@@ -10,3 +10,13 @@ C:\Users\davisc\AppData\Local\Temporary Projects\MainMenu\obj\x86\Debug\MainMenu
 \\stcfs2\Student_Data\davisc\My Documents\CIS\Projects\MainMenu\MainMenu\obj\x86\Debug\MainMenu.exe
 \\stcfs2\Student_Data\davisc\My Documents\CIS\Projects\MainMenu\MainMenu\obj\x86\Debug\MainMenu.xml
 \\stcfs2\Student_Data\davisc\My Documents\CIS\Projects\MainMenu\MainMenu\obj\x86\Debug\MainMenu.pdb
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.exe
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.xml
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.pdb
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\bin\Debug\MainMenu.exe
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\bin\Debug\MainMenu.pdb
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\bin\Debug\MainMenu.xml
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.vbprojResolveAssemblyReference.cache
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.frmMainMenu.resources
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.Resources.resources
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.vbproj.GenerateResource.Cache
