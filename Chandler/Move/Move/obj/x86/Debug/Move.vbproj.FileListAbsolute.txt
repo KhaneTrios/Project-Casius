@@ -1,0 +1,12 @@
+C:\Users\davisc\AppData\Local\Temporary Projects\Move\bin\Debug\Move.exe
+C:\Users\davisc\AppData\Local\Temporary Projects\Move\bin\Debug\Move.pdb
+C:\Users\davisc\AppData\Local\Temporary Projects\Move\bin\Debug\Move.xml
+C:\Users\davisc\AppData\Local\Temporary Projects\Move\obj\x86\Debug\Move.Resources.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Move\obj\x86\Debug\Move.vbproj.GenerateResource.Cache
+C:\Users\davisc\AppData\Local\Temporary Projects\Move\obj\x86\Debug\Move.exe
+C:\Users\davisc\AppData\Local\Temporary Projects\Move\obj\x86\Debug\Move.xml
+C:\Users\davisc\AppData\Local\Temporary Projects\Move\obj\x86\Debug\Move.pdb
+C:\Users\davisc\AppData\Local\Temporary Projects\Move\obj\x86\Debug\Move.frmMoveTest.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Move\Move\obj\x86\Debug\Move.exe
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Move\Move\obj\x86\Debug\Move.xml
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Move\Move\obj\x86\Debug\Move.pdb
