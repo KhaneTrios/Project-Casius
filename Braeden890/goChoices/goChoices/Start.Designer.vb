@@ -99,7 +99,7 @@ Partial Class Start
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.heroname)
         Me.Name = "Start"
-        Me.Text = "Start"
+        Me.Text = "Character Name"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

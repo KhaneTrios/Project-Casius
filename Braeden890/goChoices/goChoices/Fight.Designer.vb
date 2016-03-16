@@ -32,7 +32,7 @@ Partial Class Fight
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.charge2 = New System.Windows.Forms.Button()
+        Me.skillOne = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -45,15 +45,16 @@ Partial Class Fight
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.className = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.skillTwo = New System.Windows.Forms.Button()
+        Me.skillThree = New System.Windows.Forms.Button()
+        Me.skillFour = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 572)
+        Me.Button1.Location = New System.Drawing.Point(563, 572)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -134,14 +135,13 @@ Partial Class Fight
         Me.Button3.Text = "enemy atk" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'charge2
+        'skillOne
         '
-        Me.charge2.Location = New System.Drawing.Point(12, 395)
-        Me.charge2.Name = "charge2"
-        Me.charge2.Size = New System.Drawing.Size(75, 23)
-        Me.charge2.TabIndex = 9
-        Me.charge2.Text = "Charge"
-        Me.charge2.UseVisualStyleBackColor = True
+        Me.skillOne.Location = New System.Drawing.Point(8, 401)
+        Me.skillOne.Name = "skillOne"
+        Me.skillOne.Size = New System.Drawing.Size(185, 94)
+        Me.skillOne.TabIndex = 9
+        Me.skillOne.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -154,7 +154,7 @@ Partial Class Fight
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(288, 315)
+        Me.Button5.Location = New System.Drawing.Point(308, 91)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(130, 141)
         Me.Button5.TabIndex = 11
@@ -232,38 +232,36 @@ Partial Class Fight
         'className
         '
         Me.className.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.className.Location = New System.Drawing.Point(400, 9)
+        Me.className.Location = New System.Drawing.Point(399, 8)
         Me.className.Name = "className"
         Me.className.Size = New System.Drawing.Size(103, 30)
         Me.className.TabIndex = 18
         Me.className.Text = "Label12"
         '
-        'Button6
+        'skillTwo
         '
-        Me.Button6.Location = New System.Drawing.Point(12, 424)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 35)
-        Me.Button6.TabIndex = 19
-        Me.Button6.Text = "Backwards Lash" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.skillTwo.Location = New System.Drawing.Point(199, 401)
+        Me.skillTwo.Name = "skillTwo"
+        Me.skillTwo.Size = New System.Drawing.Size(185, 94)
+        Me.skillTwo.TabIndex = 19
+        Me.skillTwo.UseVisualStyleBackColor = True
         '
-        'Button7
+        'skillThree
         '
-        Me.Button7.Location = New System.Drawing.Point(12, 465)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 20
-        Me.Button7.Text = "Enrage" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.skillThree.Location = New System.Drawing.Point(8, 501)
+        Me.skillThree.Name = "skillThree"
+        Me.skillThree.Size = New System.Drawing.Size(185, 94)
+        Me.skillThree.TabIndex = 20
+        Me.skillThree.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.skillThree.UseVisualStyleBackColor = True
         '
-        'Button8
+        'skillFour
         '
-        Me.Button8.Location = New System.Drawing.Point(12, 494)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 21
-        Me.Button8.Text = "Core Slam"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.skillFour.Location = New System.Drawing.Point(199, 501)
+        Me.skillFour.Name = "skillFour"
+        Me.skillFour.Size = New System.Drawing.Size(185, 94)
+        Me.skillFour.TabIndex = 21
+        Me.skillFour.UseVisualStyleBackColor = True
         '
         'Label12
         '
@@ -274,15 +272,25 @@ Partial Class Fight
         Me.Label12.TabIndex = 22
         Me.Label12.Text = "All hail the mighty "
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(148, 106)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(45, 13)
+        Me.Label13.TabIndex = 23
+        Me.Label13.Text = "Label13"
+        '
         'Fight
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(727, 607)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.skillFour)
+        Me.Controls.Add(Me.skillThree)
+        Me.Controls.Add(Me.skillTwo)
         Me.Controls.Add(Me.className)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
@@ -292,7 +300,7 @@ Partial Class Fight
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.charge2)
+        Me.Controls.Add(Me.skillOne)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label4)
@@ -303,7 +311,7 @@ Partial Class Fight
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Fight"
-        Me.Text = "Fight"
+        Me.Text = "Fighting Screen"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -317,7 +325,7 @@ Partial Class Fight
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents charge2 As System.Windows.Forms.Button
+    Friend WithEvents skillOne As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -330,8 +338,9 @@ Partial Class Fight
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents className As Label
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
+    Friend WithEvents skillTwo As Button
+    Friend WithEvents skillThree As Button
+    Friend WithEvents skillFour As Button
     Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
 End Class

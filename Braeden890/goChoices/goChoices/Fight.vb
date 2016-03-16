@@ -21,13 +21,72 @@
         If Form1.charTact = True Then
             className.Text = "Tactician"
         End If
-        If Form1.charUnbo Then
+        If Form1.charUnbo = True Then
             className.Text = "Unborn"
         End If
         'End of class name at the top of the screen
 
         'This is the for the skill buttons on the screen 3/15
-
+        If Form1.charWarr = True Then
+            skillOne.Text = "Charge"
+        End If
+        If Form1.charWarr = True Then
+            skillTwo.Text = "Backwards Lash"
+        End If
+        If Form1.charWarr = True Then
+            skillThree.Text = "Enrage"
+        End If
+        If Form1.charWarr = True Then
+            skillFour.Text = "Core Slam"
+        End If
+        If Form1.charTact = True Then
+            skillOne.Text = "Scout"
+        End If
+        If Form1.charTact = True Then
+            skillTwo.Text = "Caltrop Launch"
+        End If
+        If Form1.charTact = True Then
+            skillThree.Text = "Over-Plan"
+        End If
+        If Form1.charTact = True Then
+            skillFour.Text = "Poison Bomb Barrage"
+        End If
+        If Form1.charMage = True Then
+            skillOne.Text = "Shards of Ice"
+        End If
+        If Form1.charMage = True Then
+            skillTwo.Text = ""
+        End If
+        If Form1.charMage = True Then
+            skillThree.Text = ""
+        End If
+        If Form1.charMage = True Then
+            skillFour.Text = ""
+        End If
+        If Form1.charRogu = True Then
+            skillOne.Text = ""
+        End If
+        If Form1.charRogu = True Then
+            skillTwo.Text = ""
+        End If
+        If Form1.charRogu = True Then
+            skillThree.Text = ""
+        End If
+        If Form1.charRogu = True Then
+            skillFour.Text = ""
+        End If
+        If Form1.charUnbo = True Then
+            skillOne.Text = ""
+        End If
+        If Form1.charUnbo = True Then
+            skillTwo.Text = " "
+        End If
+        If Form1.charUnbo = True Then
+            skillThree.Text = " "
+        End If
+        If Form1.charUnbo = True Then
+            skillFour.Text = " "
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
@@ -42,7 +101,7 @@
         Label4.Text = ProgressBar2.Value
     End Sub
 
-    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles charge2.Click
+    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles skillOne.Click
 
     End Sub
 

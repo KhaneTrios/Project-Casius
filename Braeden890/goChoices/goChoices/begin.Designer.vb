@@ -37,7 +37,7 @@ Partial Class begin
         Me.Button3 = New System.Windows.Forms.Button()
         Me.skillcount = New System.Windows.Forms.Timer(Me.components)
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.chargez = New System.Windows.Forms.Button()
+        Me.charge = New System.Windows.Forms.Button()
         Me.backwardsLash = New System.Windows.Forms.Button()
         Me.enrage = New System.Windows.Forms.Button()
         Me.coreSlam = New System.Windows.Forms.Button()
@@ -174,14 +174,14 @@ Partial Class begin
         Me.Button4.Text = "skill -1"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'chargez
+        'charge
         '
-        Me.chargez.Location = New System.Drawing.Point(12, 101)
-        Me.chargez.Name = "chargez"
-        Me.chargez.Size = New System.Drawing.Size(75, 23)
-        Me.chargez.TabIndex = 11
-        Me.chargez.Text = "Charge"
-        Me.chargez.UseVisualStyleBackColor = True
+        Me.charge.Location = New System.Drawing.Point(12, 101)
+        Me.charge.Name = "charge"
+        Me.charge.Size = New System.Drawing.Size(75, 23)
+        Me.charge.TabIndex = 11
+        Me.charge.Text = "Charge"
+        Me.charge.UseVisualStyleBackColor = True
         '
         'backwardsLash
         '
@@ -410,7 +410,7 @@ Partial Class begin
         Me.Controls.Add(Me.coreSlam)
         Me.Controls.Add(Me.enrage)
         Me.Controls.Add(Me.backwardsLash)
-        Me.Controls.Add(Me.chargez)
+        Me.Controls.Add(Me.charge)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -423,7 +423,7 @@ Partial Class begin
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "begin"
-        Me.Text = "."
+        Me.Text = "Skill Selection"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -441,7 +441,7 @@ Partial Class begin
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents skillcount As System.Windows.Forms.Timer
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents chargez As System.Windows.Forms.Button
+    Friend WithEvents charge As System.Windows.Forms.Button
     Friend WithEvents backwardsLash As System.Windows.Forms.Button
     Friend WithEvents enrage As System.Windows.Forms.Button
     Friend WithEvents coreSlam As System.Windows.Forms.Button

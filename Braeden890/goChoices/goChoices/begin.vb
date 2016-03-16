@@ -1,5 +1,6 @@
 ﻿Public Class begin
     Dim skill As Integer
+    'The names of each skill represented as an integer 3/15
     Public Shared warrCharge As Integer
     Public Shared warrBackwards As Integer
     Public Shared warrEnrage As Integer
@@ -41,7 +42,7 @@
             craze.Enabled = False
             burden.Enabled = False
         ElseIf Form1.charTact = True Then
-            chargez.Enabled = False
+            charge.Enabled = False
             backwardsLash.Enabled = False
             enrage.Enabled = False
             coreSlam.Enabled = False
@@ -58,7 +59,7 @@
             craze.Enabled = False
             burden.Enabled = False
         ElseIf Form1.charMage = True Then
-            chargez.Enabled = False
+            charge.Enabled = False
             backwardsLash.Enabled = False
             enrage.Enabled = False
             coreSlam.Enabled = False
@@ -75,7 +76,7 @@
             craze.Enabled = False
             burden.Enabled = False
         ElseIf Form1.charRogu = True Then
-            chargez.Enabled = False
+            charge.Enabled = False
             backwardsLash.Enabled = False
             enrage.Enabled = False
             coreSlam.Enabled = False
@@ -92,7 +93,7 @@
             craze.Enabled = False
             burden.Enabled = False
         ElseIf Form1.charUnbo = True Then
-            chargez.Enabled = False
+            charge.Enabled = False
             backwardsLash.Enabled = False
             enrage.Enabled = False
             coreSlam.Enabled = False
@@ -141,8 +142,7 @@
         skill -= 1
     End Sub
 
-    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles chargez.Click
-
+    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles charge.Click
         MessageBox.Show("The warrior runs at the enemy at full force and deals a devistating blow with his shoulder.", "Charge")
     End Sub
 

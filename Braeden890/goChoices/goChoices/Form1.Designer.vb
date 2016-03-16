@@ -168,8 +168,8 @@ Partial Class Form1
         Me.WarriorBox.Size = New System.Drawing.Size(62, 25)
         Me.WarriorBox.TabIndex = 22
         Me.WarriorBox.Text = "Warrior"
-        Me.ToolTip1.SetToolTip(Me.WarriorBox, """You have the mark of a warrior, and youre not afraid to show off your skill in f" &
-        "ighting. The majority of your skill is put to the test with weapons and attack d" &
+        Me.ToolTip1.SetToolTip(Me.WarriorBox, """You have the mark of a warrior, and youre not afraid to show off your skill in f" & _
+        "ighting. The majority of your skill is put to the test with weapons and attack d" & _
         "amage.""" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.WarriorBox.UseVisualStyleBackColor = True
         '
@@ -373,7 +373,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Form1"
-        Me.Text = "t"
+        Me.Text = "Class Selection"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
