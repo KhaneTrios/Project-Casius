@@ -43,6 +43,69 @@ Public Class Form1
         labelx.Text = playerx
         labely.Text = playery
 
+        If playerx = 0 And playery = 0 Then
+            x0y0.Image = player.Image
+        End If
+
+        If playerx = 0 And playery = 1 Then
+            x0y1.Image = player.Image
+        End If
+
+        If playerx = 0 And playery = 2 Then
+            x0y2.Image = player.Image
+        End If
+
+        If playerx = 1 And playery = 0 Then
+            x1y0.Image = player.Image
+        End If
+
+        If playerx = 1 And playery = 1 Then
+            x1y1.Image = player.Image
+        End If
+
+        If playerx = 1 And playery = 2 Then
+            x1y2.Image = player.Image
+        End If
+
+        If playerx = 2 And playery = 0 Then
+            x2y0.Image = player.Image
+        End If
+
+        If playerx = 2 And playery = 1 Then
+            x2y1.Image = player.Image
+        End If
+
+        If playerx = 2 And playery = 2 Then
+            x2y2.Image = player.Image
+        End If
+        '=-===-=-=-=-=-=-=-r=23-=-=-=--
+
+
     End Sub 'End movement sub
+
+    '
+    Public Function clearLastCoordinate() As Boolean
+        Select Case playerbx And playerby
+            Case 0 And 0
+                x0y0.Image = clear.Image
+            Case 0 And 1
+                x0y1.Image = clear.Image
+            Case 0 And 2
+                x0y2.Image = clear.Image
+            Case 1 And 0
+                x1y0.Image = clear.Image
+            Case 1 And 1
+                x1y1.Image = clear.Image
+            Case 1 And 2
+                x1y2.Image = clear.Image
+            Case 2 And 0
+                x2y0.Image = clear.Image
+            Case 2 And 1
+                x2y1.Image = clear.Image
+            Case 2 And 2
+                x2y2.Image = clear.Image
+        End Select
+        Return 0
+    End Function
 
 End Class 'End main class

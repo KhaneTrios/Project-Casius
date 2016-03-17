@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.x1y1 = New System.Windows.Forms.PictureBox()
         Me.x2y1 = New System.Windows.Forms.PictureBox()
         Me.x2y2 = New System.Windows.Forms.PictureBox()
@@ -35,6 +36,8 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.labelx = New System.Windows.Forms.Label()
         Me.labely = New System.Windows.Forms.Label()
+        Me.clear = New System.Windows.Forms.PictureBox()
+        Me.player = New System.Windows.Forms.PictureBox()
         CType(Me.x1y1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x2y1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x2y2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,6 +47,8 @@ Partial Class Form1
         CType(Me.x1y2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x2y0, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x0y2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.clear, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.player, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'x1y1
@@ -154,11 +159,30 @@ Partial Class Form1
         Me.labely.TabIndex = 12
         Me.labely.Text = "0"
         '
+        'clear
+        '
+        Me.clear.Location = New System.Drawing.Point(56, 16)
+        Me.clear.Name = "clear"
+        Me.clear.Size = New System.Drawing.Size(38, 36)
+        Me.clear.TabIndex = 13
+        Me.clear.TabStop = False
+        '
+        'player
+        '
+        Me.player.Image = CType(resources.GetObject("player.Image"), System.Drawing.Image)
+        Me.player.Location = New System.Drawing.Point(100, 16)
+        Me.player.Name = "player"
+        Me.player.Size = New System.Drawing.Size(38, 36)
+        Me.player.TabIndex = 14
+        Me.player.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(292, 273)
+        Me.Controls.Add(Me.player)
+        Me.Controls.Add(Me.clear)
         Me.Controls.Add(Me.labely)
         Me.Controls.Add(Me.labelx)
         Me.Controls.Add(Me.Label2)
@@ -183,6 +207,8 @@ Partial Class Form1
         CType(Me.x1y2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x2y0, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x0y2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.clear, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.player, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -200,5 +226,7 @@ Partial Class Form1
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents labelx As System.Windows.Forms.Label
     Friend WithEvents labely As System.Windows.Forms.Label
+    Friend WithEvents clear As System.Windows.Forms.PictureBox
+    Friend WithEvents player As System.Windows.Forms.PictureBox
 
 End Class
