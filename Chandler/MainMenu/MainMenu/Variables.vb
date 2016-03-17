@@ -44,7 +44,6 @@
     End Structure
 
     Structure Overall
-        Public Shared name As String
-        Public Shared num As Integer
+
     End Structure
 End Class
