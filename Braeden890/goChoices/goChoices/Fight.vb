@@ -55,37 +55,37 @@
             skillOne.Text = "Shards of Ice"
         End If
         If Form1.charMage = True Then
-            skillTwo.Text = ""
+            skillTwo.Text = "Lightning Wave"
         End If
         If Form1.charMage = True Then
-            skillThree.Text = ""
+            skillThree.Text = "Fire Cage"
         End If
         If Form1.charMage = True Then
-            skillFour.Text = ""
+            skillFour.Text = "Arcane Whirlwind"
         End If
         If Form1.charRogu = True Then
-            skillOne.Text = ""
+            skillOne.Text = "Backstab"
         End If
         If Form1.charRogu = True Then
-            skillTwo.Text = ""
+            skillTwo.Text = "Parry"
         End If
         If Form1.charRogu = True Then
-            skillThree.Text = ""
+            skillThree.Text = "Invisible"
         End If
         If Form1.charRogu = True Then
-            skillFour.Text = ""
+            skillFour.Text = "Shadow Strike"
         End If
         If Form1.charUnbo = True Then
-            skillOne.Text = ""
+            skillOne.Text = "Burden"
         End If
         If Form1.charUnbo = True Then
-            skillTwo.Text = " "
+            skillTwo.Text = "Craze"
         End If
         If Form1.charUnbo = True Then
-            skillThree.Text = " "
+            skillThree.Text = "Wild"
         End If
         If Form1.charUnbo = True Then
-            skillFour.Text = " "
+            skillFour.Text = "Redemption"
         End If
     End Sub
 

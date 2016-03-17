@@ -232,11 +232,10 @@ Partial Class Fight
         'className
         '
         Me.className.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.className.Location = New System.Drawing.Point(399, 8)
+        Me.className.Location = New System.Drawing.Point(407, 9)
         Me.className.Name = "className"
         Me.className.Size = New System.Drawing.Size(103, 30)
         Me.className.TabIndex = 18
-        Me.className.Text = "Label12"
         '
         'skillTwo
         '
@@ -268,7 +267,7 @@ Partial Class Fight
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(213, 9)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(190, 30)
+        Me.Label12.Size = New System.Drawing.Size(188, 30)
         Me.Label12.TabIndex = 22
         Me.Label12.Text = "All hail the mighty "
         '

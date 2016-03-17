@@ -121,7 +121,7 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Updater.Tick
-        Label3.Text = skill
+        skillPoints.Text = skill
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
@@ -144,6 +144,9 @@
 
     Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles charge.Click
         MessageBox.Show("The warrior runs at the enemy at full force and deals a devistating blow with his shoulder.", "Charge")
+        If skillPoints.Text = "1" Then
+            Label3.Text = "Skills acquired: Charge"
+        End If
     End Sub
 
     Private Sub Button25_Click(sender As System.Object, e As System.EventArgs) Handles Button25.Click

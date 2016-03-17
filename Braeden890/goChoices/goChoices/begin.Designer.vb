@@ -26,7 +26,7 @@ Partial Class begin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(begin))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.skillPoints = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -60,6 +60,7 @@ Partial Class begin
         Me.craze = New System.Windows.Forms.Button()
         Me.burden = New System.Windows.Forms.Button()
         Me.Button25 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -81,15 +82,15 @@ Partial Class begin
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "SKILL POINTS:"
         '
-        'Label3
+        'skillPoints
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label3.Location = New System.Drawing.Point(335, 26)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(15, 15)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "0" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.skillPoints.AutoSize = True
+        Me.skillPoints.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.skillPoints.Location = New System.Drawing.Point(335, 26)
+        Me.skillPoints.Name = "skillPoints"
+        Me.skillPoints.Size = New System.Drawing.Size(15, 15)
+        Me.skillPoints.TabIndex = 2
+        Me.skillPoints.Text = "0" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label4
         '
@@ -383,11 +384,22 @@ Partial Class begin
         Me.Button25.Text = "Fight"
         Me.Button25.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(189, 275)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(217, 47)
+        Me.Label3.TabIndex = 34
+        Me.Label3.Text = "Label3"
+        '
         'begin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(622, 384)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button25)
         Me.Controls.Add(Me.redmption)
         Me.Controls.Add(Me.wild)
@@ -419,7 +431,7 @@ Partial Class begin
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.skillPoints)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "begin"
@@ -430,7 +442,7 @@ Partial Class begin
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents skillPoints As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -464,4 +476,5 @@ Partial Class begin
     Friend WithEvents craze As System.Windows.Forms.Button
     Friend WithEvents burden As System.Windows.Forms.Button
     Friend WithEvents Button25 As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class
