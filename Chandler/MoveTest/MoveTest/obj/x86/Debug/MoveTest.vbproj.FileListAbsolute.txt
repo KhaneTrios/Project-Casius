@@ -10,3 +10,9 @@ C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\obj\x86\Debug\MoveTest
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\obj\x86\Debug\MoveTest.exe
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\obj\x86\Debug\MoveTest.xml
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\obj\x86\Debug\MoveTest.pdb
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\bin\Debug\MoveTest.exe
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\bin\Debug\MoveTest.pdb
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\bin\Debug\MoveTest.xml
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\obj\x86\Debug\MoveTest.frmMoveTest.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\obj\x86\Debug\MoveTest.Resources.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\obj\x86\Debug\MoveTest.vbproj.GenerateResource.Cache

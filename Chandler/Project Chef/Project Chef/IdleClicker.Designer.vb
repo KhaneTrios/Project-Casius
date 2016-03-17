@@ -66,6 +66,8 @@ Partial Class frmIdle
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabRebuild = New System.Windows.Forms.TabPage()
+        Me.btnLd = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
         Me.barAuto6Col = New System.Windows.Forms.ProgressBar()
         Me.barAuto4Col = New System.Windows.Forms.ProgressBar()
         Me.barAuto3Col = New System.Windows.Forms.ProgressBar()
@@ -113,8 +115,7 @@ Partial Class frmIdle
         Me.tmrAuto3 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto4 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto6 = New System.Windows.Forms.Timer(Me.components)
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnLd = New System.Windows.Forms.Button()
+        Me.backWork = New System.ComponentModel.BackgroundWorker()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -583,6 +584,24 @@ Partial Class frmIdle
         Me.tabRebuild.TabIndex = 0
         Me.tabRebuild.Text = "Rebuild"
         '
+        'btnLd
+        '
+        Me.btnLd.Location = New System.Drawing.Point(128, 168)
+        Me.btnLd.Name = "btnLd"
+        Me.btnLd.Size = New System.Drawing.Size(102, 24)
+        Me.btnLd.TabIndex = 69
+        Me.btnLd.Text = "Load"
+        Me.btnLd.UseVisualStyleBackColor = True
+        '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(24, 168)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(105, 24)
+        Me.btnSave.TabIndex = 68
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
         'barAuto6Col
         '
         Me.barAuto6Col.Location = New System.Drawing.Point(464, 224)
@@ -1002,23 +1021,8 @@ Partial Class frmIdle
         '
         Me.tmrAuto6.Interval = 20000
         '
-        'btnSave
+        'backWork
         '
-        Me.btnSave.Location = New System.Drawing.Point(24, 168)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(105, 24)
-        Me.btnSave.TabIndex = 68
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
-        'btnLd
-        '
-        Me.btnLd.Location = New System.Drawing.Point(128, 168)
-        Me.btnLd.Name = "btnLd"
-        Me.btnLd.Size = New System.Drawing.Size(102, 24)
-        Me.btnLd.TabIndex = 69
-        Me.btnLd.Text = "Load"
-        Me.btnLd.UseVisualStyleBackColor = True
         '
         'frmIdle
         '
@@ -1130,4 +1134,5 @@ Partial Class frmIdle
     Friend WithEvents tmrAuto6 As System.Windows.Forms.Timer
     Friend WithEvents btnLd As System.Windows.Forms.Button
     Friend WithEvents btnSave As System.Windows.Forms.Button
+    Friend WithEvents backWork As System.ComponentModel.BackgroundWorker
 End Class

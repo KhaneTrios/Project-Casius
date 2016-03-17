@@ -8,9 +8,6 @@
         lblCity2.Text = Variables.Movement.townSize         'Looking for the size of the town to determine the variable values needed for the rest of the autoclicker.
         lblSize.Text = Variables.Movement.townSize
 
-        Variables.Auto.auto8Max = 1              'Total amount needed to max out the 8th auto clicker which is town hall and there is only ever one in any city so this variable remains constant and therefore doesn't need to be put in with the if-statements
-
-
         Select Case Variables.Movement.townSize
             Case 1
                 Variables.Auto.auto2Max = 150        'The total amount needed to max out and complete the building of this item
@@ -35,8 +32,6 @@
                 Variables.Auto.auto7Max = 100
         End Select
 
-
-  
         'Progress bar max value sets
         barAuto2.Maximum = Variables.Auto.auto2Max              'Setting the progress bar maximum value to the value of the maximum variable due to varying city sizes.
         barAuto3.Maximum = Variables.Auto.auto3Max
@@ -436,7 +431,6 @@
                 Variables.Auto.auto8Off = True
             End If
 
-           
             ' --- Bars ---
             ' The bar progression is linked to the variable value of how many of the item has been "built"
             barAuto2.Value = Variables.Auto.home
@@ -448,7 +442,6 @@
             barAuto8.Value = Variables.Auto.auto8
 
           
-
             ' --- Button-enabling check ---
             ' Constant check for the conditions to be met to enable the next auto clicker button in order
             If (Variables.Auto.amount >= Variables.Auto.auto1Cost) Then       ' If your total score is higher or equal to the cost of the first auto clicker, then 
@@ -523,22 +516,9 @@
             tmrSucFail.Enabled = False
         End If
     End Sub
-
-    Private Sub tabGains_Click(sender As Object, e As EventArgs) Handles tabRebuild.Click
-
-    End Sub
-
     Private Sub btnDone_Click(sender As System.Object, e As System.EventArgs) Handles btnDone.Click
         frmChoice.Show()
     End Sub
-    Private Sub txtCheat_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtCheat.TextChanged
-
-    End Sub
-
-    Private Sub tmrAuto2_Tick(sender As System.Object, e As System.EventArgs) Handles tmrAuto2.Tick
-
-    End Sub
-
     Private Sub tmrBar_Tick(sender As System.Object, e As System.EventArgs)
 
     End Sub
@@ -569,6 +549,10 @@
                 DevConsole.Show()
                 Me.Close()
         End Select
+    End Sub
+
+    Private Sub backWork_DoWork(sender As System.Object, e As System.ComponentModel.DoWorkEventArgs) Handles backWork.DoWork
+
     End Sub
 End Class
 
