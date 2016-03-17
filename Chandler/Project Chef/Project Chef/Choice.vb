@@ -18,6 +18,5 @@
     Private Sub btnLeave_Click(sender As Object, e As EventArgs) Handles btnLeave.Click
         Me.Close()
         frmIdle.Close()
-        ' ok
     End Sub
 End Class

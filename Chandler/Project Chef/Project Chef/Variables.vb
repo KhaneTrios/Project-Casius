@@ -5,7 +5,7 @@
         Public Shared amount As Long                ' Total amount of clicks (score), data type "Long" so the score can get very very large.
         Public Shared auto1 As Integer              ' Number of first auto clicker owned.
         Public Shared auto1Val As Integer           ' Value of first auto clicker.
-        Public Shared auto1Item As Integer            ' How much experience the action gives
+        Public Shared auto1Item As Integer          ' How much experience the action gives
         Public Shared auto1Cool As Integer          ' Cooldown of clicker
         Public Shared auto1Cost As Integer          ' Cost to purchase item
         Public Shared auto2 As Integer : Public Shared auto2Val As Integer : Public Shared auto2Cost : Public Shared auto2Item As Integer
@@ -44,6 +44,6 @@
     End Structure
 
     Structure Overall
-
+        Public Shared fileNumber As Integer 'The file number to read and write to files
     End Structure
 End Class
