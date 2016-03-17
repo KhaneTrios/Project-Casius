@@ -1,0 +1,12 @@
+C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\obj\x86\Debug\MoveTest.frmMoveTest.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\obj\x86\Debug\MoveTest.Resources.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\obj\x86\Debug\MoveTest.vbproj.GenerateResource.Cache
+C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\bin\Debug\MoveTest.exe
+C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\bin\Debug\MoveTest.pdb
+C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\bin\Debug\MoveTest.xml
+C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\obj\x86\Debug\MoveTest.exe
+C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\obj\x86\Debug\MoveTest.xml
+C:\Users\davisc\AppData\Local\Temporary Projects\MoveTest\obj\x86\Debug\MoveTest.pdb
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\obj\x86\Debug\MoveTest.exe
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\obj\x86\Debug\MoveTest.xml
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MoveTest\MoveTest\obj\x86\Debug\MoveTest.pdb
