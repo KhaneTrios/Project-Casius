@@ -44,8 +44,4 @@
         'Variables.Auto.amount = 10000000000
         'frmIdle.btnAuto9.Enabled = True
     End Sub
-
-    Private Sub cmboSize_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cmboSize.SelectedIndexChanged
-
-    End Sub
 End Class

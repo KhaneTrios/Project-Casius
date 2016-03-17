@@ -113,8 +113,6 @@ Partial Class frmIdle
         Me.tmrAuto3 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto4 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto6 = New System.Windows.Forms.Timer(Me.components)
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnLd = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -512,8 +510,6 @@ Partial Class frmIdle
         'tabRebuild
         '
         Me.tabRebuild.BackColor = System.Drawing.Color.Transparent
-        Me.tabRebuild.Controls.Add(Me.btnLd)
-        Me.tabRebuild.Controls.Add(Me.btnSave)
         Me.tabRebuild.Controls.Add(Me.barAuto6Col)
         Me.tabRebuild.Controls.Add(Me.barAuto4Col)
         Me.tabRebuild.Controls.Add(Me.barAuto3Col)
@@ -1002,24 +998,6 @@ Partial Class frmIdle
         '
         Me.tmrAuto6.Interval = 20000
         '
-        'btnSave
-        '
-        Me.btnSave.Location = New System.Drawing.Point(24, 168)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(105, 24)
-        Me.btnSave.TabIndex = 68
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
-        'btnLd
-        '
-        Me.btnLd.Location = New System.Drawing.Point(128, 168)
-        Me.btnLd.Name = "btnLd"
-        Me.btnLd.Size = New System.Drawing.Size(102, 24)
-        Me.btnLd.TabIndex = 69
-        Me.btnLd.Text = "Load"
-        Me.btnLd.UseVisualStyleBackColor = True
-        '
         'frmIdle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1128,6 +1106,4 @@ Partial Class frmIdle
     Friend WithEvents tmrAuto3 As System.Windows.Forms.Timer
     Friend WithEvents tmrAuto4 As System.Windows.Forms.Timer
     Friend WithEvents tmrAuto6 As System.Windows.Forms.Timer
-    Friend WithEvents btnLd As System.Windows.Forms.Button
-    Friend WithEvents btnSave As System.Windows.Forms.Button
 End Class

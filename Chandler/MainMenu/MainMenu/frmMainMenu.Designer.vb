@@ -32,9 +32,6 @@ Partial Class frmMainMenu
         Me.btnLd = New System.Windows.Forms.Button()
         Me.txtNum = New System.Windows.Forms.TextBox()
         Me.lblNum = New System.Windows.Forms.Label()
-        Me.btnCreds = New System.Windows.Forms.Button()
-        Me.btnQuit = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnNewGame
@@ -58,7 +55,7 @@ Partial Class frmMainMenu
         '
         'btnLoadGame
         '
-        Me.btnLoadGame.Location = New System.Drawing.Point(8, 208)
+        Me.btnLoadGame.Location = New System.Drawing.Point(8, 216)
         Me.btnLoadGame.Name = "btnLoadGame"
         Me.btnLoadGame.Size = New System.Drawing.Size(160, 48)
         Me.btnLoadGame.TabIndex = 2
@@ -124,40 +121,11 @@ Partial Class frmMainMenu
         Me.lblNum.TabIndex = 9
         Me.lblNum.Text = "Num"
         '
-        'btnCreds
-        '
-        Me.btnCreds.Location = New System.Drawing.Point(8, 336)
-        Me.btnCreds.Name = "btnCreds"
-        Me.btnCreds.Size = New System.Drawing.Size(160, 48)
-        Me.btnCreds.TabIndex = 10
-        Me.btnCreds.Text = "Credits"
-        Me.btnCreds.UseVisualStyleBackColor = True
-        '
-        'btnQuit
-        '
-        Me.btnQuit.Location = New System.Drawing.Point(8, 400)
-        Me.btnQuit.Name = "btnQuit"
-        Me.btnQuit.Size = New System.Drawing.Size(160, 48)
-        Me.btnQuit.TabIndex = 11
-        Me.btnQuit.Text = "Quit"
-        Me.btnQuit.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(8, 272)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 48)
-        Me.Button1.TabIndex = 12
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(704, 544)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btnQuit)
-        Me.Controls.Add(Me.btnCreds)
         Me.Controls.Add(Me.lblNum)
         Me.Controls.Add(Me.txtNum)
         Me.Controls.Add(Me.btnLd)
@@ -184,7 +152,4 @@ Partial Class frmMainMenu
     Friend WithEvents btnLd As Button
     Friend WithEvents txtNum As TextBox
     Friend WithEvents lblNum As Label
-    Friend WithEvents btnCreds As System.Windows.Forms.Button
-    Friend WithEvents btnQuit As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

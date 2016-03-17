@@ -10,34 +10,35 @@
 
         Variables.Auto.auto8Max = 1              'Total amount needed to max out the 8th auto clicker which is town hall and there is only ever one in any city so this variable remains constant and therefore doesn't need to be put in with the if-statements
 
+        If Variables.Movement.townSize = 1 Then  'Check for the size of the town, the lower the number the smaller the town
+            Variables.Auto.auto2Max = 150        'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto3Max = 500        'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto4Max = 300        'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto5Max = 5          'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto6Max = 20         'The total amount needed to max out and complete the building of this item
+            Variables.Auto.auto7Max = 10         'The total amount needed to max out and complete the building of this item
+        End If
 
-        Select Case Variables.Movement.townSize
-            Case 1
-                Variables.Auto.auto2Max = 150        'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto3Max = 500        'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto4Max = 300        'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto5Max = 5          'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto6Max = 20         'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto7Max = 10         'The total amount needed to max out and complete the building of this item
-            Case 2
-                Variables.Auto.auto2Max = 500
-                Variables.Auto.auto3Max = 1000
-                Variables.Auto.auto4Max = 600
-                Variables.Auto.auto5Max = 10
-                Variables.Auto.auto6Max = 50
-                Variables.Auto.auto7Max = 50
-            Case 3
-                Variables.Auto.auto2Max = 1500
-                Variables.Auto.auto3Max = 5000
-                Variables.Auto.auto4Max = 1200
-                Variables.Auto.auto5Max = 100
-                Variables.Auto.auto6Max = 300
-                Variables.Auto.auto7Max = 100
-        End Select
+        If Variables.Movement.townSize = 2 Then
+            Variables.Auto.auto2Max = 500
+            Variables.Auto.auto3Max = 1000
+            Variables.Auto.auto4Max = 600
+            Variables.Auto.auto5Max = 10
+            Variables.Auto.auto6Max = 50
+            Variables.Auto.auto7Max = 50
+        End If
+
+        If Variables.Movement.townSize = 3 Then
+            Variables.Auto.auto2Max = 1500
+            Variables.Auto.auto3Max = 5000
+            Variables.Auto.auto4Max = 1200
+            Variables.Auto.auto5Max = 100
+            Variables.Auto.auto6Max = 300
+            Variables.Auto.auto7Max = 100
+        End If
 
 
-  
-        'Progress bar max value sets
+
         barAuto2.Maximum = Variables.Auto.auto2Max              'Setting the progress bar maximum value to the value of the maximum variable due to varying city sizes.
         barAuto3.Maximum = Variables.Auto.auto3Max
         barAuto4.Maximum = Variables.Auto.auto4Max
@@ -362,6 +363,7 @@
             lblGamble.Text = Variables.Auto.gamble
 
             
+
             ' --- Skills text display ---
             ' Constant updating all skill labels
             lblCivilians.Text = Variables.Auto.civ
@@ -437,6 +439,8 @@
             End If
 
            
+   
+
             ' --- Bars ---
             ' The bar progression is linked to the variable value of how many of the item has been "built"
             barAuto2.Value = Variables.Auto.home
@@ -509,6 +513,18 @@
     'Public Event KeyDown As KeyEventHandler
     Public Sub frmIdle_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
 
+        If e.KeyCode = Keys.F1 Then
+            txtCheat.Select()
+            txtCheat.Enabled = True
+            txtCheat.Visible = True
+            btnCheat.Enabled = True
+            btnCheat.Visible = True
+        End If
+
+        If e.KeyCode = Keys.Oemtilde Then
+            DevConsole.Show()
+            Me.Close()
+        End If
     End Sub
 
     Private Sub tmrSucFail_Tick(sender As System.Object, e As System.EventArgs) Handles tmrSucFail.Tick
@@ -541,34 +557,6 @@
 
     Private Sub tmrBar_Tick(sender As System.Object, e As System.EventArgs)
 
-    End Sub
-
-    Private Sub btnSave_Click(sender As System.Object, e As System.EventArgs) Handles btnSave.Click
-        Variables.Overall.fileNumber = FreeFile()
-        FileOpen(Variables.Overall.fileNumber, "TEST.TXT", OpenMode.Output)
-        PrintLine(Variables.Overall.fileNumber, Variables.Auto.amount)
-        FileClose(Variables.Overall.fileNumber)
-    End Sub
-
-    Private Sub btnLd_Click(sender As System.Object, e As System.EventArgs) Handles btnLd.Click
-        Variables.Overall.fileNumber = FreeFile()
-        FileOpen(Variables.Overall.fileNumber, "TEST.TXT", OpenMode.Input)
-        Input(Variables.Overall.fileNumber, Variables.Auto.amount)
-        FileClose(Variables.Overall.fileNumber)
-    End Sub
-
-    Private Sub btnClick_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles btnClick.KeyDown
-           Select e.KeyCode
-            Case Keys.F1
-                txtCheat.Select()
-                txtCheat.Enabled = True
-                txtCheat.Visible = True
-                btnCheat.Enabled = True
-                btnCheat.Visible = True
-            Case Keys.Oemtilde
-                DevConsole.Show()
-                Me.Close()
-        End Select
     End Sub
 End Class
 
