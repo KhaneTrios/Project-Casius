@@ -10,8 +10,18 @@
     Dim RHealth As Integer
     Dim HoldWep As String
     Dim TierNum As Integer
-
-
+    Dim EClass As Integer
+    Dim RanGen As New Random
+    Dim EHealBonus As Integer
+    Dim EAC As Integer
+    Dim EDamage As Integer
+    Dim EWep As Integer
+    Dim Plug As Integer
+    Dim EWepGen As New Random
+    Dim PRanGen As New Random
+    Dim Xgen As Integer
+    Dim Ygen As Integer
+    Dim GenNum As Integer
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
         If TierNum = 1 Then
             Weapon1.Text = "Short Sword"
@@ -84,9 +94,27 @@
         Label11.Text = EHealth
         WepLabel.Text = HoldWep
         Label16.Text = TierNum
+        RanLabel.Text = EClass
+        ActEHealth.Text = 100 + EHealBonus
+        ClassE.Text = EClass
         If EHealth < 0 Then
             EHealth = 0
         End If
+        If EClass = 1 Then
+            ClassE.Text = "Warrior"
+            WarriorGen.Enabled = True
+        ElseIf EClass = 2 Then
+            ClassE.Text = "Rogue"
+        ElseIf EClass = 3 Then
+            ClassE.Text = "Mage"
+        ElseIf EClass = 4 Then
+            ClassE.Text = "Tactician"
+        ElseIf EClass = 5 Then
+            ClassE.Text = "Unborn"
+        End If
+        Label21.Text = EDamage
+        Label24.Text = Plug
+        Label28.Text = GenNum
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Weapon1.Click
@@ -226,9 +254,6 @@
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As System.Object, e As System.EventArgs)
-    End Sub
-
     Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         If ComboBox1.Text = 1 Then
             ComboBox1.Enabled = False
@@ -266,5 +291,54 @@
         Leather.Visible = False
         Chain.Visible = False
         Kitchen.Visible = False
+    End Sub
+
+    Private Sub Button4_Click_1(sender As System.Object, e As System.EventArgs) Handles Button4.Click
+        Plugger.Enabled = True
+    End Sub
+
+    Private Sub Randomizer_Tick_1(sender As System.Object, e As System.EventArgs) Handles Randomizer.Tick
+        EClass = RanGen.Next(1, 6) 'Warrior, Rogue, Mage, Tact, Un
+    End Sub
+
+    Private Sub Plugger_Tick(sender As System.Object, e As System.EventArgs) Handles Plugger.Tick
+        Plug += 1
+        Randomizer.Enabled = False
+        WarriorGen.Enabled = False
+
+        If Plug = 2000 Then
+            Randomizer.Enabled = True
+            Plugger.Enabled = False
+            Plug = 0
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles Button5.Click
+        Plug = 0
+        Randomizer.Enabled = True
+        Plugger.Enabled = False
+    End Sub
+
+    Private Sub WarriorGen_Tick(sender As System.Object, e As System.EventArgs) Handles WarriorGen.Tick
+        If GenNum = 200 Then
+            WarriorGen.Enabled = False
+        End If
+        EWep = RanGen.Next(2, 5)
+        GenNum += 1
+        If EWep = 2 Then
+            Label23.Text = "Short Sword"
+            EDamage = 15
+            WarriorGen.Enabled = False
+        End If
+        If EWep = 3 Then
+            Label23.Text = "Long Sword"
+            EDamage = 20
+            WarriorGen.Enabled = False
+        End If
+        If EWep = 4 Then
+            Label23.Text = "Two-handed Sword"
+            EDamage = 45
+            WarriorGen.Enabled = False
+        End If
     End Sub
 End Class
