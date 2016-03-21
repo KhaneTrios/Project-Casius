@@ -22,7 +22,6 @@ Partial Class Fight
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,14 +33,11 @@ Partial Class Fight
         Me.Button3 = New System.Windows.Forms.Button()
         Me.skillOne = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.heroName = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Updaete = New System.Windows.Forms.Timer(Me.components)
-        Me.Randomizer = New System.Windows.Forms.Timer(Me.components)
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Plugger = New System.Windows.Forms.Timer(Me.components)
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.className = New System.Windows.Forms.Label()
@@ -49,12 +45,18 @@ Partial Class Fight
         Me.skillThree = New System.Windows.Forms.Button()
         Me.skillFour = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.enemyBox = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.enemyName = New System.Windows.Forms.Label()
+        Me.heroMana = New System.Windows.Forms.ProgressBar()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.enemyBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(563, 572)
+        Me.Button1.Location = New System.Drawing.Point(681, 694)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -64,7 +66,7 @@ Partial Class Fight
         'ProgressBar1
         '
         Me.ProgressBar1.ForeColor = System.Drawing.Color.Red
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 272)
+        Me.ProgressBar1.Location = New System.Drawing.Point(12, 356)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(152, 13)
         Me.ProgressBar1.TabIndex = 1
@@ -74,7 +76,7 @@ Partial Class Fight
         '
         Me.Label1.AutoSize = True
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Location = New System.Drawing.Point(119, 288)
+        Me.Label1.Location = New System.Drawing.Point(231, 307)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(27, 15)
         Me.Label1.TabIndex = 2
@@ -83,7 +85,7 @@ Partial Class Fight
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(48, 288)
+        Me.Label2.Location = New System.Drawing.Point(160, 307)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(70, 13)
         Me.Label2.TabIndex = 3
@@ -92,7 +94,7 @@ Partial Class Fight
         'ProgressBar2
         '
         Me.ProgressBar2.ForeColor = System.Drawing.Color.Red
-        Me.ProgressBar2.Location = New System.Drawing.Point(563, 272)
+        Me.ProgressBar2.Location = New System.Drawing.Point(604, 379)
         Me.ProgressBar2.Name = "ProgressBar2"
         Me.ProgressBar2.Size = New System.Drawing.Size(152, 13)
         Me.ProgressBar2.TabIndex = 4
@@ -101,7 +103,7 @@ Partial Class Fight
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(600, 290)
+        Me.Label3.Location = New System.Drawing.Point(641, 397)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(79, 13)
         Me.Label3.TabIndex = 5
@@ -111,7 +113,7 @@ Partial Class Fight
         '
         Me.Label4.AutoSize = True
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label4.Location = New System.Drawing.Point(677, 290)
+        Me.Label4.Location = New System.Drawing.Point(718, 397)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(27, 15)
         Me.Label4.TabIndex = 6
@@ -119,7 +121,7 @@ Partial Class Fight
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 324)
+        Me.Button2.Location = New System.Drawing.Point(16, 431)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 7
@@ -128,7 +130,7 @@ Partial Class Fight
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(640, 324)
+        Me.Button3.Location = New System.Drawing.Point(681, 431)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 8
@@ -137,7 +139,7 @@ Partial Class Fight
         '
         'skillOne
         '
-        Me.skillOne.Location = New System.Drawing.Point(8, 401)
+        Me.skillOne.Location = New System.Drawing.Point(12, 523)
         Me.skillOne.Name = "skillOne"
         Me.skillOne.Size = New System.Drawing.Size(185, 94)
         Me.skillOne.TabIndex = 9
@@ -146,25 +148,25 @@ Partial Class Fight
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(9, 379)
+        Me.Label5.Location = New System.Drawing.Point(13, 498)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(34, 13)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Skills:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Button5
+        'heroName
         '
-        Me.Button5.Location = New System.Drawing.Point(308, 91)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(130, 141)
-        Me.Button5.TabIndex = 11
-        Me.Button5.Text = "Test Fight Button"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.heroName.Location = New System.Drawing.Point(545, 576)
+        Me.heroName.Name = "heroName"
+        Me.heroName.Size = New System.Drawing.Size(130, 141)
+        Me.heroName.TabIndex = 11
+        Me.heroName.Text = "Test Fight Button"
+        Me.heroName.UseVisualStyleBackColor = True
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(28, 185)
+        Me.Label6.Location = New System.Drawing.Point(32, 292)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 12
@@ -173,26 +175,16 @@ Partial Class Fight
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(637, 185)
+        Me.Label7.Location = New System.Drawing.Point(678, 292)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(39, 13)
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Label7"
         '
-        'Updaete
-        '
-        Me.Updaete.Enabled = True
-        Me.Updaete.Interval = 1
-        '
-        'Randomizer
-        '
-        Me.Randomizer.Enabled = True
-        Me.Randomizer.Interval = 1
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(13, 220)
+        Me.Label8.Location = New System.Drawing.Point(17, 327)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(19, 13)
         Me.Label8.TabIndex = 14
@@ -201,20 +193,16 @@ Partial Class Fight
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(640, 219)
+        Me.Label9.Location = New System.Drawing.Point(681, 326)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(40, 13)
         Me.Label9.TabIndex = 15
         Me.Label9.Text = "50-100"
         '
-        'Plugger
-        '
-        Me.Plugger.Interval = 5
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(48, 220)
+        Me.Label10.Location = New System.Drawing.Point(52, 327)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(19, 13)
         Me.Label10.TabIndex = 16
@@ -223,7 +211,7 @@ Partial Class Fight
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(119, 253)
+        Me.Label11.Location = New System.Drawing.Point(124, 327)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(19, 13)
         Me.Label11.TabIndex = 17
@@ -239,7 +227,7 @@ Partial Class Fight
         '
         'skillTwo
         '
-        Me.skillTwo.Location = New System.Drawing.Point(199, 401)
+        Me.skillTwo.Location = New System.Drawing.Point(203, 523)
         Me.skillTwo.Name = "skillTwo"
         Me.skillTwo.Size = New System.Drawing.Size(185, 94)
         Me.skillTwo.TabIndex = 19
@@ -247,7 +235,7 @@ Partial Class Fight
         '
         'skillThree
         '
-        Me.skillThree.Location = New System.Drawing.Point(8, 501)
+        Me.skillThree.Location = New System.Drawing.Point(12, 623)
         Me.skillThree.Name = "skillThree"
         Me.skillThree.Size = New System.Drawing.Size(185, 94)
         Me.skillThree.TabIndex = 20
@@ -256,7 +244,7 @@ Partial Class Fight
         '
         'skillFour
         '
-        Me.skillFour.Location = New System.Drawing.Point(199, 501)
+        Me.skillFour.Location = New System.Drawing.Point(203, 623)
         Me.skillFour.Name = "skillFour"
         Me.skillFour.Size = New System.Drawing.Size(185, 94)
         Me.skillFour.TabIndex = 21
@@ -271,21 +259,62 @@ Partial Class Fight
         Me.Label12.TabIndex = 22
         Me.Label12.Text = "All hail the mighty "
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Location = New System.Drawing.Point(16, 143)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(152, 146)
+        Me.PictureBox1.TabIndex = 23
+        Me.PictureBox1.TabStop = False
+        '
+        'enemyBox
+        '
+        Me.enemyBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.enemyBox.Location = New System.Drawing.Point(604, 159)
+        Me.enemyBox.Name = "enemyBox"
+        Me.enemyBox.Size = New System.Drawing.Size(152, 146)
+        Me.enemyBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.enemyBox.TabIndex = 24
+        Me.enemyBox.TabStop = False
+        '
         'Label13
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(148, 106)
+        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label13.Location = New System.Drawing.Point(68, 115)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(45, 13)
-        Me.Label13.TabIndex = 23
-        Me.Label13.Text = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(100, 23)
+        Me.Label13.TabIndex = 25
+        Me.Label13.Text = "heroName" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'enemyName
+        '
+        Me.enemyName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.enemyName.Location = New System.Drawing.Point(604, 115)
+        Me.enemyName.Name = "enemyName"
+        Me.enemyName.Size = New System.Drawing.Size(100, 23)
+        Me.enemyName.TabIndex = 26
+        Me.enemyName.Text = "enemyName" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'heroMana
+        '
+        Me.heroMana.ForeColor = System.Drawing.Color.Blue
+        Me.heroMana.Location = New System.Drawing.Point(12, 366)
+        Me.heroMana.Name = "heroMana"
+        Me.heroMana.Size = New System.Drawing.Size(152, 13)
+        Me.heroMana.TabIndex = 27
+        Me.heroMana.Value = 100
         '
         'Fight
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(727, 607)
+        Me.ClientSize = New System.Drawing.Size(768, 729)
+        Me.Controls.Add(Me.heroMana)
+        Me.Controls.Add(Me.enemyName)
         Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.enemyBox)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.skillFour)
         Me.Controls.Add(Me.skillThree)
@@ -297,7 +326,7 @@ Partial Class Fight
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.heroName)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.skillOne)
         Me.Controls.Add(Me.Button3)
@@ -311,6 +340,8 @@ Partial Class Fight
         Me.Controls.Add(Me.Button1)
         Me.Name = "Fight"
         Me.Text = "Fighting Screen"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.enemyBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -326,7 +357,7 @@ Partial Class Fight
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents skillOne As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents heroName As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Updaete As System.Windows.Forms.Timer
@@ -341,5 +372,9 @@ Partial Class Fight
     Friend WithEvents skillThree As Button
     Friend WithEvents skillFour As Button
     Friend WithEvents Label12 As Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents enemyBox As System.Windows.Forms.PictureBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents enemyName As System.Windows.Forms.Label
+    Friend WithEvents heroMana As System.Windows.Forms.ProgressBar
 End Class

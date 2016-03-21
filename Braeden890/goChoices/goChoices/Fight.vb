@@ -1,8 +1,11 @@
 ﻿Public Class Fight
     Dim AttackGen As New Random 'Self Explanatory
+    Dim opponentName As New Random 'random opponent class above opponent picture
     Dim HC As Integer           'Player Hit chance
     Dim Plug As Integer         'Stops randomizer
     Dim EHC As Integer          'Enemy Hit chance
+    Dim Jerkwad As String
+    Dim Choices As Integer
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Me.Close()
     End Sub
@@ -87,6 +90,28 @@
         If Form1.charUnbo = True Then
             skillFour.Text = "Redemption"
         End If
+
+        'hero name above hero picture box
+        Label13.Text = Start.Variable.asdfmod
+
+        'enemy name above enemy pic
+        Choices = opponentName.Next(1, 6)
+        If Choices = 1 Then
+            Jerkwad = "Random Warrior"
+        End If
+        If Choices = 2 Then
+            Jerkwad = "Random Rogue"
+        End If
+        If Choices = 3 Then
+            Jerkwad = "Random Mage"
+        End If
+        If Choices = 4 Then
+            Jerkwad = "Random Unborn"
+        End If
+        If Choices = 5 Then
+            Jerkwad = "Random Tactician"
+        End If
+
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
@@ -102,16 +127,21 @@
     End Sub
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles skillOne.Click
-
+        ' If Form1.charWarr = True Then
+        '     heroMana.Value = heroMana.Value - 10
+        ' End If
+        ' If Form1.charWarr = True Then
+        '    ProgressBar2.Value = ProgressBar2.Value - 10
+        'End If
     End Sub
 
-    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles heroName.Click
         'this is the random fighting button
         Plugger.Enabled = True
 
     End Sub
 
-    Private Sub Updaete_Tick(sender As System.Object, e As System.EventArgs) Handles Updaete.Tick
+    Private Sub Updaete_Tick(sender As System.Object, e As System.EventArgs)
         Label6.Text = HC
         Label7.Text = EHC
         Label1.Text = ProgressBar1.Value
@@ -120,21 +150,22 @@
         Label10.Text = Form1.PlayerHY
         Label11.Text = Form1.PlayerDmg
         If ProgressBar1.Value = 0 Then
-            Button5.Enabled = False
+            heroName.Enabled = False
             Randomizer.Enabled = False
         End If
         If ProgressBar2.Value = 0 Then
-            Button5.Enabled = False
+            heroName.Enabled = False
             Randomizer.Enabled = False
         End If
+        enemyName.Text = Jerkwad
     End Sub
 
-    Private Sub Randomizer_Tick(sender As System.Object, e As System.EventArgs) Handles Randomizer.Tick
+    Private Sub Randomizer_Tick(sender As System.Object, e As System.EventArgs)
         HC = AttackGen.Next(0, 101)
         EHC = AttackGen.Next(0, 101)
     End Sub
 
-    Private Sub Plugger_Tick(sender As System.Object, e As System.EventArgs) Handles Plugger.Tick
+    Private Sub Plugger_Tick(sender As System.Object, e As System.EventArgs)
         Plug += 1
         Randomizer.Enabled = False
         If Randomizer.Enabled = False And EHC >= 51 And EHC <= 101 Then
