@@ -7,6 +7,9 @@ Public Class Form1
     'Declare variables for the player's current and former coordinates.
     Dim playerx As Integer : Dim playerbx As Integer
     Dim playery As Integer : Dim playerby As Integer
+    'Variables for town spawns.
+    Dim spawnTown As Integer 'Tells the program whether the town's coordinates have been spawned yet.
+    Dim town1x As Integer : Dim town1y As Integer
 
     'When a button is pressed.
     Private Sub Form1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
@@ -43,69 +46,143 @@ Public Class Form1
         labelx.Text = playerx
         labely.Text = playery
 
-        If playerx = 0 And playery = 0 Then
-            x0y0.Image = player.Image
-        End If
-
-        If playerx = 0 And playery = 1 Then
-            x0y1.Image = player.Image
-        End If
-
-        If playerx = 0 And playery = 2 Then
-            x0y2.Image = player.Image
-        End If
-
-        If playerx = 1 And playery = 0 Then
-            x1y0.Image = player.Image
-        End If
-
-        If playerx = 1 And playery = 1 Then
-            x1y1.Image = player.Image
-        End If
-
-        If playerx = 1 And playery = 2 Then
-            x1y2.Image = player.Image
-        End If
-
-        If playerx = 2 And playery = 0 Then
-            x2y0.Image = player.Image
-        End If
-
-        If playerx = 2 And playery = 1 Then
-            x2y1.Image = player.Image
-        End If
-
-        If playerx = 2 And playery = 2 Then
-            x2y2.Image = player.Image
-        End If
-        '=-===-=-=-=-=-=-=-r=23-=-=-=--
-
+        'Show the player's current coordinates
+        showPlayerCoordinate()
 
     End Sub 'End movement sub
 
-    '
-    Public Function clearLastCoordinate() As Boolean
-        Select Case playerbx And playerby
-            Case 0 And 0
-                x0y0.Image = clear.Image
-            Case 0 And 1
-                x0y1.Image = clear.Image
-            Case 0 And 2
-                x0y2.Image = clear.Image
-            Case 1 And 0
-                x1y0.Image = clear.Image
-            Case 1 And 1
-                x1y1.Image = clear.Image
-            Case 1 And 2
-                x1y2.Image = clear.Image
-            Case 2 And 0
-                x2y0.Image = clear.Image
-            Case 2 And 1
-                x2y1.Image = clear.Image
-            Case 2 And 2
-                x2y2.Image = clear.Image
-        End Select
+    'Function for clearing the whole fucking map.
+    Public Function clearCoordinates() As Boolean
+        x0y0.Image = clear.Image
+        x0y1.Image = clear.Image
+        x0y2.Image = clear.Image
+        x1y0.Image = clear.Image
+        x1y1.Image = clear.Image
+        x1y2.Image = clear.Image
+        x2y0.Image = clear.Image
+        x2y1.Image = clear.Image
+        x2y2.Image = clear.Image
         Return 0
     End Function
 
+    'Function for showing town coordinates.
+    Public Function showTown1Coordinate() As Boolean
+        'According to the town's current coordinates
+        If town1x = 0 And town1y = 0 Then
+            'Make the towns's current coordinate's picturebox show the player.
+            x0y0.Image = town.Image
+        End If
+
+        If town1x = 0 And town1y = 1 Then
+            x0y1.Image = town.Image
+        End If
+
+        If town1x = 0 And town1y = 2 Then
+            x0y2.Image = town.Image
+        End If
+
+        If town1x = 1 And town1y = 0 Then
+            x1y0.Image = town.Image
+        End If
+
+        If town1x = 1 And town1y = 1 Then
+            x1y1.Image = town.Image
+        End If
+
+        If town1x = 1 And town1y = 2 Then
+            x1y2.Image = town.Image
+        End If
+
+        If town1x = 2 And town1y = 0 Then
+            x2y0.Image = town.Image
+        End If
+
+        If town1x = 2 And town1y = 1 Then
+            x2y1.Image = town.Image
+        End If
+
+        If town1x = 2 And town1y = 2 Then
+            x2y2.Image = town.Image
+        End If
+        Return 0
+    End Function
+
+    'Function for showing the player's coordinate.
+    Public Function showPlayerCoordinate() As Boolean
+        'According to the player's current coordinates
+        If playerx = 0 And playery = 0 Then
+            'Clear the whole grid
+            clearCoordinates()
+            'Make the player's current coordinate's picturebox show the player.
+            x0y0.Image = player.Image
+            'Show the town through the town's current coordinate picturebox.
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 1 Then
+            clearCoordinates()
+            x0y1.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 2 Then
+            clearCoordinates()
+            x0y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 0 Then
+            clearCoordinates()
+            x1y0.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 1 Then
+            clearCoordinates()
+            x1y1.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 2 Then
+            clearCoordinates()
+            x1y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 0 Then
+            clearCoordinates()
+            x2y0.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 1 Then
+            clearCoordinates()
+            x2y1.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 2 Then
+            clearCoordinates()
+            x2y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+        Return 0
+    End Function 'End movem function
+
+    'When the form loads.
+    Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        'Load in variables
+        spawnTown = 1
+        'Load the player's current coordinates.
+        showPlayerCoordinate()
+        'Randomise the town spawn variables if it is the first time this map has been loaded on the save.
+        If spawnTown = 1 Then
+            town1x = CInt(Int((3 * Rnd()) + 1))
+            town1y = CInt(Int((3 * Rnd()) + 1))
+            spawnTown = 0 'Save that the town has been spawned.
+        End If
+        'Update the town's variable labels
+        townLabelx.Text = town1x
+        townLabely.Text = town1y
+    End Sub 'end form load sub
 End Class 'End main class

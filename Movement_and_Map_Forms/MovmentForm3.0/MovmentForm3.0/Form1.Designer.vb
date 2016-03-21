@@ -38,6 +38,11 @@ Partial Class Form1
         Me.labely = New System.Windows.Forms.Label()
         Me.clear = New System.Windows.Forms.PictureBox()
         Me.player = New System.Windows.Forms.PictureBox()
+        Me.town = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.townLabelx = New System.Windows.Forms.Label()
+        Me.townLabely = New System.Windows.Forms.Label()
         CType(Me.x1y1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x2y1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x2y2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,6 +54,7 @@ Partial Class Form1
         CType(Me.x0y2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.clear, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.player, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.town, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'x1y1
@@ -161,7 +167,7 @@ Partial Class Form1
         '
         'clear
         '
-        Me.clear.Location = New System.Drawing.Point(56, 16)
+        Me.clear.Location = New System.Drawing.Point(157, 6)
         Me.clear.Name = "clear"
         Me.clear.Size = New System.Drawing.Size(38, 36)
         Me.clear.TabIndex = 13
@@ -170,17 +176,67 @@ Partial Class Form1
         'player
         '
         Me.player.Image = CType(resources.GetObject("player.Image"), System.Drawing.Image)
-        Me.player.Location = New System.Drawing.Point(100, 16)
+        Me.player.Location = New System.Drawing.Point(201, 6)
         Me.player.Name = "player"
         Me.player.Size = New System.Drawing.Size(38, 36)
         Me.player.TabIndex = 14
         Me.player.TabStop = False
+        '
+        'town
+        '
+        Me.town.Image = CType(resources.GetObject("town.Image"), System.Drawing.Image)
+        Me.town.Location = New System.Drawing.Point(245, 6)
+        Me.town.Name = "town"
+        Me.town.Size = New System.Drawing.Size(38, 36)
+        Me.town.TabIndex = 15
+        Me.town.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(19, 68)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(35, 13)
+        Me.Label3.TabIndex = 16
+        Me.Label3.Text = "towny"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(19, 55)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(35, 13)
+        Me.Label4.TabIndex = 17
+        Me.Label4.Text = "townx"
+        '
+        'townLabelx
+        '
+        Me.townLabelx.AutoSize = True
+        Me.townLabelx.Location = New System.Drawing.Point(60, 55)
+        Me.townLabelx.Name = "townLabelx"
+        Me.townLabelx.Size = New System.Drawing.Size(13, 13)
+        Me.townLabelx.TabIndex = 18
+        Me.townLabelx.Text = "0"
+        '
+        'townLabely
+        '
+        Me.townLabely.AutoSize = True
+        Me.townLabely.Location = New System.Drawing.Point(60, 68)
+        Me.townLabely.Name = "townLabely"
+        Me.townLabely.Size = New System.Drawing.Size(13, 13)
+        Me.townLabely.TabIndex = 19
+        Me.townLabely.Text = "0"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(292, 273)
+        Me.Controls.Add(Me.townLabely)
+        Me.Controls.Add(Me.townLabelx)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.town)
         Me.Controls.Add(Me.player)
         Me.Controls.Add(Me.clear)
         Me.Controls.Add(Me.labely)
@@ -209,6 +265,7 @@ Partial Class Form1
         CType(Me.x0y2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.clear, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.player, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.town, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -228,5 +285,10 @@ Partial Class Form1
     Friend WithEvents labely As System.Windows.Forms.Label
     Friend WithEvents clear As System.Windows.Forms.PictureBox
     Friend WithEvents player As System.Windows.Forms.PictureBox
+    Friend WithEvents town As System.Windows.Forms.PictureBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents townLabelx As System.Windows.Forms.Label
+    Friend WithEvents townLabely As System.Windows.Forms.Label
 
 End Class

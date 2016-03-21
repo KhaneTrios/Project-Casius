@@ -21,10 +21,6 @@ Public Class MovementFormNew
         'Have a message box pop up with text.
         Call MsgBox("Sample Text")
 
-        'Randomise the x and y coordinate of the towns
-        'town1x = CInt(Int((7 * Rnd()) + 1)) TEMPORARILY COMMENTED FOR TESTING.
-        town1y = CInt(Int((6 * Rnd()) + 1))
-
         'town1y = 1 'Temp value for testing.
         town1x = 1 'Temp value for testing.
 
