@@ -28,14 +28,12 @@ Partial Class Form1
         Me.Plugger = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PlugLabel = New System.Windows.Forms.Label()
-        Me.Updater = New System.Windows.Forms.Timer(Me.components)
-        Me.Randomizer = New System.Windows.Forms.Timer(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LabelClass = New System.Windows.Forms.Label()
-        Me.RandomArmor = New System.Windows.Forms.Timer(Me.components)
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ArmLabel = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Randomizer = New System.Windows.Forms.Timer(Me.components)
+        Me.Updater = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'UnPlug
@@ -49,6 +47,7 @@ Partial Class Form1
         '
         'RePlug
         '
+        Me.RePlug.Enabled = False
         Me.RePlug.Location = New System.Drawing.Point(13, 43)
         Me.RePlug.Name = "RePlug"
         Me.RePlug.Size = New System.Drawing.Size(75, 23)
@@ -79,16 +78,6 @@ Partial Class Form1
         Me.PlugLabel.TabIndex = 3
         Me.PlugLabel.Text = "9999"
         '
-        'Updater
-        '
-        Me.Updater.Enabled = True
-        Me.Updater.Interval = 1
-        '
-        'Randomizer
-        '
-        Me.Randomizer.Enabled = True
-        Me.Randomizer.Interval = 1
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -107,10 +96,6 @@ Partial Class Form1
         Me.LabelClass.Size = New System.Drawing.Size(39, 13)
         Me.LabelClass.TabIndex = 5
         Me.LabelClass.Text = "Casual"
-        '
-        'RandomArmor
-        '
-        Me.RandomArmor.Interval = 10
         '
         'Label3
         '
@@ -131,21 +116,21 @@ Partial Class Form1
         Me.ArmLabel.TabIndex = 7
         Me.ArmLabel.Text = "Plot Armor"
         '
-        'Button1
+        'Randomizer
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 73)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Randomizer.Enabled = True
+        Me.Randomizer.Interval = 1
+        '
+        'Updater
+        '
+        Me.Updater.Enabled = True
+        Me.Updater.Interval = 1
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(670, 489)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ArmLabel)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.LabelClass)
@@ -165,13 +150,11 @@ Partial Class Form1
     Friend WithEvents Plugger As System.Windows.Forms.Timer
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PlugLabel As System.Windows.Forms.Label
-    Friend WithEvents Updater As System.Windows.Forms.Timer
-    Friend WithEvents Randomizer As System.Windows.Forms.Timer
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents LabelClass As System.Windows.Forms.Label
-    Friend WithEvents RandomArmor As System.Windows.Forms.Timer
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents ArmLabel As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Randomizer As System.Windows.Forms.Timer
+    Friend WithEvents Updater As System.Windows.Forms.Timer
 
 End Class
