@@ -25,8 +25,7 @@ Public Class MovementFormNew
         town1x = 1 'Temp value for testing.
 
         'Randomise the x and y coordinates of the bandits
-        banditx = CInt(Int((30 * Rnd()) + 1))
-        bandity = CInt(Int((30 * Rnd()) + 1))
+
 
     End Sub
 

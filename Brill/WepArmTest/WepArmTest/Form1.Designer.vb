@@ -63,6 +63,30 @@ Partial Class BrillTest
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.Randomizer = New System.Windows.Forms.Timer(Me.components)
+        Me.RanLabel = New System.Windows.Forms.Label()
+        Me.ClassE = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.ActEHealth = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Plugger = New System.Windows.Forms.Timer(Me.components)
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.WarriorGen = New System.Windows.Forms.Timer(Me.components)
+        Me.RogueGen = New System.Windows.Forms.Timer(Me.components)
+        Me.MageGen = New System.Windows.Forms.Timer(Me.components)
+        Me.TactGen = New System.Windows.Forms.Timer(Me.components)
+        Me.UnGen = New System.Windows.Forms.Timer(Me.components)
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -266,15 +290,15 @@ Partial Class BrillTest
         '
         Me.ProgressBar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ProgressBar1.ForeColor = System.Drawing.Color.Red
-        Me.ProgressBar1.Location = New System.Drawing.Point(597, 498)
+        Me.ProgressBar1.Location = New System.Drawing.Point(94, 376)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(241, 39)
+        Me.ProgressBar1.Size = New System.Drawing.Size(123, 23)
         Me.ProgressBar1.TabIndex = 22
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(594, 482)
+        Me.Label10.Location = New System.Drawing.Point(91, 360)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(75, 13)
         Me.Label10.TabIndex = 23
@@ -284,7 +308,7 @@ Partial Class BrillTest
         '
         Me.TotalHealth.AutoSize = True
         Me.TotalHealth.BackColor = System.Drawing.Color.Transparent
-        Me.TotalHealth.Location = New System.Drawing.Point(690, 482)
+        Me.TotalHealth.Location = New System.Drawing.Point(172, 360)
         Me.TotalHealth.Name = "TotalHealth"
         Me.TotalHealth.Size = New System.Drawing.Size(45, 13)
         Me.TotalHealth.TabIndex = 24
@@ -329,7 +353,7 @@ Partial Class BrillTest
         Me.ProgressBar2.ForeColor = System.Drawing.Color.Gold
         Me.ProgressBar2.Location = New System.Drawing.Point(12, 316)
         Me.ProgressBar2.Name = "ProgressBar2"
-        Me.ProgressBar2.Size = New System.Drawing.Size(826, 23)
+        Me.ProgressBar2.Size = New System.Drawing.Size(205, 23)
         Me.ProgressBar2.TabIndex = 28
         '
         'Button10
@@ -343,7 +367,7 @@ Partial Class BrillTest
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(404, 442)
+        Me.Button11.Location = New System.Drawing.Point(13, 405)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(75, 23)
         Me.Button11.TabIndex = 30
@@ -353,7 +377,7 @@ Partial Class BrillTest
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(377, 297)
+        Me.Label11.Location = New System.Drawing.Point(9, 300)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(45, 13)
         Me.Label11.TabIndex = 31
@@ -431,11 +455,210 @@ Partial Class BrillTest
         Me.Label16.TabIndex = 39
         Me.Label16.Text = "#"
         '
+        'Randomizer
+        '
+        Me.Randomizer.Enabled = True
+        Me.Randomizer.Interval = 1
+        '
+        'RanLabel
+        '
+        Me.RanLabel.AutoSize = True
+        Me.RanLabel.Location = New System.Drawing.Point(223, 316)
+        Me.RanLabel.Name = "RanLabel"
+        Me.RanLabel.Size = New System.Drawing.Size(13, 13)
+        Me.RanLabel.TabIndex = 40
+        Me.RanLabel.Text = "0"
+        '
+        'ClassE
+        '
+        Me.ClassE.AutoSize = True
+        Me.ClassE.Location = New System.Drawing.Point(264, 316)
+        Me.ClassE.Name = "ClassE"
+        Me.ClassE.Size = New System.Drawing.Size(45, 13)
+        Me.ClassE.TabIndex = 41
+        Me.ClassE.Text = "Label17"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(403, 300)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(82, 13)
+        Me.Label17.TabIndex = 42
+        Me.Label17.Text = "Enemy Damage"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(403, 276)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(73, 13)
+        Me.Label18.TabIndex = 43
+        Me.Label18.Text = "Enemy Health"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(403, 326)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(69, 13)
+        Me.Label19.TabIndex = 44
+        Me.Label19.Text = "Enemy Armor"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(403, 351)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(83, 13)
+        Me.Label20.TabIndex = 45
+        Me.Label20.Text = "Enemy Weapon"
+        '
+        'ActEHealth
+        '
+        Me.ActEHealth.AutoSize = True
+        Me.ActEHealth.Location = New System.Drawing.Point(530, 276)
+        Me.ActEHealth.Name = "ActEHealth"
+        Me.ActEHealth.Size = New System.Drawing.Size(13, 13)
+        Me.ActEHealth.TabIndex = 46
+        Me.ActEHealth.Text = "0"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(530, 300)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(13, 13)
+        Me.Label21.TabIndex = 47
+        Me.Label21.Text = "0"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(530, 326)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(34, 13)
+        Me.Label22.TabIndex = 48
+        Me.Label22.Text = "Blank"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(530, 351)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(34, 13)
+        Me.Label23.TabIndex = 49
+        Me.Label23.Text = "Blank"
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(267, 346)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(59, 23)
+        Me.Button4.TabIndex = 50
+        Me.Button4.Text = "UnPlug"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Plugger
+        '
+        Me.Plugger.Interval = 5
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(267, 376)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(59, 23)
+        Me.Button5.TabIndex = 51
+        Me.Button5.Text = "RePlug"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(267, 414)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(45, 13)
+        Me.Label24.TabIndex = 52
+        Me.Label24.Text = "Label24"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(228, 414)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(33, 13)
+        Me.Label25.TabIndex = 53
+        Me.Label25.Text = "Plugs"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(231, 431)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(194, 13)
+        Me.Label26.TabIndex = 54
+        Me.Label26.Text = "If Plugs = 2000, Randomizer will resume"
+        '
+        'WarriorGen
+        '
+        Me.WarriorGen.Interval = 5
+        '
+        'RogueGen
+        '
+        Me.RogueGen.Interval = 5
+        '
+        'MageGen
+        '
+        Me.MageGen.Interval = 5
+        '
+        'TactGen
+        '
+        Me.TactGen.Interval = 5
+        '
+        'UnGen
+        '
+        Me.UnGen.Interval = 5
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(353, 414)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(54, 13)
+        Me.Label27.TabIndex = 55
+        Me.Label27.Text = "GenNums"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(414, 414)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(45, 13)
+        Me.Label28.TabIndex = 56
+        Me.Label28.Text = "Label28"
+        '
         'BrillTest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(850, 549)
+        Me.Controls.Add(Me.Label28)
+        Me.Controls.Add(Me.Label27)
+        Me.Controls.Add(Me.Label26)
+        Me.Controls.Add(Me.Label25)
+        Me.Controls.Add(Me.Label24)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Label23)
+        Me.Controls.Add(Me.Label22)
+        Me.Controls.Add(Me.Label21)
+        Me.Controls.Add(Me.ActEHealth)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.ClassE)
+        Me.Controls.Add(Me.RanLabel)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
@@ -521,5 +744,29 @@ Partial Class BrillTest
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Randomizer As System.Windows.Forms.Timer
+    Friend WithEvents RanLabel As System.Windows.Forms.Label
+    Friend WithEvents ClassE As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents ActEHealth As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Plugger As System.Windows.Forms.Timer
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents Label26 As System.Windows.Forms.Label
+    Friend WithEvents WarriorGen As System.Windows.Forms.Timer
+    Friend WithEvents RogueGen As System.Windows.Forms.Timer
+    Friend WithEvents MageGen As System.Windows.Forms.Timer
+    Friend WithEvents TactGen As System.Windows.Forms.Timer
+    Friend WithEvents UnGen As System.Windows.Forms.Timer
+    Friend WithEvents Label27 As System.Windows.Forms.Label
+    Friend WithEvents Label28 As System.Windows.Forms.Label
 
 End Class

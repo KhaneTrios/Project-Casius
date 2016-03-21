@@ -111,12 +111,16 @@ Public Class Form1
     Public Function showPlayerCoordinate() As Boolean
         'According to the player's current coordinates
         If playerx = 0 And playery = 0 Then
+
             'Clear the whole grid
             clearCoordinates()
+
             'Make the player's current coordinate's picturebox show the player.
             x0y0.Image = player.Image
+
             'Show the town through the town's current coordinate picturebox.
             showTown1Coordinate()
+
         End If
 
         If playerx = 0 And playery = 1 Then
@@ -167,22 +171,46 @@ Public Class Form1
             showTown1Coordinate()
         End If
         Return 0
-    End Function 'End movem function
+    End Function 'End movement function
 
     'When the form loads.
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        'Load in variables
-        spawnTown = 1
-        'Load the player's current coordinates.
-        showPlayerCoordinate()
-        'Randomise the town spawn variables if it is the first time this map has been loaded on the save.
-        If spawnTown = 1 Then
-            town1x = CInt(Int((3 * Rnd()) + 1))
-            town1y = CInt(Int((3 * Rnd()) + 1))
-            spawnTown = 0 'Save that the town has been spawned.
-        End If
+
+        'Load the town coordinates.
+        town1x = CInt(Int((3 * Rnd()) - 1))
+        town1y = CInt(Int((3 * Rnd()) - 1))
+
         'Update the town's variable labels
         townLabelx.Text = town1x
         townLabely.Text = town1y
+
+        'Load the player's current coordinates.
+        showPlayerCoordinate()
+
     End Sub 'end form load sub
+
+    'Function for clearing all the coordinates on the fucking map.
+    Public Function clearLastCoordinate() As Boolean
+        Select Case playerbx And playerby
+            Case 0 And 0
+                x0y0.Image = clear.Image
+            Case 0 And 1
+                x0y1.Image = clear.Image
+            Case 0 And 2
+                x0y2.Image = clear.Image
+            Case 1 And 0
+                x1y0.Image = clear.Image
+            Case 1 And 1
+                x1y1.Image = clear.Image
+            Case 1 And 2
+                x1y2.Image = clear.Image
+            Case 2 And 0
+                x2y0.Image = clear.Image
+            Case 2 And 1
+                x2y1.Image = clear.Image
+            Case 2 And 2
+                x2y2.Image = clear.Image
+        End Select
+        Return 0
+    End Function 'End clearing function
 End Class 'End main class
