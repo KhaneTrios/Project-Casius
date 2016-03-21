@@ -29,6 +29,8 @@
         Public Shared auto1Max As Integer : Public Shared auto2Max As Integer : Public Shared auto3Max As Integer : Public Shared auto4Max As Integer : Public Shared auto5Max As Integer : Public Shared auto6Max As Integer : Public Shared auto7Max As Integer : Public Shared auto8Max As Integer
         Public Shared recAsk As Boolean = False
         Public Shared auto2Col As Boolean = False : Public Shared auto3Col As Boolean = False : Public Shared auto4Col As Boolean = False : Public Shared auto6Col As Boolean = False
+        Public Shared up1Cost As Integer : Public Shared up2Cost As Integer : Public Shared up3Cost
+        Public Shared up1 As Boolean : Public Shared up2 As Boolean : Public Shared up3 As Boolean
     End Structure
     Structure Fight
 

@@ -117,6 +117,9 @@ Partial Class frmIdle
         Me.tmrAuto4 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto6 = New System.Windows.Forms.Timer(Me.components)
         Me.backWork = New System.ComponentModel.BackgroundWorker()
+        Me.btnUp1 = New System.Windows.Forms.Button()
+        Me.btnUp2 = New System.Windows.Forms.Button()
+        Me.btnUp3 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -447,7 +450,7 @@ Partial Class frmIdle
         'txtCheat
         '
         Me.txtCheat.Enabled = False
-        Me.txtCheat.Location = New System.Drawing.Point(48, 240)
+        Me.txtCheat.Location = New System.Drawing.Point(48, 224)
         Me.txtCheat.Name = "txtCheat"
         Me.txtCheat.Size = New System.Drawing.Size(128, 20)
         Me.txtCheat.TabIndex = 32
@@ -456,7 +459,7 @@ Partial Class frmIdle
         'btnCheat
         '
         Me.btnCheat.Enabled = False
-        Me.btnCheat.Location = New System.Drawing.Point(184, 240)
+        Me.btnCheat.Location = New System.Drawing.Point(184, 224)
         Me.btnCheat.Name = "btnCheat"
         Me.btnCheat.Size = New System.Drawing.Size(80, 24)
         Me.btnCheat.TabIndex = 33
@@ -514,6 +517,9 @@ Partial Class frmIdle
         'tabRebuild
         '
         Me.tabRebuild.BackColor = System.Drawing.Color.Transparent
+        Me.tabRebuild.Controls.Add(Me.btnUp3)
+        Me.tabRebuild.Controls.Add(Me.btnUp2)
+        Me.tabRebuild.Controls.Add(Me.btnUp1)
         Me.tabRebuild.Controls.Add(Me.lblBar2Col)
         Me.tabRebuild.Controls.Add(Me.btnLd)
         Me.tabRebuild.Controls.Add(Me.btnSave)
@@ -1032,6 +1038,34 @@ Partial Class frmIdle
         '
         Me.tmrAuto6.Interval = 20000
         '
+        'btnUp1
+        '
+        Me.btnUp1.Enabled = False
+        Me.btnUp1.Location = New System.Drawing.Point(48, 280)
+        Me.btnUp1.Name = "btnUp1"
+        Me.btnUp1.Size = New System.Drawing.Size(32, 24)
+        Me.btnUp1.TabIndex = 71
+        Me.btnUp1.Text = "1"
+        Me.btnUp1.UseVisualStyleBackColor = True
+        '
+        'btnUp2
+        '
+        Me.btnUp2.Location = New System.Drawing.Point(96, 280)
+        Me.btnUp2.Name = "btnUp2"
+        Me.btnUp2.Size = New System.Drawing.Size(32, 24)
+        Me.btnUp2.TabIndex = 72
+        Me.btnUp2.Text = "2"
+        Me.btnUp2.UseVisualStyleBackColor = True
+        '
+        'btnUp3
+        '
+        Me.btnUp3.Location = New System.Drawing.Point(144, 280)
+        Me.btnUp3.Name = "btnUp3"
+        Me.btnUp3.Size = New System.Drawing.Size(32, 24)
+        Me.btnUp3.TabIndex = 73
+        Me.btnUp3.Text = "3"
+        Me.btnUp3.UseVisualStyleBackColor = True
+        '
         'frmIdle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1144,4 +1178,7 @@ Partial Class frmIdle
     Friend WithEvents btnSave As System.Windows.Forms.Button
     Friend WithEvents backWork As System.ComponentModel.BackgroundWorker
     Friend WithEvents lblBar2Col As System.Windows.Forms.Label
+    Friend WithEvents btnUp3 As System.Windows.Forms.Button
+    Friend WithEvents btnUp2 As System.Windows.Forms.Button
+    Friend WithEvents btnUp1 As System.Windows.Forms.Button
 End Class
