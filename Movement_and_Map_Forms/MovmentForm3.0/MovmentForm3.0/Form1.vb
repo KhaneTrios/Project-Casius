@@ -78,12 +78,10 @@ Public Class Form1
         If playerx = 2 And playery = 2 Then
             x2y2.Image = player.Image
         End If
-        '=-===-=-=-=-=-=-=-r=23-=-=-=--
-
-
+		
     End Sub 'End movement sub
 
-    '
+    'Function for clearing all the coordinates on the fucking map.
     Public Function clearLastCoordinate() As Boolean
         Select Case playerbx And playerby
             Case 0 And 0
@@ -106,6 +104,6 @@ Public Class Form1
                 x2y2.Image = clear.Image
         End Select
         Return 0
-    End Function
+    End Function 'End clearing function
 
 End Class 'End main class

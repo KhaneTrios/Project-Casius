@@ -66,6 +66,7 @@ Partial Class frmIdle
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabRebuild = New System.Windows.Forms.TabPage()
+        Me.lblBar2Col = New System.Windows.Forms.Label()
         Me.btnLd = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.barAuto6Col = New System.Windows.Forms.ProgressBar()
@@ -513,6 +514,7 @@ Partial Class frmIdle
         'tabRebuild
         '
         Me.tabRebuild.BackColor = System.Drawing.Color.Transparent
+        Me.tabRebuild.Controls.Add(Me.lblBar2Col)
         Me.tabRebuild.Controls.Add(Me.btnLd)
         Me.tabRebuild.Controls.Add(Me.btnSave)
         Me.tabRebuild.Controls.Add(Me.barAuto6Col)
@@ -583,6 +585,15 @@ Partial Class frmIdle
         Me.tabRebuild.Size = New System.Drawing.Size(632, 454)
         Me.tabRebuild.TabIndex = 0
         Me.tabRebuild.Text = "Rebuild"
+        '
+        'lblBar2Col
+        '
+        Me.lblBar2Col.AutoSize = True
+        Me.lblBar2Col.Location = New System.Drawing.Point(240, 80)
+        Me.lblBar2Col.Name = "lblBar2Col"
+        Me.lblBar2Col.Size = New System.Drawing.Size(39, 13)
+        Me.lblBar2Col.TabIndex = 70
+        Me.lblBar2Col.Text = "Label7"
         '
         'btnLd
         '
@@ -1021,9 +1032,6 @@ Partial Class frmIdle
         '
         Me.tmrAuto6.Interval = 20000
         '
-        'backWork
-        '
-        '
         'frmIdle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1135,4 +1143,5 @@ Partial Class frmIdle
     Friend WithEvents btnLd As System.Windows.Forms.Button
     Friend WithEvents btnSave As System.Windows.Forms.Button
     Friend WithEvents backWork As System.ComponentModel.BackgroundWorker
+    Friend WithEvents lblBar2Col As System.Windows.Forms.Label
 End Class
