@@ -175,10 +175,10 @@ Public Class Form1
 
     'When the form loads.
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
+        Randomize()
         'Load the town coordinates.
-        town1x = CInt(Int((3 * Rnd()) - 1))
-        town1y = CInt(Int((3 * Rnd()) - 1))
+        town1x = CInt(Int((3 * Rnd()) + 0))
+        town1y = CInt(Int((3 * Rnd()) + 0))
 
         'Update the town's variable labels
         townLabelx.Text = town1x
