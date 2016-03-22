@@ -13,6 +13,7 @@
         lblCity2.Text = Variables.Movement.townSize         'Looking for the size of the town to determine the variable values needed for the rest of the autoclicker.
         lblSize.Text = Variables.Movement.townSize
 
+
         Select Case Variables.Movement.townSize
             Case 1
                 Variables.Auto.auto2Max = 150        'The total amount needed to max out and complete the building of this item
@@ -361,6 +362,9 @@
             lblAuto9Val.Text = Variables.Auto.auto9Val
             lblGamble.Text = Variables.Auto.gamble
             lblBar2Col.Text = barAuto2Col.Value
+            lbl7bought.Text = Variables.Auto.auto7Bought
+            lbl8off.Text = Variables.Auto.auto8Off
+            lblFollowers.Text = Variables.Overall.followers
             
             ' --- Skills text display ---
             ' Constant updating all skill labels
@@ -426,10 +430,10 @@
                 btnAuto7.Enabled = False
                 Variables.Auto.auto7Off = True
             End If
-            If Variables.Auto.auto8 >= Variables.Auto.auto8Max Then
-                barAuto8.Enabled = False
+            If Variables.Auto.auto8 >= 1 Then
+                'barAuto8.Enabled = False
                 lblHall.Enabled = False
-                Variables.Auto.auto8 = Variables.Auto.auto8Max
+                Variables.Auto.auto8 = 1
                 btnAuto8.Enabled = False
                 Variables.Auto.auto8Off = True
             End If
@@ -442,7 +446,7 @@
             barAuto5.Value = Variables.Auto.auto5
             barAuto6.Value = Variables.Auto.shop
             barAuto7.Value = Variables.Auto.auto7
-            barAuto8.Value = Variables.Auto.auto8
+            ' barAuto8.Value = Variables.Auto.auto8
 
           
             ' --- Button-enabling check ---
@@ -505,6 +509,7 @@
 
             If Variables.Auto.amount >= Variables.Auto.up1Cost Then
                 btnUp1.Enabled = True
+                Else : btnUp1.Enabled = False
             End If
 
         End If
@@ -525,6 +530,17 @@
         ElseIf Variables.Auto.gamble = 4 Then
             lblSucFail.Text = "Successful Recruitment!"
         Else : lblSucFail.Text = "Failed Recruitment."
+        End If
+
+        If Variables.Auto.gamble = 5 Or 4 Then
+            Select Case Variables.Movement.townSize
+                Case 1
+                    Variables.Overall.followers += 100
+                Case 2
+                    Variables.Overall.followers += 1000
+                Case 3
+                    Variables.Overall.followers += 10000
+            End Select
         End If
 
         If tmrSucFail.Interval = 500 Then
@@ -573,6 +589,8 @@
 
     Private Sub btnUp1_Click(sender As System.Object, e As System.EventArgs) Handles btnUp1.Click
         Variables.Auto.up1 = True
-        btnUp1.Enabled = False
+        Application.DoEvents()
+        btnUp1.Visible = False
+        Application.DoEvents()
     End Sub
 End Class

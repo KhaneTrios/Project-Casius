@@ -66,6 +66,10 @@ Partial Class frmIdle
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabRebuild = New System.Windows.Forms.TabPage()
+        Me.lblFollowers = New System.Windows.Forms.Label()
+        Me.btnUp3 = New System.Windows.Forms.Button()
+        Me.btnUp2 = New System.Windows.Forms.Button()
+        Me.btnUp1 = New System.Windows.Forms.Button()
         Me.lblBar2Col = New System.Windows.Forms.Label()
         Me.btnLd = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
@@ -85,7 +89,6 @@ Partial Class frmIdle
         Me.lblAuto6Val = New System.Windows.Forms.Label()
         Me.lblAuto5Val = New System.Windows.Forms.Label()
         Me.lblAuto4Val = New System.Windows.Forms.Label()
-        Me.lblGPPS = New System.Windows.Forms.Label()
         Me.barAuto4 = New System.Windows.Forms.ProgressBar()
         Me.barAuto2 = New System.Windows.Forms.ProgressBar()
         Me.barAuto3 = New System.Windows.Forms.ProgressBar()
@@ -117,9 +120,8 @@ Partial Class frmIdle
         Me.tmrAuto4 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto6 = New System.Windows.Forms.Timer(Me.components)
         Me.backWork = New System.ComponentModel.BackgroundWorker()
-        Me.btnUp1 = New System.Windows.Forms.Button()
-        Me.btnUp2 = New System.Windows.Forms.Button()
-        Me.btnUp3 = New System.Windows.Forms.Button()
+        Me.lbl7bought = New System.Windows.Forms.Label()
+        Me.lbl8off = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -517,6 +519,9 @@ Partial Class frmIdle
         'tabRebuild
         '
         Me.tabRebuild.BackColor = System.Drawing.Color.Transparent
+        Me.tabRebuild.Controls.Add(Me.lbl8off)
+        Me.tabRebuild.Controls.Add(Me.lbl7bought)
+        Me.tabRebuild.Controls.Add(Me.lblFollowers)
         Me.tabRebuild.Controls.Add(Me.btnUp3)
         Me.tabRebuild.Controls.Add(Me.btnUp2)
         Me.tabRebuild.Controls.Add(Me.btnUp1)
@@ -541,7 +546,6 @@ Partial Class frmIdle
         Me.tabRebuild.Controls.Add(Me.lblAuto6Val)
         Me.tabRebuild.Controls.Add(Me.lblAuto5Val)
         Me.tabRebuild.Controls.Add(Me.lblAuto4Val)
-        Me.tabRebuild.Controls.Add(Me.lblGPPS)
         Me.tabRebuild.Controls.Add(Me.lblTmrAmount)
         Me.tabRebuild.Controls.Add(Me.lblAuto6N)
         Me.tabRebuild.Controls.Add(Me.lblAuto5N)
@@ -592,10 +596,47 @@ Partial Class frmIdle
         Me.tabRebuild.TabIndex = 0
         Me.tabRebuild.Text = "Rebuild"
         '
+        'lblFollowers
+        '
+        Me.lblFollowers.AutoSize = True
+        Me.lblFollowers.Location = New System.Drawing.Point(544, 416)
+        Me.lblFollowers.Name = "lblFollowers"
+        Me.lblFollowers.Size = New System.Drawing.Size(51, 13)
+        Me.lblFollowers.TabIndex = 74
+        Me.lblFollowers.Text = "Followers"
+        '
+        'btnUp3
+        '
+        Me.btnUp3.Location = New System.Drawing.Point(144, 280)
+        Me.btnUp3.Name = "btnUp3"
+        Me.btnUp3.Size = New System.Drawing.Size(32, 24)
+        Me.btnUp3.TabIndex = 73
+        Me.btnUp3.Text = "3"
+        Me.btnUp3.UseVisualStyleBackColor = True
+        '
+        'btnUp2
+        '
+        Me.btnUp2.Location = New System.Drawing.Point(96, 280)
+        Me.btnUp2.Name = "btnUp2"
+        Me.btnUp2.Size = New System.Drawing.Size(32, 24)
+        Me.btnUp2.TabIndex = 72
+        Me.btnUp2.Text = "2"
+        Me.btnUp2.UseVisualStyleBackColor = True
+        '
+        'btnUp1
+        '
+        Me.btnUp1.Enabled = False
+        Me.btnUp1.Location = New System.Drawing.Point(48, 280)
+        Me.btnUp1.Name = "btnUp1"
+        Me.btnUp1.Size = New System.Drawing.Size(32, 24)
+        Me.btnUp1.TabIndex = 71
+        Me.btnUp1.Text = "1"
+        Me.btnUp1.UseVisualStyleBackColor = True
+        '
         'lblBar2Col
         '
         Me.lblBar2Col.AutoSize = True
-        Me.lblBar2Col.Location = New System.Drawing.Point(240, 80)
+        Me.lblBar2Col.Location = New System.Drawing.Point(424, 64)
         Me.lblBar2Col.Name = "lblBar2Col"
         Me.lblBar2Col.Size = New System.Drawing.Size(39, 13)
         Me.lblBar2Col.TabIndex = 70
@@ -755,15 +796,6 @@ Partial Class frmIdle
         Me.lblAuto4Val.Size = New System.Drawing.Size(13, 13)
         Me.lblAuto4Val.TabIndex = 39
         Me.lblAuto4Val.Text = "0"
-        '
-        'lblGPPS
-        '
-        Me.lblGPPS.AutoSize = True
-        Me.lblGPPS.Location = New System.Drawing.Point(128, 96)
-        Me.lblGPPS.Name = "lblGPPS"
-        Me.lblGPPS.Size = New System.Drawing.Size(13, 13)
-        Me.lblGPPS.TabIndex = 38
-        Me.lblGPPS.Text = "0"
         '
         'barAuto4
         '
@@ -1038,33 +1070,23 @@ Partial Class frmIdle
         '
         Me.tmrAuto6.Interval = 20000
         '
-        'btnUp1
+        'lbl7bought
         '
-        Me.btnUp1.Enabled = False
-        Me.btnUp1.Location = New System.Drawing.Point(48, 280)
-        Me.btnUp1.Name = "btnUp1"
-        Me.btnUp1.Size = New System.Drawing.Size(32, 24)
-        Me.btnUp1.TabIndex = 71
-        Me.btnUp1.Text = "1"
-        Me.btnUp1.UseVisualStyleBackColor = True
+        Me.lbl7bought.AutoSize = True
+        Me.lbl7bought.Location = New System.Drawing.Point(168, 64)
+        Me.lbl7bought.Name = "lbl7bought"
+        Me.lbl7bought.Size = New System.Drawing.Size(72, 13)
+        Me.lbl7bought.TabIndex = 75
+        Me.lbl7bought.Text = "Auto7 Bought"
         '
-        'btnUp2
+        'lbl8off
         '
-        Me.btnUp2.Location = New System.Drawing.Point(96, 280)
-        Me.btnUp2.Name = "btnUp2"
-        Me.btnUp2.Size = New System.Drawing.Size(32, 24)
-        Me.btnUp2.TabIndex = 72
-        Me.btnUp2.Text = "2"
-        Me.btnUp2.UseVisualStyleBackColor = True
-        '
-        'btnUp3
-        '
-        Me.btnUp3.Location = New System.Drawing.Point(144, 280)
-        Me.btnUp3.Name = "btnUp3"
-        Me.btnUp3.Size = New System.Drawing.Size(32, 24)
-        Me.btnUp3.TabIndex = 73
-        Me.btnUp3.Text = "3"
-        Me.btnUp3.UseVisualStyleBackColor = True
+        Me.lbl8off.AutoSize = True
+        Me.lbl8off.Location = New System.Drawing.Point(168, 88)
+        Me.lbl8off.Name = "lbl8off"
+        Me.lbl8off.Size = New System.Drawing.Size(52, 13)
+        Me.lbl8off.TabIndex = 76
+        Me.lbl8off.Text = "Auto8 Off"
         '
         'frmIdle
         '
@@ -1134,7 +1156,6 @@ Partial Class frmIdle
     Friend WithEvents lblShops As System.Windows.Forms.Label
     Friend WithEvents lblGuards As System.Windows.Forms.Label
     Friend WithEvents lblHomes As System.Windows.Forms.Label
-    Friend WithEvents lblGPPS As System.Windows.Forms.Label
     Friend WithEvents lblWalls As System.Windows.Forms.Label
     Friend WithEvents lblGamblingText As System.Windows.Forms.Label
     Friend WithEvents lblAuto9Val As System.Windows.Forms.Label
@@ -1181,4 +1202,7 @@ Partial Class frmIdle
     Friend WithEvents btnUp3 As System.Windows.Forms.Button
     Friend WithEvents btnUp2 As System.Windows.Forms.Button
     Friend WithEvents btnUp1 As System.Windows.Forms.Button
+    Friend WithEvents lblFollowers As System.Windows.Forms.Label
+    Friend WithEvents lbl7bought As System.Windows.Forms.Label
+    Friend WithEvents lbl8off As System.Windows.Forms.Label
 End Class
