@@ -7,3 +7,6 @@
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.exe
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.xml
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.pdb
+\\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.exe
+\\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.xml
+\\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.pdb

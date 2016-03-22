@@ -30,6 +30,12 @@
         If Start.Variable.asdfmod = "Hooty McOwlface" Then
             className.Text = "God Damned Owl"
         End If
+        If Start.Variable.asdfmod = "tedcruz" Then
+            className.Text = "The Zodiac Killer"
+        End If
+        If Start.Variable.asdfmod = "Ted Cruz" Then
+            className.Text = "The Zodiac Killer"
+        End If
         'End of class name at the top of the screen
 
         'This is the for the skill buttons on the screen 3/15
@@ -162,6 +168,9 @@
     Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles heroName.Click
         'this is the random fighting button
         PluggerV2.Enabled = True
+        If ProgressBar1.Value = 0 Then
+            MessageBox.Show("You have been defeated!", "Dead")
+        End If
 
     End Sub
 
@@ -217,5 +226,4 @@
         HC = AttackGen.Next(0, 101)
         EHC = AttackGen.Next(0, 101)
     End Sub
-
 End Class

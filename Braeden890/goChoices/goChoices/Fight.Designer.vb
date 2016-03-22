@@ -121,7 +121,7 @@ Partial Class Fight
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(27, 15)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "100"
+        Me.Label4.Text = "200"
         '
         'Button2
         '
