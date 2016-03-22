@@ -56,12 +56,40 @@ Public Class Form1
         x0y0.Image = clear.Image
         x0y1.Image = clear.Image
         x0y2.Image = clear.Image
+        x0y3.Image = clear.Image
+        x0y4.Image = clear.Image
+        x0y5.Image = clear.Image
+        x0y6.Image = clear.Image
+        x0y7.Image = clear.Image
+        x0y8.Image = clear.Image
+        x0y9.Image = clear.Image
+        x0y10.Image = clear.Image
+        x0y11.Image = clear.Image
         x1y0.Image = clear.Image
         x1y1.Image = clear.Image
         x1y2.Image = clear.Image
+        x1y3.Image = clear.Image
+        x1y4.Image = clear.Image
+        x1y5.Image = clear.Image
+        x1y6.Image = clear.Image
+        x1y7.Image = clear.Image
+        x1y8.Image = clear.Image
+        x1y9.Image = clear.Image
+        x1y10.Image = clear.Image
+        x1y11.Image = clear.Image
         x2y0.Image = clear.Image
         x2y1.Image = clear.Image
         x2y2.Image = clear.Image
+        x2y3.Image = clear.Image
+        x2y4.Image = clear.Image
+        x2y5.Image = clear.Image
+        x2y6.Image = clear.Image
+        x2y7.Image = clear.Image
+        x2y8.Image = clear.Image
+        x2y9.Image = clear.Image
+        x2y10.Image = clear.Image
+        x2y11.Image = clear.Image
+        x3y1.Image = clear.Image
         Return 0
     End Function
 
@@ -217,4 +245,5 @@ Public Class Form1
     Private Sub town_Click(sender As System.Object, e As System.EventArgs) Handles town.Click
         Button1.Enabled = False
     End Sub
+
 End Class 'End main class
