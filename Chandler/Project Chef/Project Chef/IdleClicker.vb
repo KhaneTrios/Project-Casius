@@ -45,7 +45,6 @@
         barAuto5.Maximum = Variables.Auto.auto5Max
         barAuto6.Maximum = Variables.Auto.auto6Max
         barAuto7.Maximum = Variables.Auto.auto7Max
-        barAuto8.Maximum = Variables.Auto.auto8Max
         barAuto2Col.Maximum = tmrAuto2.Interval
 
         Variables.Auto.up1Cost = 10000
@@ -446,7 +445,7 @@
             barAuto5.Value = Variables.Auto.auto5
             barAuto6.Value = Variables.Auto.shop
             barAuto7.Value = Variables.Auto.auto7
-            ' barAuto8.Value = Variables.Auto.auto8
+            barAuto8.Value = Variables.Auto.auto8
 
           
             ' --- Button-enabling check ---
@@ -511,7 +510,10 @@
                 btnUp1.Enabled = True
                 Else : btnUp1.Enabled = False
             End If
-
+            If Variables.Auto.amount >= Variables.Auto.up2Cost Then
+                btnUp2.Enabled = True
+            Else : btnUp2.Enabled = False
+            End If
         End If
     End Sub
     Private Sub btnCheat_Click(sender As System.Object, e As System.EventArgs) Handles btnCheat.Click
@@ -532,16 +534,19 @@
         Else : lblSucFail.Text = "Failed Recruitment."
         End If
 
-        If Variables.Auto.gamble = 5 Or 4 Then
-            Select Case Variables.Movement.townSize
-                Case 1
-                    Variables.Overall.followers += 100
-                Case 2
-                    Variables.Overall.followers += 1000
-                Case 3
-                    Variables.Overall.followers += 10000
-            End Select
-        End If
+
+        Select Case Variables.Auto.gamble
+            Case 5 Or 4
+                Select Case Variables.Movement.townSize
+                    Case 1
+                        Variables.Overall.followers += 100
+                    Case 2
+                        Variables.Overall.followers += 1000
+                    Case 3
+                        Variables.Overall.followers += 10000
+                End Select
+        End Select
+
 
         If tmrSucFail.Interval = 500 Then
             tmrSucFail.Enabled = False
@@ -591,6 +596,13 @@
         Variables.Auto.up1 = True
         Application.DoEvents()
         btnUp1.Visible = False
+        Application.DoEvents()
+    End Sub
+
+    Private Sub btnUp2_Click(sender As System.Object, e As System.EventArgs) Handles btnUp2.Click
+        Variables.Auto.up2 = True
+        Application.DoEvents()
+        btnUp2.Visible = False
         Application.DoEvents()
     End Sub
 End Class
