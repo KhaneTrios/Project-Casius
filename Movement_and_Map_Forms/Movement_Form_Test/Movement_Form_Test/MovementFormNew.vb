@@ -35,6 +35,7 @@ Public Class MovementFormNew
         Dim bHandled As Boolean = False
 
         'Example of random events
+        'DONT FORGET TO Randomize() BEFORE THE MATH
         'If we wanted to have a chance of triggering an enemy encounter every time we move, like in traditional
         'JRPG games, we would put this line of code in each movement case.
         'spawn = CInt(Int((30 * Rnd()) + 1))

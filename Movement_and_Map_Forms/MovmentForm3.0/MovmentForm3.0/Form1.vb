@@ -213,4 +213,8 @@ Public Class Form1
         End Select
         Return 0
     End Function 'End clearing function
+
+    Private Sub town_Click(sender As System.Object, e As System.EventArgs) Handles town.Click
+        Button1.Enabled = False
+    End Sub
 End Class 'End main class
