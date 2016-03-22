@@ -27,72 +27,96 @@
         If Form1.charUnbo = True Then
             className.Text = "Unborn"
         End If
+        If Start.Variable.asdfmod = "Hooty McOwlface" Then
+            className.Text = "God Damned Owl"
+        End If
         'End of class name at the top of the screen
 
         'This is the for the skill buttons on the screen 3/15
         If Form1.charWarr = True Then
             skillOne.Text = "Charge"
-        End If
-        If Form1.charWarr = True Then
             skillTwo.Text = "Backwards Lash"
-        End If
-        If Form1.charWarr = True Then
             skillThree.Text = "Enrage"
-        End If
-        If Form1.charWarr = True Then
             skillFour.Text = "Core Slam"
+
         End If
+        'If Form1.charWarr = True Then
+        'End If
+        'If Form1.charWarr = True Then
+
+        'End If
+        'If Form1.charWarr = True Then
+
+        'End If
         If Form1.charTact = True Then
             skillOne.Text = "Scout"
-        End If
-        If Form1.charTact = True Then
             skillTwo.Text = "Caltrop Launch"
-        End If
-        If Form1.charTact = True Then
             skillThree.Text = "Over-Plan"
-        End If
-        If Form1.charTact = True Then
             skillFour.Text = "Poison Bomb Barrage"
         End If
+        'If Form1.charTact = True Then
+
+        'End If
+        'If Form1.charTact = True Then
+
+        'End If
+        'If Form1.charTact = True Then
+
+        'End If
         If Form1.charMage = True Then
             skillOne.Text = "Shards of Ice"
-        End If
-        If Form1.charMage = True Then
+            skillFour.Text = "Arcane Whirlwind"
             skillTwo.Text = "Lightning Wave"
-        End If
-        If Form1.charMage = True Then
             skillThree.Text = "Fire Cage"
         End If
-        If Form1.charMage = True Then
-            skillFour.Text = "Arcane Whirlwind"
-        End If
+        'If Form1.charMage = True Then
+
+        'End If
+        'If Form1.charMage = True Then
+
+        'End If
+        'If Form1.charMage = True Then
+
+        'End If
         If Form1.charRogu = True Then
             skillOne.Text = "Backstab"
-        End If
-        If Form1.charRogu = True Then
+            skillFour.Text = "Shadow Strike"
             skillTwo.Text = "Parry"
-        End If
-        If Form1.charRogu = True Then
             skillThree.Text = "Invisible"
         End If
-        If Form1.charRogu = True Then
-            skillFour.Text = "Shadow Strike"
-        End If
+        'If Form1.charRogu = True Then
+
+        'End If
+        'If Form1.charRogu = True Then
+
+        'End If
+        'If Form1.charRogu = True Then
+
+        'End If
         If Form1.charUnbo = True Then
             skillOne.Text = "Burden"
-        End If
-        If Form1.charUnbo = True Then
+            skillFour.Text = "Redemption"
             skillTwo.Text = "Craze"
-        End If
-        If Form1.charUnbo = True Then
             skillThree.Text = "Wild"
         End If
-        If Form1.charUnbo = True Then
-            skillFour.Text = "Redemption"
-        End If
+        'If Form1.charUnbo = True Then
 
+        'End If
+        'If Form1.charUnbo = True Then
+
+        'End If
+        'If Form1.charUnbo = True Then
+
+        'End If
+        If Start.Variable.asdfmod = "Hooty McOwlface" Then
+            skillOne.Text = "Hoot"
+            skillTwo.Text = "More Hoot"
+            skillThree.Text = "Dat Swoop"
+            skillFour.Text = "Ever Effective Screech"
+        End If
         'hero name above hero picture box
         Label13.Text = Start.Variable.asdfmod
+
 
         'enemy name above enemy pic
         Choices = opponentName.Next(1, 6)
@@ -127,21 +151,21 @@
     End Sub
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles skillOne.Click
-        ' If Form1.charWarr = True Then
-        '     heroMana.Value = heroMana.Value - 10
-        ' End If
-        ' If Form1.charWarr = True Then
-        '    ProgressBar2.Value = ProgressBar2.Value - 10
-        'End If
+        If Form1.charWarr = True Then
+            heroMana.Value = heroMana.Value - 10
+        End If
+        If Form1.charWarr = True Then
+            ProgressBar2.Value = ProgressBar2.Value - 10
+        End If
     End Sub
 
     Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles heroName.Click
         'this is the random fighting button
-        Plugger.Enabled = True
+        PluggerV2.Enabled = True
 
     End Sub
 
-    Private Sub Updaete_Tick(sender As System.Object, e As System.EventArgs)
+    Private Sub Updater_Tick(sender As System.Object, e As System.EventArgs) Handles Updater.Tick
         Label6.Text = HC
         Label7.Text = EHC
         Label1.Text = ProgressBar1.Value
@@ -149,43 +173,49 @@
         Label8.Text = Form1.PlayerHX
         Label10.Text = Form1.PlayerHY
         Label11.Text = Form1.PlayerDmg
+        If ProgressBar2.Value < 0 Then
+            ProgressBar2.Value = 0
+        End If
         If ProgressBar1.Value = 0 Then
             heroName.Enabled = False
-            Randomizer.Enabled = False
+            RandomizerV2.Enabled = False
         End If
         If ProgressBar2.Value = 0 Then
             heroName.Enabled = False
-            Randomizer.Enabled = False
+            RandomizerV2.Enabled = False
         End If
         enemyName.Text = Jerkwad
     End Sub
 
-    Private Sub Randomizer_Tick(sender As System.Object, e As System.EventArgs)
+    Private Sub PluggerV2_Tick(sender As System.Object, e As System.EventArgs) Handles PluggerV2.Tick
+        Plug += 1
+        RandomizerV2.Enabled = False
+        If RandomizerV2.Enabled = False And EHC >= 51 And EHC <= 101 Then
+            ProgressBar1.Value = ProgressBar1.Value - 10
+            If ProgressBar1.Value < 0 Then
+                ProgressBar1.Value = 0
+            End If
+        End If
+        If RandomizerV2.Enabled = False And HC >= Form1.PlayerHX And HC <= Form1.PlayerHY Then
+
+            If ProgressBar2.Value > 0 Then
+                If ProgressBar2.Value < 0 Then
+                    ProgressBar2.Value = 0
+                End If
+                ProgressBar2.Value = ProgressBar2.Value - Form1.PlayerDmg
+                Plug = 2
+            End If
+        End If
+        If Plug = 2 Then
+            RandomizerV2.Enabled = True
+            PluggerV2.Enabled = False
+            Plug = 0
+        End If
+    End Sub
+
+    Private Sub RandomizerV2_Tick(sender As System.Object, e As System.EventArgs) Handles RandomizerV2.Tick
         HC = AttackGen.Next(0, 101)
         EHC = AttackGen.Next(0, 101)
     End Sub
 
-    Private Sub Plugger_Tick(sender As System.Object, e As System.EventArgs)
-        Plug += 1
-        Randomizer.Enabled = False
-        If Randomizer.Enabled = False And EHC >= 51 And EHC <= 101 Then
-            If ProgressBar1.Value <= 0 Then
-                ProgressBar1.Value = 0
-            End If
-            ProgressBar1.Value = ProgressBar1.Value - 5
-            Plug = 2
-        End If
-        If Randomizer.Enabled = False And HC >= Form1.PlayerHX And HC <= Form1.PlayerHY Then
-            If ProgressBar2.Value <= 0 Then
-                ProgressBar2.Value = 0
-            End If
-            ProgressBar2.Value = ProgressBar2.Value - Form1.PlayerDmg
-            Plug = 2
-        End If
-        If Plug = 2 Then
-            Randomizer.Enabled = True
-            Plugger.Enabled = False
-            Plug = 0
-        End If
-    End Sub
 End Class

@@ -110,6 +110,11 @@
             parry.Enabled = False
             backstab.Enabled = False
         End If
+        'Brill made a Debug name! Yay for him!
+        If Start.Variable.asdfmod = "Hooty McOwlface" Then
+            skill = 9999
+            Fight.className.Text = "God damned Owl"
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click

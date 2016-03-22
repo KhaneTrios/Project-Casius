@@ -22,6 +22,7 @@ Partial Class Fight
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -50,6 +51,9 @@ Partial Class Fight
         Me.Label13 = New System.Windows.Forms.Label()
         Me.enemyName = New System.Windows.Forms.Label()
         Me.heroMana = New System.Windows.Forms.ProgressBar()
+        Me.Updater = New System.Windows.Forms.Timer(Me.components)
+        Me.PluggerV2 = New System.Windows.Forms.Timer(Me.components)
+        Me.RandomizerV2 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enemyBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -220,10 +224,11 @@ Partial Class Fight
         'className
         '
         Me.className.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.className.Location = New System.Drawing.Point(407, 9)
+        Me.className.Location = New System.Drawing.Point(398, 9)
         Me.className.Name = "className"
-        Me.className.Size = New System.Drawing.Size(103, 30)
+        Me.className.Size = New System.Drawing.Size(256, 30)
         Me.className.TabIndex = 18
+        Me.className.Text = "Plot Character"
         '
         'skillTwo
         '
@@ -255,7 +260,7 @@ Partial Class Fight
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(213, 9)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(188, 30)
+        Me.Label12.Size = New System.Drawing.Size(187, 30)
         Me.Label12.TabIndex = 22
         Me.Label12.Text = "All hail the mighty "
         '
@@ -305,6 +310,19 @@ Partial Class Fight
         Me.heroMana.TabIndex = 27
         Me.heroMana.Value = 100
         '
+        'Updater
+        '
+        Me.Updater.Enabled = True
+        Me.Updater.Interval = 1
+        '
+        'PluggerV2
+        '
+        Me.PluggerV2.Interval = 5
+        '
+        'RandomizerV2
+        '
+        Me.RandomizerV2.Interval = 1
+        '
         'Fight
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -346,6 +364,8 @@ Partial Class Fight
         Me.PerformLayout()
 
     End Sub
+    Friend WithEvents Updater As System.Windows.Forms.Timer
+    Friend WithEvents PluggerV2 As System.Windows.Forms.Timer
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -377,4 +397,5 @@ Partial Class Fight
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents enemyName As System.Windows.Forms.Label
     Friend WithEvents heroMana As System.Windows.Forms.ProgressBar
+    Friend WithEvents RandomizerV2 As System.Windows.Forms.Timer
 End Class
