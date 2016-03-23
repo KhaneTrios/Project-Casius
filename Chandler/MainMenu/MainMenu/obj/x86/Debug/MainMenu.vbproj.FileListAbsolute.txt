@@ -35,3 +35,5 @@ C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x8
 \\stcfs2\Student_Data\davisc\Desktop\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.pdb
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.frmSaves.resources
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\bin\Debug\MainMenu.exe.config
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\bin\Debug\MainMenu.exe.config
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.frmSaves.resources
