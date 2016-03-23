@@ -115,6 +115,7 @@
     <Compile Include="Start.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="begin.resx">

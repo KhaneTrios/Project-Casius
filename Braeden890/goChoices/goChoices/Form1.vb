@@ -11,7 +11,7 @@
     Public Shared Lck As Integer '5 shots or 6?
     Public Shared Int As Integer 'Are you going to read a book, or are you dun did gonna learn yerself a book?
     Dim Roflmaolol As Integer    'Dat Reset Timer Variable though
-    Public Shared charWarr As Integer   'You're a warrior, Harry
+    'Public Shared charWarr As Integer   'You're a warrior, Harry
     Public Shared charTact As Integer   'You're a tactician, Harry
     Public Shared charMage As Integer   'You're a wizard, Harry
     Public Shared charRogu As Integer   'You're a rogue, Harry
@@ -31,14 +31,13 @@
     End Sub
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        Label2.Text = Start.Variable.asdfmod
+        Label2.Text = Variables.Fight.asdfmod
     End Sub
-
     Private Sub Button7_Click(sender As System.Object, e As System.EventArgs)
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles WarriorBox.CheckedChanged
-        charWarr = WarriorBox.Enabled
+        Variables.Fight.charWarr = WarriorBox.Enabled
         Form1.Str = 10
         Form1.Agi = 5
         Form1.Con = 7

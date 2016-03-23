@@ -1,5 +1,4 @@
 ﻿Public Class begin
-    Dim skill As Integer
     'The names of each skill represented as an integer 3/15
     Public Shared warrCharge As Integer
     Public Shared warrBackwards As Integer
@@ -24,7 +23,10 @@
 
     Private Sub begin_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         'The NAMES of each skill representing its respective button 3/15
-        If Form1.charWarr = True Then
+        If Variables.Fight.charWarr = True Then
+            'asdasda
+            charge.Enabled = False
+            'asdasda
             poisonBomb.Enabled = False
             overPlan.Enabled = False
             caltropLaunch.Enabled = False
@@ -111,10 +113,10 @@
             backstab.Enabled = False
         End If
         'Brill made a Debug name! Yay for him!
-        If Start.Variable.asdfmod = "Hooty McOwlface" Then
-            skill = 9999
-            Fight.className.Text = "God damned Owl"
-        End If
+        'If Start.Variable.asdfmod = "Hooty McOwlface" Then
+        'Variables.Fight.skill = 9999
+        'Fight.className.Text = "God damned Owl"
+        'End If
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
@@ -122,11 +124,12 @@
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        skill += 1
+        charge.Enabled = True
+        Variables.Fight.skill += 1
     End Sub
 
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Updater.Tick
-        skillPoints.Text = skill
+        skillPoints.Text = Variables.Fight.skill
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
@@ -134,23 +137,34 @@
     End Sub
 
     Private Sub skillcount_Tick(sender As System.Object, e As System.EventArgs) Handles skillcount.Tick
-        skill += 1
-        If skill = 10 Then
+        Variables.Fight.skill += 1
+        If Variables.Fight.skill = 10 Then
             skillcount.Enabled = False
         End If
-        If skill < 10 And skillcount.Interval = 100 Then
+        If Variables.Fight.skill < 10 And skillcount.Interval = 100 Then
             skillcount.Enabled = True
         End If
     End Sub
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
-        skill -= 1
+        Variables.Fight.skill -= 1
     End Sub
 
     Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles charge.Click
+        If Variables.Fight.skill = 1 Then
+            charge.Enabled = True
+        End If
+
         MessageBox.Show("The warrior runs at the enemy at full force and deals a devistating blow with his shoulder.", "Charge")
-        If skillPoints.Text = "1" Then
-            Label3.Text = "Skills acquired: Charge"
+        Label3.Text = "Skills acquired: Charge"
+
+
+        Variables.Fight.skillOneBought = True
+
+        Variables.Fight.skill = Variables.Fight.skill - 1
+        If Variables.Fight.skill = -1 Then
+            Variables.Fight.skill = 0 And
+                MessageBox.Show("You already have acquired this skill!", "Error")
         End If
     End Sub
 
