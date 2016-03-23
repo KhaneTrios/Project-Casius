@@ -55,3 +55,4 @@ C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Project Chef\Project Che
 \\stcfs2\Student_Data\davisc\Desktop\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.exe
 \\stcfs2\Student_Data\davisc\Desktop\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.xml
 \\stcfs2\Student_Data\davisc\Desktop\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project Chef.pdb
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Project Chef\Project Chef\obj\x86\Debug\Project_Chef.frmFollowers.resources

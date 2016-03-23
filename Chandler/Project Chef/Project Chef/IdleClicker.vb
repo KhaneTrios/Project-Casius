@@ -60,8 +60,6 @@
         barAuto7.Maximum = Variables.Auto.auto7Max
         barAuto2Col.Maximum = tmrAuto2.Interval
 
-        Variables.Auto.up1Cost = 10000
-
         'Amount of clicks gained linking and loading
         Variables.Auto.amount = Val(0)               'Setting the amount variable to 0 on load.
 
@@ -282,12 +280,25 @@
                 Randomize()                                                             'Initializxing the random number generator function
                 Variables.Auto.gamble = (Int((5 * Rnd()) + 1))                          'The variable is a random integer between 5 and 1.
 
-                tmrSucFail.Enabled = True                                               'Begin the success/fail message timer
+                Select Case Variables.Auto.gamble
+                    Case 5, 4
+                        Select Case Variables.Movement.townSize
+                            Case 1
+                                Variables.Overall.followers += 100
+                            Case 2
+                                Variables.Overall.followers += 1000
+                            Case 3
+                                Variables.Overall.followers += 10000
+                        End Select
+                End Select
 
                 If Variables.Auto.gamble = 5 Then
                     Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto9Val) * (2))
+                    frmFollowers.Show()
                 ElseIf Variables.Auto.gamble = 4 Then
                     Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto9Val) * (2))
+                    frmFollowers.Show()
+                Else : frmFollowers.Show()
                 End If
             Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.
             End If
@@ -374,8 +385,6 @@
             lblAuto9Val.Text = Variables.Auto.auto9Val
             lblGamble.Text = Variables.Auto.gamble
             lblBar2Col.Text = barAuto2Col.Value
-            lbl7bought.Text = Variables.Auto.auto7Bought
-            lbl8off.Text = Variables.Auto.auto8Off
             lblFollowers.Text = Variables.Overall.followers
             
             ' --- Skills text display ---
@@ -512,13 +521,6 @@
                 btnDone.Enabled = True
             End If
 
-            'If barAuto2Col.Value = 5000 Then
-            'btnAuto2.Text = "Collect"
-            'Variables.Auto.auto2Col = True
-            'btnAuto2.Enabled = True
-            'Variables.Auto.auto2Off = False
-            'End If
-
             If Variables.Auto.amount >= Variables.Auto.up1Cost Then
                 btnUp1.Enabled = True
                 Else : btnUp1.Enabled = False
@@ -541,33 +543,6 @@
     'Public Event KeyDown As KeyEventHandler
     Public Sub frmIdle_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
 
-    End Sub
-
-    Private Sub tmrSucFail_Tick(sender As System.Object, e As System.EventArgs) Handles tmrSucFail.Tick
-        If Variables.Auto.gamble = 5 Then
-            lblSucFail.Text = "Successful Recruitment!"
-        ElseIf Variables.Auto.gamble = 4 Then
-            lblSucFail.Text = "Successful Recruitment!"
-        Else : lblSucFail.Text = "Failed Recruitment."
-        End If
-
-
-        Select Case Variables.Auto.gamble
-            Case 5 Or 4
-                Select Case Variables.Movement.townSize
-                    Case 1
-                        Variables.Overall.followers += 100
-                    Case 2
-                        Variables.Overall.followers += 1000
-                    Case 3
-                        Variables.Overall.followers += 10000
-                End Select
-        End Select
-
-
-        If tmrSucFail.Interval = 500 Then
-            tmrSucFail.Enabled = False
-        End If
     End Sub
     Private Sub btnDone_Click(sender As System.Object, e As System.EventArgs) Handles btnDone.Click
         frmChoice.Show()

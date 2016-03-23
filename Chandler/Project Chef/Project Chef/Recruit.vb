@@ -11,14 +11,14 @@
             Randomize()                                             'Initializxing the random number generator function
             Variables.Auto.gamble = (Int((5 * Rnd()) + 1))          'The variable is a random integer between 5 and 1.
 
-            frmIdle.tmrSucFail.Enabled = True                       'Begin the success/fail message timer
-
             If Variables.Auto.gamble = 5 Then
                 Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto9Val) * (2))
+                frmFollowers.Show()
             ElseIf Variables.Auto.gamble = 4 Then
                 Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.auto9Val) * (2))
+                frmFollowers.Show()
+            Else : frmFollowers.Show()
             End If
-
             Me.Close()
 
         Else : MessageBox.Show("The city is not strong enough.", "No", MessageBoxButtons.OK, MessageBoxIcon.Error)     'Error message to handle the button being clicked when there is not enough funds to purchase it.

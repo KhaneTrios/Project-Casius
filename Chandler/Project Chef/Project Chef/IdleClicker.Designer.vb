@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmIdle
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmIdle
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.btnClick = New System.Windows.Forms.Button()
@@ -66,8 +66,6 @@ Partial Class frmIdle
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabRebuild = New System.Windows.Forms.TabPage()
-        Me.lbl8off = New System.Windows.Forms.Label()
-        Me.lbl7bought = New System.Windows.Forms.Label()
         Me.lblFollowers = New System.Windows.Forms.Label()
         Me.btnUp3 = New System.Windows.Forms.Button()
         Me.btnUp2 = New System.Windows.Forms.Button()
@@ -116,7 +114,6 @@ Partial Class frmIdle
         Me.lblCraftingText = New System.Windows.Forms.Label()
         Me.lblCivilians = New System.Windows.Forms.Label()
         Me.lblCombatText = New System.Windows.Forms.Label()
-        Me.tmrSucFail = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto2 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto3 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto4 = New System.Windows.Forms.Timer(Me.components)
@@ -519,8 +516,6 @@ Partial Class frmIdle
         'tabRebuild
         '
         Me.tabRebuild.BackColor = System.Drawing.Color.Transparent
-        Me.tabRebuild.Controls.Add(Me.lbl8off)
-        Me.tabRebuild.Controls.Add(Me.lbl7bought)
         Me.tabRebuild.Controls.Add(Me.lblFollowers)
         Me.tabRebuild.Controls.Add(Me.btnUp3)
         Me.tabRebuild.Controls.Add(Me.btnUp2)
@@ -595,24 +590,6 @@ Partial Class frmIdle
         Me.tabRebuild.Size = New System.Drawing.Size(632, 454)
         Me.tabRebuild.TabIndex = 0
         Me.tabRebuild.Text = "Rebuild"
-        '
-        'lbl8off
-        '
-        Me.lbl8off.AutoSize = True
-        Me.lbl8off.Location = New System.Drawing.Point(168, 88)
-        Me.lbl8off.Name = "lbl8off"
-        Me.lbl8off.Size = New System.Drawing.Size(52, 13)
-        Me.lbl8off.TabIndex = 76
-        Me.lbl8off.Text = "Auto8 Off"
-        '
-        'lbl7bought
-        '
-        Me.lbl7bought.AutoSize = True
-        Me.lbl7bought.Location = New System.Drawing.Point(168, 64)
-        Me.lbl7bought.Name = "lbl7bought"
-        Me.lbl7bought.Size = New System.Drawing.Size(72, 13)
-        Me.lbl7bought.TabIndex = 75
-        Me.lbl7bought.Text = "Auto7 Bought"
         '
         'lblFollowers
         '
@@ -1068,10 +1045,6 @@ Partial Class frmIdle
         Me.lblCombatText.TabIndex = 0
         Me.lblCombatText.Text = "Civilians helped"
         '
-        'tmrSucFail
-        '
-        Me.tmrSucFail.Interval = 500
-        '
         'tmrAuto2
         '
         Me.tmrAuto2.Interval = 5000
@@ -1165,7 +1138,6 @@ Partial Class frmIdle
     Friend WithEvents lblAuto5Val As System.Windows.Forms.Label
     Friend WithEvents lblAuto4Val As System.Windows.Forms.Label
     Friend WithEvents lblSucFail As System.Windows.Forms.Label
-    Friend WithEvents tmrSucFail As System.Windows.Forms.Timer
     Friend WithEvents lblCity2 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents lblGamble As System.Windows.Forms.Label
@@ -1203,6 +1175,4 @@ Partial Class frmIdle
     Friend WithEvents btnUp2 As System.Windows.Forms.Button
     Friend WithEvents btnUp1 As System.Windows.Forms.Button
     Friend WithEvents lblFollowers As System.Windows.Forms.Label
-    Friend WithEvents lbl7bought As System.Windows.Forms.Label
-    Friend WithEvents lbl8off As System.Windows.Forms.Label
 End Class

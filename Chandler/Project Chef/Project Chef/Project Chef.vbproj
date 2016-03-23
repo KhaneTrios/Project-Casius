@@ -84,6 +84,12 @@
     <Compile Include="DevConsole.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmFollowers.Designer.vb">
+      <DependentUpon>frmFollowers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFollowers.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Recruit.Designer.vb">
       <DependentUpon>Recruit.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DevConsole.resx">
       <DependentUpon>DevConsole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFollowers.resx">
+      <DependentUpon>frmFollowers.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IdleClicker.resx">
       <DependentUpon>IdleClicker.vb</DependentUpon>
