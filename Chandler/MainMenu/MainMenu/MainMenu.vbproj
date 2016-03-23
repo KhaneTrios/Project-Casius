@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmSaves.Designer.vb">
+      <DependentUpon>frmSaves.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaves.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmSaves.resx">
+      <DependentUpon>frmSaves.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.vb</DependentUpon>
     </EmbeddedResource>

@@ -43,7 +43,17 @@
         End
     End Sub
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs)
 
+    End Sub
+
+    Private Sub btnLoadGame_Click(sender As System.Object, e As System.EventArgs) Handles btnLoadGame.Click
+        Variables.Overall.saveLoad = 2
+        frmSaves.Show()
+    End Sub
+
+    Private Sub btnNewGame_Click(sender As System.Object, e As System.EventArgs) Handles btnNewGame.Click
+        Variables.Overall.saveLoad = 1
+        frmSaves.Show()
     End Sub
 End Class
