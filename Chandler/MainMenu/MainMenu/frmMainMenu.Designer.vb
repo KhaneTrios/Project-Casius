@@ -34,14 +34,13 @@ Partial Class frmMainMenu
         Me.lblNum = New System.Windows.Forms.Label()
         Me.btnCreds = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnNewGame
         '
-        Me.btnNewGame.Location = New System.Drawing.Point(8, 144)
+        Me.btnNewGame.Location = New System.Drawing.Point(8, 104)
         Me.btnNewGame.Name = "btnNewGame"
-        Me.btnNewGame.Size = New System.Drawing.Size(160, 48)
+        Me.btnNewGame.Size = New System.Drawing.Size(208, 80)
         Me.btnNewGame.TabIndex = 0
         Me.btnNewGame.Text = "New Game"
         Me.btnNewGame.UseVisualStyleBackColor = True
@@ -49,10 +48,10 @@ Partial Class frmMainMenu
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(8, 24)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(8, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(190, 31)
+        Me.Label1.Size = New System.Drawing.Size(242, 39)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Project Casius"
         '
@@ -60,7 +59,7 @@ Partial Class frmMainMenu
         '
         Me.btnLoadGame.Location = New System.Drawing.Point(8, 208)
         Me.btnLoadGame.Name = "btnLoadGame"
-        Me.btnLoadGame.Size = New System.Drawing.Size(160, 48)
+        Me.btnLoadGame.Size = New System.Drawing.Size(208, 80)
         Me.btnLoadGame.TabIndex = 2
         Me.btnLoadGame.Text = "Load Game"
         Me.btnLoadGame.UseVisualStyleBackColor = True
@@ -126,36 +125,27 @@ Partial Class frmMainMenu
         '
         'btnCreds
         '
-        Me.btnCreds.Location = New System.Drawing.Point(8, 336)
+        Me.btnCreds.Location = New System.Drawing.Point(8, 312)
         Me.btnCreds.Name = "btnCreds"
-        Me.btnCreds.Size = New System.Drawing.Size(160, 48)
+        Me.btnCreds.Size = New System.Drawing.Size(208, 80)
         Me.btnCreds.TabIndex = 10
         Me.btnCreds.Text = "Credits"
         Me.btnCreds.UseVisualStyleBackColor = True
         '
         'btnQuit
         '
-        Me.btnQuit.Location = New System.Drawing.Point(8, 400)
+        Me.btnQuit.Location = New System.Drawing.Point(8, 416)
         Me.btnQuit.Name = "btnQuit"
-        Me.btnQuit.Size = New System.Drawing.Size(160, 48)
+        Me.btnQuit.Size = New System.Drawing.Size(208, 80)
         Me.btnQuit.TabIndex = 11
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(8, 272)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 48)
-        Me.Button1.TabIndex = 12
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(704, 544)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnCreds)
         Me.Controls.Add(Me.lblNum)
@@ -186,5 +176,4 @@ Partial Class frmMainMenu
     Friend WithEvents lblNum As Label
     Friend WithEvents btnCreds As System.Windows.Forms.Button
     Friend WithEvents btnQuit As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

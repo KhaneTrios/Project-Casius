@@ -4,14 +4,21 @@
         Variables.Auto.civ += 1
 
 
-        If Variables.Auto.up1 = True Then
-            Variables.Auto.amount = Val(Variables.Auto.amount + (50))
+        If Variables.Auto.up1On = True Then
+            Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.up1Val))
+        End If
+        If Variables.Auto.up2On = True Then
+            Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.up2Val))
+        End If
+        If Variables.Auto.up3On = True Then
+            Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.up3Val))
         End If
     End Sub
     Private Sub frmMain_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         lblCity1.Text = Variables.Movement.townName         'Looking for the name of the town and setting the Rebuild tab town name label to it
         lblCity2.Text = Variables.Movement.townSize         'Looking for the size of the town to determine the variable values needed for the rest of the autoclicker.
         lblSize.Text = Variables.Movement.townSize
+
 
         Select Case Variables.Movement.townSize
             Case 1
@@ -37,6 +44,13 @@
                 Variables.Auto.auto7Max = 100
         End Select
 
+        Variables.Auto.up1Val = 50
+        Variables.Auto.up1Cost = 10000
+        Variables.Auto.up2Val = 100
+        Variables.Auto.up2Cost = 50000
+        Variables.Auto.up3Val = 500
+        Variables.Auto.up3Cost = 100000
+
         'Progress bar max value sets
         barAuto2.Maximum = Variables.Auto.auto2Max              'Setting the progress bar maximum value to the value of the maximum variable due to varying city sizes.
         barAuto3.Maximum = Variables.Auto.auto3Max
@@ -44,7 +58,6 @@
         barAuto5.Maximum = Variables.Auto.auto5Max
         barAuto6.Maximum = Variables.Auto.auto6Max
         barAuto7.Maximum = Variables.Auto.auto7Max
-        barAuto8.Maximum = Variables.Auto.auto8Max
         barAuto2Col.Maximum = tmrAuto2.Interval
 
         Variables.Auto.up1Cost = 10000
@@ -361,6 +374,9 @@
             lblAuto9Val.Text = Variables.Auto.auto9Val
             lblGamble.Text = Variables.Auto.gamble
             lblBar2Col.Text = barAuto2Col.Value
+            lbl7bought.Text = Variables.Auto.auto7Bought
+            lbl8off.Text = Variables.Auto.auto8Off
+            lblFollowers.Text = Variables.Overall.followers
             
             ' --- Skills text display ---
             ' Constant updating all skill labels
@@ -426,10 +442,10 @@
                 btnAuto7.Enabled = False
                 Variables.Auto.auto7Off = True
             End If
-            If Variables.Auto.auto8 >= Variables.Auto.auto8Max Then
-                barAuto8.Enabled = False
+            If Variables.Auto.auto8 >= 1 Then
+                'barAuto8.Enabled = False
                 lblHall.Enabled = False
-                Variables.Auto.auto8 = Variables.Auto.auto8Max
+                Variables.Auto.auto8 = 1
                 btnAuto8.Enabled = False
                 Variables.Auto.auto8Off = True
             End If
@@ -505,8 +521,16 @@
 
             If Variables.Auto.amount >= Variables.Auto.up1Cost Then
                 btnUp1.Enabled = True
+                Else : btnUp1.Enabled = False
             End If
-
+            If Variables.Auto.amount >= Variables.Auto.up2Cost And Variables.Auto.up1On Then
+                btnUp2.Enabled = True
+            Else : btnUp2.Enabled = False
+            End If
+            If Variables.Auto.amount >= Variables.Auto.up3Cost And Variables.Auto.up2On Then
+                btnUp3.Enabled = True
+            Else : btnUp3.Enabled = False
+            End If
         End If
     End Sub
     Private Sub btnCheat_Click(sender As System.Object, e As System.EventArgs) Handles btnCheat.Click
@@ -526,6 +550,20 @@
             lblSucFail.Text = "Successful Recruitment!"
         Else : lblSucFail.Text = "Failed Recruitment."
         End If
+
+
+        Select Case Variables.Auto.gamble
+            Case 5 Or 4
+                Select Case Variables.Movement.townSize
+                    Case 1
+                        Variables.Overall.followers += 100
+                    Case 2
+                        Variables.Overall.followers += 1000
+                    Case 3
+                        Variables.Overall.followers += 10000
+                End Select
+        End Select
+
 
         If tmrSucFail.Interval = 500 Then
             tmrSucFail.Enabled = False
@@ -572,7 +610,34 @@
     End Sub
 
     Private Sub btnUp1_Click(sender As System.Object, e As System.EventArgs) Handles btnUp1.Click
-        Variables.Auto.up1 = True
-        btnUp1.Enabled = False
+        Variables.Auto.up1On = True
+        btnUp1.Visible = False
+        Variables.Auto.amount += -(Variables.Auto.up1Cost)
+    End Sub
+    Private Sub btnUp1_Hover(sender As System.Object, e As System.EventArgs) Handles btnUp1.MouseHover
+        ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.
+        ToolTip.SetToolTip(Me.btnUp1, "Heal civilian wounds | Cost: " & Variables.Auto.up1Cost & " | Gain Per Click: " & Variables.Auto.up1Val & " |")
+    End Sub
+
+    Private Sub btnUp2_Click(sender As System.Object, e As System.EventArgs) Handles btnUp2.Click
+        Variables.Auto.up2On = True
+        Variables.Auto.up1On = False
+        btnUp2.Visible = False
+        Variables.Auto.amount += -(Variables.Auto.up2Cost)
+    End Sub
+    Private Sub btnUp2_Hover(sender As System.Object, e As System.EventArgs) Handles btnUp2.MouseHover
+        ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.
+        ToolTip.SetToolTip(Me.btnUp2, " | Cost: " & Variables.Auto.up2Cost & " | Gain Per Click: " & Variables.Auto.up2Val & " |")
+    End Sub
+
+    Private Sub btnUp3_Click(sender As System.Object, e As System.EventArgs) Handles btnUp3.Click
+        Variables.Auto.up3On = True
+        Variables.Auto.up2On = False
+        btnUp3.Visible = False
+        Variables.Auto.amount += -(Variables.Auto.up3Cost)
+    End Sub
+    Private Sub btnUp3_Hover(sender As System.Object, e As System.EventArgs) Handles btnUp3.MouseHover
+        ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.
+        ToolTip.SetToolTip(Me.btnUp3, " | Cost: " & Variables.Auto.up3Cost & " | Gain Per Click: " & Variables.Auto.up3Val & " |")
     End Sub
 End Class

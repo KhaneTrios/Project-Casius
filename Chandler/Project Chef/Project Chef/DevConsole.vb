@@ -41,8 +41,9 @@
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles chkRecruit.CheckedChanged
-        'Variables.Auto.amount = 10000000000
-        'frmIdle.btnAuto9.Enabled = True
+        If chkRecruit.Checked Then
+
+        End If
     End Sub
 
     Private Sub cmboSize_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cmboSize.SelectedIndexChanged

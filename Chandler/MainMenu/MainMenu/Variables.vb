@@ -46,5 +46,10 @@
     Structure Overall
         Public Shared name As String
         Public Shared num As Integer
+        Public Shared fileNumber As Integer
+        Public Shared saveLoad As Integer
+        Public Shared save1 As String
+        Public Shared save2 As String
+        Public Shared save3 As String
     End Structure
 End Class

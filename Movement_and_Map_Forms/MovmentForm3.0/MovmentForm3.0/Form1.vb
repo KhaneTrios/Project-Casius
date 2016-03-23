@@ -90,6 +90,113 @@ Public Class Form1
         x2y10.Image = clear.Image
         x2y11.Image = clear.Image
         x3y1.Image = clear.Image
+        x3y2.Image = clear.Image
+        x3y3.Image = clear.Image
+        x3y4.Image = clear.Image
+        x3y5.Image = clear.Image
+        x3y6.Image = clear.Image
+        x3y7.Image = clear.Image
+        x3y8.Image = clear.Image
+        x3y9.Image = clear.Image
+        x3y10.Image = clear.Image
+        x3y11.Image = clear.Image
+        x4y0.Image = clear.Image
+        x4y1.Image = clear.Image
+        x4y2.Image = clear.Image
+        x4y3.Image = clear.Image
+        x4y4.Image = clear.Image
+        x4y5.Image = clear.Image
+        x4y6.Image = clear.Image
+        x4y7.Image = clear.Image
+        x4y8.Image = clear.Image
+        x4y9.Image = clear.Image
+        x4y10.Image = clear.Image
+        x4y11.Image = clear.Image
+        x5y0.Image = clear.Image
+        x5y1.Image = clear.Image
+        x5y2.Image = clear.Image
+        x5y3.Image = clear.Image
+        x5y4.Image = clear.Image
+        x5y5.Image = clear.Image
+        x5y6.Image = clear.Image
+        x5y7.Image = clear.Image
+        x5y8.Image = clear.Image
+        x5y9.Image = clear.Image
+        x5y10.Image = clear.Image
+        x5y11.Image = clear.Image
+        x6y0.Image = clear.Image
+        x6y1.Image = clear.Image
+        x6y2.Image = clear.Image
+        x6y3.Image = clear.Image
+        x6y4.Image = clear.Image
+        x6y5.Image = clear.Image
+        x6y6.Image = clear.Image
+        x6y7.Image = clear.Image
+        x6y8.Image = clear.Image
+        x6y9.Image = clear.Image
+        x6y10.Image = clear.Image
+        x6y11.Image = clear.Image
+        x7y0.Image = clear.Image
+        x7y1.Image = clear.Image
+        x7y2.Image = clear.Image
+        x7y3.Image = clear.Image
+        x7y4.Image = clear.Image
+        x7y5.Image = clear.Image
+        x7y6.Image = clear.Image
+        x7y7.Image = clear.Image
+        x7y8.Image = clear.Image
+        x7y9.Image = clear.Image
+        x7y10.Image = clear.Image
+        x7y11.Image = clear.Image
+        x8y0.Image = clear.Image
+        x8y1.Image = clear.Image
+        x8y2.Image = clear.Image
+        x8y3.Image = clear.Image
+        x8y4.Image = clear.Image
+        x8y5.Image = clear.Image
+        x8y6.Image = clear.Image
+        x8y7.Image = clear.Image
+        x8y8.Image = clear.Image
+        x8y9.Image = clear.Image
+        x8y10.Image = clear.Image
+        x8y11.Image = clear.Image
+        x9y0.Image = clear.Image
+        x9y1.Image = clear.Image
+        x9y2.Image = clear.Image
+        x9y3.Image = clear.Image
+        x9y4.Image = clear.Image
+        x9y5.Image = clear.Image
+        x9y6.Image = clear.Image
+        x9y6.Image = clear.Image
+        x9y7.Image = clear.Image
+        x9y8.Image = clear.Image
+        x9y9.Image = clear.Image
+        x9y10.Image = clear.Image
+        x9y11.Image = clear.Image 'inside job
+        x10y0.Image = clear.Image
+        x10y1.Image = clear.Image
+        x10y2.Image = clear.Image
+        x10y3.Image = clear.Image
+        x10y4.Image = clear.Image
+        x10y5.Image = clear.Image
+        x10y6.Image = clear.Image
+        x10y7.Image = clear.Image
+        x10y8.Image = clear.Image
+        x10y9.Image = clear.Image
+        x10y10.Image = clear.Image
+        x10y11.Image = clear.Image
+        x11y0.Image = clear.Image
+        x11y1.Image = clear.Image
+        x11y2.Image = clear.Image
+        x11y3.Image = clear.Image
+        x11y4.Image = clear.Image
+        x11y5.Image = clear.Image
+        x11y6.Image = clear.Image
+        x11y7.Image = clear.Image
+        x11y8.Image = clear.Image
+        x11y9.Image = clear.Image
+        x11y10.Image = clear.Image
+        x11y11.Image = clear.Image
         Return 0
     End Function
 
@@ -181,6 +288,60 @@ Public Class Form1
             showTown1Coordinate()
         End If
 
+        If playerx = 1 And playery = 3 Then
+            clearCoordinates()
+            x1y3.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 4 Then
+            clearCoordinates()
+            x1y4.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 5 Then
+            clearCoordinates()
+            x1y5.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 6 Then
+            clearCoordinates()
+            x1y6.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 7 Then
+            clearCoordinates()
+            x1y7.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 8 Then
+            clearCoordinates()
+            x1y8.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 9 Then
+            clearCoordinates()
+            x1y9.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 10 Then
+            clearCoordinates()
+            x1y10.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 1 And playery = 11 Then
+            clearCoordinates()
+            x1y11.Image = player.Image
+            showTown1Coordinate()
+        End If
+
         If playerx = 2 And playery = 0 Then
             clearCoordinates()
             x2y0.Image = player.Image
@@ -196,6 +357,204 @@ Public Class Form1
         If playerx = 2 And playery = 2 Then
             clearCoordinates()
             x2y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 3 Then
+            clearCoordinates()
+            x2y3.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 4 Then
+            clearCoordinates()
+            x2y4.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 5 Then
+            clearCoordinates()
+            x2y5.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 6 Then
+            clearCoordinates()
+            x2y6.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 7 Then
+            clearCoordinates()
+            x2y7.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 8 Then
+            clearCoordinates()
+            x2y8.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 9 Then
+            clearCoordinates()
+            x2y9.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 10 Then
+            clearCoordinates()
+            x2y10.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 2 And playery = 11 Then
+            clearCoordinates()
+            x2y11.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 0 Then
+            clearCoordinates()
+            x3y0.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 1 Then
+            clearCoordinates()
+            x3y1.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 2 Then
+            clearCoordinates()
+            x3y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 3 Then
+            clearCoordinates()
+            x3y3.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 4 Then
+            clearCoordinates()
+            x3y4.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 5 Then
+            clearCoordinates()
+            x3y5.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 6 Then
+            clearCoordinates()
+            x3y6.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 7 Then
+            clearCoordinates()
+            x3y7.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 8 Then
+            clearCoordinates()
+            x3y8.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 9 Then
+            clearCoordinates()
+            x3y9.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 10 Then
+            clearCoordinates()
+            x3y10.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 3 And playery = 11 Then
+            clearCoordinates()
+            x3y11.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 0 Then
+            clearCoordinates()
+            x4y0.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 1 Then
+            clearCoordinates()
+            x4y1.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 2 Then
+            clearCoordinates()
+            x4y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 3 Then
+            clearCoordinates()
+            x4y3.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 4 Then
+            clearCoordinates()
+            x4y4.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 5 Then
+            clearCoordinates()
+            x4y5.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 6 Then
+            clearCoordinates()
+            x4y6.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 7 Then
+            clearCoordinates()
+            x4y7.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 8 Then
+            clearCoordinates()
+            x4y8.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 9 Then
+            clearCoordinates()
+            x4y9.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 10 Then
+            clearCoordinates()
+            x4y10.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 4 And playery = 11 Then
+            clearCoordinates()
+            x4y11.Image = player.Image
             showTown1Coordinate()
         End If
         Return 0
