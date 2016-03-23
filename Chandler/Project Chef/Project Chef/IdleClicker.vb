@@ -4,8 +4,14 @@
         Variables.Auto.civ += 1
 
 
-        If Variables.Auto.up1 = True Then
-            Variables.Auto.amount = Val(Variables.Auto.amount + (50))
+        If Variables.Auto.up1On = True Then
+            Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.up1Val))
+        End If
+        If Variables.Auto.up2On = True Then
+            Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.up2Val))
+        End If
+        If Variables.Auto.up3On = True Then
+            Variables.Auto.amount = Val(Variables.Auto.amount + (Variables.Auto.up3Val))
         End If
     End Sub
     Private Sub frmMain_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
@@ -37,6 +43,13 @@
                 Variables.Auto.auto6Max = 300
                 Variables.Auto.auto7Max = 100
         End Select
+
+        Variables.Auto.up1Val = 50
+        Variables.Auto.up1Cost = 10000
+        Variables.Auto.up2Val = 100
+        Variables.Auto.up2Cost = 50000
+        Variables.Auto.up3Val = 500
+        Variables.Auto.up3Cost = 100000
 
         'Progress bar max value sets
         barAuto2.Maximum = Variables.Auto.auto2Max              'Setting the progress bar maximum value to the value of the maximum variable due to varying city sizes.
@@ -510,9 +523,13 @@
                 btnUp1.Enabled = True
                 Else : btnUp1.Enabled = False
             End If
-            If Variables.Auto.amount >= Variables.Auto.up2Cost Then
+            If Variables.Auto.amount >= Variables.Auto.up2Cost And Variables.Auto.up1On Then
                 btnUp2.Enabled = True
             Else : btnUp2.Enabled = False
+            End If
+            If Variables.Auto.amount >= Variables.Auto.up3Cost And Variables.Auto.up2On Then
+                btnUp3.Enabled = True
+            Else : btnUp3.Enabled = False
             End If
         End If
     End Sub
@@ -593,16 +610,34 @@
     End Sub
 
     Private Sub btnUp1_Click(sender As System.Object, e As System.EventArgs) Handles btnUp1.Click
-        Variables.Auto.up1 = True
-        Application.DoEvents()
+        Variables.Auto.up1On = True
         btnUp1.Visible = False
-        Application.DoEvents()
+        Variables.Auto.amount += -(Variables.Auto.up1Cost)
+    End Sub
+    Private Sub btnUp1_Hover(sender As System.Object, e As System.EventArgs) Handles btnUp1.MouseHover
+        ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.
+        ToolTip.SetToolTip(Me.btnUp1, "Heal civilian wounds | Cost: " & Variables.Auto.up1Cost & " | Gain Per Click: " & Variables.Auto.up1Val & " |")
     End Sub
 
     Private Sub btnUp2_Click(sender As System.Object, e As System.EventArgs) Handles btnUp2.Click
-        Variables.Auto.up2 = True
-        Application.DoEvents()
+        Variables.Auto.up2On = True
+        Variables.Auto.up1On = False
         btnUp2.Visible = False
-        Application.DoEvents()
+        Variables.Auto.amount += -(Variables.Auto.up2Cost)
+    End Sub
+    Private Sub btnUp2_Hover(sender As System.Object, e As System.EventArgs) Handles btnUp2.MouseHover
+        ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.
+        ToolTip.SetToolTip(Me.btnUp2, " | Cost: " & Variables.Auto.up2Cost & " | Gain Per Click: " & Variables.Auto.up2Val & " |")
+    End Sub
+
+    Private Sub btnUp3_Click(sender As System.Object, e As System.EventArgs) Handles btnUp3.Click
+        Variables.Auto.up3On = True
+        Variables.Auto.up2On = False
+        btnUp3.Visible = False
+        Variables.Auto.amount += -(Variables.Auto.up3Cost)
+    End Sub
+    Private Sub btnUp3_Hover(sender As System.Object, e As System.EventArgs) Handles btnUp3.MouseHover
+        ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.
+        ToolTip.SetToolTip(Me.btnUp3, " | Cost: " & Variables.Auto.up3Cost & " | Gain Per Click: " & Variables.Auto.up3Val & " |")
     End Sub
 End Class

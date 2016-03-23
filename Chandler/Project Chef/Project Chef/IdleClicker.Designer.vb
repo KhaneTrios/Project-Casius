@@ -66,6 +66,8 @@ Partial Class frmIdle
         Me.lblCity1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabRebuild = New System.Windows.Forms.TabPage()
+        Me.lbl8off = New System.Windows.Forms.Label()
+        Me.lbl7bought = New System.Windows.Forms.Label()
         Me.lblFollowers = New System.Windows.Forms.Label()
         Me.btnUp3 = New System.Windows.Forms.Button()
         Me.btnUp2 = New System.Windows.Forms.Button()
@@ -120,8 +122,6 @@ Partial Class frmIdle
         Me.tmrAuto4 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrAuto6 = New System.Windows.Forms.Timer(Me.components)
         Me.backWork = New System.ComponentModel.BackgroundWorker()
-        Me.lbl7bought = New System.Windows.Forms.Label()
-        Me.lbl8off = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.tabRebuild.SuspendLayout()
         Me.tabStats.SuspendLayout()
@@ -596,6 +596,24 @@ Partial Class frmIdle
         Me.tabRebuild.TabIndex = 0
         Me.tabRebuild.Text = "Rebuild"
         '
+        'lbl8off
+        '
+        Me.lbl8off.AutoSize = True
+        Me.lbl8off.Location = New System.Drawing.Point(168, 88)
+        Me.lbl8off.Name = "lbl8off"
+        Me.lbl8off.Size = New System.Drawing.Size(52, 13)
+        Me.lbl8off.TabIndex = 76
+        Me.lbl8off.Text = "Auto8 Off"
+        '
+        'lbl7bought
+        '
+        Me.lbl7bought.AutoSize = True
+        Me.lbl7bought.Location = New System.Drawing.Point(168, 64)
+        Me.lbl7bought.Name = "lbl7bought"
+        Me.lbl7bought.Size = New System.Drawing.Size(72, 13)
+        Me.lbl7bought.TabIndex = 75
+        Me.lbl7bought.Text = "Auto7 Bought"
+        '
         'lblFollowers
         '
         Me.lblFollowers.AutoSize = True
@@ -1069,24 +1087,6 @@ Partial Class frmIdle
         'tmrAuto6
         '
         Me.tmrAuto6.Interval = 20000
-        '
-        'lbl7bought
-        '
-        Me.lbl7bought.AutoSize = True
-        Me.lbl7bought.Location = New System.Drawing.Point(168, 64)
-        Me.lbl7bought.Name = "lbl7bought"
-        Me.lbl7bought.Size = New System.Drawing.Size(72, 13)
-        Me.lbl7bought.TabIndex = 75
-        Me.lbl7bought.Text = "Auto7 Bought"
-        '
-        'lbl8off
-        '
-        Me.lbl8off.AutoSize = True
-        Me.lbl8off.Location = New System.Drawing.Point(168, 88)
-        Me.lbl8off.Name = "lbl8off"
-        Me.lbl8off.Size = New System.Drawing.Size(52, 13)
-        Me.lbl8off.TabIndex = 76
-        Me.lbl8off.Text = "Auto8 Off"
         '
         'frmIdle
         '

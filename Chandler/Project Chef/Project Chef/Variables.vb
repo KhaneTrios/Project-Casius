@@ -30,8 +30,8 @@
         Public Shared recAsk As Boolean = False
         Public Shared auto2Col As Boolean = False : Public Shared auto3Col As Boolean = False : Public Shared auto4Col As Boolean = False : Public Shared auto6Col As Boolean = False
         Public Shared up1Cost As Integer : Public Shared up2Cost As Integer : Public Shared up3Cost
-        Public Shared up1 As Boolean : Public Shared up2 As Boolean : Public Shared up3 As Boolean
-        Public Shared up1On As Boolean = False : Public Shared up2On As Boolean = False
+        Public Shared up1Val As Integer : Public Shared up2Val As Integer : Public Shared up3Val As Integer
+        Public Shared up1On As Boolean = False : Public Shared up2On As Boolean = False : Public Shared up3On As Boolean = False
     End Structure
     Structure Fight
 
