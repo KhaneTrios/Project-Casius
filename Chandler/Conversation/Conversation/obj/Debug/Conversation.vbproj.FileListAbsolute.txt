@@ -1,0 +1,2 @@
+C:\Users\thedr\Desktop\Conversation\Conversation\bin\Debug\Conversation.exe.config
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.exe.config
