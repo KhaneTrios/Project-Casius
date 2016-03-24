@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DevConsole.designer.vb">
+      <DependentUpon>DevConsole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DevConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmConvo.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DevConsole.resx">
+      <DependentUpon>DevConsole.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConvo.resx">
       <DependentUpon>frmConvo.vb</DependentUpon>
     </EmbeddedResource>
