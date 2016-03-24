@@ -11,6 +11,7 @@
                 PrintLine(Variables.Overall.fileNumber, Variables.Overall.num)          'Print data on the next line of the document, read th file number, write that variable to the document.
                 FileClose(Variables.Overall.fileNumber)                                 'Close the file that is referenced by the active file number
                 Variables.Overall.oneWritten = True
+                Me.Close()
             Case 2                                                                      'In the case that you are loading
                 If Variables.Overall.oneWritten = True Then
                     Variables.Overall.fileNumber = FreeFile()                               'Setting the file number variable to the lowest random available file number
@@ -36,6 +37,7 @@
                 PrintLine(Variables.Overall.fileNumber, Variables.Overall.name)
                 PrintLine(Variables.Overall.fileNumber, Variables.Overall.num)
                 FileClose(Variables.Overall.fileNumber)
+                Me.Close()
             Case 2
                 If Variables.Overall.twoWritten = True Then
                     Variables.Overall.fileNumber = FreeFile()
@@ -60,6 +62,7 @@
                 PrintLine(Variables.Overall.fileNumber, Variables.Overall.name)
                 PrintLine(Variables.Overall.fileNumber, Variables.Overall.num)
                 FileClose(Variables.Overall.fileNumber)
+                Me.Close()
             Case 2
                 If Variables.Overall.threeWritten = True Then
                     Variables.Overall.fileNumber = FreeFile()
@@ -128,6 +131,7 @@
             FileOpen(Variables.Overall.fileNumber, "FILE01.txt", OpenMode.Output)
             PrintLine(Variables.Overall.fileNumber, Variables.Overall.oneWritten)
             FileClose(Variables.Overall.fileNumber)
+            Me.Close()
         End If
     End Sub
 
@@ -139,6 +143,7 @@
             FileOpen(Variables.Overall.fileNumber, "FILE02.txt", OpenMode.Output)
             PrintLine(Variables.Overall.fileNumber, Variables.Overall.twoWritten)
             FileClose(Variables.Overall.fileNumber)
+            Me.Close()
         End If
     End Sub
 
@@ -150,6 +155,7 @@
             FileOpen(Variables.Overall.fileNumber, "FILE03.txt", OpenMode.Output)
             PrintLine(Variables.Overall.fileNumber, Variables.Overall.threeWritten)
             FileClose(Variables.Overall.fileNumber)
+            Me.Close()
         End If
     End Sub
 End Class
