@@ -11,3 +11,15 @@ C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Conversation\Conversatio
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.xml
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.exe
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.pdb
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.exe.config
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.exe
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.xml
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.pdb
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.exe
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.pdb
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.xml
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.vbprojResolveAssemblyReference.cache
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.DevConsole.resources
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.frmConvo.resources
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.Resources.resources
+C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.vbproj.GenerateResource.Cache

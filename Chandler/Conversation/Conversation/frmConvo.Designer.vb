@@ -32,14 +32,17 @@ Partial Class frmConvo
         Me.grp2 = New System.Windows.Forms.GroupBox()
         Me.Talk = New System.Windows.Forms.Button()
         Me.grp3 = New System.Windows.Forms.GroupBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.grp4 = New System.Windows.Forms.GroupBox()
         Me.btn4Leave = New System.Windows.Forms.Button()
         Me.btn4Talk = New System.Windows.Forms.Button()
         Me.btn4Sell = New System.Windows.Forms.Button()
         Me.btn4Buy = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.grp5 = New System.Windows.Forms.GroupBox()
         Me.btn5Ok = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         CType(Me.picChar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grp1.SuspendLayout()
         CType(Me.picBack, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,6 +64,7 @@ Partial Class frmConvo
         '
         'grp1
         '
+        Me.grp1.Controls.Add(Me.Button5)
         Me.grp1.Controls.Add(Me.Button1)
         Me.grp1.Location = New System.Drawing.Point(0, 0)
         Me.grp1.Name = "grp1"
@@ -76,7 +80,7 @@ Partial Class frmConvo
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(148, 48)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Talk"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'picBack
@@ -108,9 +112,9 @@ Partial Class frmConvo
         '
         'grp2
         '
+        Me.grp2.Controls.Add(Me.Button4)
         Me.grp2.Controls.Add(Me.Talk)
-        Me.grp2.Controls.Add(Me.grp1)
-        Me.grp2.Location = New System.Drawing.Point(1, 0)
+        Me.grp2.Location = New System.Drawing.Point(0, 0)
         Me.grp2.Name = "grp2"
         Me.grp2.Size = New System.Drawing.Size(726, 130)
         Me.grp2.TabIndex = 2
@@ -124,14 +128,15 @@ Partial Class frmConvo
         Me.Talk.Name = "Talk"
         Me.Talk.Size = New System.Drawing.Size(148, 48)
         Me.Talk.TabIndex = 0
-        Me.Talk.Text = "Button2"
+        Me.Talk.Text = "Fight"
         Me.Talk.UseVisualStyleBackColor = True
         '
         'grp3
         '
+        Me.grp3.Controls.Add(Me.grp1)
+        Me.grp3.Controls.Add(Me.Button2)
         Me.grp3.Controls.Add(Me.Button3)
-        Me.grp3.Controls.Add(Me.grp2)
-        Me.grp3.Location = New System.Drawing.Point(1, 313)
+        Me.grp3.Location = New System.Drawing.Point(0, 0)
         Me.grp3.Name = "grp3"
         Me.grp3.Size = New System.Drawing.Size(726, 130)
         Me.grp3.TabIndex = 2
@@ -139,13 +144,23 @@ Partial Class frmConvo
         Me.grp3.Text = "Interact"
         Me.grp3.Visible = False
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(10, 48)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(148, 48)
+        Me.Button3.TabIndex = 0
+        Me.Button3.Text = "Talk"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'grp4
         '
+        Me.grp4.Controls.Add(Me.grp3)
         Me.grp4.Controls.Add(Me.btn4Leave)
         Me.grp4.Controls.Add(Me.btn4Talk)
         Me.grp4.Controls.Add(Me.btn4Sell)
         Me.grp4.Controls.Add(Me.btn4Buy)
-        Me.grp4.Location = New System.Drawing.Point(1, 0)
+        Me.grp4.Location = New System.Drawing.Point(2, 313)
         Me.grp4.Name = "grp4"
         Me.grp4.Size = New System.Drawing.Size(726, 130)
         Me.grp4.TabIndex = 2
@@ -189,18 +204,9 @@ Partial Class frmConvo
         Me.btn4Buy.Text = "Buy"
         Me.btn4Buy.UseVisualStyleBackColor = True
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(10, 48)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(148, 48)
-        Me.Button3.TabIndex = 0
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'grp5
         '
-        Me.grp5.Controls.Add(Me.grp4)
+        Me.grp5.Controls.Add(Me.grp2)
         Me.grp5.Controls.Add(Me.btn5Ok)
         Me.grp5.Location = New System.Drawing.Point(1, 313)
         Me.grp5.Name = "grp5"
@@ -219,12 +225,39 @@ Partial Class frmConvo
         Me.btn5Ok.Text = "Ok"
         Me.btn5Ok.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(173, 48)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(148, 48)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Persuade"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(166, 48)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(148, 48)
+        Me.Button4.TabIndex = 1
+        Me.Button4.Text = "Talk"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(166, 48)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(148, 48)
+        Me.Button5.TabIndex = 1
+        Me.Button5.Text = "Recruit"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'frmConvo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(732, 443)
-        Me.Controls.Add(Me.grp3)
+        Me.Controls.Add(Me.grp4)
         Me.Controls.Add(Me.lblNPCName)
         Me.Controls.Add(Me.rtxtNPC)
         Me.Controls.Add(Me.picChar)
@@ -261,4 +294,7 @@ Partial Class frmConvo
     Friend WithEvents btn4Leave As Button
     Friend WithEvents btn4Talk As Button
     Friend WithEvents btn4Sell As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button2 As Button
 End Class
