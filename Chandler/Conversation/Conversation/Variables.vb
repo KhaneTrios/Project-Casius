@@ -54,6 +54,7 @@
     End Structure
 
     Structure Overall
+        Public Shared name As String
         Public Shared fileNumber As Integer 'The file number to read and write to files
         Public Shared followers As Integer ' Number of followers you have ammassed
         Public Shared charTag As String ' Tags to cheat behavior

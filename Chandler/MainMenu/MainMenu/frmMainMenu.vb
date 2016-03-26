@@ -2,6 +2,8 @@
     Dim fileNumber As Integer
 
     Private Sub frmMainMenu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        chkCreds.Appearance = System.Windows.Forms.Appearance.Button
+        Me.chkCreds.Size = New System.Drawing.Size(208, 80)
     End Sub
 
     Private Sub btnClick_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
@@ -55,5 +57,10 @@
     Private Sub btnNewGame_Click(sender As System.Object, e As System.EventArgs) Handles btnNewGame.Click
         Variables.Overall.saveLoad = 1
         frmSaves.Show()
+    End Sub
+
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles rtxtCred.TextChanged
+
     End Sub
 End Class

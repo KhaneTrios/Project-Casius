@@ -22,9 +22,11 @@ Partial Class frmMainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMainMenu))
         Me.btnNewGame = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnLoadGame = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.btnName = New System.Windows.Forms.Button()
         Me.lblName = New System.Windows.Forms.Label()
@@ -32,8 +34,8 @@ Partial Class frmMainMenu
         Me.btnLd = New System.Windows.Forms.Button()
         Me.txtNum = New System.Windows.Forms.TextBox()
         Me.lblNum = New System.Windows.Forms.Label()
-        Me.btnCreds = New System.Windows.Forms.Button()
-        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.rtxtCred = New System.Windows.Forms.RichTextBox()
+        Me.chkCreds = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'btnNewGame
@@ -63,6 +65,15 @@ Partial Class frmMainMenu
         Me.btnLoadGame.TabIndex = 2
         Me.btnLoadGame.Text = "Load Game"
         Me.btnLoadGame.UseVisualStyleBackColor = True
+        '
+        'btnQuit
+        '
+        Me.btnQuit.Location = New System.Drawing.Point(8, 416)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(208, 80)
+        Me.btnQuit.TabIndex = 11
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
         '
         'txtName
         '
@@ -123,31 +134,34 @@ Partial Class frmMainMenu
         Me.lblNum.TabIndex = 9
         Me.lblNum.Text = "Num"
         '
-        'btnCreds
+        'rtxtCred
         '
-        Me.btnCreds.Location = New System.Drawing.Point(8, 312)
-        Me.btnCreds.Name = "btnCreds"
-        Me.btnCreds.Size = New System.Drawing.Size(208, 80)
-        Me.btnCreds.TabIndex = 10
-        Me.btnCreds.Text = "Credits"
-        Me.btnCreds.UseVisualStyleBackColor = True
+        Me.rtxtCred.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rtxtCred.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtxtCred.Location = New System.Drawing.Point(232, 85)
+        Me.rtxtCred.Name = "rtxtCred"
+        Me.rtxtCred.Size = New System.Drawing.Size(470, 444)
+        Me.rtxtCred.TabIndex = 12
+        Me.rtxtCred.Text = resources.GetString("rtxtCred.Text")
+        Me.rtxtCred.Visible = False
         '
-        'btnQuit
+        'chkCreds
         '
-        Me.btnQuit.Location = New System.Drawing.Point(8, 416)
-        Me.btnQuit.Name = "btnQuit"
-        Me.btnQuit.Size = New System.Drawing.Size(208, 80)
-        Me.btnQuit.TabIndex = 11
-        Me.btnQuit.Text = "Quit"
-        Me.btnQuit.UseVisualStyleBackColor = True
+        Me.chkCreds.AutoSize = True
+        Me.chkCreds.Location = New System.Drawing.Point(28, 330)
+        Me.chkCreds.Name = "chkCreds"
+        Me.chkCreds.Size = New System.Drawing.Size(81, 17)
+        Me.chkCreds.TabIndex = 13
+        Me.chkCreds.Text = "CheckBox1"
+        Me.chkCreds.UseVisualStyleBackColor = True
         '
         'frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(704, 544)
+        Me.Controls.Add(Me.chkCreds)
         Me.Controls.Add(Me.btnQuit)
-        Me.Controls.Add(Me.btnCreds)
         Me.Controls.Add(Me.lblNum)
         Me.Controls.Add(Me.txtNum)
         Me.Controls.Add(Me.btnLd)
@@ -158,6 +172,7 @@ Partial Class frmMainMenu
         Me.Controls.Add(Me.btnLoadGame)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnNewGame)
+        Me.Controls.Add(Me.rtxtCred)
         Me.Name = "frmMainMenu"
         Me.Text = "Project Casius"
         Me.ResumeLayout(False)
@@ -167,6 +182,7 @@ Partial Class frmMainMenu
     Friend WithEvents btnNewGame As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnLoadGame As System.Windows.Forms.Button
+    Friend WithEvents btnQuit As System.Windows.Forms.Button
     Friend WithEvents txtName As TextBox
     Friend WithEvents btnName As Button
     Friend WithEvents lblName As Label
@@ -174,6 +190,6 @@ Partial Class frmMainMenu
     Friend WithEvents btnLd As Button
     Friend WithEvents txtNum As TextBox
     Friend WithEvents lblNum As Label
-    Friend WithEvents btnCreds As System.Windows.Forms.Button
-    Friend WithEvents btnQuit As System.Windows.Forms.Button
+    Friend WithEvents rtxtCred As RichTextBox
+    Friend WithEvents chkCreds As CheckBox
 End Class

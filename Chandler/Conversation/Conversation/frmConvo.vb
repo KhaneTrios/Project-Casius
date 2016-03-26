@@ -85,4 +85,38 @@
 
                 rtxtNPC.Text = answer
     End Sub
+
+    Private Sub btnAction2_Click(sender As Object, e As EventArgs) Handles btnAction2.Click
+        Dim answer As String
+
+        Select Case Variables.Convo.Type
+            Case 2
+                Select Case Variables.Overall.charTag
+                    Case "a"
+                        answer = "You don't scare me, " & Variables.Overall.name & "."
+                    Case "b"
+                        answer = "Don't kill me."
+                    Case "c"
+                        answer = "Hahahaha"
+                End Select
+
+            Case 3
+                Select Case Variables.Overall.charTag
+                    Case "a"
+                        answer = "Do I look like I'm running a store here?"
+                    Case "b"
+                        answer = "I don't have anything to trade."
+                End Select
+
+            Case 4
+                Select Case Variables.Overall.charTag
+                    Case "a"
+                        answer = "You gonna buy something or what?"
+                    Case "b"
+                        answer = "I don't have all day..."
+                End Select
+        End Select
+
+        rtxtNPC.Text = answer
+    End Sub
 End Class
