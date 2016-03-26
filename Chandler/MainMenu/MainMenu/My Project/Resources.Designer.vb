@@ -59,5 +59,35 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to False
+        '''.
+        '''</summary>
+        Friend ReadOnly Property FILE01() As String
+            Get
+                Return ResourceManager.GetString("FILE01", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to False
+        '''.
+        '''</summary>
+        Friend ReadOnly Property FILE02() As String
+            Get
+                Return ResourceManager.GetString("FILE02", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to False
+        '''.
+        '''</summary>
+        Friend ReadOnly Property FILE03() As String
+            Get
+                Return ResourceManager.GetString("FILE03", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

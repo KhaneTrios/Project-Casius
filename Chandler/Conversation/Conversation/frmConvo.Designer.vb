@@ -24,32 +24,20 @@ Partial Class frmConvo
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmConvo))
         Me.picChar = New System.Windows.Forms.PictureBox()
-        Me.grp1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.picBack = New System.Windows.Forms.PictureBox()
         Me.rtxtNPC = New System.Windows.Forms.RichTextBox()
         Me.lblNPCName = New System.Windows.Forms.Label()
-        Me.grp2 = New System.Windows.Forms.GroupBox()
-        Me.Talk = New System.Windows.Forms.Button()
-        Me.grp3 = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.grp4 = New System.Windows.Forms.GroupBox()
-        Me.btn4Leave = New System.Windows.Forms.Button()
-        Me.btn4Talk = New System.Windows.Forms.Button()
-        Me.btn4Sell = New System.Windows.Forms.Button()
-        Me.btn4Buy = New System.Windows.Forms.Button()
-        Me.grp5 = New System.Windows.Forms.GroupBox()
-        Me.btn5Ok = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.grpInteract = New System.Windows.Forms.GroupBox()
+        Me.btnAction1 = New System.Windows.Forms.Button()
+        Me.btnAction2 = New System.Windows.Forms.Button()
+        Me.btnAction3 = New System.Windows.Forms.Button()
+        Me.btnAction4 = New System.Windows.Forms.Button()
+        Me.btnAction5 = New System.Windows.Forms.Button()
+        Me.btnAction6 = New System.Windows.Forms.Button()
+        Me.lblMoney = New System.Windows.Forms.Label()
         CType(Me.picChar, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.grp1.SuspendLayout()
         CType(Me.picBack, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.grp2.SuspendLayout()
-        Me.grp3.SuspendLayout()
-        Me.grp4.SuspendLayout()
-        Me.grp5.SuspendLayout()
+        Me.grpInteract.SuspendLayout()
         Me.SuspendLayout()
         '
         'picChar
@@ -61,27 +49,6 @@ Partial Class frmConvo
         Me.picChar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picChar.TabIndex = 0
         Me.picChar.TabStop = False
-        '
-        'grp1
-        '
-        Me.grp1.Controls.Add(Me.Button5)
-        Me.grp1.Controls.Add(Me.Button1)
-        Me.grp1.Location = New System.Drawing.Point(0, 0)
-        Me.grp1.Name = "grp1"
-        Me.grp1.Size = New System.Drawing.Size(726, 130)
-        Me.grp1.TabIndex = 1
-        Me.grp1.TabStop = False
-        Me.grp1.Text = "Interact"
-        Me.grp1.Visible = False
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(10, 48)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(148, 48)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Talk"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'picBack
         '
@@ -97,7 +64,7 @@ Partial Class frmConvo
         '
         Me.rtxtNPC.Location = New System.Drawing.Point(307, 38)
         Me.rtxtNPC.Name = "rtxtNPC"
-        Me.rtxtNPC.Size = New System.Drawing.Size(331, 91)
+        Me.rtxtNPC.Size = New System.Drawing.Size(331, 109)
         Me.rtxtNPC.TabIndex = 3
         Me.rtxtNPC.Text = "Character says stuff here..."
         '
@@ -110,191 +77,116 @@ Partial Class frmConvo
         Me.lblNPCName.TabIndex = 4
         Me.lblNPCName.Text = "NPC Name"
         '
-        'grp2
+        'grpInteract
         '
-        Me.grp2.Controls.Add(Me.Button4)
-        Me.grp2.Controls.Add(Me.Talk)
-        Me.grp2.Location = New System.Drawing.Point(0, 0)
-        Me.grp2.Name = "grp2"
-        Me.grp2.Size = New System.Drawing.Size(726, 130)
-        Me.grp2.TabIndex = 2
-        Me.grp2.TabStop = False
-        Me.grp2.Text = "Interact"
-        Me.grp2.Visible = False
+        Me.grpInteract.Controls.Add(Me.lblMoney)
+        Me.grpInteract.Controls.Add(Me.btnAction6)
+        Me.grpInteract.Controls.Add(Me.btnAction5)
+        Me.grpInteract.Controls.Add(Me.btnAction4)
+        Me.grpInteract.Controls.Add(Me.btnAction3)
+        Me.grpInteract.Controls.Add(Me.btnAction2)
+        Me.grpInteract.Controls.Add(Me.btnAction1)
+        Me.grpInteract.Location = New System.Drawing.Point(2, 313)
+        Me.grpInteract.Name = "grpInteract"
+        Me.grpInteract.Size = New System.Drawing.Size(720, 144)
+        Me.grpInteract.TabIndex = 5
+        Me.grpInteract.TabStop = False
+        Me.grpInteract.Text = "Interact"
         '
-        'Talk
+        'btnAction1
         '
-        Me.Talk.Location = New System.Drawing.Point(10, 48)
-        Me.Talk.Name = "Talk"
-        Me.Talk.Size = New System.Drawing.Size(148, 48)
-        Me.Talk.TabIndex = 0
-        Me.Talk.Text = "Fight"
-        Me.Talk.UseVisualStyleBackColor = True
+        Me.btnAction1.Location = New System.Drawing.Point(6, 19)
+        Me.btnAction1.Name = "btnAction1"
+        Me.btnAction1.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction1.TabIndex = 0
+        Me.btnAction1.Text = "Action 1"
+        Me.btnAction1.UseVisualStyleBackColor = True
         '
-        'grp3
+        'btnAction2
         '
-        Me.grp3.Controls.Add(Me.grp1)
-        Me.grp3.Controls.Add(Me.Button2)
-        Me.grp3.Controls.Add(Me.Button3)
-        Me.grp3.Location = New System.Drawing.Point(0, 0)
-        Me.grp3.Name = "grp3"
-        Me.grp3.Size = New System.Drawing.Size(726, 130)
-        Me.grp3.TabIndex = 2
-        Me.grp3.TabStop = False
-        Me.grp3.Text = "Interact"
-        Me.grp3.Visible = False
+        Me.btnAction2.Location = New System.Drawing.Point(6, 85)
+        Me.btnAction2.Name = "btnAction2"
+        Me.btnAction2.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction2.TabIndex = 1
+        Me.btnAction2.Text = "Action 2"
+        Me.btnAction2.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnAction3
         '
-        Me.Button3.Location = New System.Drawing.Point(10, 48)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(148, 48)
-        Me.Button3.TabIndex = 0
-        Me.Button3.Text = "Talk"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnAction3.Location = New System.Drawing.Point(254, 19)
+        Me.btnAction3.Name = "btnAction3"
+        Me.btnAction3.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction3.TabIndex = 2
+        Me.btnAction3.Text = "Action 3"
+        Me.btnAction3.UseVisualStyleBackColor = True
         '
-        'grp4
+        'btnAction4
         '
-        Me.grp4.Controls.Add(Me.grp3)
-        Me.grp4.Controls.Add(Me.btn4Leave)
-        Me.grp4.Controls.Add(Me.btn4Talk)
-        Me.grp4.Controls.Add(Me.btn4Sell)
-        Me.grp4.Controls.Add(Me.btn4Buy)
-        Me.grp4.Location = New System.Drawing.Point(2, 313)
-        Me.grp4.Name = "grp4"
-        Me.grp4.Size = New System.Drawing.Size(726, 130)
-        Me.grp4.TabIndex = 2
-        Me.grp4.TabStop = False
-        Me.grp4.Text = "Interact"
-        Me.grp4.Visible = False
+        Me.btnAction4.Location = New System.Drawing.Point(254, 85)
+        Me.btnAction4.Name = "btnAction4"
+        Me.btnAction4.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction4.TabIndex = 3
+        Me.btnAction4.Text = "Action 4"
+        Me.btnAction4.UseVisualStyleBackColor = True
         '
-        'btn4Leave
+        'btnAction5
         '
-        Me.btn4Leave.Location = New System.Drawing.Point(502, 47)
-        Me.btn4Leave.Name = "btn4Leave"
-        Me.btn4Leave.Size = New System.Drawing.Size(123, 48)
-        Me.btn4Leave.TabIndex = 3
-        Me.btn4Leave.Text = "Leave"
-        Me.btn4Leave.UseVisualStyleBackColor = True
+        Me.btnAction5.Location = New System.Drawing.Point(496, 19)
+        Me.btnAction5.Name = "btnAction5"
+        Me.btnAction5.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction5.TabIndex = 4
+        Me.btnAction5.Text = "Action 5"
+        Me.btnAction5.UseVisualStyleBackColor = True
         '
-        'btn4Talk
+        'btnAction6
         '
-        Me.btn4Talk.Location = New System.Drawing.Point(264, 47)
-        Me.btn4Talk.Name = "btn4Talk"
-        Me.btn4Talk.Size = New System.Drawing.Size(123, 49)
-        Me.btn4Talk.TabIndex = 2
-        Me.btn4Talk.Text = "Talk"
-        Me.btn4Talk.UseVisualStyleBackColor = True
+        Me.btnAction6.Location = New System.Drawing.Point(496, 85)
+        Me.btnAction6.Name = "btnAction6"
+        Me.btnAction6.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction6.TabIndex = 5
+        Me.btnAction6.Text = "Action 6"
+        Me.btnAction6.UseVisualStyleBackColor = True
         '
-        'btn4Sell
+        'lblMoney
         '
-        Me.btn4Sell.Location = New System.Drawing.Point(135, 48)
-        Me.btn4Sell.Name = "btn4Sell"
-        Me.btn4Sell.Size = New System.Drawing.Size(123, 47)
-        Me.btn4Sell.TabIndex = 1
-        Me.btn4Sell.Text = "Sell"
-        Me.btn4Sell.UseVisualStyleBackColor = True
-        '
-        'btn4Buy
-        '
-        Me.btn4Buy.Location = New System.Drawing.Point(10, 48)
-        Me.btn4Buy.Name = "btn4Buy"
-        Me.btn4Buy.Size = New System.Drawing.Size(119, 47)
-        Me.btn4Buy.TabIndex = 0
-        Me.btn4Buy.Text = "Buy"
-        Me.btn4Buy.UseVisualStyleBackColor = True
-        '
-        'grp5
-        '
-        Me.grp5.Controls.Add(Me.grp2)
-        Me.grp5.Controls.Add(Me.btn5Ok)
-        Me.grp5.Location = New System.Drawing.Point(1, 313)
-        Me.grp5.Name = "grp5"
-        Me.grp5.Size = New System.Drawing.Size(726, 130)
-        Me.grp5.TabIndex = 2
-        Me.grp5.TabStop = False
-        Me.grp5.Text = "Interact"
-        Me.grp5.Visible = False
-        '
-        'btn5Ok
-        '
-        Me.btn5Ok.Location = New System.Drawing.Point(187, 34)
-        Me.btn5Ok.Name = "btn5Ok"
-        Me.btn5Ok.Size = New System.Drawing.Size(273, 70)
-        Me.btn5Ok.TabIndex = 0
-        Me.btn5Ok.Text = "Ok"
-        Me.btn5Ok.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(173, 48)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(148, 48)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Persuade"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(166, 48)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(148, 48)
-        Me.Button4.TabIndex = 1
-        Me.Button4.Text = "Talk"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(166, 48)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(148, 48)
-        Me.Button5.TabIndex = 1
-        Me.Button5.Text = "Recruit"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.lblMoney.AutoSize = True
+        Me.lblMoney.Location = New System.Drawing.Point(628, 0)
+        Me.lblMoney.Name = "lblMoney"
+        Me.lblMoney.Size = New System.Drawing.Size(39, 13)
+        Me.lblMoney.TabIndex = 6
+        Me.lblMoney.Text = "Money"
         '
         'frmConvo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(732, 443)
-        Me.Controls.Add(Me.grp4)
+        Me.ClientSize = New System.Drawing.Size(729, 462)
+        Me.Controls.Add(Me.grpInteract)
         Me.Controls.Add(Me.lblNPCName)
         Me.Controls.Add(Me.rtxtNPC)
         Me.Controls.Add(Me.picChar)
         Me.Controls.Add(Me.picBack)
-        Me.Controls.Add(Me.grp5)
         Me.Name = "frmConvo"
         Me.Text = "Project Casius"
         CType(Me.picChar, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.grp1.ResumeLayout(False)
         CType(Me.picBack, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.grp2.ResumeLayout(False)
-        Me.grp3.ResumeLayout(False)
-        Me.grp4.ResumeLayout(False)
-        Me.grp5.ResumeLayout(False)
+        Me.grpInteract.ResumeLayout(False)
+        Me.grpInteract.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents picChar As PictureBox
-    Friend WithEvents grp1 As GroupBox
-    Friend WithEvents Button1 As Button
     Friend WithEvents picBack As PictureBox
     Friend WithEvents rtxtNPC As RichTextBox
     Friend WithEvents lblNPCName As Label
-    Friend WithEvents grp2 As GroupBox
-    Friend WithEvents grp3 As GroupBox
-    Friend WithEvents grp4 As GroupBox
-    Friend WithEvents grp5 As GroupBox
-    Friend WithEvents btn5Ok As Button
-    Friend WithEvents btn4Buy As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Talk As Button
-    Friend WithEvents btn4Leave As Button
-    Friend WithEvents btn4Talk As Button
-    Friend WithEvents btn4Sell As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents grpInteract As GroupBox
+    Friend WithEvents btnAction6 As Button
+    Friend WithEvents btnAction5 As Button
+    Friend WithEvents btnAction4 As Button
+    Friend WithEvents btnAction3 As Button
+    Friend WithEvents btnAction2 As Button
+    Friend WithEvents btnAction1 As Button
+    Friend WithEvents lblMoney As Label
 End Class

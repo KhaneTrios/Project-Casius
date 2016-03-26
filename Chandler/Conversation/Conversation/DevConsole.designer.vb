@@ -28,10 +28,13 @@ Partial Class DevConsole
         Me.btnEnd = New System.Windows.Forms.Button()
         Me.btnSet = New System.Windows.Forms.Button()
         Me.ToolTipDev = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnTagSet = New System.Windows.Forms.Button()
+        Me.btnRand = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.chkComplete = New System.Windows.Forms.CheckBox()
         Me.chkRecruit = New System.Windows.Forms.CheckBox()
         Me.cmboType = New System.Windows.Forms.ComboBox()
+        Me.cmboTag = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'btnLoad
@@ -56,13 +59,33 @@ Partial Class DevConsole
         '
         'btnSet
         '
-        Me.btnSet.Location = New System.Drawing.Point(118, 103)
+        Me.btnSet.Location = New System.Drawing.Point(118, 102)
         Me.btnSet.Name = "btnSet"
         Me.btnSet.Size = New System.Drawing.Size(72, 21)
         Me.btnSet.TabIndex = 3
         Me.btnSet.Text = "Set"
         Me.ToolTipDev.SetToolTip(Me.btnSet, "Sets the City size, to test all city sizes. Must be 1, 2, or 3.")
         Me.btnSet.UseVisualStyleBackColor = True
+        '
+        'btnTagSet
+        '
+        Me.btnTagSet.Location = New System.Drawing.Point(118, 129)
+        Me.btnTagSet.Name = "btnTagSet"
+        Me.btnTagSet.Size = New System.Drawing.Size(72, 21)
+        Me.btnTagSet.TabIndex = 10
+        Me.btnTagSet.Text = "Set"
+        Me.ToolTipDev.SetToolTip(Me.btnTagSet, "Sets the City size, to test all city sizes. Must be 1, 2, or 3.")
+        Me.btnTagSet.UseVisualStyleBackColor = True
+        '
+        'btnRand
+        '
+        Me.btnRand.Location = New System.Drawing.Point(196, 130)
+        Me.btnRand.Name = "btnRand"
+        Me.btnRand.Size = New System.Drawing.Size(59, 21)
+        Me.btnRand.TabIndex = 11
+        Me.btnRand.Text = "Rand"
+        Me.ToolTipDev.SetToolTip(Me.btnRand, "Sets the City size, to test all city sizes. Must be 1, 2, or 3.")
+        Me.btnRand.UseVisualStyleBackColor = True
         '
         'RichTextBox1
         '
@@ -76,7 +99,7 @@ Partial Class DevConsole
         'chkComplete
         '
         Me.chkComplete.AutoSize = True
-        Me.chkComplete.Location = New System.Drawing.Point(17, 140)
+        Me.chkComplete.Location = New System.Drawing.Point(17, 159)
         Me.chkComplete.Name = "chkComplete"
         Me.chkComplete.Size = New System.Drawing.Size(95, 17)
         Me.chkComplete.TabIndex = 6
@@ -86,7 +109,7 @@ Partial Class DevConsole
         'chkRecruit
         '
         Me.chkRecruit.AutoSize = True
-        Me.chkRecruit.Location = New System.Drawing.Point(136, 140)
+        Me.chkRecruit.Location = New System.Drawing.Point(136, 159)
         Me.chkRecruit.Name = "chkRecruit"
         Me.chkRecruit.Size = New System.Drawing.Size(81, 17)
         Me.chkRecruit.TabIndex = 7
@@ -103,11 +126,24 @@ Partial Class DevConsole
         Me.cmboType.TabIndex = 8
         Me.cmboType.Text = "NPC Type"
         '
+        'cmboTag
+        '
+        Me.cmboTag.FormattingEnabled = True
+        Me.cmboTag.Items.AddRange(New Object() {"a", "b", "c", "d", "e", "f"})
+        Me.cmboTag.Location = New System.Drawing.Point(32, 130)
+        Me.cmboTag.Name = "cmboTag"
+        Me.cmboTag.Size = New System.Drawing.Size(80, 21)
+        Me.cmboTag.TabIndex = 9
+        Me.cmboTag.Text = "NPC Tag"
+        '
         'DevConsole
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(260, 246)
+        Me.Controls.Add(Me.btnRand)
+        Me.Controls.Add(Me.btnTagSet)
+        Me.Controls.Add(Me.cmboTag)
         Me.Controls.Add(Me.cmboType)
         Me.Controls.Add(Me.chkRecruit)
         Me.Controls.Add(Me.chkComplete)
@@ -129,4 +165,7 @@ Partial Class DevConsole
     Friend WithEvents chkComplete As System.Windows.Forms.CheckBox
     Friend WithEvents chkRecruit As CheckBox
     Friend WithEvents cmboType As ComboBox
+    Friend WithEvents cmboTag As ComboBox
+    Friend WithEvents btnTagSet As Button
+    Friend WithEvents btnRand As Button
 End Class

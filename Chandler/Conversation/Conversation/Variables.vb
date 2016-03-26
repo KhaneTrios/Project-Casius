@@ -56,5 +56,36 @@
     Structure Overall
         Public Shared fileNumber As Integer 'The file number to read and write to files
         Public Shared followers As Integer ' Number of followers you have ammassed
+        Public Shared charTag As String ' Tags to cheat behavior
+    End Structure
+
+    Structure Functions
+        Public Shared Function genTag() As String
+            Dim tag As String
+            Dim rng As Integer
+
+            Randomize()
+            rng = (Int((4 * Rnd()) + 1))
+
+            Select Case rng
+                Case 1
+                    tag = "a"
+                Case 2
+                    tag = "b"
+                Case 3
+                    tag = "c"
+                Case 4
+                    tag = "d"
+                Case 5
+                    tag = "e"
+                Case 6
+                    tag = "f"
+            End Select
+
+            Variables.Overall.charTag = tag
+
+
+            Return 0
+        End Function
     End Structure
 End Class

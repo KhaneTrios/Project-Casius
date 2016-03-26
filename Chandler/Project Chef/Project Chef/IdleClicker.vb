@@ -22,26 +22,26 @@
 
         Select Case Variables.Movement.townSize
             Case 1
-                Variables.Auto.auto2Max = 150        'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto3Max = 500        'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto4Max = 300        'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto5Max = 5          'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto6Max = 20         'The total amount needed to max out and complete the building of this item
-                Variables.Auto.auto7Max = 10         'The total amount needed to max out and complete the building of this item
+                Variables.Auto.auto2Max = 150        'The total amount needed to max out and complete the building of the houses
+                Variables.Auto.auto3Max = 500        'The total amount needed to max out and complete the building of the walls
+                Variables.Auto.auto4Max = 300        'The total amount needed to max out and complete the building of the barracks
+                Variables.Auto.auto5Max = 2          'The total amount needed to max out and complete the building of thr churches
+                Variables.Auto.auto6Max = 20         'The total amount needed to max out and complete the building of the shops
+                Variables.Auto.auto7Max = 5         'The total amount needed to max out and complete the building of the banks
             Case 2
                 Variables.Auto.auto2Max = 500
                 Variables.Auto.auto3Max = 1000
                 Variables.Auto.auto4Max = 600
-                Variables.Auto.auto5Max = 10
+                Variables.Auto.auto5Max = 5
                 Variables.Auto.auto6Max = 50
-                Variables.Auto.auto7Max = 50
+                Variables.Auto.auto7Max = 10
             Case 3
                 Variables.Auto.auto2Max = 1500
                 Variables.Auto.auto3Max = 5000
                 Variables.Auto.auto4Max = 1200
-                Variables.Auto.auto5Max = 100
+                Variables.Auto.auto5Max = 15
                 Variables.Auto.auto6Max = 300
-                Variables.Auto.auto7Max = 100
+                Variables.Auto.auto7Max = 20
         End Select
 
         Variables.Auto.up1Val = 50

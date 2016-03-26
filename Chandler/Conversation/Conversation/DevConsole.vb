@@ -41,4 +41,16 @@
     Private Sub cmboSize_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cmboType.SelectedIndexChanged
 
     End Sub
+
+    Private Sub cmboTag_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmboTag.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub btnTagSet_Click(sender As Object, e As EventArgs) Handles btnTagSet.Click
+        Variables.Overall.charTag = cmboTag.Text
+    End Sub
+
+    Private Sub btnRand_Click(sender As Object, e As EventArgs) Handles btnRand.Click
+        Variables.Functions.genTag()
+    End Sub
 End Class
