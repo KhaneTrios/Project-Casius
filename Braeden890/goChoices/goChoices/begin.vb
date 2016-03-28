@@ -113,10 +113,12 @@
             backstab.Enabled = False
         End If
         'Brill made a Debug name! Yay for him!
-        'If Start.Variable.asdfmod = "Hooty McOwlface" Then
-        'Variables.Fight.skill = 9999
-        'Fight.className.Text = "God damned Owl"
-        'End If
+        If Variables.Fight.asdfmod = "Hooty McOwlface" Then
+            Variables.Fight.skill = 9999
+            Fight.className.Text = "God damned Owl"
+        End If
+        Button4.Visible = False
+        Button25.Visible = False
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
@@ -126,14 +128,20 @@
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
         charge.Enabled = True
         Variables.Fight.skill += 1
+
+
+
+
+        Button25.Visible = True
+        Button2.Visible = False
     End Sub
 
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Updater.Tick
         skillPoints.Text = Variables.Fight.skill
     End Sub
 
-    Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
-        skillcount.Enabled = True
+    Private Sub Button3_Click(sender As System.Object, e As System.EventArgs)
+        'skillcount.Enabled = True
     End Sub
 
     Private Sub skillcount_Tick(sender As System.Object, e As System.EventArgs) Handles skillcount.Tick

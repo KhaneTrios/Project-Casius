@@ -33,10 +33,22 @@
         Public Shared up1 As Boolean : Public Shared up2 As Boolean : Public Shared up3 As Boolean
     End Structure
     Structure Fight
-        Public Shared skill As Integer 'actual number of skills you have
-        Public Shared skillOneBought As Boolean = False 'first skill button on fight screen
-        Public Shared charWarr As Integer  'if you pick the warrior class
-        Public Shared asdfmod As String 'player name
+        Public Shared skill As Integer                  'Actual number of skills you have
+        Public Shared skillOneBought As Boolean = False 'First skill button on fight screen
+        Public Shared charWarr As Integer               'If you pick the warrior class
+        Public Shared asdfmod As String                 'Player name
+        Public Shared AttackGen As New Random           'Self Explanatory
+        Public Shared opponentName As New Random        'Random opponent class above opponent picture
+        Public Shared HC As Integer                     'Player Hit chance
+        Public Shared Plug As Integer                   'Stops randomizer
+        Public Shared EHC As Integer                    'Enemy Hit chance
+        Public Shared Jerkwad As String                 'Enemy Type (aka Name)
+        Public Shared Choices As Integer                'Choice for classes
+        Public Shared EHealth As Integer                'Enemy health
+        Public Shared plyrDmg As Integer                'Damage being dealt to player
+        Public Shared PHealth As Integer                'Player health
+        Public Shared eDmg As Integer                   'damage being dealth to enemy
+
     End Structure
 
     Structure Movement

@@ -32,6 +32,7 @@
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Label2.Text = Variables.Fight.asdfmod
+        Button1.Visible = False
     End Sub
     Private Sub Button7_Click(sender As System.Object, e As System.EventArgs)
     End Sub
@@ -51,6 +52,7 @@
         Form1.PlayerHX = 0
         Form1.PlayerHY = 50
         Form1.PlayerDmg = 10
+        Button1.Visible = True
     End Sub
 
     Private Sub CheckBox5_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles TactBox.CheckedChanged
@@ -68,6 +70,7 @@
         Form1.PlayerHX = 0
         Form1.PlayerHY = 90
         Form1.PlayerDmg = 5
+        Button1.Visible = True
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles UnBox.CheckedChanged
@@ -86,6 +89,7 @@
         Form1.PlayerHX = 25
         Form1.PlayerHY = 75
         Form1.PlayerDmg = 25
+        Button1.Visible = True
     End Sub
 
     Private Sub CheckBox4_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles MageBox.CheckedChanged
@@ -103,6 +107,7 @@
         Form1.PlayerHX = 10
         Form1.PlayerHY = 80
         Form1.PlayerDmg = 15
+        Button1.Visible = True
     End Sub
 
     Private Sub CheckBox3_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RogueBox.CheckedChanged
@@ -120,6 +125,7 @@
         Form1.PlayerHX = 33
         Form1.PlayerHY = 99
         Form1.PlayerDmg = 12
+        Button1.Visible = True
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
