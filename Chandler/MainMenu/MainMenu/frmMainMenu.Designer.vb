@@ -35,7 +35,8 @@ Partial Class frmMainMenu
         Me.txtNum = New System.Windows.Forms.TextBox()
         Me.lblNum = New System.Windows.Forms.Label()
         Me.rtxtCred = New System.Windows.Forms.RichTextBox()
-        Me.chkCreds = New System.Windows.Forms.CheckBox()
+        Me.btnCreds = New System.Windows.Forms.Button()
+        Me.lbltoggle = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnNewGame
@@ -145,22 +146,31 @@ Partial Class frmMainMenu
         Me.rtxtCred.Text = resources.GetString("rtxtCred.Text")
         Me.rtxtCred.Visible = False
         '
-        'chkCreds
+        'btnCreds
         '
-        Me.chkCreds.AutoSize = True
-        Me.chkCreds.Location = New System.Drawing.Point(28, 330)
-        Me.chkCreds.Name = "chkCreds"
-        Me.chkCreds.Size = New System.Drawing.Size(81, 17)
-        Me.chkCreds.TabIndex = 13
-        Me.chkCreds.Text = "CheckBox1"
-        Me.chkCreds.UseVisualStyleBackColor = True
+        Me.btnCreds.Location = New System.Drawing.Point(8, 306)
+        Me.btnCreds.Name = "btnCreds"
+        Me.btnCreds.Size = New System.Drawing.Size(208, 80)
+        Me.btnCreds.TabIndex = 13
+        Me.btnCreds.Text = "Credits"
+        Me.btnCreds.UseVisualStyleBackColor = True
+        '
+        'lbltoggle
+        '
+        Me.lbltoggle.AutoSize = True
+        Me.lbltoggle.Location = New System.Drawing.Point(506, 372)
+        Me.lbltoggle.Name = "lbltoggle"
+        Me.lbltoggle.Size = New System.Drawing.Size(36, 13)
+        Me.lbltoggle.TabIndex = 14
+        Me.lbltoggle.Text = "toggle"
         '
         'frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(704, 544)
-        Me.Controls.Add(Me.chkCreds)
+        Me.Controls.Add(Me.lbltoggle)
+        Me.Controls.Add(Me.btnCreds)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.lblNum)
         Me.Controls.Add(Me.txtNum)
@@ -191,5 +201,6 @@ Partial Class frmMainMenu
     Friend WithEvents txtNum As TextBox
     Friend WithEvents lblNum As Label
     Friend WithEvents rtxtCred As RichTextBox
-    Friend WithEvents chkCreds As CheckBox
+    Friend WithEvents btnCreds As Button
+    Friend WithEvents lbltoggle As Label
 End Class

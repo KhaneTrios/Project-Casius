@@ -2,8 +2,7 @@
     Dim fileNumber As Integer
 
     Private Sub frmMainMenu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        chkCreds.Appearance = System.Windows.Forms.Appearance.Button
-        Me.chkCreds.Size = New System.Drawing.Size(208, 80)
+
     End Sub
 
     Private Sub btnClick_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
@@ -62,5 +61,22 @@
 
     Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles rtxtCred.TextChanged
 
+    End Sub
+
+    Private Sub btnCreds_Click(sender As Object, e As EventArgs) Handles btnCreds.Click
+
+
+        Dim toggle As Integer = 0
+        lbltoggle.Text = toggle
+
+        If toggle = 0 Then
+            rtxtCred.Visible = False
+            toggle = toggle + 1
+        End If
+
+        If toggle = 1 Then
+            rtxtCred.Visible = True
+            toggle = toggle - 1
+        End If
     End Sub
 End Class

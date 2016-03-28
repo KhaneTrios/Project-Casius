@@ -78,10 +78,7 @@
     End Sub
 
     Private Sub frmSaves_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        'Loading the form in the middle of the larger parent form
-        Me.StartPosition = 0
-        Me.Top = frmMainMenu.Top + 150
-        Me.Left = frmMainMenu.Left + frmMainMenu.Width - Me.Width - 175
+
 
         'Reading the name of the characters stored in each file to make the load buttons the names of the characters in the files
         Variables.Overall.fileNumber = FreeFile()
