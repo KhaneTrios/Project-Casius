@@ -102,7 +102,7 @@
         End If
         If EClass = 1 Then
             ClassE.Text = "Warrior"
-            WarriorGen.Enabled = True
+            EnemyGen.Enabled = True
         ElseIf EClass = 2 Then
             ClassE.Text = "Rogue"
         ElseIf EClass = 3 Then
@@ -304,7 +304,7 @@
     Private Sub Plugger_Tick(sender As System.Object, e As System.EventArgs) Handles Plugger.Tick
         Plug += 1
         Randomizer.Enabled = False
-        WarriorGen.Enabled = False
+        EnemyGen.Enabled = False
 
         If Plug = 2000 Then
             Randomizer.Enabled = True
@@ -319,26 +319,27 @@
         Plugger.Enabled = False
     End Sub
 
-    Private Sub WarriorGen_Tick(sender As System.Object, e As System.EventArgs) Handles WarriorGen.Tick
+    Private Sub WarriorGen_Tick(sender As System.Object, e As System.EventArgs) Handles EnemyGen.Tick
         If GenNum = 200 Then
-            WarriorGen.Enabled = False
+            EnemyGen.Enabled = False
         End If
         EWep = RanGen.Next(2, 5)
         GenNum += 1
         If EWep = 2 Then
             Label23.Text = "Short Sword"
             EDamage = 15
-            WarriorGen.Enabled = False
+            EnemyGen.Enabled = False
         End If
         If EWep = 3 Then
             Label23.Text = "Long Sword"
             EDamage = 20
-            WarriorGen.Enabled = False
+            EnemyGen.Enabled = False
         End If
         If EWep = 4 Then
             Label23.Text = "Two-handed Sword"
             EDamage = 45
-            WarriorGen.Enabled = False
+            EnemyGen.Enabled = False
         End If
     End Sub
+
 End Class
