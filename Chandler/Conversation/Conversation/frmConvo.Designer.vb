@@ -45,7 +45,7 @@ Partial Class frmConvo
         Me.picChar.Image = CType(resources.GetObject("picChar.Image"), System.Drawing.Image)
         Me.picChar.Location = New System.Drawing.Point(22, 38)
         Me.picChar.Name = "picChar"
-        Me.picChar.Size = New System.Drawing.Size(170, 154)
+        Me.picChar.Size = New System.Drawing.Size(265, 244)
         Me.picChar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picChar.TabIndex = 0
         Me.picChar.TabStop = False

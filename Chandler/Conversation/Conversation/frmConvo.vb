@@ -119,4 +119,8 @@
 
         rtxtNPC.Text = answer
     End Sub
+
+    Private Sub picChar_Click(sender As Object, e As EventArgs) Handles picChar.Click
+
+    End Sub
 End Class
