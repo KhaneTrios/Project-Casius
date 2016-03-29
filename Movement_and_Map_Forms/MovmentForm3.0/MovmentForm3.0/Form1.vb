@@ -10,6 +10,9 @@ Public Class Form1
     'Variables for town spawns.
     Dim spawnTown As Integer 'Tells the program whether the town's coordinates have been spawned yet.
     Dim town1x As Integer : Dim town1y As Integer
+    'Merchant spawns
+    Dim merchantx As Integer
+    Dim merchanty As Integer
 
     'When a button is pressed.
     Private Sub Form1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
@@ -48,6 +51,11 @@ Public Class Form1
 
         'Show the player's current coordinates
         showPlayerCoordinate()
+
+        'Triggered
+        If playerx = merchantx And playery = merchanty Then
+            'Do shit in here.
+        End If
 
     End Sub 'End movement sub
 
@@ -267,6 +275,60 @@ Public Class Form1
         If playerx = 0 And playery = 2 Then
             clearCoordinates()
             x0y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 3 Then
+            clearCoordinates()
+            x0y3.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 4 Then
+            clearCoordinates()
+            x0y4.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 5 Then
+            clearCoordinates()
+            x0y5.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 6 Then
+            clearCoordinates()
+            x0y6.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 7 Then
+            clearCoordinates()
+            x0y7.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 8 Then
+            clearCoordinates()
+            x0y8.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 9 Then
+            clearCoordinates()
+            x0y9.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 10 Then
+            clearCoordinates()
+            x0y10.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 0 And playery = 11 Then
+            clearCoordinates()
+            x0y11.Image = player.Image
             showTown1Coordinate()
         End If
 
@@ -557,6 +619,122 @@ Public Class Form1
             x4y11.Image = player.Image
             showTown1Coordinate()
         End If
+
+        If playerx = 5 And playery = 0 Then
+            clearCoordinates()
+            x5y0.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 1 Then
+            clearCoordinates()
+            x5y1.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 2 Then
+            clearCoordinates()
+            x5y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 3 Then
+            clearCoordinates()
+            x5y3.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 4 Then
+            clearCoordinates()
+            x5y4.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 5 Then
+            clearCoordinates()
+            x5y5.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 6 Then
+            clearCoordinates()
+            x5y6.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 7 Then
+            clearCoordinates()
+            x5y7.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 8 Then
+            clearCoordinates()
+            x5y8.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 9 Then
+            clearCoordinates()
+            x5y9.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 10 Then
+            clearCoordinates()
+            x5y10.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 5 And playery = 11 Then
+            clearCoordinates()
+            x5y11.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 6 And playery = 0 Then
+            clearCoordinates()
+            x6y0.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 6 And playery = 1 Then
+            clearCoordinates()
+            x6y1.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 6 And playery = 2 Then
+            clearCoordinates()
+            x6y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 6 And playery = 3 Then
+            clearCoordinates()
+            x6y3.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 6 And playery = 4 Then
+            clearCoordinates()
+            x6y4.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 6 And playery = 5 Then
+            clearCoordinates()
+            x6y5.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 6 And playery = 6 Then
+            clearCoordinates()
+            x6y5.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+
         Return 0
     End Function 'End movement function
 
@@ -573,6 +751,10 @@ Public Class Form1
 
         'Load the player's current coordinates.
         showPlayerCoordinate()
+
+        'Randomly spawn the merchant.
+        merchantx = CInt(Int((5 * Rnd()) + 0))
+        merchanty = CInt(Int((11 * Rnd()) + 0))
 
     End Sub 'end form load sub
 
@@ -600,6 +782,7 @@ Public Class Form1
         End Select
         Return 0
     End Function 'End clearing function
+
 
     Private Sub town_Click(sender As System.Object, e As System.EventArgs) Handles town.Click
         Button1.Enabled = False

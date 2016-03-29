@@ -7,3 +7,4 @@
 \\stcfs2\Student_Data\dougalt\Desktop\GitHub\Project-Casius\Movement_and_Map_Forms\MovmentForm3.0\MovmentForm3.0\obj\x86\Debug\MovmentForm3.0.exe
 \\stcfs2\Student_Data\dougalt\Desktop\GitHub\Project-Casius\Movement_and_Map_Forms\MovmentForm3.0\MovmentForm3.0\obj\x86\Debug\MovmentForm3.0.xml
 \\stcfs2\Student_Data\dougalt\Desktop\GitHub\Project-Casius\Movement_and_Map_Forms\MovmentForm3.0\MovmentForm3.0\obj\x86\Debug\MovmentForm3.0.pdb
+\\stcfs2\Student_Data\dougalt\Desktop\GitHub\Project-Casius\Movement_and_Map_Forms\MovmentForm3.0\MovmentForm3.0\obj\x86\Debug\MovmentForm3.0.vbprojResolveAssemblyReference.cache
