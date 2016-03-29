@@ -1,26 +1,5 @@
 ﻿Public Class begin
-    'The names of each skill represented as an integer 3/15
-    Public Shared warrCharge As Integer
-    Public Shared warrBackwards As Integer
-    Public Shared warrEnrage As Integer
-    Public Shared warrCore As Integer
-    Public Shared tactScout As Integer
-    Public Shared tactCaltrop As Integer
-    Public Shared tactOver As Integer
-    Public Shared tactPoison As Integer
-    Public Shared mageShards As Integer
-    Public Shared mageLightning As Integer
-    Public Shared mageFire As Integer
-    Public Shared mageArcane As Integer
-    Public Shared roguBackstab As Integer
-    Public Shared roguParry As Integer
-    Public Shared roguInvisible As Integer
-    Public Shared roguShadow As Integer
-    Public Shared unboBurden As Integer
-    Public Shared unboCraze As Integer
-    Public Shared unboWild As Integer
-    Public Shared unboRedemption As Integer
-
+    'ALL VARIABLES ARE IN VARIABLES.VB 
     Private Sub begin_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         'The NAMES of each skill representing its respective button 3/15
         If Variables.Fight.charWarr = True Then
@@ -43,7 +22,7 @@
             wild.Enabled = False
             craze.Enabled = False
             burden.Enabled = False
-        ElseIf Form1.charTact = True Then
+        ElseIf Variables.Skills.charTact = True Then
             charge.Enabled = False
             backwardsLash.Enabled = False
             enrage.Enabled = False
@@ -60,7 +39,7 @@
             wild.Enabled = False
             craze.Enabled = False
             burden.Enabled = False
-        ElseIf Form1.charMage = True Then
+        ElseIf Variables.Skills.charMage = True Then
             charge.Enabled = False
             backwardsLash.Enabled = False
             enrage.Enabled = False
@@ -77,7 +56,7 @@
             wild.Enabled = False
             craze.Enabled = False
             burden.Enabled = False
-        ElseIf Form1.charRogu = True Then
+        ElseIf Variables.Skills.charRogu = True Then
             charge.Enabled = False
             backwardsLash.Enabled = False
             enrage.Enabled = False
@@ -94,7 +73,7 @@
             wild.Enabled = False
             craze.Enabled = False
             burden.Enabled = False
-        ElseIf Form1.charUnbo = True Then
+        ElseIf Variables.Skills.charUnbo = True Then
             charge.Enabled = False
             backwardsLash.Enabled = False
             enrage.Enabled = False
@@ -138,6 +117,14 @@
 
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Updater.Tick
         skillPoints.Text = Variables.Fight.skill
+
+        If Variables.Fight.charWarr = 1 And Variables.Fight.skillOneBought Then
+            lblAquired.Text = "Skills Aquired: " & Variables.Skills.warrCharge
+        End If
+        If Variables.Fight.charWarr = 1 And Variables.Fight.skillTwoBought Then
+            lblAquired.Text = "Skills Aquired: " & Variables.Skills.warrBackwards
+        End If
+
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs)
@@ -164,10 +151,10 @@
         End If
 
         MessageBox.Show("The warrior runs at the enemy at full force and deals a devistating blow with his shoulder.", "Charge")
-        Label3.Text = "Skills acquired: Charge"
+        lblAquired.Text = "Skills acquired: Charge"
 
 
-        Variables.Fight.skillOneBought = True
+        Variables.Fight.skillOneBought = True 'skill bought
 
         Variables.Fight.skill = Variables.Fight.skill - 1
         If Variables.Fight.skill = -1 Then
@@ -182,7 +169,13 @@
     End Sub
 
     Private Sub Button6_Click(sender As System.Object, e As System.EventArgs) Handles backwardsLash.Click
+        If Variables.Fight.skill = 1 Then
+            backwardsLash.Enabled = True
+        End If
         MessageBox.Show("While attacking the enemy, the warrior flails and twirls his weapon to hit the enemy for piercing damage while thrusting his weapon backwards into the opponent.", "Backwards Lash")
+
+
+
     End Sub
 
     Private Sub Button7_Click(sender As System.Object, e As System.EventArgs) Handles enrage.Click
@@ -210,6 +203,10 @@
     End Sub
 
     Private Sub Button16_Click(sender As System.Object, e As System.EventArgs) Handles shards.Click
+
+    End Sub
+
+    Private Sub lblAquired_Click(sender As Object, e As EventArgs) Handles lblAquired.Click
 
     End Sub
 End Class

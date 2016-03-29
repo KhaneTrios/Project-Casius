@@ -58,7 +58,7 @@ Partial Class begin
         Me.craze = New System.Windows.Forms.Button()
         Me.burden = New System.Windows.Forms.Button()
         Me.Button25 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblAquired = New System.Windows.Forms.Label()
         Me.skillcount = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
@@ -373,15 +373,15 @@ Partial Class begin
         Me.Button25.Text = "Fight!"
         Me.Button25.UseVisualStyleBackColor = True
         '
-        'Label3
+        'lblAquired
         '
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 350)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(284, 127)
-        Me.Label3.TabIndex = 34
-        Me.Label3.Text = "Label3"
+        Me.lblAquired.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblAquired.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAquired.Location = New System.Drawing.Point(12, 350)
+        Me.lblAquired.Name = "lblAquired"
+        Me.lblAquired.Size = New System.Drawing.Size(284, 127)
+        Me.lblAquired.TabIndex = 34
+        Me.lblAquired.Text = "Label3"
         '
         'skillcount
         '
@@ -391,7 +391,7 @@ Partial Class begin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(622, 486)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblAquired)
         Me.Controls.Add(Me.Button25)
         Me.Controls.Add(Me.redmption)
         Me.Controls.Add(Me.wild)
@@ -465,6 +465,6 @@ Partial Class begin
     Friend WithEvents craze As System.Windows.Forms.Button
     Friend WithEvents burden As System.Windows.Forms.Button
     Friend WithEvents Button25 As System.Windows.Forms.Button
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblAquired As System.Windows.Forms.Label
     Friend WithEvents skillcount As System.Windows.Forms.Timer
 End Class

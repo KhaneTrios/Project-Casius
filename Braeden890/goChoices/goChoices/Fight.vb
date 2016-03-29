@@ -1,5 +1,5 @@
 ﻿Public Class Fight
-
+    'no more variables C:
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Me.Close()
     End Sub
@@ -13,16 +13,16 @@
         If Variables.Fight.charWarr = True Then
             className.Text = "Warrior"
         End If
-        If Form1.charMage = True Then
+        If Variables.Fight.charMage = True Then
             className.Text = "Mage"
         End If
-        If Form1.charRogu = True Then
+        If Variables.Fight.charRogu = True Then
             className.Text = "Rogue"
         End If
-        If Form1.charTact = True Then
+        If Variables.Fight.charTact = True Then
             className.Text = "Tactician"
         End If
-        If Form1.charUnbo = True Then
+        If Variables.Fight.charUnbo = True Then
             className.Text = "Unborn"
         End If
         If Variables.Fight.asdfmod = "Hooty McOwlface" Then
@@ -40,28 +40,28 @@
         'skillThree.Text = "Enrage"
         'skillFour.Text = "Core Slam"
 
-        If Form1.charTact = True Then
+        If Variables.Fight.charTact = True Then
             skillOne.Text = "Scout"
             skillTwo.Text = "Caltrop Launch"
             skillThree.Text = "Over-Plan"
             skillFour.Text = "Poison Bomb Barrage"
         End If
 
-        If Form1.charMage = True Then
+        If Variables.Fight.charMage = True Then
             skillOne.Text = "Shards of Ice"
             skillFour.Text = "Arcane Whirlwind"
             skillTwo.Text = "Lightning Wave"
             skillThree.Text = "Fire Cage"
         End If
 
-        If Form1.charRogu = True Then
+        If Variables.Fight.charRogu = True Then
             skillOne.Text = "Backstab"
             skillFour.Text = "Shadow Strike"
             skillTwo.Text = "Parry"
             skillThree.Text = "Invisible"
         End If
 
-        If Form1.charUnbo = True Then
+        If Variables.Fight.charUnbo = True Then
             skillOne.Text = "Burden"
             skillFour.Text = "Redemption"
             skillTwo.Text = "Craze"
@@ -142,9 +142,9 @@
         Label7.Text = Variables.Fight.EHC
         'Label1.Text = ProgressBar1.Value
         'Label4.Text = ProgressBar2.Value
-        Label8.Text = Form1.PlayerHX
-        Label10.Text = Form1.PlayerHY
-        Label11.Text = Form1.PlayerDmg
+        Label8.Text = Variables.Fight.playerHX
+        Label10.Text = Variables.Fight.playerHY
+        Label11.Text = Variables.Fight.PlayerDmg
         Label1.Text = Variables.Fight.PHealth
         Label4.Text = Variables.Fight.EHealth
 
@@ -174,13 +174,13 @@
                 ProgressBar1.Value = 0
             End If
         End If
-        If RandomizerV2.Enabled = False And Variables.Fight.HC >= Form1.PlayerHX And Variables.Fight.HC <= Form1.PlayerHY Then
+        If RandomizerV2.Enabled = False And Variables.Fight.HC >= Variables.Fight.playerHX And Variables.Fight.HC <= Variables.Fight.playerHY Then
 
             If ProgressBar2.Value > 0 Then
                 If ProgressBar2.Value < 0 Then
                     ProgressBar2.Value = 0
                 End If
-                ProgressBar2.Value = ProgressBar2.Value - Form1.PlayerDmg
+                ProgressBar2.Value = ProgressBar2.Value - Variables.Fight.PlayerDmg
                 Variables.Fight.Plug = 2
             End If
         End If
