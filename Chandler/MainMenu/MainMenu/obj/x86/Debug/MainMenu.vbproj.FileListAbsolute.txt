@@ -38,3 +38,4 @@ C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x8
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\bin\Debug\MainMenu.exe.config
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.frmSaves.resources
 C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.frmCredits.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\MainMenu\MainMenu\obj\x86\Debug\MainMenu.frmCredits.resources

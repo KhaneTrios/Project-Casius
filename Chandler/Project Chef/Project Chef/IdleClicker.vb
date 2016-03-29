@@ -1,5 +1,6 @@
 ﻿Public Class frmIdle
     Private Sub btnClick_Click(sender As System.Object, e As System.EventArgs) Handles btnClick.Click
+
         Variables.Auto.amount = Val(Variables.Auto.amount + (1))
         Variables.Auto.civ += 1
 

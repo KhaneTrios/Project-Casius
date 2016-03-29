@@ -7827,4 +7827,10 @@
         bRC4G2prStE+ILzRouMoYgnZbeJ3NKWcgVDGU4uu97gmo3LKZsmEA9tNeR9R3ua67upD/9k=
 </value>
   </data>
+  <metadata name="tmrUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="tmrPause.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>128, 17</value>
+  </metadata>
 </root>

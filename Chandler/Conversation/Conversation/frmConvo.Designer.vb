@@ -22,19 +22,23 @@ Partial Class frmConvo
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmConvo))
         Me.picChar = New System.Windows.Forms.PictureBox()
         Me.picBack = New System.Windows.Forms.PictureBox()
         Me.rtxtNPC = New System.Windows.Forms.RichTextBox()
         Me.lblNPCName = New System.Windows.Forms.Label()
         Me.grpInteract = New System.Windows.Forms.GroupBox()
-        Me.btnAction1 = New System.Windows.Forms.Button()
-        Me.btnAction2 = New System.Windows.Forms.Button()
-        Me.btnAction3 = New System.Windows.Forms.Button()
-        Me.btnAction4 = New System.Windows.Forms.Button()
-        Me.btnAction5 = New System.Windows.Forms.Button()
-        Me.btnAction6 = New System.Windows.Forms.Button()
         Me.lblMoney = New System.Windows.Forms.Label()
+        Me.btnAction6 = New System.Windows.Forms.Button()
+        Me.btnAction5 = New System.Windows.Forms.Button()
+        Me.btnAction4 = New System.Windows.Forms.Button()
+        Me.btnAction3 = New System.Windows.Forms.Button()
+        Me.btnAction2 = New System.Windows.Forms.Button()
+        Me.btnAction1 = New System.Windows.Forms.Button()
+        Me.lblFollowers = New System.Windows.Forms.Label()
+        Me.tmrUpdate = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrPause = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picChar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBack, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpInteract.SuspendLayout()
@@ -79,6 +83,7 @@ Partial Class frmConvo
         '
         'grpInteract
         '
+        Me.grpInteract.Controls.Add(Me.lblFollowers)
         Me.grpInteract.Controls.Add(Me.lblMoney)
         Me.grpInteract.Controls.Add(Me.btnAction6)
         Me.grpInteract.Controls.Add(Me.btnAction5)
@@ -93,50 +98,15 @@ Partial Class frmConvo
         Me.grpInteract.TabStop = False
         Me.grpInteract.Text = "Interact"
         '
-        'btnAction1
+        'lblMoney
         '
-        Me.btnAction1.Location = New System.Drawing.Point(6, 19)
-        Me.btnAction1.Name = "btnAction1"
-        Me.btnAction1.Size = New System.Drawing.Size(201, 52)
-        Me.btnAction1.TabIndex = 0
-        Me.btnAction1.Text = "Action 1"
-        Me.btnAction1.UseVisualStyleBackColor = True
-        '
-        'btnAction2
-        '
-        Me.btnAction2.Location = New System.Drawing.Point(6, 85)
-        Me.btnAction2.Name = "btnAction2"
-        Me.btnAction2.Size = New System.Drawing.Size(201, 52)
-        Me.btnAction2.TabIndex = 1
-        Me.btnAction2.Text = "Action 2"
-        Me.btnAction2.UseVisualStyleBackColor = True
-        '
-        'btnAction3
-        '
-        Me.btnAction3.Location = New System.Drawing.Point(254, 19)
-        Me.btnAction3.Name = "btnAction3"
-        Me.btnAction3.Size = New System.Drawing.Size(201, 52)
-        Me.btnAction3.TabIndex = 2
-        Me.btnAction3.Text = "Action 3"
-        Me.btnAction3.UseVisualStyleBackColor = True
-        '
-        'btnAction4
-        '
-        Me.btnAction4.Location = New System.Drawing.Point(254, 85)
-        Me.btnAction4.Name = "btnAction4"
-        Me.btnAction4.Size = New System.Drawing.Size(201, 52)
-        Me.btnAction4.TabIndex = 3
-        Me.btnAction4.Text = "Action 4"
-        Me.btnAction4.UseVisualStyleBackColor = True
-        '
-        'btnAction5
-        '
-        Me.btnAction5.Location = New System.Drawing.Point(496, 19)
-        Me.btnAction5.Name = "btnAction5"
-        Me.btnAction5.Size = New System.Drawing.Size(201, 52)
-        Me.btnAction5.TabIndex = 4
-        Me.btnAction5.Text = "Action 5"
-        Me.btnAction5.UseVisualStyleBackColor = True
+        Me.lblMoney.AutoSize = True
+        Me.lblMoney.Location = New System.Drawing.Point(628, 0)
+        Me.lblMoney.Name = "lblMoney"
+        Me.lblMoney.Size = New System.Drawing.Size(39, 13)
+        Me.lblMoney.TabIndex = 6
+        Me.lblMoney.Text = "Money"
+        Me.lblMoney.Visible = False
         '
         'btnAction6
         '
@@ -147,14 +117,69 @@ Partial Class frmConvo
         Me.btnAction6.Text = "Action 6"
         Me.btnAction6.UseVisualStyleBackColor = True
         '
-        'lblMoney
+        'btnAction5
         '
-        Me.lblMoney.AutoSize = True
-        Me.lblMoney.Location = New System.Drawing.Point(628, 0)
-        Me.lblMoney.Name = "lblMoney"
-        Me.lblMoney.Size = New System.Drawing.Size(39, 13)
-        Me.lblMoney.TabIndex = 6
-        Me.lblMoney.Text = "Money"
+        Me.btnAction5.Location = New System.Drawing.Point(496, 19)
+        Me.btnAction5.Name = "btnAction5"
+        Me.btnAction5.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction5.TabIndex = 4
+        Me.btnAction5.Text = "Action 5"
+        Me.btnAction5.UseVisualStyleBackColor = True
+        '
+        'btnAction4
+        '
+        Me.btnAction4.Location = New System.Drawing.Point(254, 85)
+        Me.btnAction4.Name = "btnAction4"
+        Me.btnAction4.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction4.TabIndex = 3
+        Me.btnAction4.Text = "Action 4"
+        Me.btnAction4.UseVisualStyleBackColor = True
+        '
+        'btnAction3
+        '
+        Me.btnAction3.Location = New System.Drawing.Point(254, 19)
+        Me.btnAction3.Name = "btnAction3"
+        Me.btnAction3.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction3.TabIndex = 2
+        Me.btnAction3.Text = "Action 3"
+        Me.btnAction3.UseVisualStyleBackColor = True
+        '
+        'btnAction2
+        '
+        Me.btnAction2.Location = New System.Drawing.Point(6, 85)
+        Me.btnAction2.Name = "btnAction2"
+        Me.btnAction2.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction2.TabIndex = 1
+        Me.btnAction2.Text = "Action 2"
+        Me.btnAction2.UseVisualStyleBackColor = True
+        '
+        'btnAction1
+        '
+        Me.btnAction1.Location = New System.Drawing.Point(6, 19)
+        Me.btnAction1.Name = "btnAction1"
+        Me.btnAction1.Size = New System.Drawing.Size(201, 52)
+        Me.btnAction1.TabIndex = 0
+        Me.btnAction1.Text = "Action 1"
+        Me.btnAction1.UseVisualStyleBackColor = True
+        '
+        'lblFollowers
+        '
+        Me.lblFollowers.AutoSize = True
+        Me.lblFollowers.Location = New System.Drawing.Point(628, 0)
+        Me.lblFollowers.Name = "lblFollowers"
+        Me.lblFollowers.Size = New System.Drawing.Size(51, 13)
+        Me.lblFollowers.TabIndex = 6
+        Me.lblFollowers.Text = "Followers"
+        Me.lblFollowers.Visible = False
+        '
+        'tmrUpdate
+        '
+        Me.tmrUpdate.Enabled = True
+        Me.tmrUpdate.Interval = 1
+        '
+        'tmrPause
+        '
+        Me.tmrPause.Interval = 2000
         '
         'frmConvo
         '
@@ -189,4 +214,7 @@ Partial Class frmConvo
     Friend WithEvents btnAction2 As Button
     Friend WithEvents btnAction1 As Button
     Friend WithEvents lblMoney As Label
+    Friend WithEvents lblFollowers As Label
+    Friend WithEvents tmrUpdate As Timer
+    Friend WithEvents tmrPause As Timer
 End Class

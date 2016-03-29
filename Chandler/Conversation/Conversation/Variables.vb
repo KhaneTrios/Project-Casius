@@ -51,13 +51,16 @@
         Public Shared Type As Integer
         Public Shared NPCName As String
         Public Shared money As Integer
+
     End Structure
 
     Structure Overall
         Public Shared name As String
         Public Shared fileNumber As Integer 'The file number to read and write to files
         Public Shared followers As Integer ' Number of followers you have ammassed
+        Public Shared recruit As Boolean
         Public Shared charTag As String ' Tags to cheat behavior
+
     End Structure
 
     Structure Functions
@@ -77,15 +80,25 @@
                     tag = "c"
                 Case 4
                     tag = "d"
-                Case 5
-                    tag = "e"
-                Case 6
-                    tag = "f"
             End Select
 
             Variables.Overall.charTag = tag
 
+            Return 0
+        End Function
 
+        Public Shared Function follow() As Boolean
+            Dim rng As Integer
+
+            Randomize()
+            rng = (Int((4 * Rnd()) + 1))
+
+            Select Case rng
+                Case 2, 4
+                    Variables.Overall.recruit = False
+                Case 1, 3
+                    Variables.Overall.recruit = True
+            End Select
             Return 0
         End Function
     End Structure

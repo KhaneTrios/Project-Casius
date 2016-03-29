@@ -23,3 +23,15 @@ C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conv
 C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.frmConvo.resources
 C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.Resources.resources
 C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.vbproj.GenerateResource.Cache
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.exe.config
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.exe
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.xml
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.pdb
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.exe
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.pdb
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\bin\Debug\Conversation.xml
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.vbprojResolveAssemblyReference.cache
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.DevConsole.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.frmConvo.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.Resources.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.vbproj.GenerateResource.Cache
