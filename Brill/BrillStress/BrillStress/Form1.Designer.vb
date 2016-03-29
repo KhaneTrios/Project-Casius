@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class ClothMod
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -26,8 +26,6 @@ Partial Class Form1
         Me.UnPlug = New System.Windows.Forms.Button()
         Me.RePlug = New System.Windows.Forms.Button()
         Me.Plugger = New System.Windows.Forms.Timer(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PlugLabel = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LabelClass = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -108,58 +106,54 @@ Partial Class Form1
         Me.Label47 = New System.Windows.Forms.Label()
         Me.Label48 = New System.Windows.Forms.Label()
         Me.Label49 = New System.Windows.Forms.Label()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.Label56 = New System.Windows.Forms.Label()
+        Me.Lable50 = New System.Windows.Forms.Label()
+        Me.ClothHealth = New System.Windows.Forms.Label()
+        Me.LeatherHealth = New System.Windows.Forms.Label()
         Me.Label57 = New System.Windows.Forms.Label()
-        Me.Label58 = New System.Windows.Forms.Label()
+        Me.ChainHealth = New System.Windows.Forms.Label()
         Me.Label59 = New System.Windows.Forms.Label()
-        Me.Label60 = New System.Windows.Forms.Label()
+        Me.PlateHealth = New System.Windows.Forms.Label()
         Me.Label50 = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
+        Me.InvasionHealth = New System.Windows.Forms.Label()
+        Me.InvasionDamage = New System.Windows.Forms.Label()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.TierNumber = New System.Windows.Forms.Label()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.DeCheck = New System.Windows.Forms.Timer(Me.components)
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.MetalsLabel = New System.Windows.Forms.Label()
+        Me.WoodLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'UnPlug
         '
         Me.UnPlug.Location = New System.Drawing.Point(13, 13)
         Me.UnPlug.Name = "UnPlug"
-        Me.UnPlug.Size = New System.Drawing.Size(75, 23)
+        Me.UnPlug.Size = New System.Drawing.Size(52, 23)
         Me.UnPlug.TabIndex = 0
-        Me.UnPlug.Text = "UnPlug"
+        Me.UnPlug.Text = "Start"
         Me.UnPlug.UseVisualStyleBackColor = True
         '
         'RePlug
         '
         Me.RePlug.Enabled = False
-        Me.RePlug.Location = New System.Drawing.Point(13, 43)
+        Me.RePlug.Location = New System.Drawing.Point(87, 12)
         Me.RePlug.Name = "RePlug"
-        Me.RePlug.Size = New System.Drawing.Size(75, 23)
+        Me.RePlug.Size = New System.Drawing.Size(52, 23)
         Me.RePlug.TabIndex = 1
-        Me.RePlug.Text = "RePlug"
+        Me.RePlug.Text = "Reset"
         Me.RePlug.UseVisualStyleBackColor = True
         '
         'Plugger
         '
         Me.Plugger.Interval = 5
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 69)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Plugs"
-        '
-        'PlugLabel
-        '
-        Me.PlugLabel.AutoSize = True
-        Me.PlugLabel.Location = New System.Drawing.Point(56, 69)
-        Me.PlugLabel.Name = "PlugLabel"
-        Me.PlugLabel.Size = New System.Drawing.Size(31, 13)
-        Me.PlugLabel.TabIndex = 3
-        Me.PlugLabel.Text = "9999"
         '
         'Label2
         '
@@ -489,16 +483,18 @@ Partial Class Form1
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(491, 408)
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(4, 177)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(103, 13)
+        Me.Label29.Size = New System.Drawing.Size(122, 13)
         Me.Label29.TabIndex = 50
         Me.Label29.Text = "Total Enemy Assault"
         '
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(599, 408)
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(147, 177)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(12, 13)
         Me.Label30.TabIndex = 51
@@ -507,7 +503,8 @@ Partial Class Form1
         'LabelAssault
         '
         Me.LabelAssault.AutoSize = True
-        Me.LabelAssault.Location = New System.Drawing.Point(617, 408)
+        Me.LabelAssault.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelAssault.Location = New System.Drawing.Point(165, 177)
         Me.LabelAssault.Name = "LabelAssault"
         Me.LabelAssault.Size = New System.Drawing.Size(31, 13)
         Me.LabelAssault.TabIndex = 52
@@ -892,7 +889,7 @@ Partial Class Form1
         '
         Me.Label47.AutoSize = True
         Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label47.Location = New System.Drawing.Point(10, 109)
+        Me.Label47.Location = New System.Drawing.Point(13, 54)
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(55, 13)
         Me.Label47.TabIndex = 92
@@ -901,7 +898,7 @@ Partial Class Form1
         'Label48
         '
         Me.Label48.AutoSize = True
-        Me.Label48.Location = New System.Drawing.Point(99, 109)
+        Me.Label48.Location = New System.Drawing.Point(102, 54)
         Me.Label48.Name = "Label48"
         Me.Label48.Size = New System.Drawing.Size(25, 13)
         Me.Label48.TabIndex = 93
@@ -911,110 +908,262 @@ Partial Class Form1
         '
         Me.Label49.AutoSize = True
         Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label49.Location = New System.Drawing.Point(10, 134)
+        Me.Label49.Location = New System.Drawing.Point(13, 79)
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(64, 13)
         Me.Label49.TabIndex = 94
         Me.Label49.Text = "Cloth Mod"
         '
-        'Label52
+        'Lable50
         '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.Location = New System.Drawing.Point(9, 156)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(78, 13)
-        Me.Label52.TabIndex = 95
-        Me.Label52.Text = "Leather Mod"
+        Me.Lable50.AutoSize = True
+        Me.Lable50.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lable50.Location = New System.Drawing.Point(12, 101)
+        Me.Lable50.Name = "Lable50"
+        Me.Lable50.Size = New System.Drawing.Size(78, 13)
+        Me.Lable50.TabIndex = 95
+        Me.Lable50.Text = "Leather Mod"
         '
-        'Label54
+        'ClothHealth
         '
-        Me.Label54.AutoSize = True
-        Me.Label54.Location = New System.Drawing.Point(99, 134)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(13, 13)
-        Me.Label54.TabIndex = 96
-        Me.Label54.Text = "5"
+        Me.ClothHealth.AutoSize = True
+        Me.ClothHealth.Location = New System.Drawing.Point(102, 79)
+        Me.ClothHealth.Name = "ClothHealth"
+        Me.ClothHealth.Size = New System.Drawing.Size(13, 13)
+        Me.ClothHealth.TabIndex = 96
+        Me.ClothHealth.Text = "5"
         '
-        'Label56
+        'LeatherHealth
         '
-        Me.Label56.AutoSize = True
-        Me.Label56.Location = New System.Drawing.Point(99, 156)
-        Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(19, 13)
-        Me.Label56.TabIndex = 97
-        Me.Label56.Text = "10"
+        Me.LeatherHealth.AutoSize = True
+        Me.LeatherHealth.Location = New System.Drawing.Point(102, 101)
+        Me.LeatherHealth.Name = "LeatherHealth"
+        Me.LeatherHealth.Size = New System.Drawing.Size(19, 13)
+        Me.LeatherHealth.TabIndex = 97
+        Me.LeatherHealth.Text = "10"
         '
         'Label57
         '
         Me.Label57.AutoSize = True
         Me.Label57.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label57.Location = New System.Drawing.Point(10, 179)
+        Me.Label57.Location = New System.Drawing.Point(13, 124)
         Me.Label57.Name = "Label57"
         Me.Label57.Size = New System.Drawing.Size(67, 13)
         Me.Label57.TabIndex = 98
         Me.Label57.Text = "Chain Mod"
         '
-        'Label58
+        'ChainHealth
         '
-        Me.Label58.AutoSize = True
-        Me.Label58.Location = New System.Drawing.Point(99, 179)
-        Me.Label58.Name = "Label58"
-        Me.Label58.Size = New System.Drawing.Size(19, 13)
-        Me.Label58.TabIndex = 99
-        Me.Label58.Text = "20"
+        Me.ChainHealth.AutoSize = True
+        Me.ChainHealth.Location = New System.Drawing.Point(102, 124)
+        Me.ChainHealth.Name = "ChainHealth"
+        Me.ChainHealth.Size = New System.Drawing.Size(19, 13)
+        Me.ChainHealth.TabIndex = 99
+        Me.ChainHealth.Text = "20"
         '
         'Label59
         '
         Me.Label59.AutoSize = True
         Me.Label59.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label59.Location = New System.Drawing.Point(10, 202)
+        Me.Label59.Location = New System.Drawing.Point(13, 147)
         Me.Label59.Name = "Label59"
         Me.Label59.Size = New System.Drawing.Size(64, 13)
         Me.Label59.TabIndex = 100
         Me.Label59.Text = "Plate Mod"
         '
-        'Label60
+        'PlateHealth
         '
-        Me.Label60.AutoSize = True
-        Me.Label60.Location = New System.Drawing.Point(99, 202)
-        Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(19, 13)
-        Me.Label60.TabIndex = 101
-        Me.Label60.Text = "30"
+        Me.PlateHealth.AutoSize = True
+        Me.PlateHealth.Location = New System.Drawing.Point(102, 147)
+        Me.PlateHealth.Name = "PlateHealth"
+        Me.PlateHealth.Size = New System.Drawing.Size(19, 13)
+        Me.PlateHealth.TabIndex = 101
+        Me.PlateHealth.Text = "30"
         '
         'Label50
         '
         Me.Label50.AutoSize = True
-        Me.Label50.Location = New System.Drawing.Point(41, 349)
+        Me.Label50.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label50.Location = New System.Drawing.Point(4, 207)
         Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(45, 13)
+        Me.Label50.Size = New System.Drawing.Size(129, 13)
         Me.Label50.TabIndex = 102
-        Me.Label50.Text = "Label50"
+        Me.Label50.Text = "Total Invasion Health"
         '
         'Label51
         '
         Me.Label51.AutoSize = True
-        Me.Label51.Location = New System.Drawing.Point(44, 371)
+        Me.Label51.Location = New System.Drawing.Point(147, 207)
         Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(45, 13)
+        Me.Label51.Size = New System.Drawing.Size(12, 13)
         Me.Label51.TabIndex = 103
-        Me.Label51.Text = "Label51"
+        Me.Label51.Text = "x"
         '
-        'Form1
+        'InvasionHealth
+        '
+        Me.InvasionHealth.AutoSize = True
+        Me.InvasionHealth.Location = New System.Drawing.Point(165, 207)
+        Me.InvasionHealth.Name = "InvasionHealth"
+        Me.InvasionHealth.Size = New System.Drawing.Size(49, 13)
+        Me.InvasionHealth.TabIndex = 104
+        Me.InvasionHealth.Text = "9999999"
+        '
+        'InvasionDamage
+        '
+        Me.InvasionDamage.AutoSize = True
+        Me.InvasionDamage.Location = New System.Drawing.Point(165, 236)
+        Me.InvasionDamage.Name = "InvasionDamage"
+        Me.InvasionDamage.Size = New System.Drawing.Size(43, 13)
+        Me.InvasionDamage.TabIndex = 105
+        Me.InvasionDamage.Text = "999999"
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label53.Location = New System.Drawing.Point(4, 236)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(138, 13)
+        Me.Label53.TabIndex = 106
+        Me.Label53.Text = "Total Invasion Damage"
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.Location = New System.Drawing.Point(147, 236)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(12, 13)
+        Me.Label55.TabIndex = 107
+        Me.Label55.Text = "x"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(29, 283)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(53, 17)
+        Me.CheckBox1.TabIndex = 108
+        Me.CheckBox1.Text = "Tier 2"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.Location = New System.Drawing.Point(10, 262)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(78, 13)
+        Me.Label61.TabIndex = 109
+        Me.Label61.Text = "Current Tier:"
+        '
+        'TierNumber
+        '
+        Me.TierNumber.AutoSize = True
+        Me.TierNumber.Location = New System.Drawing.Point(90, 261)
+        Me.TierNumber.Name = "TierNumber"
+        Me.TierNumber.Size = New System.Drawing.Size(13, 13)
+        Me.TierNumber.TabIndex = 110
+        Me.TierNumber.Text = "9"
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(29, 307)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(53, 17)
+        Me.CheckBox2.TabIndex = 111
+        Me.CheckBox2.Text = "Tier 3"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(13, 350)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(77, 23)
+        Me.Button1.TabIndex = 113
+        Me.Button1.Text = "Reset Tier"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'DeCheck
+        '
+        Me.DeCheck.Interval = 1
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Location = New System.Drawing.Point(16, 327)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(184, 13)
+        Me.Label52.TabIndex = 114
+        Me.Label52.Text = "If no Tier is selected: Default to Tier 1"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(38, 403)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(42, 13)
+        Me.Label1.TabIndex = 115
+        Me.Label1.Text = "Metal:"
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label54.Location = New System.Drawing.Point(12, 442)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(68, 13)
+        Me.Label54.TabIndex = 116
+        Me.Label54.Text = "Staff/Bow:"
+        '
+        'MetalsLabel
+        '
+        Me.MetalsLabel.AutoSize = True
+        Me.MetalsLabel.Location = New System.Drawing.Point(90, 403)
+        Me.MetalsLabel.Name = "MetalsLabel"
+        Me.MetalsLabel.Size = New System.Drawing.Size(66, 13)
+        Me.MetalsLabel.TabIndex = 117
+        Me.MetalsLabel.Text = "Unobtainium"
+        '
+        'WoodLabel
+        '
+        Me.WoodLabel.AutoSize = True
+        Me.WoodLabel.Location = New System.Drawing.Point(90, 442)
+        Me.WoodLabel.Name = "WoodLabel"
+        Me.WoodLabel.Size = New System.Drawing.Size(40, 13)
+        Me.WoodLabel.TabIndex = 118
+        Me.WoodLabel.Text = "Smoke"
+        '
+        'ClothMod
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(919, 477)
+        Me.Controls.Add(Me.WoodLabel)
+        Me.Controls.Add(Me.MetalsLabel)
+        Me.Controls.Add(Me.Label54)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label52)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.TierNumber)
+        Me.Controls.Add(Me.Label61)
+        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.Label55)
+        Me.Controls.Add(Me.Label53)
+        Me.Controls.Add(Me.InvasionDamage)
+        Me.Controls.Add(Me.InvasionHealth)
         Me.Controls.Add(Me.Label51)
         Me.Controls.Add(Me.Label50)
-        Me.Controls.Add(Me.Label60)
+        Me.Controls.Add(Me.PlateHealth)
         Me.Controls.Add(Me.Label59)
-        Me.Controls.Add(Me.Label58)
+        Me.Controls.Add(Me.ChainHealth)
         Me.Controls.Add(Me.Label57)
-        Me.Controls.Add(Me.Label56)
-        Me.Controls.Add(Me.Label54)
-        Me.Controls.Add(Me.Label52)
+        Me.Controls.Add(Me.LeatherHealth)
+        Me.Controls.Add(Me.ClothHealth)
+        Me.Controls.Add(Me.Lable50)
         Me.Controls.Add(Me.Label49)
         Me.Controls.Add(Me.Label48)
         Me.Controls.Add(Me.Label47)
@@ -1094,12 +1243,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.LabelClass)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.PlugLabel)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.RePlug)
         Me.Controls.Add(Me.UnPlug)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "Form1"
+        Me.Name = "ClothMod"
         Me.Text = "Enemy Randomizer"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -1108,8 +1255,6 @@ Partial Class Form1
     Friend WithEvents UnPlug As System.Windows.Forms.Button
     Friend WithEvents RePlug As System.Windows.Forms.Button
     Friend WithEvents Plugger As System.Windows.Forms.Timer
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents PlugLabel As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents LabelClass As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -1190,14 +1335,29 @@ Partial Class Form1
     Friend WithEvents Label47 As System.Windows.Forms.Label
     Friend WithEvents Label48 As System.Windows.Forms.Label
     Friend WithEvents Label49 As System.Windows.Forms.Label
-    Friend WithEvents Label52 As System.Windows.Forms.Label
-    Friend WithEvents Label54 As System.Windows.Forms.Label
-    Friend WithEvents Label56 As System.Windows.Forms.Label
+    Friend WithEvents Lable50 As System.Windows.Forms.Label
+    Friend WithEvents ClothHealth As System.Windows.Forms.Label
+    Friend WithEvents LeatherHealth As System.Windows.Forms.Label
     Friend WithEvents Label57 As System.Windows.Forms.Label
-    Friend WithEvents Label58 As System.Windows.Forms.Label
+    Friend WithEvents ChainHealth As System.Windows.Forms.Label
     Friend WithEvents Label59 As System.Windows.Forms.Label
-    Friend WithEvents Label60 As System.Windows.Forms.Label
+    Friend WithEvents PlateHealth As System.Windows.Forms.Label
     Friend WithEvents Label50 As System.Windows.Forms.Label
     Friend WithEvents Label51 As System.Windows.Forms.Label
+    Friend WithEvents InvasionHealth As System.Windows.Forms.Label
+    Friend WithEvents InvasionDamage As System.Windows.Forms.Label
+    Friend WithEvents Label53 As System.Windows.Forms.Label
+    Friend WithEvents Label55 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents Label61 As System.Windows.Forms.Label
+    Friend WithEvents TierNumber As System.Windows.Forms.Label
+    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents DeCheck As System.Windows.Forms.Timer
+    Friend WithEvents Label52 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label54 As System.Windows.Forms.Label
+    Friend WithEvents MetalsLabel As System.Windows.Forms.Label
+    Friend WithEvents WoodLabel As System.Windows.Forms.Label
 
 End Class
