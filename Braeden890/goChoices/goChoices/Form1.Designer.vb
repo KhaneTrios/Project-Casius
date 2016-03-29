@@ -59,16 +59,17 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(346, 336)
+        Me.Button1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(335, 311)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 40)
+        Me.Button1.Size = New System.Drawing.Size(118, 64)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Begin" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button1.Text = "Pick your first skill!"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(31, 336)
+        Me.Button2.Location = New System.Drawing.Point(12, 336)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(87, 39)
         Me.Button2.TabIndex = 1
@@ -223,11 +224,11 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(190, 303)
+        Me.Button3.Location = New System.Drawing.Point(105, 335)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(87, 72)
+        Me.Button3.Size = New System.Drawing.Size(87, 40)
         Me.Button3.TabIndex = 27
-        Me.Button3.Text = "Clear Attributes (Cancer Button)"
+        Me.Button3.Text = "Class reset" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Label10

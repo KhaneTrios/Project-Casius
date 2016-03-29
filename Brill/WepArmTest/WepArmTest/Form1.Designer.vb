@@ -80,9 +80,8 @@ Partial Class BrillTest
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.WarriorGen = New System.Windows.Forms.Timer(Me.components)
+        Me.EnemyGen = New System.Windows.Forms.Timer(Me.components)
         Me.RogueGen = New System.Windows.Forms.Timer(Me.components)
-        Me.MageGen = New System.Windows.Forms.Timer(Me.components)
         Me.TactGen = New System.Windows.Forms.Timer(Me.components)
         Me.UnGen = New System.Windows.Forms.Timer(Me.components)
         Me.Label27 = New System.Windows.Forms.Label()
@@ -405,14 +404,14 @@ Partial Class BrillTest
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(450, 181)
+        Me.ComboBox1.Location = New System.Drawing.Point(384, 82)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 34
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(446, 208)
+        Me.Button1.Location = New System.Drawing.Point(384, 109)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(39, 23)
         Me.Button1.TabIndex = 35
@@ -421,7 +420,7 @@ Partial Class BrillTest
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(496, 208)
+        Me.Button3.Location = New System.Drawing.Point(430, 109)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 36
@@ -440,7 +439,7 @@ Partial Class BrillTest
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(394, 181)
+        Me.Label15.Location = New System.Drawing.Point(353, 85)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(25, 13)
         Me.Label15.TabIndex = 38
@@ -481,7 +480,7 @@ Partial Class BrillTest
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(403, 300)
+        Me.Label17.Location = New System.Drawing.Point(337, 340)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(82, 13)
         Me.Label17.TabIndex = 42
@@ -490,7 +489,7 @@ Partial Class BrillTest
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(403, 276)
+        Me.Label18.Location = New System.Drawing.Point(337, 316)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(73, 13)
         Me.Label18.TabIndex = 43
@@ -499,7 +498,7 @@ Partial Class BrillTest
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(403, 326)
+        Me.Label19.Location = New System.Drawing.Point(337, 366)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(69, 13)
         Me.Label19.TabIndex = 44
@@ -508,7 +507,7 @@ Partial Class BrillTest
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(403, 351)
+        Me.Label20.Location = New System.Drawing.Point(337, 391)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(83, 13)
         Me.Label20.TabIndex = 45
@@ -517,7 +516,7 @@ Partial Class BrillTest
         'ActEHealth
         '
         Me.ActEHealth.AutoSize = True
-        Me.ActEHealth.Location = New System.Drawing.Point(530, 276)
+        Me.ActEHealth.Location = New System.Drawing.Point(464, 316)
         Me.ActEHealth.Name = "ActEHealth"
         Me.ActEHealth.Size = New System.Drawing.Size(13, 13)
         Me.ActEHealth.TabIndex = 46
@@ -526,7 +525,7 @@ Partial Class BrillTest
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(530, 300)
+        Me.Label21.Location = New System.Drawing.Point(464, 340)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(13, 13)
         Me.Label21.TabIndex = 47
@@ -535,7 +534,7 @@ Partial Class BrillTest
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(530, 326)
+        Me.Label22.Location = New System.Drawing.Point(464, 366)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(34, 13)
         Me.Label22.TabIndex = 48
@@ -544,7 +543,7 @@ Partial Class BrillTest
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(530, 351)
+        Me.Label23.Location = New System.Drawing.Point(464, 391)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(34, 13)
         Me.Label23.TabIndex = 49
@@ -575,7 +574,7 @@ Partial Class BrillTest
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(267, 414)
+        Me.Label24.Location = New System.Drawing.Point(305, 415)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(45, 13)
         Me.Label24.TabIndex = 52
@@ -584,7 +583,7 @@ Partial Class BrillTest
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(228, 414)
+        Me.Label25.Location = New System.Drawing.Point(266, 415)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(33, 13)
         Me.Label25.TabIndex = 53
@@ -593,23 +592,19 @@ Partial Class BrillTest
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(231, 431)
+        Me.Label26.Location = New System.Drawing.Point(269, 432)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(194, 13)
         Me.Label26.TabIndex = 54
         Me.Label26.Text = "If Plugs = 2000, Randomizer will resume"
         '
-        'WarriorGen
+        'EnemyGen
         '
-        Me.WarriorGen.Interval = 5
+        Me.EnemyGen.Interval = 5
         '
         'RogueGen
         '
         Me.RogueGen.Interval = 5
-        '
-        'MageGen
-        '
-        Me.MageGen.Interval = 5
         '
         'TactGen
         '
@@ -622,7 +617,7 @@ Partial Class BrillTest
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(353, 414)
+        Me.Label27.Location = New System.Drawing.Point(391, 415)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(54, 13)
         Me.Label27.TabIndex = 55
@@ -631,7 +626,7 @@ Partial Class BrillTest
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(414, 414)
+        Me.Label28.Location = New System.Drawing.Point(452, 415)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(45, 13)
         Me.Label28.TabIndex = 56
@@ -761,9 +756,8 @@ Partial Class BrillTest
     Friend WithEvents Label24 As System.Windows.Forms.Label
     Friend WithEvents Label25 As System.Windows.Forms.Label
     Friend WithEvents Label26 As System.Windows.Forms.Label
-    Friend WithEvents WarriorGen As System.Windows.Forms.Timer
+    Friend WithEvents EnemyGen As System.Windows.Forms.Timer
     Friend WithEvents RogueGen As System.Windows.Forms.Timer
-    Friend WithEvents MageGen As System.Windows.Forms.Timer
     Friend WithEvents TactGen As System.Windows.Forms.Timer
     Friend WithEvents UnGen As System.Windows.Forms.Timer
     Friend WithEvents Label27 As System.Windows.Forms.Label

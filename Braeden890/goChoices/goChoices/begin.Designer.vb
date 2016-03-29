@@ -34,8 +34,6 @@ Partial Class begin
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Updater = New System.Windows.Forms.Timer(Me.components)
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.skillcount = New System.Windows.Forms.Timer(Me.components)
         Me.Button4 = New System.Windows.Forms.Button()
         Me.charge = New System.Windows.Forms.Button()
         Me.backwardsLash = New System.Windows.Forms.Button()
@@ -61,6 +59,7 @@ Partial Class begin
         Me.burden = New System.Windows.Forms.Button()
         Me.Button25 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.skillcount = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Label1
@@ -124,9 +123,10 @@ Partial Class begin
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 349)
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(319, 428)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(83, 46)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
@@ -142,29 +142,17 @@ Partial Class begin
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 9)
+        Me.Button2.Location = New System.Drawing.Point(408, 418)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(90, 56)
         Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "First free skillpoint!"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Updater
         '
         Me.Updater.Enabled = True
         Me.Updater.Interval = 1
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(481, 257)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(129, 115)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Timer skill + 1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'skillcount
-        '
         '
         'Button4
         '
@@ -377,28 +365,32 @@ Partial Class begin
         '
         'Button25
         '
-        Me.Button25.Location = New System.Drawing.Point(93, 349)
+        Me.Button25.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button25.Location = New System.Drawing.Point(504, 372)
         Me.Button25.Name = "Button25"
-        Me.Button25.Size = New System.Drawing.Size(75, 23)
+        Me.Button25.Size = New System.Drawing.Size(106, 102)
         Me.Button25.TabIndex = 33
-        Me.Button25.Text = "Fight"
+        Me.Button25.Text = "Fight!"
         Me.Button25.UseVisualStyleBackColor = True
         '
         'Label3
         '
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(189, 275)
+        Me.Label3.Location = New System.Drawing.Point(12, 350)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(217, 47)
+        Me.Label3.Size = New System.Drawing.Size(284, 127)
         Me.Label3.TabIndex = 34
         Me.Label3.Text = "Label3"
+        '
+        'skillcount
+        '
         '
         'begin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(622, 384)
+        Me.ClientSize = New System.Drawing.Size(622, 486)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button25)
         Me.Controls.Add(Me.redmption)
@@ -424,7 +416,6 @@ Partial Class begin
         Me.Controls.Add(Me.backwardsLash)
         Me.Controls.Add(Me.charge)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button1)
@@ -450,8 +441,6 @@ Partial Class begin
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Updater As System.Windows.Forms.Timer
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents skillcount As System.Windows.Forms.Timer
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents charge As System.Windows.Forms.Button
     Friend WithEvents backwardsLash As System.Windows.Forms.Button
@@ -477,4 +466,5 @@ Partial Class begin
     Friend WithEvents burden As System.Windows.Forms.Button
     Friend WithEvents Button25 As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents skillcount As System.Windows.Forms.Timer
 End Class
