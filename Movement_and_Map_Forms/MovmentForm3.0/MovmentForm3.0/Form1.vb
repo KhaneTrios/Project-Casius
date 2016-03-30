@@ -842,7 +842,59 @@ Public Class Form1
             showTown1Coordinate()
         End If
 
+        If playerx = 8 And playery = 1 Then
+            clearCoordinates()
+            x8y1.Image = player.Image
+            showTown1Coordinate()
+        End If
 
+        If playerx = 8 And playery = 2 Then
+            clearCoordinates()
+            x8y2.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 8 And playery = 3 Then
+            clearCoordinates()
+            x8y3.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 8 And playery = 4 Then
+            clearCoordinates()
+            x8y4.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 8 And playery = 5 Then
+            clearCoordinates()
+            x8y5.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 8 And playery = 6 Then
+            clearCoordinates()
+            x8y6.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 8 And playery = 7 Then
+            clearCoordinates()
+            x8y7.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 8 And playery = 8 Then
+            clearCoordinates()
+            x8y8.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 8 And playery = 9 Then
+            clearCoordinates()
+            x8y9.Image = player.Image
+            showTown1Coordinate()
+        End If
 
         Return 0
     End Function 'End movement function
