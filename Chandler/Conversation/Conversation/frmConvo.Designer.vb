@@ -29,6 +29,7 @@ Partial Class frmConvo
         Me.rtxtNPC = New System.Windows.Forms.RichTextBox()
         Me.lblNPCName = New System.Windows.Forms.Label()
         Me.grpInteract = New System.Windows.Forms.GroupBox()
+        Me.lblFollowers = New System.Windows.Forms.Label()
         Me.lblMoney = New System.Windows.Forms.Label()
         Me.btnAction6 = New System.Windows.Forms.Button()
         Me.btnAction5 = New System.Windows.Forms.Button()
@@ -36,9 +37,9 @@ Partial Class frmConvo
         Me.btnAction3 = New System.Windows.Forms.Button()
         Me.btnAction2 = New System.Windows.Forms.Button()
         Me.btnAction1 = New System.Windows.Forms.Button()
-        Me.lblFollowers = New System.Windows.Forms.Label()
         Me.tmrUpdate = New System.Windows.Forms.Timer(Me.components)
-        Me.tmrPause = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrPause2 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrPause1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picChar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBack, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpInteract.SuspendLayout()
@@ -97,6 +98,16 @@ Partial Class frmConvo
         Me.grpInteract.TabIndex = 5
         Me.grpInteract.TabStop = False
         Me.grpInteract.Text = "Interact"
+        '
+        'lblFollowers
+        '
+        Me.lblFollowers.AutoSize = True
+        Me.lblFollowers.Location = New System.Drawing.Point(628, 0)
+        Me.lblFollowers.Name = "lblFollowers"
+        Me.lblFollowers.Size = New System.Drawing.Size(51, 13)
+        Me.lblFollowers.TabIndex = 6
+        Me.lblFollowers.Text = "Followers"
+        Me.lblFollowers.Visible = False
         '
         'lblMoney
         '
@@ -162,24 +173,18 @@ Partial Class frmConvo
         Me.btnAction1.Text = "Action 1"
         Me.btnAction1.UseVisualStyleBackColor = True
         '
-        'lblFollowers
-        '
-        Me.lblFollowers.AutoSize = True
-        Me.lblFollowers.Location = New System.Drawing.Point(628, 0)
-        Me.lblFollowers.Name = "lblFollowers"
-        Me.lblFollowers.Size = New System.Drawing.Size(51, 13)
-        Me.lblFollowers.TabIndex = 6
-        Me.lblFollowers.Text = "Followers"
-        Me.lblFollowers.Visible = False
-        '
         'tmrUpdate
         '
         Me.tmrUpdate.Enabled = True
         Me.tmrUpdate.Interval = 1
         '
-        'tmrPause
+        'tmrPause2
         '
-        Me.tmrPause.Interval = 2000
+        Me.tmrPause2.Interval = 2000
+        '
+        'tmrPause1
+        '
+        Me.tmrPause1.Interval = 1000
         '
         'frmConvo
         '
@@ -216,5 +221,6 @@ Partial Class frmConvo
     Friend WithEvents lblMoney As Label
     Friend WithEvents lblFollowers As Label
     Friend WithEvents tmrUpdate As Timer
-    Friend WithEvents tmrPause As Timer
+    Friend WithEvents tmrPause2 As Timer
+    Friend WithEvents tmrPause1 As Timer
 End Class

@@ -58,7 +58,6 @@
         Public Shared name As String
         Public Shared fileNumber As Integer 'The file number to read and write to files
         Public Shared followers As Integer ' Number of followers you have ammassed
-        Public Shared recruit As Boolean
         Public Shared charTag As String ' Tags to cheat behavior
 
     End Structure
@@ -69,7 +68,7 @@
             Dim rng As Integer
 
             Randomize()
-            rng = (Int((4 * Rnd()) + 1))
+            rng = (Int((3 * Rnd()) + 1))
 
             Select Case rng
                 Case 1
@@ -78,8 +77,6 @@
                     tag = "b"
                 Case 3
                     tag = "c"
-                Case 4
-                    tag = "d"
             End Select
 
             Variables.Overall.charTag = tag
@@ -87,19 +84,39 @@
             Return 0
         End Function
 
-        Public Shared Function follow() As Boolean
+        Public Shared Function fairChance() As Boolean
             Dim rng As Integer
+            Dim answer As Boolean = False
 
             Randomize()
             rng = (Int((4 * Rnd()) + 1))
 
             Select Case rng
                 Case 2, 4
-                    Variables.Overall.recruit = False
+                    answer = False
                 Case 1, 3
-                    Variables.Overall.recruit = True
+                    answer = True
             End Select
-            Return 0
+
+            Return answer
+        End Function
+
+        Public Shared Function lowChance() As Boolean
+            Dim rng As Integer
+            Dim answer As Boolean = False
+
+            Randomize()
+            rng = (Int((7 * Rnd()) + 1))
+
+            Select Case rng
+                Case 7, 6, 4, 3, 2, 1
+                    answer = False
+                Case 5
+                    answer = True
+            End Select
+
+            Return answer
+
         End Function
     End Structure
 End Class

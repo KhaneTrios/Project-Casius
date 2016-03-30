@@ -84,11 +84,13 @@
                 End Select
         End Select
 
-                rtxtNPC.Text = answer
+        rtxtNPC.Text = answer
     End Sub
 
     Private Sub btnAction2_Click(sender As Object, e As EventArgs) Handles btnAction2.Click
         Dim answer As String
+        Dim trade As Boolean
+        Dim canTrade As Boolean = False
 
         Select Case Variables.Convo.Type
             Case 2
@@ -102,14 +104,38 @@
                 End Select
 
             Case 3
-                Select Case Variables.Overall.charTag
-                    Case "a"
-                        answer = "Do I look like I'm running a store here?"
-                    Case "b"
-                        answer = "I don't have anything to trade."
-                End Select
+                If canTrade = False Then
+                    trade = Variables.Functions.lowChance()
+                    Select Case trade
+                        Case True
+                            canTrade = True
+                            tmrPause1.Enabled = True
+                            Select Case Variables.Overall.charTag
+                                Case "a"
+                                    answer = "I do actually have a few things..."
+                                Case "b"
+                                    answer = "I'll show you what I got, but this isn't a charity."
+                                Case "c"
+                                    answer = "I think I have some things you might be interested in."
+                            End Select
+                        Case False
+                            btnAction2.Enabled = False
+                            Select Case Variables.Overall.charTag
+                                Case "a"
+                                    answer = "Do I look like I'm running a store here?"
+                                Case "b"
+                                    answer = "I have nothing to offer someone like you."
+                                Case "c"
+                                    answer = "I don't have anything to trade."
+                            End Select
+                    End Select
 
-            Case 4
+
+                ElseIf canTrade = True Then
+                    frmConvo.trade()
+                    End If
+
+                    Case 4
                 Select Case Variables.Overall.charTag
                     Case "a"
                         answer = "You gonna buy something or what?"
@@ -126,18 +152,10 @@
 
         Select Case Variables.Convo.Type
             Case 1
-                Variables.Functions.follow()
-                btnAction3.Enabled = False
-                Select Case Variables.Overall.recruit
-                    Case True
-                        Variables.Overall.followers += 1
-                        answer = "Sure, I'll join you."
-                    Case False
-                        answer = "I won't join you..."
-                End Select
+                frmConvo.follow()
 
             Case 2
-                tmrPause.Enabled = True
+                tmrPause2.Enabled = True
                 btnAction1.Enabled = False
                 btnAction2.Enabled = False
                 btnAction3.Enabled = False
@@ -152,12 +170,7 @@
                 End Select
 
             Case 3
-                Select Case Variables.Overall.charTag
-                    Case "a"
-                        answer = "Do I look like I'm running a store here?"
-                    Case "b"
-                        answer = "I don't have anything to trade."
-                End Select
+                frmConvo.follow()
 
             Case 4
                 Select Case Variables.Overall.charTag
@@ -190,10 +203,68 @@
         End If
     End Sub
 
-    Private Sub tmrPause_Tick(sender As Object, e As EventArgs) Handles tmrPause.Tick
-        If tmrPause.Interval = 2000 Then
-            MessageBox.Show("Are you sure you want to delete this save file?.", "Delete save file?", MessageBoxButtons.YesNo, MessageBoxIcon.Stop)     'Error message to handle no save file
+    Private Sub tmrPause_Tick(sender As Object, e As EventArgs) Handles tmrPause2.Tick
+        If tmrPause2.Interval = 2000 Then
+            MessageBox.Show("Fight.", "Popup", MessageBoxButtons.OK, MessageBoxIcon.Information)     'Error message to handle no save file
             'frmBattle.Show()
+            tmrPause2.Enabled = False
         End If
     End Sub
+
+    Private Sub tmrPause1_Tick(sender As Object, e As EventArgs) Handles tmrPause1.Tick
+        If tmrPause1.Interval = 1000 Then
+            MessageBox.Show("Trade.", "Trade", MessageBoxButtons.OK, MessageBoxIcon.Information)     'Error message to handle no save file
+            tmrPause1.Enabled = False
+        End If
+    End Sub
+
+    Public Shared Function trade() As Integer
+        Dim answer As String = ""
+        frmConvo.tmrPause1.Enabled = True
+        Select Case Variables.Overall.charTag
+            Case "a"
+                answer = "I do actually have a few things..."
+            Case "b"
+                answer = "I'll show you what I got, but this isn't a charity."
+            Case "c"
+                answer = "I think I have some things you might be interested in."
+        End Select
+
+        frmConvo.rtxtNPC.Text = answer
+        Return 0
+    End Function
+
+    Public Shared Function follow() As Integer
+        Dim answer As String = ""
+        Dim recruit As Boolean
+        recruit = Variables.Functions.fairChance()
+        frmConvo.btnAction3.Enabled = False
+        frmConvo.lblFollowers.Visible = True
+
+        Select Case recruit
+            Case True
+                frmConvo.btnAction4.Enabled = False
+                Variables.Overall.followers += 1
+                Select Case Variables.Overall.charTag
+                    Case "a"
+                        answer = "Sure, I'll join you."
+                    Case "b"
+                        answer = "I don't like you, but I respect you... count me in."
+                    Case "c"
+                        answer = "Let's get to work."
+                End Select
+            Case False
+                Select Case Variables.Overall.charTag
+                    Case "a"
+                        answer = "I won't join you."
+                    Case "b"
+                        answer = "I'll never join you!"
+                    Case "c"
+                        answer = "I have other things to worry about right now."
+                End Select
+        End Select
+
+        frmConvo.rtxtNPC.Text = answer
+        Return 0
+    End Function
 End Class
