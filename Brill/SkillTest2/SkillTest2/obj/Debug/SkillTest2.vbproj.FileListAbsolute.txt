@@ -1,0 +1,11 @@
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\bin\Debug\SkillTest2.exe.config
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\bin\Debug\SkillTest2.exe
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\bin\Debug\SkillTest2.pdb
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\bin\Debug\SkillTest2.xml
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.vbprojResolveAssemblyReference.cache
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.Form1.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.Resources.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.vbproj.GenerateResource.Cache
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.exe
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.xml
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.pdb

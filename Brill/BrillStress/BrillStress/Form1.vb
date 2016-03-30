@@ -73,7 +73,7 @@
         Classtho5 = Rngsus.Next(1, 6)
         E1Num = SecondRngsus.Next(1, 181)
         E2Num = SecondRngsus.Next(1, 181)
-        E3Num = SecondRngsus.Next(1, 180)
+        E3Num = SecondRngsus.Next(1, 181)
         E4Num = SecondRngsus.Next(1, 181)
         E5Num = SecondRngsus.Next(1, 181)
 
