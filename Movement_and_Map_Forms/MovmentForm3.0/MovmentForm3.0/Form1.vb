@@ -180,85 +180,12 @@ Public Class Form1
         x8y9.Image = clear.Image
         x8y10.Image = clear.Image
         x8y11.Image = clear.Image
-        x9y0.Image = clear.Image
-        x9y1.Image = clear.Image
-        x9y2.Image = clear.Image
-        x9y3.Image = clear.Image
-        x9y4.Image = clear.Image
-        x9y5.Image = clear.Image
-        x9y6.Image = clear.Image
-        x9y6.Image = clear.Image
-        x9y7.Image = clear.Image
-        x9y8.Image = clear.Image
-        x9y9.Image = clear.Image
-        x9y10.Image = clear.Image
-        x9y11.Image = clear.Image 'inside job
-        x10y0.Image = clear.Image
-        x10y1.Image = clear.Image
-        x10y2.Image = clear.Image
-        x10y3.Image = clear.Image
-        x10y4.Image = clear.Image
-        x10y5.Image = clear.Image
-        x10y6.Image = clear.Image
-        x10y7.Image = clear.Image
-        x10y8.Image = clear.Image
-        x10y9.Image = clear.Image
-        x10y10.Image = clear.Image
-        x10y11.Image = clear.Image
-        x11y0.Image = clear.Image
-        x11y1.Image = clear.Image
-        x11y2.Image = clear.Image
-        x11y3.Image = clear.Image
-        x11y4.Image = clear.Image
-        x11y5.Image = clear.Image
-        x11y6.Image = clear.Image
-        x11y7.Image = clear.Image
-        x11y8.Image = clear.Image
-        x11y9.Image = clear.Image
-        x11y10.Image = clear.Image
-        x11y11.Image = clear.Image
         Return 0
     End Function
 
     'Function for showing town coordinates.
     Public Function showTown1Coordinate() As Boolean
-        'According to the town's current coordinates
-        If town1x = 0 And town1y = 0 Then
-            'Make the towns's current coordinate's picturebox show the player.
-            x0y0.Image = town.Image
-        End If
 
-        If town1x = 0 And town1y = 1 Then
-            x0y1.Image = town.Image
-        End If
-
-        If town1x = 0 And town1y = 2 Then
-            x0y2.Image = town.Image
-        End If
-
-        If town1x = 1 And town1y = 0 Then
-            x1y0.Image = town.Image
-        End If
-
-        If town1x = 1 And town1y = 1 Then
-            x1y1.Image = town.Image
-        End If
-
-        If town1x = 1 And town1y = 2 Then
-            x1y2.Image = town.Image
-        End If
-
-        If town1x = 2 And town1y = 0 Then
-            x2y0.Image = town.Image
-        End If
-
-        If town1x = 2 And town1y = 1 Then
-            x2y1.Image = town.Image
-        End If
-
-        If town1x = 2 And town1y = 2 Then
-            x2y2.Image = town.Image
-        End If
         Return 0
     End Function
 
@@ -925,7 +852,7 @@ Public Class Form1
 
     'When the form loads.
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        
+
         Randomize()
         'Load the town coordinates.
         town1x = CInt(Int((8 * Rnd()) + 0))
@@ -939,32 +866,6 @@ Public Class Form1
         showPlayerCoordinate()
 
     End Sub 'end form load sub
-
-    'Function for clearing all the coordinates on the fucking map.
-    Public Function clearLastCoordinate() As Boolean
-        Select Case playerbx And playerby
-            Case 0 And 0
-                x0y0.Image = clear.Image
-            Case 0 And 1
-                x0y1.Image = clear.Image
-            Case 0 And 2
-                x0y2.Image = clear.Image
-            Case 1 And 0
-                x1y0.Image = clear.Image
-            Case 1 And 1
-                x1y1.Image = clear.Image
-            Case 1 And 2
-                x1y2.Image = clear.Image
-            Case 2 And 0
-                x2y0.Image = clear.Image
-            Case 2 And 1
-                x2y1.Image = clear.Image
-            Case 2 And 2
-                x2y2.Image = clear.Image
-        End Select
-        Return 0
-    End Function 'End clearing function
-
 
     Private Sub town_Click(sender As System.Object, e As System.EventArgs) Handles town.Click
         Button1.Enabled = False
