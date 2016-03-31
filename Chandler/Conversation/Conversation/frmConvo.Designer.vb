@@ -40,6 +40,7 @@ Partial Class frmConvo
         Me.tmrUpdate = New System.Windows.Forms.Timer(Me.components)
         Me.tmrPause2 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrPause1 = New System.Windows.Forms.Timer(Me.components)
+        Me.lblCounter = New System.Windows.Forms.Label()
         CType(Me.picChar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBack, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpInteract.SuspendLayout()
@@ -67,8 +68,10 @@ Partial Class frmConvo
         '
         'rtxtNPC
         '
+        Me.rtxtNPC.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtxtNPC.Location = New System.Drawing.Point(307, 38)
         Me.rtxtNPC.Name = "rtxtNPC"
+        Me.rtxtNPC.ReadOnly = True
         Me.rtxtNPC.Size = New System.Drawing.Size(331, 109)
         Me.rtxtNPC.TabIndex = 3
         Me.rtxtNPC.Text = "Character says stuff here..."
@@ -186,11 +189,21 @@ Partial Class frmConvo
         '
         Me.tmrPause1.Interval = 1000
         '
+        'lblCounter
+        '
+        Me.lblCounter.AutoSize = True
+        Me.lblCounter.Location = New System.Drawing.Point(599, 269)
+        Me.lblCounter.Name = "lblCounter"
+        Me.lblCounter.Size = New System.Drawing.Size(44, 13)
+        Me.lblCounter.TabIndex = 6
+        Me.lblCounter.Text = "Counter"
+        '
         'frmConvo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(729, 462)
+        Me.Controls.Add(Me.lblCounter)
         Me.Controls.Add(Me.grpInteract)
         Me.Controls.Add(Me.lblNPCName)
         Me.Controls.Add(Me.rtxtNPC)
@@ -223,4 +236,5 @@ Partial Class frmConvo
     Friend WithEvents tmrUpdate As Timer
     Friend WithEvents tmrPause2 As Timer
     Friend WithEvents tmrPause1 As Timer
+    Friend WithEvents lblCounter As Label
 End Class

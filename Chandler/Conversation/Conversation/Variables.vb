@@ -51,6 +51,10 @@
         Public Shared Type As Integer
         Public Shared NPCName As String
         Public Shared money As Integer
+        Public Shared canTrade As Boolean = False
+        Public Shared haggle As Boolean
+        Public Shared counter As Integer = 0
+
 
     End Structure
 
