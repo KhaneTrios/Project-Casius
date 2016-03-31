@@ -57,7 +57,6 @@ Public Class Form1
             playery = playerbydv
         End If
 
-
         'Update the coordinate labels for troubleshooting purposes
         labelx.Text = playerx
         labely.Text = playery
@@ -926,11 +925,11 @@ Public Class Form1
 
     'When the form loads.
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        
         Randomize()
-
         'Load the town coordinates.
-        town1x = CInt(Int((3 * Rnd()) + 0))
-        town1y = CInt(Int((3 * Rnd()) + 0))
+        town1x = CInt(Int((8 * Rnd()) + 0))
+        town1y = CInt(Int((11 * Rnd()) + 0))
 
         'Update the town's variable labels
         townLabelx.Text = town1x
@@ -938,10 +937,6 @@ Public Class Form1
 
         'Load the player's current coordinates.
         showPlayerCoordinate()
-
-        'Randomly spawn the merchant.
-        merchantx = CInt(Int((5 * Rnd()) + 0))
-        merchanty = CInt(Int((11 * Rnd()) + 0))
 
     End Sub 'end form load sub
 
