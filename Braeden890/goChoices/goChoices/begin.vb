@@ -98,6 +98,11 @@
         End If
         Button4.Visible = False
         Button25.Visible = False
+        Button3.Visible = False
+
+        If Variables.Skills.activeOnce = True Then 'if player goes thru one fight gets access to main menu
+            Button3.Visible = True
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
@@ -165,6 +170,7 @@
 
     Private Sub Button25_Click(sender As System.Object, e As System.EventArgs) Handles Button25.Click
         Fight.Show()
+        Variables.Skills.activeOnce = True
         Me.Close()
     End Sub
 
@@ -208,5 +214,9 @@
 
     Private Sub lblAquired_Click(sender As Object, e As EventArgs) Handles lblAquired.Click
 
+    End Sub
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        mainMenu.Show()
     End Sub
 End Class

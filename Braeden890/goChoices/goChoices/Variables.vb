@@ -56,9 +56,9 @@
         Public Shared plyrDmg As Integer                'Damage being dealt to player
         Public Shared PHealth As Integer                'Player health
         Public Shared eDmg As Integer                   'damage being dealth to enemy
-        Public Shared playerHX As Integer 'Min Hit Range
-        Public Shared playerHY As Integer 'Max Hit Range
-        Public Shared PlayerDmg As Integer 'Base Player Damage
+        Public Shared playerHX As Integer               'Min Hit Range
+        Public Shared playerHY As Integer               'Max Hit Range
+        Public Shared PlayerDmg As Integer              'Base Player Damage
     End Structure
 
     Structure Skills
@@ -75,6 +75,7 @@
         Public Shared playerHX As Integer 'Min Hit Range
         Public Shared playerHY As Integer 'Max Hit Range
         Public Shared PlayerDmg As Integer 'Base Player Damage
+        Public Shared activeOnce As Boolean = False 'Variable for finishing the first fight and getting access to the main menu
         '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
         'All actual skills
         Public Shared warrCharge = "Charge"
@@ -98,6 +99,13 @@
         Public Shared unboWild As Integer
         Public Shared unboRedemption As Integer
         '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+    End Structure
+
+    Structure Inventory
+
+
+
+
     End Structure
 
     Structure Movement

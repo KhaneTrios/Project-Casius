@@ -60,6 +60,7 @@ Partial Class begin
         Me.Button25 = New System.Windows.Forms.Button()
         Me.lblAquired = New System.Windows.Forms.Label()
         Me.skillcount = New System.Windows.Forms.Timer(Me.components)
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -142,9 +143,9 @@ Partial Class begin
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(408, 418)
+        Me.Button2.Location = New System.Drawing.Point(408, 419)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(90, 56)
+        Me.Button2.Size = New System.Drawing.Size(90, 55)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "First free skillpoint!"
         Me.Button2.UseVisualStyleBackColor = True
@@ -386,11 +387,22 @@ Partial Class begin
         'skillcount
         '
         '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(319, 376)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(83, 46)
+        Me.Button3.TabIndex = 35
+        Me.Button3.Text = "Main Menu" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'begin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(622, 486)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.lblAquired)
         Me.Controls.Add(Me.Button25)
         Me.Controls.Add(Me.redmption)
@@ -467,4 +479,5 @@ Partial Class begin
     Friend WithEvents Button25 As System.Windows.Forms.Button
     Friend WithEvents lblAquired As System.Windows.Forms.Label
     Friend WithEvents skillcount As System.Windows.Forms.Timer
+    Friend WithEvents Button3 As Button
 End Class

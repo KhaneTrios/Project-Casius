@@ -205,6 +205,7 @@
 
     Private Sub Button5_Click_1(sender As System.Object, e As System.EventArgs) Handles Button5.Click
         begin.Show()
+        Variables.Skills.activeOnce = True
         Me.Close()
     End Sub
 End Class

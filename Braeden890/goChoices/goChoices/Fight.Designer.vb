@@ -62,7 +62,7 @@ Partial Class Fight
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(403, 523)
+        Me.Button1.Location = New System.Drawing.Point(600, 694)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -127,7 +127,7 @@ Partial Class Fight
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(16, 431)
+        Me.Button2.Location = New System.Drawing.Point(12, 389)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 7
@@ -145,16 +145,16 @@ Partial Class Fight
         '
         'skillOne
         '
-        Me.skillOne.Location = New System.Drawing.Point(12, 523)
+        Me.skillOne.Location = New System.Drawing.Point(12, 481)
         Me.skillOne.Name = "skillOne"
-        Me.skillOne.Size = New System.Drawing.Size(185, 94)
+        Me.skillOne.Size = New System.Drawing.Size(150, 84)
         Me.skillOne.TabIndex = 9
         Me.skillOne.UseVisualStyleBackColor = True
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(13, 498)
+        Me.Label5.Location = New System.Drawing.Point(17, 465)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(34, 13)
         Me.Label5.TabIndex = 10
@@ -162,9 +162,9 @@ Partial Class Fight
         '
         'heroName
         '
-        Me.heroName.Location = New System.Drawing.Point(403, 576)
+        Me.heroName.Location = New System.Drawing.Point(168, 540)
         Me.heroName.Name = "heroName"
-        Me.heroName.Size = New System.Drawing.Size(130, 141)
+        Me.heroName.Size = New System.Drawing.Size(150, 84)
         Me.heroName.TabIndex = 11
         Me.heroName.Text = "Test Fight Button"
         Me.heroName.UseVisualStyleBackColor = True
@@ -234,26 +234,26 @@ Partial Class Fight
         '
         'skillTwo
         '
-        Me.skillTwo.Location = New System.Drawing.Point(203, 523)
+        Me.skillTwo.Location = New System.Drawing.Point(324, 481)
         Me.skillTwo.Name = "skillTwo"
-        Me.skillTwo.Size = New System.Drawing.Size(185, 94)
+        Me.skillTwo.Size = New System.Drawing.Size(150, 84)
         Me.skillTwo.TabIndex = 19
         Me.skillTwo.UseVisualStyleBackColor = True
         '
         'skillThree
         '
-        Me.skillThree.Location = New System.Drawing.Point(12, 623)
+        Me.skillThree.Location = New System.Drawing.Point(12, 614)
         Me.skillThree.Name = "skillThree"
-        Me.skillThree.Size = New System.Drawing.Size(185, 94)
+        Me.skillThree.Size = New System.Drawing.Size(150, 84)
         Me.skillThree.TabIndex = 20
         Me.skillThree.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.skillThree.UseVisualStyleBackColor = True
         '
         'skillFour
         '
-        Me.skillFour.Location = New System.Drawing.Point(203, 623)
+        Me.skillFour.Location = New System.Drawing.Point(324, 614)
         Me.skillFour.Name = "skillFour"
-        Me.skillFour.Size = New System.Drawing.Size(185, 94)
+        Me.skillFour.Size = New System.Drawing.Size(150, 84)
         Me.skillFour.TabIndex = 21
         Me.skillFour.UseVisualStyleBackColor = True
         '
@@ -327,7 +327,7 @@ Partial Class Fight
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(310, 205)
+        Me.Button4.Location = New System.Drawing.Point(627, 648)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(129, 40)
         Me.Button4.TabIndex = 28
