@@ -89,33 +89,6 @@ Partial Class Form1
         Me.x8y5 = New System.Windows.Forms.PictureBox()
         Me.x8y4 = New System.Windows.Forms.PictureBox()
         Me.x7y4 = New System.Windows.Forms.PictureBox()
-        Me.x9y2 = New System.Windows.Forms.PictureBox()
-        Me.x11y0 = New System.Windows.Forms.PictureBox()
-        Me.x10y2 = New System.Windows.Forms.PictureBox()
-        Me.x9y0 = New System.Windows.Forms.PictureBox()
-        Me.x10y0 = New System.Windows.Forms.PictureBox()
-        Me.x9y1 = New System.Windows.Forms.PictureBox()
-        Me.x11y2 = New System.Windows.Forms.PictureBox()
-        Me.x11y1 = New System.Windows.Forms.PictureBox()
-        Me.x10y1 = New System.Windows.Forms.PictureBox()
-        Me.x9y5 = New System.Windows.Forms.PictureBox()
-        Me.x11y3 = New System.Windows.Forms.PictureBox()
-        Me.x10y5 = New System.Windows.Forms.PictureBox()
-        Me.x9y3 = New System.Windows.Forms.PictureBox()
-        Me.x10y3 = New System.Windows.Forms.PictureBox()
-        Me.x9y4 = New System.Windows.Forms.PictureBox()
-        Me.x11y5 = New System.Windows.Forms.PictureBox()
-        Me.x11y4 = New System.Windows.Forms.PictureBox()
-        Me.x10y4 = New System.Windows.Forms.PictureBox()
-        Me.x9y8 = New System.Windows.Forms.PictureBox()
-        Me.x11y6 = New System.Windows.Forms.PictureBox()
-        Me.x10y8 = New System.Windows.Forms.PictureBox()
-        Me.x9y6 = New System.Windows.Forms.PictureBox()
-        Me.x10y6 = New System.Windows.Forms.PictureBox()
-        Me.x9y7 = New System.Windows.Forms.PictureBox()
-        Me.x11y8 = New System.Windows.Forms.PictureBox()
-        Me.x11y7 = New System.Windows.Forms.PictureBox()
-        Me.x10y7 = New System.Windows.Forms.PictureBox()
         Me.x6y8 = New System.Windows.Forms.PictureBox()
         Me.x8y6 = New System.Windows.Forms.PictureBox()
         Me.x7y8 = New System.Windows.Forms.PictureBox()
@@ -169,15 +142,6 @@ Partial Class Form1
         Me.x8y11 = New System.Windows.Forms.PictureBox()
         Me.x8y10 = New System.Windows.Forms.PictureBox()
         Me.x7y10 = New System.Windows.Forms.PictureBox()
-        Me.x9y11 = New System.Windows.Forms.PictureBox()
-        Me.x11y9 = New System.Windows.Forms.PictureBox()
-        Me.x10y11 = New System.Windows.Forms.PictureBox()
-        Me.x9y9 = New System.Windows.Forms.PictureBox()
-        Me.x10y9 = New System.Windows.Forms.PictureBox()
-        Me.x9y10 = New System.Windows.Forms.PictureBox()
-        Me.x11y11 = New System.Windows.Forms.PictureBox()
-        Me.x11y10 = New System.Windows.Forms.PictureBox()
-        Me.x10y10 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.x2y9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x1y1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -237,33 +201,6 @@ Partial Class Form1
         CType(Me.x8y5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x8y4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x7y4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y0, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y0, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y0, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x6y8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x8y6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x7y8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -317,15 +254,6 @@ Partial Class Form1
         CType(Me.x8y11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x8y10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.x7y10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x9y10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x11y10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.x10y10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'x2y9
@@ -866,222 +794,6 @@ Partial Class Form1
         Me.x7y4.TabIndex = 56
         Me.x7y4.TabStop = False
         '
-        'x9y2
-        '
-        Me.x9y2.Location = New System.Drawing.Point(415, 461)
-        Me.x9y2.Name = "x9y2"
-        Me.x9y2.Size = New System.Drawing.Size(38, 36)
-        Me.x9y2.TabIndex = 73
-        Me.x9y2.TabStop = False
-        '
-        'x11y0
-        '
-        Me.x11y0.Location = New System.Drawing.Point(503, 545)
-        Me.x11y0.Name = "x11y0"
-        Me.x11y0.Size = New System.Drawing.Size(38, 36)
-        Me.x11y0.TabIndex = 72
-        Me.x11y0.TabStop = False
-        '
-        'x10y2
-        '
-        Me.x10y2.Location = New System.Drawing.Point(459, 461)
-        Me.x10y2.Name = "x10y2"
-        Me.x10y2.Size = New System.Drawing.Size(38, 36)
-        Me.x10y2.TabIndex = 71
-        Me.x10y2.TabStop = False
-        '
-        'x9y0
-        '
-        Me.x9y0.Location = New System.Drawing.Point(415, 545)
-        Me.x9y0.Name = "x9y0"
-        Me.x9y0.Size = New System.Drawing.Size(38, 36)
-        Me.x9y0.TabIndex = 70
-        Me.x9y0.TabStop = False
-        '
-        'x10y0
-        '
-        Me.x10y0.Location = New System.Drawing.Point(459, 545)
-        Me.x10y0.Name = "x10y0"
-        Me.x10y0.Size = New System.Drawing.Size(38, 36)
-        Me.x10y0.TabIndex = 69
-        Me.x10y0.TabStop = False
-        '
-        'x9y1
-        '
-        Me.x9y1.Location = New System.Drawing.Point(415, 503)
-        Me.x9y1.Name = "x9y1"
-        Me.x9y1.Size = New System.Drawing.Size(38, 36)
-        Me.x9y1.TabIndex = 68
-        Me.x9y1.TabStop = False
-        '
-        'x11y2
-        '
-        Me.x11y2.Location = New System.Drawing.Point(503, 461)
-        Me.x11y2.Name = "x11y2"
-        Me.x11y2.Size = New System.Drawing.Size(38, 36)
-        Me.x11y2.TabIndex = 67
-        Me.x11y2.TabStop = False
-        '
-        'x11y1
-        '
-        Me.x11y1.Location = New System.Drawing.Point(503, 503)
-        Me.x11y1.Name = "x11y1"
-        Me.x11y1.Size = New System.Drawing.Size(38, 36)
-        Me.x11y1.TabIndex = 66
-        Me.x11y1.TabStop = False
-        '
-        'x10y1
-        '
-        Me.x10y1.Location = New System.Drawing.Point(459, 503)
-        Me.x10y1.Name = "x10y1"
-        Me.x10y1.Size = New System.Drawing.Size(38, 36)
-        Me.x10y1.TabIndex = 65
-        Me.x10y1.TabStop = False
-        '
-        'x9y5
-        '
-        Me.x9y5.Location = New System.Drawing.Point(415, 335)
-        Me.x9y5.Name = "x9y5"
-        Me.x9y5.Size = New System.Drawing.Size(38, 36)
-        Me.x9y5.TabIndex = 82
-        Me.x9y5.TabStop = False
-        '
-        'x11y3
-        '
-        Me.x11y3.Location = New System.Drawing.Point(503, 419)
-        Me.x11y3.Name = "x11y3"
-        Me.x11y3.Size = New System.Drawing.Size(38, 36)
-        Me.x11y3.TabIndex = 81
-        Me.x11y3.TabStop = False
-        '
-        'x10y5
-        '
-        Me.x10y5.Location = New System.Drawing.Point(459, 335)
-        Me.x10y5.Name = "x10y5"
-        Me.x10y5.Size = New System.Drawing.Size(38, 36)
-        Me.x10y5.TabIndex = 80
-        Me.x10y5.TabStop = False
-        '
-        'x9y3
-        '
-        Me.x9y3.Location = New System.Drawing.Point(415, 419)
-        Me.x9y3.Name = "x9y3"
-        Me.x9y3.Size = New System.Drawing.Size(38, 36)
-        Me.x9y3.TabIndex = 79
-        Me.x9y3.TabStop = False
-        '
-        'x10y3
-        '
-        Me.x10y3.Location = New System.Drawing.Point(459, 419)
-        Me.x10y3.Name = "x10y3"
-        Me.x10y3.Size = New System.Drawing.Size(38, 36)
-        Me.x10y3.TabIndex = 78
-        Me.x10y3.TabStop = False
-        '
-        'x9y4
-        '
-        Me.x9y4.Location = New System.Drawing.Point(415, 377)
-        Me.x9y4.Name = "x9y4"
-        Me.x9y4.Size = New System.Drawing.Size(38, 36)
-        Me.x9y4.TabIndex = 77
-        Me.x9y4.TabStop = False
-        '
-        'x11y5
-        '
-        Me.x11y5.Location = New System.Drawing.Point(503, 335)
-        Me.x11y5.Name = "x11y5"
-        Me.x11y5.Size = New System.Drawing.Size(38, 36)
-        Me.x11y5.TabIndex = 76
-        Me.x11y5.TabStop = False
-        '
-        'x11y4
-        '
-        Me.x11y4.Location = New System.Drawing.Point(503, 377)
-        Me.x11y4.Name = "x11y4"
-        Me.x11y4.Size = New System.Drawing.Size(38, 36)
-        Me.x11y4.TabIndex = 75
-        Me.x11y4.TabStop = False
-        '
-        'x10y4
-        '
-        Me.x10y4.Location = New System.Drawing.Point(459, 377)
-        Me.x10y4.Name = "x10y4"
-        Me.x10y4.Size = New System.Drawing.Size(38, 36)
-        Me.x10y4.TabIndex = 74
-        Me.x10y4.TabStop = False
-        '
-        'x9y8
-        '
-        Me.x9y8.Location = New System.Drawing.Point(415, 209)
-        Me.x9y8.Name = "x9y8"
-        Me.x9y8.Size = New System.Drawing.Size(38, 36)
-        Me.x9y8.TabIndex = 91
-        Me.x9y8.TabStop = False
-        '
-        'x11y6
-        '
-        Me.x11y6.Location = New System.Drawing.Point(503, 293)
-        Me.x11y6.Name = "x11y6"
-        Me.x11y6.Size = New System.Drawing.Size(38, 36)
-        Me.x11y6.TabIndex = 90
-        Me.x11y6.TabStop = False
-        '
-        'x10y8
-        '
-        Me.x10y8.Location = New System.Drawing.Point(459, 209)
-        Me.x10y8.Name = "x10y8"
-        Me.x10y8.Size = New System.Drawing.Size(38, 36)
-        Me.x10y8.TabIndex = 89
-        Me.x10y8.TabStop = False
-        '
-        'x9y6
-        '
-        Me.x9y6.Location = New System.Drawing.Point(415, 293)
-        Me.x9y6.Name = "x9y6"
-        Me.x9y6.Size = New System.Drawing.Size(38, 36)
-        Me.x9y6.TabIndex = 88
-        Me.x9y6.TabStop = False
-        '
-        'x10y6
-        '
-        Me.x10y6.Location = New System.Drawing.Point(459, 293)
-        Me.x10y6.Name = "x10y6"
-        Me.x10y6.Size = New System.Drawing.Size(38, 36)
-        Me.x10y6.TabIndex = 87
-        Me.x10y6.TabStop = False
-        '
-        'x9y7
-        '
-        Me.x9y7.Location = New System.Drawing.Point(415, 251)
-        Me.x9y7.Name = "x9y7"
-        Me.x9y7.Size = New System.Drawing.Size(38, 36)
-        Me.x9y7.TabIndex = 86
-        Me.x9y7.TabStop = False
-        '
-        'x11y8
-        '
-        Me.x11y8.Location = New System.Drawing.Point(503, 209)
-        Me.x11y8.Name = "x11y8"
-        Me.x11y8.Size = New System.Drawing.Size(38, 36)
-        Me.x11y8.TabIndex = 85
-        Me.x11y8.TabStop = False
-        '
-        'x11y7
-        '
-        Me.x11y7.Location = New System.Drawing.Point(503, 251)
-        Me.x11y7.Name = "x11y7"
-        Me.x11y7.Size = New System.Drawing.Size(38, 36)
-        Me.x11y7.TabIndex = 84
-        Me.x11y7.TabStop = False
-        '
-        'x10y7
-        '
-        Me.x10y7.Location = New System.Drawing.Point(459, 251)
-        Me.x10y7.Name = "x10y7"
-        Me.x10y7.Size = New System.Drawing.Size(38, 36)
-        Me.x10y7.TabIndex = 83
-        Me.x10y7.TabStop = False
-        '
         'x6y8
         '
         Me.x6y8.Location = New System.Drawing.Point(283, 209)
@@ -1506,81 +1218,9 @@ Partial Class Form1
         Me.x7y10.TabIndex = 137
         Me.x7y10.TabStop = False
         '
-        'x9y11
-        '
-        Me.x9y11.Location = New System.Drawing.Point(415, 85)
-        Me.x9y11.Name = "x9y11"
-        Me.x9y11.Size = New System.Drawing.Size(38, 36)
-        Me.x9y11.TabIndex = 154
-        Me.x9y11.TabStop = False
-        '
-        'x11y9
-        '
-        Me.x11y9.Location = New System.Drawing.Point(503, 169)
-        Me.x11y9.Name = "x11y9"
-        Me.x11y9.Size = New System.Drawing.Size(38, 36)
-        Me.x11y9.TabIndex = 153
-        Me.x11y9.TabStop = False
-        '
-        'x10y11
-        '
-        Me.x10y11.Location = New System.Drawing.Point(459, 85)
-        Me.x10y11.Name = "x10y11"
-        Me.x10y11.Size = New System.Drawing.Size(38, 36)
-        Me.x10y11.TabIndex = 152
-        Me.x10y11.TabStop = False
-        '
-        'x9y9
-        '
-        Me.x9y9.Location = New System.Drawing.Point(415, 169)
-        Me.x9y9.Name = "x9y9"
-        Me.x9y9.Size = New System.Drawing.Size(38, 36)
-        Me.x9y9.TabIndex = 151
-        Me.x9y9.TabStop = False
-        '
-        'x10y9
-        '
-        Me.x10y9.Location = New System.Drawing.Point(459, 169)
-        Me.x10y9.Name = "x10y9"
-        Me.x10y9.Size = New System.Drawing.Size(38, 36)
-        Me.x10y9.TabIndex = 150
-        Me.x10y9.TabStop = False
-        '
-        'x9y10
-        '
-        Me.x9y10.Location = New System.Drawing.Point(415, 127)
-        Me.x9y10.Name = "x9y10"
-        Me.x9y10.Size = New System.Drawing.Size(38, 36)
-        Me.x9y10.TabIndex = 149
-        Me.x9y10.TabStop = False
-        '
-        'x11y11
-        '
-        Me.x11y11.Location = New System.Drawing.Point(503, 85)
-        Me.x11y11.Name = "x11y11"
-        Me.x11y11.Size = New System.Drawing.Size(38, 36)
-        Me.x11y11.TabIndex = 148
-        Me.x11y11.TabStop = False
-        '
-        'x11y10
-        '
-        Me.x11y10.Location = New System.Drawing.Point(503, 127)
-        Me.x11y10.Name = "x11y10"
-        Me.x11y10.Size = New System.Drawing.Size(38, 36)
-        Me.x11y10.TabIndex = 147
-        Me.x11y10.TabStop = False
-        '
-        'x10y10
-        '
-        Me.x10y10.Location = New System.Drawing.Point(459, 127)
-        Me.x10y10.Name = "x10y10"
-        Me.x10y10.Size = New System.Drawing.Size(38, 36)
-        Me.x10y10.TabIndex = 146
-        Me.x10y10.TabStop = False
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(405, 19)
+        Me.Button1.Location = New System.Drawing.Point(327, 24)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 155
@@ -1591,17 +1231,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(572, 609)
+        Me.ClientSize = New System.Drawing.Size(564, 609)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.x9y11)
-        Me.Controls.Add(Me.x11y9)
-        Me.Controls.Add(Me.x10y11)
-        Me.Controls.Add(Me.x9y9)
-        Me.Controls.Add(Me.x10y9)
-        Me.Controls.Add(Me.x9y10)
-        Me.Controls.Add(Me.x11y11)
-        Me.Controls.Add(Me.x11y10)
-        Me.Controls.Add(Me.x10y10)
         Me.Controls.Add(Me.x6y11)
         Me.Controls.Add(Me.x8y9)
         Me.Controls.Add(Me.x7y11)
@@ -1656,33 +1287,6 @@ Partial Class Form1
         Me.Controls.Add(Me.x8y8)
         Me.Controls.Add(Me.x8y7)
         Me.Controls.Add(Me.x7y7)
-        Me.Controls.Add(Me.x9y8)
-        Me.Controls.Add(Me.x11y6)
-        Me.Controls.Add(Me.x10y8)
-        Me.Controls.Add(Me.x9y6)
-        Me.Controls.Add(Me.x10y6)
-        Me.Controls.Add(Me.x9y7)
-        Me.Controls.Add(Me.x11y8)
-        Me.Controls.Add(Me.x11y7)
-        Me.Controls.Add(Me.x10y7)
-        Me.Controls.Add(Me.x9y5)
-        Me.Controls.Add(Me.x11y3)
-        Me.Controls.Add(Me.x10y5)
-        Me.Controls.Add(Me.x9y3)
-        Me.Controls.Add(Me.x10y3)
-        Me.Controls.Add(Me.x9y4)
-        Me.Controls.Add(Me.x11y5)
-        Me.Controls.Add(Me.x11y4)
-        Me.Controls.Add(Me.x10y4)
-        Me.Controls.Add(Me.x9y2)
-        Me.Controls.Add(Me.x11y0)
-        Me.Controls.Add(Me.x10y2)
-        Me.Controls.Add(Me.x9y0)
-        Me.Controls.Add(Me.x10y0)
-        Me.Controls.Add(Me.x9y1)
-        Me.Controls.Add(Me.x11y2)
-        Me.Controls.Add(Me.x11y1)
-        Me.Controls.Add(Me.x10y1)
         Me.Controls.Add(Me.x6y5)
         Me.Controls.Add(Me.x8y3)
         Me.Controls.Add(Me.x7y5)
@@ -1808,33 +1412,6 @@ Partial Class Form1
         CType(Me.x8y5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x8y4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x7y4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y0, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y0, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y0, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x6y8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x8y6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x7y8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1888,15 +1465,6 @@ Partial Class Form1
         CType(Me.x8y11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x8y10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.x7y10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x9y10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x11y10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.x10y10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1965,33 +1533,6 @@ Partial Class Form1
     Friend WithEvents x8y5 As System.Windows.Forms.PictureBox
     Friend WithEvents x8y4 As System.Windows.Forms.PictureBox
     Friend WithEvents x7y4 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y2 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y0 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y2 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y0 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y0 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y1 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y2 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y1 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y1 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y5 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y3 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y5 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y3 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y3 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y4 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y5 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y4 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y4 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y8 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y6 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y8 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y6 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y6 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y7 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y8 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y7 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y7 As System.Windows.Forms.PictureBox
     Friend WithEvents x6y8 As System.Windows.Forms.PictureBox
     Friend WithEvents x8y6 As System.Windows.Forms.PictureBox
     Friend WithEvents x7y8 As System.Windows.Forms.PictureBox
@@ -2045,17 +1586,8 @@ Partial Class Form1
     Friend WithEvents x8y11 As System.Windows.Forms.PictureBox
     Friend WithEvents x8y10 As System.Windows.Forms.PictureBox
     Friend WithEvents x7y10 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y9 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y11 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y9 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y9 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y10 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y11 As System.Windows.Forms.PictureBox
-    Friend WithEvents x11y10 As System.Windows.Forms.PictureBox
-    Friend WithEvents x10y10 As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents x2y4 As System.Windows.Forms.PictureBox
-    Friend WithEvents x9y11 As System.Windows.Forms.PictureBox
     Private WithEvents x2y9 As System.Windows.Forms.PictureBox
 
 End Class

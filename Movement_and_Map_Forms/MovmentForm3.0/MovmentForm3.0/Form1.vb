@@ -14,7 +14,7 @@ Public Class Form1
     Dim merchantx As Integer
     Dim merchanty As Integer
 
-    'When a button is pressed.
+    'When a button is pressed. (Movement)
     Private Sub Form1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
         Dim bHandled As Boolean = False
 
@@ -44,6 +44,19 @@ Public Class Form1
                 e.Handled = True
 
         End Select 'End select/switch
+
+        'Map Boundaries
+        'If the player passes the x boundary
+        If playerx < 0 Or playerx > 8 Then
+            'return him to his last coordinate
+            playerx = playerbx
+        End If
+        'If the player passes the y boundary
+        If playery < 0 Or playery > 11 Then
+            'return him to his last coordinate
+            playery = playerbydv
+        End If
+
 
         'Update the coordinate labels for troubleshooting purposes
         labelx.Text = playerx
@@ -896,12 +909,25 @@ Public Class Form1
             showTown1Coordinate()
         End If
 
+        If playerx = 8 And playery = 10 Then
+            clearCoordinates()
+            x8y10.Image = player.Image
+            showTown1Coordinate()
+        End If
+
+        If playerx = 8 And playery = 11 Then
+            clearCoordinates()
+            x8y11.Image = player.Image
+            showTown1Coordinate()
+        End If
+
         Return 0
     End Function 'End movement function
 
     'When the form loads.
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Randomize()
+
         'Load the town coordinates.
         town1x = CInt(Int((3 * Rnd()) + 0))
         town1y = CInt(Int((3 * Rnd()) + 0))
