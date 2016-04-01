@@ -202,7 +202,7 @@
             Case 5
                 Variables.Convo.counter += 1
                 Select Case Variables.Overall.charTag
-                    Case "a"
+                    Case "a1"
                         Select Case Variables.Convo.counter
                             Case 1
                                 answer = "Greetings, confused one, I am your guide!"
@@ -221,8 +221,57 @@
                                 btnAction3.Enabled = False
                                 btnAction6.Visible = True
                         End Select
+                    Case "a2"
+                        Select Case Variables.Convo.counter
+                            Case 1
+                                answer = "Good work hero, you saved that village!"
+                            Case 2
+                                answer = "Now that you have saved the village let me finish what I was saying."
+                            Case 3
+                                answer = "This kingdom is in great danger and YOU have to save it."
+                            Case 4
+                                answer = "In order to be prepared to stop them you must aquire the proper resources."
+                            Case 5
+                                answer = "You'll need Frill to buy proper gear to take them on and you'll need gold bars to build defenses and fortifications."
+                            Case 6
+                                answer = "You can get gold from your adventures around the land, finding it in dungeons and chests and even some merchants."
+                            Case 7
+                                answer = "The thing is... gold is pretty scarce... Most towns and cities already have found and mined most of the gold around here."
+                            Case 8
+                                answer = "Time is of the essance hero, if we are to save the kingdom we will need all of the resources we can get, fast."
+                            Case 9
+                                answer = "If we don't hurry the entire kingdom will be engulfed by this terrible doom lurking around the corner."
+                            Case 10
+                                answer = "If we are to successfully ward off this threat, there is going to have to be sacrifices..."
+                            Case 11
+                                answer = "Gold is our ticket to being strong enought to fend off our attackers... and all the towns control most of the Gold supply."
+                            Case 12
+                                answer = "Along the way you will encounter more besiged cities, and once you gain access to them and they trust you, you can get at their Gold supply."
+                            Case 13
+                                answer = "You can use this to your advantage, pillage the city and leave it crippled to gain its gold so you can save the entire kingdom."
+                            Case 14
+                                answer = "Or you can leave the cities as they are and try to scrounge up as much resources as you can in hopes of having enough to save everyone, including yourself."
+                            Case 15
+                                answer = "It's hard, I know, but they is no victory without sacrifice."
+                            Case 16
+                                answer = "We are running out of time however, you must go now and complete your quest. Save the kingdom hero, save us all!"
+                                btnAction3.Enabled = False
+                                btnAction6.Visible = True
+                        End Select
+                    Case "b"
+                        Select Case Variables.Convo.counter
+                            Case 1
+                                answer = "YOU ARE THE HUMAN WHO HAS BEEN THWARTING OUR PLANS!"
+                            Case 2
+                                answer = "YOU HAVE BEEN A THORN IN MY SIDE SINCE YOU HAVE ARRIVED HERE."
+                            Case 3
+                                answer = "IT IS TIME FOR ME TO END YOU, NUISANCE."
+                                btnAction3.Enabled = False
+                                tmrPause2.Enabled = True
+                        End Select
                 End Select
-        End Select
+                End Select
+
         rtxtNPC.Text = answer
     End Sub
 
@@ -250,6 +299,7 @@
         If tmrPause2.Interval = 2000 Then
             MessageBox.Show("Fight.", "Popup", MessageBoxButtons.OK, MessageBoxIcon.Information)     'Error message to handle no save file
             'frmBattle.Show()
+            'Me.Close()
             tmrPause2.Enabled = False
         End If
     End Sub
@@ -333,16 +383,27 @@
     End Function
 
     Private Sub btnAction4_Click(sender As Object, e As EventArgs) Handles btnAction4.Click
+        Dim answer As String
+
         Select Case Variables.Convo.Type
             Case 3
+                tmrPause2.Enabled = True
                 Select Case Variables.Overall.charTag
                     Case "a"
+                        answer = "Don't make me hurt you"
+                    Case "b"
+                        answer = "Fool!"
+                    Case "c"
+                        answer = "I won't let you push me around!"
+
                 End Select
             Case 4
                 Select Case Variables.Overall.charTag
                     Case "a"
                 End Select
         End Select
+
+        rtxtNPC.Text = answer
     End Sub
 
     Private Sub btnAction6_Click(sender As Object, e As EventArgs) Handles btnAction6.Click

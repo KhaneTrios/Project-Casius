@@ -129,7 +129,7 @@ Partial Class DevConsole
         'cmboTag
         '
         Me.cmboTag.FormattingEnabled = True
-        Me.cmboTag.Items.AddRange(New Object() {"a", "b", "c", "d", "e", "f"})
+        Me.cmboTag.Items.AddRange(New Object() {"a", "b", "c", "d", "e", "f", "a1", "a2"})
         Me.cmboTag.Location = New System.Drawing.Point(32, 130)
         Me.cmboTag.Name = "cmboTag"
         Me.cmboTag.Size = New System.Drawing.Size(80, 21)
