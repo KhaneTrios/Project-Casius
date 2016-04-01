@@ -2,95 +2,7 @@
     'ALL VARIABLES ARE IN VARIABLES.VB 
     Private Sub begin_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         'The NAMES of each skill representing its respective button 3/15
-        If Variables.Fight.charWarr = True Then
-            'asdasda
-            charge.Enabled = False
-            'asdasda
-            poisonBomb.Enabled = False
-            overPlan.Enabled = False
-            caltropLaunch.Enabled = False
-            scout.Enabled = False
-            arcaneWhirlwind.Enabled = False
-            fireCage.Enabled = False
-            lightningWave.Enabled = False
-            shards.Enabled = False
-            shadowStrike.Enabled = False
-            invisible.Enabled = False
-            parry.Enabled = False
-            backstab.Enabled = False
-            redmption.Enabled = False
-            wild.Enabled = False
-            craze.Enabled = False
-            burden.Enabled = False
-        ElseIf Variables.Skills.charTact = True Then
-            charge.Enabled = False
-            backwardsLash.Enabled = False
-            enrage.Enabled = False
-            coreSlam.Enabled = False
-            arcaneWhirlwind.Enabled = False
-            fireCage.Enabled = False
-            lightningWave.Enabled = False
-            shards.Enabled = False
-            shadowStrike.Enabled = False
-            invisible.Enabled = False
-            parry.Enabled = False
-            backstab.Enabled = False
-            redmption.Enabled = False
-            wild.Enabled = False
-            craze.Enabled = False
-            burden.Enabled = False
-        ElseIf Variables.Skills.charMage = True Then
-            charge.Enabled = False
-            backwardsLash.Enabled = False
-            enrage.Enabled = False
-            coreSlam.Enabled = False
-            poisonBomb.Enabled = False
-            overPlan.Enabled = False
-            caltropLaunch.Enabled = False
-            scout.Enabled = False
-            shadowStrike.Enabled = False
-            invisible.Enabled = False
-            parry.Enabled = False
-            backstab.Enabled = False
-            redmption.Enabled = False
-            wild.Enabled = False
-            craze.Enabled = False
-            burden.Enabled = False
-        ElseIf Variables.Skills.charRogu = True Then
-            charge.Enabled = False
-            backwardsLash.Enabled = False
-            enrage.Enabled = False
-            coreSlam.Enabled = False
-            poisonBomb.Enabled = False
-            overPlan.Enabled = False
-            caltropLaunch.Enabled = False
-            scout.Enabled = False
-            arcaneWhirlwind.Enabled = False
-            fireCage.Enabled = False
-            lightningWave.Enabled = False
-            shards.Enabled = False
-            redmption.Enabled = False
-            wild.Enabled = False
-            craze.Enabled = False
-            burden.Enabled = False
-        ElseIf Variables.Skills.charUnbo = True Then
-            charge.Enabled = False
-            backwardsLash.Enabled = False
-            enrage.Enabled = False
-            coreSlam.Enabled = False
-            poisonBomb.Enabled = False
-            overPlan.Enabled = False
-            caltropLaunch.Enabled = False
-            scout.Enabled = False
-            arcaneWhirlwind.Enabled = False
-            fireCage.Enabled = False
-            lightningWave.Enabled = False
-            shards.Enabled = False
-            shadowStrike.Enabled = False
-            invisible.Enabled = False
-            parry.Enabled = False
-            backstab.Enabled = False
-        End If
+
         'Brill made a Debug name! Yay for him!
         If Variables.Fight.asdfmod = "Hooty McOwlface" Then
             Variables.Fight.skill = 9999
@@ -103,6 +15,8 @@
         If Variables.Skills.activeOnce = True Then 'if player goes thru one fight gets access to main menu
             Button3.Visible = True
         End If
+
+
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
@@ -110,17 +24,12 @@
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        charge.Enabled = True
         Variables.Fight.skill += 1
-
-
-
-
         Button25.Visible = True
         Button2.Visible = False
     End Sub
 
-    Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Updater.Tick
+    Public Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Updater.Tick
         skillPoints.Text = Variables.Fight.skill
 
         If Variables.Fight.charWarr = 1 And Variables.Fight.skillOneBought Then
@@ -128,6 +37,46 @@
         End If
         If Variables.Fight.charWarr = 1 And Variables.Fight.skillTwoBought Then
             lblAquired.Text = "Skills Aquired: " & Variables.Skills.warrBackwards
+        End If
+
+        If Variables.Fight.charWarr = True Then
+            Label3.Text = "Warrior"
+            Button5.Text = Variables.Skills.warrCharge
+            Button6.Text = Variables.Skills.warrBackwards
+            Button7.Text = Variables.Skills.warrEnrage
+            Button8.Text = Variables.Skills.warrCore
+        End If
+
+        If Variables.Fight.charTact = True Then
+            Label3.Text = "Tactician"
+            Button5.Text = Variables.Skills.tactScout
+            Button6.Text = Variables.Skills.tactCaltrop
+            Button7.Text = Variables.Skills.tactOver
+            Button8.Text = Variables.Skills.tactPoison
+        End If
+
+        If Variables.Fight.charMage = True Then
+            Label3.Text = "Mage"
+            Button5.Text = Variables.Skills.mageShards
+            Button6.Text = Variables.Skills.mageLightning
+            Button7.Text = Variables.Skills.mageFire
+            Button8.Text = Variables.Skills.mageArcane
+        End If
+
+        If Variables.Fight.charRogu = True Then
+            Label3.Text = "Rogue"
+            Button5.Text = Variables.Skills.roguBackstab
+            Button6.Text = Variables.Skills.roguParry
+            Button7.Text = Variables.Skills.roguInvisible
+            Button8.Text = Variables.Skills.roguShadow
+        End If
+
+        If Variables.Fight.charUnbo = True Then
+            Label3.Text = "Unborn"
+            Button5.Text = Variables.Skills.unboBurden
+            Button6.Text = Variables.Skills.unboCraze
+            Button7.Text = Variables.Skills.unboWild
+            Button8.Text = Variables.Skills.unboRedemption
         End If
 
     End Sub
@@ -150,10 +99,8 @@
         Variables.Fight.skill -= 1
     End Sub
 
-    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles charge.Click
-        If Variables.Fight.skill = 1 Then
-            charge.Enabled = True
-        End If
+    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs)
+
 
         MessageBox.Show("The warrior runs at the enemy at full force and deals a devistating blow with his shoulder.", "Charge")
         lblAquired.Text = "Skills acquired: Charge"
@@ -174,41 +121,35 @@
         Me.Close()
     End Sub
 
-    Private Sub Button6_Click(sender As System.Object, e As System.EventArgs) Handles backwardsLash.Click
-        If Variables.Fight.skill = 1 Then
-            backwardsLash.Enabled = True
-        End If
+    Private Sub Button6_Click(sender As System.Object, e As System.EventArgs)
         MessageBox.Show("While attacking the enemy, the warrior flails and twirls his weapon to hit the enemy for piercing damage while thrusting his weapon backwards into the opponent.", "Backwards Lash")
-
-
-
     End Sub
 
-    Private Sub Button7_Click(sender As System.Object, e As System.EventArgs) Handles enrage.Click
+    Private Sub Button7_Click(sender As System.Object, e As System.EventArgs)
         MessageBox.Show("You channel your anger and skill to increase all of your damage values by 5%", "Enrage")
     End Sub
 
-    Private Sub Button8_Click(sender As System.Object, e As System.EventArgs) Handles coreSlam.Click
+    Private Sub Button8_Click(sender As System.Object, e As System.EventArgs)
         MessageBox.Show("The warrior picks ups his opponent and slams him into the ground with all of his force", "Core Slam")
     End Sub
 
-    Private Sub Button12_Click_1(sender As System.Object, e As System.EventArgs) Handles scout.Click
+    Private Sub Button12_Click_1(sender As System.Object, e As System.EventArgs)
         MessageBox.Show("The tactician scouts the immediate area and gets a knoweldge bonus which gives him an edge in battle.", "Scout")
     End Sub
 
-    Private Sub Button11_Click(sender As System.Object, e As System.EventArgs) Handles caltropLaunch.Click
+    Private Sub Button11_Click(sender As System.Object, e As System.EventArgs)
         MessageBox.Show("Throw out a dozen caltrops for your opponent to step on and take damage from, also slows them down.", "Caltrop Launch")
     End Sub
 
-    Private Sub Button9_Click(sender As System.Object, e As System.EventArgs) Handles poisonBomb.Click
+    Private Sub Button9_Click(sender As System.Object, e As System.EventArgs)
         MessageBox.Show("As a tactician, you have the best tools of the trade. That being said, the tactician deploys a series of poison bombs that damage the enemy right away, as well as over time.", "Poison Bomb Barrage")
     End Sub
 
-    Private Sub Button10_Click(sender As System.Object, e As System.EventArgs) Handles overPlan.Click
+    Private Sub Button10_Click(sender As System.Object, e As System.EventArgs)
         MessageBox.Show("The tactician gathers and uses the data from the current battle to give him/her self a damage and agility boost.", "Over-Plan")
     End Sub
 
-    Private Sub Button16_Click(sender As System.Object, e As System.EventArgs) Handles shards.Click
+    Private Sub Button16_Click(sender As System.Object, e As System.EventArgs)
 
     End Sub
 
@@ -218,5 +159,97 @@
 
     Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
         mainMenu.Show()
+    End Sub
+
+    Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
+        If Button5.Text = Variables.Skills.warrCharge Then
+            MessageBox.Show("The warrior runs at the enemy at full force and deals a devistating blow with his shoulder.", "Charge")
+            lblAquired.Text = "Skill acquired: Charge"
+        End If
+        If Button5.Text = Variables.Skills.tactScout Then
+            MessageBox.Show("The tactician scouts the immediate area and gets a knoweldge bonus which gives him an edge in battle.", "Scout")
+            lblAquired.Text = "Skill acquired: Scout"
+        End If
+        If Button5.Text = Variables.Skills.mageShards Then
+            MessageBox.Show("Shards of Ice ")
+            lblAquired.Text = "Skill acquired: Shards of Ice"
+        End If
+        If Button5.Text = Variables.Skills.roguBackstab Then
+            MessageBox.Show("Backstab")
+            lblAquired.Text = "Skill acquired: Backstab"
+        End If
+        If Button5.Text = Variables.Skills.unboBurden Then
+            MessageBox.Show("Burden")
+            lblAquired.Text = "Skill acquired: Burden"
+        End If
+    End Sub
+
+    Private Sub Button6_Click_1(sender As Object, e As EventArgs) Handles Button6.Click
+        If Button6.Text = Variables.Skills.warrBackwards Then
+            MessageBox.Show("While attacking the enemy, the warrior flails and twirls his weapon to hit the enemy for piercing damage while thrusting his weapon backwards into the opponent.", "Backwards Lash")
+            lblAquired.Text = "Skill acquired: Backwards Lash"
+        End If
+        If Button6.Text = Variables.Skills.tactCaltrop Then
+            MessageBox.Show("Caltop launch")
+            lblAquired.Text = "Skill acquired: Caltrop launch"
+        End If
+        If Button6.Text = Variables.Skills.mageLightning Then
+            MessageBox.Show("Lightning Wave")
+            lblAquired.Text = "Skill acquired: Lightning Wave"
+        End If
+        If Button6.Text = Variables.Skills.roguParry Then
+            MessageBox.Show("Parry")
+            lblAquired.Text = "Skill acquired: Parry"
+        End If
+        If Button6.Text = Variables.Skills.unboCraze Then
+            MessageBox.Show("Craze")
+            lblAquired.Text = "Skill acquired: Craze"
+        End If
+    End Sub
+
+    Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
+        If Button7.Text = Variables.Skills.warrEnrage Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Enrage"
+        End If
+        If Button7.Text = Variables.Skills.tactOver Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Over-Plan"
+        End If
+        If Button7.Text = Variables.Skills.mageFire Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Fire Care"
+        End If
+        If Button7.Text = Variables.Skills.roguInvisible Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Invisible"
+        End If
+        If Button7.Text = Variables.Skills.unboWild Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Wild"
+        End If
+    End Sub
+
+    Private Sub Button8_Click_1(sender As Object, e As EventArgs) Handles Button8.Click
+        If Button8.Text = Variables.Skills.warrCore Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Core Slam"
+        End If
+        If Button8.Text = Variables.Skills.tactPoison Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Poison Barrage"
+        End If
+        If Button8.Text = Variables.Skills.mageArcane Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Arcane Whirlwind"
+        End If
+        If Button8.Text = Variables.Skills.roguShadow Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Shadow Strike"
+        End If
+        If Button8.Text = Variables.Skills.unboRedemption Then
+            MessageBox.Show(" ")
+            lblAquired.Text = "Skill acquired: Redemption"
+        End If
     End Sub
 End Class

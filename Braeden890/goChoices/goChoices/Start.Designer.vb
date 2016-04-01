@@ -33,7 +33,7 @@ Partial Class Start
         '
         'heroname
         '
-        Me.heroname.Location = New System.Drawing.Point(221, 158)
+        Me.heroname.Location = New System.Drawing.Point(174, 139)
         Me.heroname.Name = "heroname"
         Me.heroname.Size = New System.Drawing.Size(100, 20)
         Me.heroname.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class Start
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(151, 161)
+        Me.Label1.Location = New System.Drawing.Point(104, 142)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(64, 13)
         Me.Label1.TabIndex = 1
@@ -49,9 +49,9 @@ Partial Class Start
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(405, 292)
+        Me.Button1.Location = New System.Drawing.Point(138, 179)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(110, 74)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Begin"
         Me.Button1.UseVisualStyleBackColor = True
@@ -61,7 +61,7 @@ Partial Class Start
         Me.Label2.AutoSize = True
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label2.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(174, 9)
+        Me.Label2.Location = New System.Drawing.Point(128, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(120, 25)
         Me.Label2.TabIndex = 3
@@ -72,7 +72,7 @@ Partial Class Start
         Me.Label3.AutoSize = True
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label3.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(143, 121)
+        Me.Label3.Location = New System.Drawing.Point(92, 95)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(194, 25)
         Me.Label3.TabIndex = 4
@@ -82,7 +82,7 @@ Partial Class Start
         '
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label4.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(57, 34)
+        Me.Label4.Location = New System.Drawing.Point(11, 34)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(366, 18)
         Me.Label4.TabIndex = 5
@@ -90,18 +90,18 @@ Partial Class Start
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 292)
+        Me.Button2.Location = New System.Drawing.Point(138, 260)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(110, 23)
         Me.Button2.TabIndex = 6
-        Me.Button2.Text = "dumb"
+        Me.Button2.Text = "An end note..."
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Start
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(487, 320)
+        Me.ClientSize = New System.Drawing.Size(383, 296)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -121,5 +121,5 @@ Partial Class Start
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As Button
 End Class

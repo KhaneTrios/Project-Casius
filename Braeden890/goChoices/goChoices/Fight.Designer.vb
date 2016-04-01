@@ -71,7 +71,7 @@ Partial Class Fight
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.ForeColor = System.Drawing.Color.Red
+        Me.ProgressBar1.ForeColor = System.Drawing.Color.DarkRed
         Me.ProgressBar1.Location = New System.Drawing.Point(12, 356)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(152, 13)

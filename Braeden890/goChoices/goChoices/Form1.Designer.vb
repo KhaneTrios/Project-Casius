@@ -169,8 +169,8 @@ Partial Class Form1
         Me.WarriorBox.Size = New System.Drawing.Size(62, 25)
         Me.WarriorBox.TabIndex = 22
         Me.WarriorBox.Text = "Warrior"
-        Me.ToolTip1.SetToolTip(Me.WarriorBox, """You have the mark of a warrior, and youre not afraid to show off your skill in f" & _
-        "ighting. The majority of your skill is put to the test with weapons and attack d" & _
+        Me.ToolTip1.SetToolTip(Me.WarriorBox, """You have the mark of a warrior, and youre not afraid to show off your skill in f" &
+        "ighting. The majority of your skill is put to the test with weapons and attack d" &
         "amage.""" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.WarriorBox.UseVisualStyleBackColor = True
         '

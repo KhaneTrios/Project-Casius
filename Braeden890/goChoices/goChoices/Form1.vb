@@ -17,6 +17,7 @@
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles WarriorBox.CheckedChanged
+        Variables.Fight.charWarr = 1
         Variables.Fight.charWarr = WarriorBox.Enabled
         Variables.Skills.Str = 10
         Variables.Skills.Agi = 5
@@ -32,10 +33,11 @@
         Variables.Skills.PlayerHY = 50
         Variables.Skills.PlayerDmg = 10
         Button1.Visible = True
+        begin.Updater.Enabled = True
     End Sub
 
     Private Sub CheckBox5_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles TactBox.CheckedChanged
-        Variables.Skills.charTact = TactBox.Enabled
+        Variables.Fight.charTact = TactBox.Enabled
         Variables.Skills.Str = 7   'Added a bit of beef because bows are tough. Prev 5
         Variables.Skills.Agi = 8   'To save disputes versus Rogue. Prev 10
         Variables.Skills.Con = 5
@@ -50,10 +52,11 @@
         Variables.Skills.PlayerHY = 90
         Variables.Skills.PlayerDmg = 5
         Button1.Visible = True
+        begin.Updater.Enabled = True
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles UnBox.CheckedChanged
-        Variables.Skills.charUnbo = UnBox.Enabled
+        Variables.Fight.charUnbo = UnBox.Enabled
         'Even though you have nothing special about you, you're still going to have some bits to you
         Variables.Skills.Str = 2 'Prev 0
         Variables.Skills.Agi = 2 'Prev 0
@@ -69,10 +72,11 @@
         Variables.Skills.PlayerHY = 75
         Variables.Skills.PlayerDmg = 25
         Button1.Visible = True
+        begin.Updater.Enabled = True
     End Sub
 
     Private Sub CheckBox4_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles MageBox.CheckedChanged
-        Variables.Skills.charMage = MageBox.Enabled
+        Variables.Fight.charMage = MageBox.Enabled
         Variables.Skills.Str = 3
         Variables.Skills.Agi = 5
         Variables.Skills.Con = 2 'Because glass cannons. Prev 5
@@ -87,10 +91,11 @@
         Variables.Skills.PlayerHY = 80
         Variables.Skills.PlayerDmg = 15
         Button1.Visible = True
+        begin.Updater.Enabled = True
     End Sub
 
     Private Sub CheckBox3_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RogueBox.CheckedChanged
-        Variables.Skills.charRogu = RogueBox.Enabled
+        Variables.Fight.charRogu = RogueBox.Enabled
         Variables.Skills.Str = 5
         Variables.Skills.Agi = 9 'Need them nimble fingers for 100 (legendary 100) Lockpicking skill and cat burglar status. Prev 7
         Variables.Skills.Con = 5 'Little more rough about the edges, your bones are no longer glass. Prev 3
@@ -105,6 +110,7 @@
         Variables.Skills.PlayerHY = 99
         Variables.Skills.PlayerDmg = 12
         Button1.Visible = True
+        begin.Updater.Enabled = True
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click

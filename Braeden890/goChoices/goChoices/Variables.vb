@@ -35,11 +35,11 @@
     Structure Fight
         '\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
         'Classes in fight screen
-        Public Shared charWarr As Integer               'If you pick the warrior class
-        Public Shared charTact As Integer               'You're a tactician, Harry
-        Public Shared charMage As Integer               'You're a wizard, Harry
-        Public Shared charRogu As Integer               'You're a rogue, Harry
-        Public Shared charUnbo As Integer               'You're a staircase child, Harry
+        Public Shared charWarr As Integer             'If you pick the warrior class
+        Public Shared charTact As Integer       'You're a tactician, Harry
+        Public Shared charMage As Integer       'You're a wizard, Harry
+        Public Shared charRogu As Integer       'You're a rogue, Harry
+        Public Shared charUnbo As Integer        'You're a staircase child, Harry
         '\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
         Public Shared skill As Integer                  'Actual number of skills you have
         Public Shared skillOneBought As Boolean = False 'First skill button on fight screen
@@ -68,10 +68,6 @@
         Public Shared Lck As Integer '5 shots or 6?
         Public Shared Int As Integer 'Are you going to read a book, or are you dun did gonna learn yerself a book?
         Public Shared Roflmaolol As Integer 'Dat Reset Timer Variable though
-        Public Shared charTact As Integer 'You're a tactician, Harry
-        Public Shared charMage As Integer 'You're a wizard, Harry
-        Public Shared charRogu As Integer 'You're a rogue, Harry
-        Public Shared charUnbo As Integer 'You're a staircase child, Harry
         Public Shared playerHX As Integer 'Min Hit Range
         Public Shared playerHY As Integer 'Max Hit Range
         Public Shared PlayerDmg As Integer 'Base Player Damage
@@ -82,22 +78,22 @@
         Public Shared warrBackwards = "Backwards Lash"
         Public Shared warrEnrage = "Enrage"
         Public Shared warrCore = "Core Slam"
-        Public Shared tactScout As Integer
-        Public Shared tactCaltrop As Integer
-        Public Shared tactOver As Integer
-        Public Shared tactPoison As Integer
-        Public Shared mageShards As Integer
-        Public Shared mageLightning As Integer
-        Public Shared mageFire As Integer
-        Public Shared mageArcane As Integer
-        Public Shared roguBackstab As Integer
-        Public Shared roguParry As Integer
-        Public Shared roguInvisible As Integer
-        Public Shared roguShadow As Integer
-        Public Shared unboBurden As Integer
-        Public Shared unboCraze As Integer
-        Public Shared unboWild As Integer
-        Public Shared unboRedemption As Integer
+        Public Shared tactScout = "Scout"
+        Public Shared tactCaltrop = "Caltop Launch"
+        Public Shared tactOver = "Over Plan"
+        Public Shared tactPoison = "Poison Barrage"
+        Public Shared mageShards = "Shards of Ice"
+        Public Shared mageLightning = "Lightning Wave"
+        Public Shared mageFire = "Fire Cage"
+        Public Shared mageArcane = "Arcane Whirlwind"
+        Public Shared roguBackstab = "Backstab"
+        Public Shared roguParry = "Parry"
+        Public Shared roguInvisible = "Invisible"
+        Public Shared roguShadow = "Shadow Strike"
+        Public Shared unboBurden = "Burden"
+        Public Shared unboCraze = "Craze"
+        Public Shared unboWild = "Wild"
+        Public Shared unboRedemption = "Redemption"
         '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
     End Structure
 
