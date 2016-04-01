@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ClothMod
+Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -900,9 +900,9 @@ Partial Class ClothMod
         Me.Label48.AutoSize = True
         Me.Label48.Location = New System.Drawing.Point(102, 54)
         Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(25, 13)
+        Me.Label48.Size = New System.Drawing.Size(31, 13)
         Me.Label48.TabIndex = 93
-        Me.Label48.Text = "100"
+        Me.Label48.Text = "1000"
         '
         'Label49
         '
@@ -929,18 +929,18 @@ Partial Class ClothMod
         Me.ClothHealth.AutoSize = True
         Me.ClothHealth.Location = New System.Drawing.Point(102, 79)
         Me.ClothHealth.Name = "ClothHealth"
-        Me.ClothHealth.Size = New System.Drawing.Size(13, 13)
+        Me.ClothHealth.Size = New System.Drawing.Size(19, 13)
         Me.ClothHealth.TabIndex = 96
-        Me.ClothHealth.Text = "5"
+        Me.ClothHealth.Text = "50"
         '
         'LeatherHealth
         '
         Me.LeatherHealth.AutoSize = True
         Me.LeatherHealth.Location = New System.Drawing.Point(102, 101)
         Me.LeatherHealth.Name = "LeatherHealth"
-        Me.LeatherHealth.Size = New System.Drawing.Size(19, 13)
+        Me.LeatherHealth.Size = New System.Drawing.Size(25, 13)
         Me.LeatherHealth.TabIndex = 97
-        Me.LeatherHealth.Text = "10"
+        Me.LeatherHealth.Text = "100"
         '
         'Label57
         '
@@ -957,9 +957,9 @@ Partial Class ClothMod
         Me.ChainHealth.AutoSize = True
         Me.ChainHealth.Location = New System.Drawing.Point(102, 124)
         Me.ChainHealth.Name = "ChainHealth"
-        Me.ChainHealth.Size = New System.Drawing.Size(19, 13)
+        Me.ChainHealth.Size = New System.Drawing.Size(25, 13)
         Me.ChainHealth.TabIndex = 99
-        Me.ChainHealth.Text = "20"
+        Me.ChainHealth.Text = "200"
         '
         'Label59
         '
@@ -976,9 +976,9 @@ Partial Class ClothMod
         Me.PlateHealth.AutoSize = True
         Me.PlateHealth.Location = New System.Drawing.Point(102, 147)
         Me.PlateHealth.Name = "PlateHealth"
-        Me.PlateHealth.Size = New System.Drawing.Size(19, 13)
+        Me.PlateHealth.Size = New System.Drawing.Size(25, 13)
         Me.PlateHealth.TabIndex = 101
-        Me.PlateHealth.Text = "30"
+        Me.PlateHealth.Text = "300"
         '
         'Label50
         '
@@ -1136,7 +1136,7 @@ Partial Class ClothMod
         Me.WoodLabel.TabIndex = 118
         Me.WoodLabel.Text = "Smoke"
         '
-        'ClothMod
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -1246,7 +1246,7 @@ Partial Class ClothMod
         Me.Controls.Add(Me.RePlug)
         Me.Controls.Add(Me.UnPlug)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "ClothMod"
+        Me.Name = "Form1"
         Me.Text = "Enemy Randomizer"
         Me.ResumeLayout(False)
         Me.PerformLayout()

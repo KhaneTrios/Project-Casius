@@ -311,7 +311,7 @@ Partial Class Form1
         Me.EnemyBar.BackColor = System.Drawing.SystemColors.ControlText
         Me.EnemyBar.ForeColor = System.Drawing.Color.DarkRed
         Me.EnemyBar.Location = New System.Drawing.Point(251, 12)
-        Me.EnemyBar.Maximum = 1000
+        Me.EnemyBar.Maximum = 2000
         Me.EnemyBar.Name = "EnemyBar"
         Me.EnemyBar.Size = New System.Drawing.Size(142, 18)
         Me.EnemyBar.TabIndex = 25
@@ -321,7 +321,7 @@ Partial Class Form1
         Me.PlayerBar.BackColor = System.Drawing.SystemColors.ControlText
         Me.PlayerBar.ForeColor = System.Drawing.Color.DarkRed
         Me.PlayerBar.Location = New System.Drawing.Point(12, 12)
-        Me.PlayerBar.Maximum = 1000
+        Me.PlayerBar.Maximum = 2000
         Me.PlayerBar.Name = "PlayerBar"
         Me.PlayerBar.Size = New System.Drawing.Size(142, 18)
         Me.PlayerBar.TabIndex = 24

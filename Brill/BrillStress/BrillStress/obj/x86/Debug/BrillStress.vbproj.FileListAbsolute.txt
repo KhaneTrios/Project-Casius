@@ -9,4 +9,5 @@
 \\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.exe
 \\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.xml
 \\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.pdb
-\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.ClothMod.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.vbprojResolveAssemblyReference.cache
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.Form1.resources

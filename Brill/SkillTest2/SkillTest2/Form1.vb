@@ -58,9 +58,9 @@
         If UnbornMod = 4 Then
             RageLabel.Text = UnDmg
         End If
-        If PHealth > 1000 Then
-            PHealth = 1000
-            PlayerBar.Increment(1000)
+        If PHealth > 2000 Then
+            PHealth = 2000
+            PlayerBar.Increment(PHealth)
         End If
         If TactMod = 1 Then
             RichTextBox1.Text = "Next Player Attack: Guaranteed Hit"
@@ -73,7 +73,7 @@
             RageLabel.Text = BonusDmg
         End If
         RageLabel.Text = BonusDmg
-        If PHealth < 1000 Or EHealth < 1000 Then
+        If PHealth < 2000 Or EHealth < 2000 Then
             Reset.Enabled = True
         Else
             Reset.Enabled = False
@@ -93,10 +93,10 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        PHealth = 1000
-        EHealth = 1000
-        PlayerBar.Increment(1000)
-        EnemyBar.Increment(1000)
+        PHealth = 2000
+        EHealth = 2000
+        PlayerBar.Increment(PHealth)
+        EnemyBar.Increment(EHealth)
         Hemo = 1
         Toxin = 1
         RogueDmgMod = 1
@@ -309,10 +309,10 @@
     End Sub
 
     Private Sub Reset_Click(sender As Object, e As EventArgs) Handles Reset.Click
-        PHealth = 1000
-        EHealth = 1000
-        PlayerBar.Increment(1000)
-        EnemyBar.Increment(1000)
+        PHealth = 2000
+        EHealth = 2000
+        PlayerBar.Increment(PHealth)
+        EnemyBar.Increment(EHealth)
         Turn = 0
         Toxin = 1
         Hemo = 1
@@ -351,7 +351,7 @@
         Else
             PlayerBar.Increment(-6)
             PHealth = PHealth - Edmg
-        Edmg = 6
+            Edmg = 6
         End If
 
 

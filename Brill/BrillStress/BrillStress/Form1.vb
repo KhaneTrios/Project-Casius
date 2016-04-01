@@ -1,4 +1,4 @@
-﻿Public Class ClothMod  'Finally working rng for enemies; thanks to Luke for actually figuring it out so I still have my brain
+﻿Public Class Form1  'Finally working rng for enemies; thanks to Luke for actually figuring it out so I still have my brain
     Dim Plug As Integer 'For the Randomizer
     Dim Classtho As Integer 'Determines class
     Dim Classtho2 As Integer 'Determines class 2
@@ -590,36 +590,36 @@
         E3Dmg.Text = EDmg3
         E4Dmg.Text = EDmg4
         E5Dmg.Text = EDmg5
-        ClothCheck = 100 + ClothValue
-        LeatherCheck = 100 + LeatherValue
-        ChainCheck = 100 + ChainValue
-        PlateCheck = 100 + PlateValue
+        ClothCheck = 2000 + ClothValue
+        LeatherCheck = 2000 + LeatherValue
+        ChainCheck = 2000 + ChainValue
+        PlateCheck = 2000 + PlateValue
         ClothHealth.Text = ClothCheck
         LeatherHealth.Text = LeatherCheck
         ChainHealth.Text = ChainCheck
         PlateHealth.Text = PlateCheck
         '////////////////////////////////////////////
         If TierCheck = 1 Then
-            ClothValue = 5
-            LeatherValue = 10
-            ChainValue = 20
-            PlateValue = 30
+            ClothValue = 50
+            LeatherValue = 100
+            ChainValue = 200
+            PlateValue = 300
             MetalsLabel.Text = "Iron"
             WoodLabel.Text = "Maple Wood"
         End If
         If TierCheck = 2 Then
-            ClothValue = 10
-            LeatherValue = 20
-            ChainValue = 30
-            PlateValue = 40
+            ClothValue = 100
+            LeatherValue = 200
+            ChainValue = 300
+            PlateValue = 400
             MetalsLabel.Text = "Mithril"
             WoodLabel.Text = "Silver"
         End If
         If TierCheck = 3 Then
-            ClothValue = 20
-            LeatherValue = 40
-            ChainValue = 60
-            PlateValue = 80
+            ClothValue = 200
+            LeatherValue = 400
+            ChainValue = 600
+            PlateValue = 800
             MetalsLabel.Text = "Adamantine"
             WoodLabel.Text = "Ironwood"
         End If
