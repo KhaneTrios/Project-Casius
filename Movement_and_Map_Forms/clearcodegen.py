@@ -8,13 +8,11 @@ by tony dougal
 x = 0 #x coordinate variable
 y = 0 #y coordinate variable
 c = 0 #counter variable
-v = 170 #break check variable
+v = 180 #break check variable
 
 while True:
-    print("If town1x =",x,"And town1y =",y, "Then ")
-    print(" x",x,"y",y,".Image = town.Image", sep = '')
-    print("End If")
-    print("")
+    
+    print("x",x,"y",y,".Image = clear.Image", sep = '')
 
     y += 1
 
