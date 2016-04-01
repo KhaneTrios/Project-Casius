@@ -120,39 +120,6 @@
         Variables.Skills.activeOnce = True
         Me.Close()
     End Sub
-
-    Private Sub Button6_Click(sender As System.Object, e As System.EventArgs)
-        MessageBox.Show("While attacking the enemy, the warrior flails and twirls his weapon to hit the enemy for piercing damage while thrusting his weapon backwards into the opponent.", "Backwards Lash")
-    End Sub
-
-    Private Sub Button7_Click(sender As System.Object, e As System.EventArgs)
-        MessageBox.Show("You channel your anger and skill to increase all of your damage values by 5%", "Enrage")
-    End Sub
-
-    Private Sub Button8_Click(sender As System.Object, e As System.EventArgs)
-        MessageBox.Show("The warrior picks ups his opponent and slams him into the ground with all of his force", "Core Slam")
-    End Sub
-
-    Private Sub Button12_Click_1(sender As System.Object, e As System.EventArgs)
-        MessageBox.Show("The tactician scouts the immediate area and gets a knoweldge bonus which gives him an edge in battle.", "Scout")
-    End Sub
-
-    Private Sub Button11_Click(sender As System.Object, e As System.EventArgs)
-        MessageBox.Show("Throw out a dozen caltrops for your opponent to step on and take damage from, also slows them down.", "Caltrop Launch")
-    End Sub
-
-    Private Sub Button9_Click(sender As System.Object, e As System.EventArgs)
-        MessageBox.Show("As a tactician, you have the best tools of the trade. That being said, the tactician deploys a series of poison bombs that damage the enemy right away, as well as over time.", "Poison Bomb Barrage")
-    End Sub
-
-    Private Sub Button10_Click(sender As System.Object, e As System.EventArgs)
-        MessageBox.Show("The tactician gathers and uses the data from the current battle to give him/her self a damage and agility boost.", "Over-Plan")
-    End Sub
-
-    Private Sub Button16_Click(sender As System.Object, e As System.EventArgs)
-
-    End Sub
-
     Private Sub lblAquired_Click(sender As Object, e As EventArgs) Handles lblAquired.Click
 
     End Sub
@@ -171,15 +138,15 @@
             lblAquired.Text = "Skill acquired: Scout"
         End If
         If Button5.Text = Variables.Skills.mageShards Then
-            MessageBox.Show("Shards of Ice ")
+            MessageBox.Show("The mage summons upon the power of ice and conjures huge ice shards to pierce the enemy.")
             lblAquired.Text = "Skill acquired: Shards of Ice"
         End If
         If Button5.Text = Variables.Skills.roguBackstab Then
-            MessageBox.Show("Backstab")
+            MessageBox.Show("The rogue catches their opponent off guard and uses their hidden blade to stab the opponent in the back", "Backstab")
             lblAquired.Text = "Skill acquired: Backstab"
         End If
         If Button5.Text = Variables.Skills.unboBurden Then
-            MessageBox.Show("Burden")
+            MessageBox.Show("The unborn uses every ounce of sorrow to hurt himself and reflects a percentage of damage back.", "Burden")
             lblAquired.Text = "Skill acquired: Burden"
         End If
     End Sub
@@ -190,7 +157,7 @@
             lblAquired.Text = "Skill acquired: Backwards Lash"
         End If
         If Button6.Text = Variables.Skills.tactCaltrop Then
-            MessageBox.Show("Caltop launch")
+            MessageBox.Show("Throw out a dozen caltrops for your opponent to step on and take damage from, also slows them down.", "Caltrop Launch")
             lblAquired.Text = "Skill acquired: Caltrop launch"
         End If
         If Button6.Text = Variables.Skills.mageLightning Then
@@ -198,57 +165,57 @@
             lblAquired.Text = "Skill acquired: Lightning Wave"
         End If
         If Button6.Text = Variables.Skills.roguParry Then
-            MessageBox.Show("Parry")
+            MessageBox.Show("Years of practice allows you to counter almost all attacks effortlessly.", "Parry")
             lblAquired.Text = "Skill acquired: Parry"
         End If
         If Button6.Text = Variables.Skills.unboCraze Then
-            MessageBox.Show("Craze")
+            MessageBox.Show("Seeing red? Your rage bellows to distant lands and increases your raw attack power.", "Craze")
             lblAquired.Text = "Skill acquired: Craze"
         End If
     End Sub
 
     Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
         If Button7.Text = Variables.Skills.warrEnrage Then
-            MessageBox.Show(" ")
+            MessageBox.Show("You channel your anger and skill to increase all of your damage values by 5%", "Enrage")
             lblAquired.Text = "Skill acquired: Enrage"
         End If
         If Button7.Text = Variables.Skills.tactOver Then
-            MessageBox.Show(" ")
+            MessageBox.Show("The tactician gathers and uses the data from the current battle to give him/her self a damage and agility boost.", "Over-Plan")
             lblAquired.Text = "Skill acquired: Over-Plan"
         End If
         If Button7.Text = Variables.Skills.mageFire Then
-            MessageBox.Show(" ")
-            lblAquired.Text = "Skill acquired: Fire Care"
+            MessageBox.Show("Materialize a prison of scorching flames to engulf and trap your opponent, doing them burn damage by the second.", "Fire Cage")
+            lblAquired.Text = "Skill acquired: Fire Cage"
         End If
         If Button7.Text = Variables.Skills.roguInvisible Then
-            MessageBox.Show(" ")
+            MessageBox.Show("To the rogue, this practice is second nature, go completely invisible.", "Invisible")
             lblAquired.Text = "Skill acquired: Invisible"
         End If
         If Button7.Text = Variables.Skills.unboWild Then
-            MessageBox.Show(" ")
+            MessageBox.Show("You give into your feral instincts and resemble a mad man! Speed of all attacks is boosted.", "Wild")
             lblAquired.Text = "Skill acquired: Wild"
         End If
     End Sub
 
     Private Sub Button8_Click_1(sender As Object, e As EventArgs) Handles Button8.Click
         If Button8.Text = Variables.Skills.warrCore Then
-            MessageBox.Show(" ")
+            MessageBox.Show("The warrior picks ups his opponent and slams him into the ground with all of his force", "Core Slam ")
             lblAquired.Text = "Skill acquired: Core Slam"
         End If
         If Button8.Text = Variables.Skills.tactPoison Then
-            MessageBox.Show(" ")
+            MessageBox.Show("As a tactician, you have the best tools of the trade. That being said, the tactician deploys a series of poison bombs that damage the enemy right away, as well as over time.", "Poison Bomb Barrage ")
             lblAquired.Text = "Skill acquired: Poison Barrage"
         End If
         If Button8.Text = Variables.Skills.mageArcane Then
-            MessageBox.Show(" ")
+            MessageBox.Show("The mage uses all of his power to conjure up a whirlwind of the elements to deal immense damage to anyone foolish enough not to run away at the sight of this spell.", "Arcane Whirlwind")
             lblAquired.Text = "Skill acquired: Arcane Whirlwind"
         End If
         If Button8.Text = Variables.Skills.roguShadow Then
-            MessageBox.Show(" ")
+            MessageBox.Show("Go invisible and quickly manuever to the blind side of the enemy, inflicting critical damage. ")
             lblAquired.Text = "Skill acquired: Shadow Strike"
         End If
         If Button8.Text = Variables.Skills.unboRedemption Then
-            MessageBox.Show(" ")
+            MessageBox.Show("The unborn finally finds meaning in his journey and unlocks his full potential. The gods favor you, weakling. All damage taken is decreased by 75% for 5 turns and for 3 of the 5 turns, the damage is reflected back to the enemy.", "Redemption")
             lblAquired.Text = "Skill acquired: Redemption"
         End If
     End Sub
