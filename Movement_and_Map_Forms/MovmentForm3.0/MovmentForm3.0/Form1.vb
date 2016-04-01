@@ -13,6 +13,8 @@ Public Class Form1
     'Merchant spawns
     Dim merchantx As Integer
     Dim merchanty As Integer
+    'Scenery spawns
+    Dim brockx As Integer : Dim brocky As Integer
 
     'When a button is pressed. (Movement)
     Private Sub Form1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
@@ -926,6 +928,11 @@ Public Class Form1
         End If
 
         Return 0
+    End Function
+
+    'Function for showing scenery.
+    Public Function showBrock() As Boolean
+
     End Function
 
     'Function for showing the player's coordinate.
@@ -1954,6 +1961,10 @@ Public Class Form1
         'Load the town coordinates.
         town1x = CInt(Int((12 * Rnd()) + 0))
         town1y = CInt(Int((12 * Rnd()) + 0))
+
+        'Load the scenery coordinates.
+        brockx = CInt(Int((12 * Rnd()) + 0))
+        brocky = CInt(Int((12 * Rnd()) + 0))
 
         'Update the town's variable labels
         townLabelx.Text = town1x
