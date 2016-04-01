@@ -59,5 +59,15 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _420__Pixel_Art__Icons_for_RPG_by_Ails_e1438773801847() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("420__Pixel_Art__Icons_for_RPG_by_Ails-e1438773801847", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace

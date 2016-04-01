@@ -400,6 +400,11 @@
             Case 4
                 Select Case Variables.Overall.charTag
                     Case "a"
+                        answer = "Let's see what ya got."
+                    Case "b"
+                        answer = "Better be worth my while."
+                    Case "c"
+                        answer = "I have Frill to invest in some fine wares."
                 End Select
         End Select
 
