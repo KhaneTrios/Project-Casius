@@ -98,13 +98,17 @@
 
         Select Case Variables.Convo.Type
             Case 2
-                Select Case Variables.Overall.charTag
-                    Case "a"
-                        answer = "You don't scare me, " & Variables.Overall.name & "."
-                    Case "b"
-                        answer = "Don't kill me."
-                    Case "c"
-                        answer = "Hahahaha"
+                Variables.Convo.intimidate = Variables.Functions.lowChance()
+                Select Case Variables.Convo.intimidate
+                    Case True
+                        Select Case Variables.Overall.charTag
+                            Case "a"
+                                answer = "You don't scare me, " & Variables.Overall.name & "."
+                            Case "b"
+                                answer = "Don't kill me."
+                            Case "c"
+                                answer = "Hahahaha"
+                        End Select
                 End Select
 
             Case 3

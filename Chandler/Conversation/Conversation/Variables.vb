@@ -54,6 +54,7 @@
         Public Shared canTrade As Boolean = False
         Public Shared haggle As Boolean
         Public Shared counter As Integer = 0
+        Public Shared intimidate As Boolean
 
 
     End Structure
