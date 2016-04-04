@@ -188,7 +188,7 @@
                 answer = follow()
 
             Case 4
-                tmrPause2.Enabled = True
+                tmrPause1.Enabled = True
                 Select Case Variables.Overall.charTag
                     Case "a"
                         answer = "Oooh what would you like to purchase today?"
@@ -306,7 +306,7 @@
 
     Private Sub tmrPause1_Tick(sender As Object, e As EventArgs) Handles tmrPause1.Tick
         If tmrPause1.Interval = 1000 Then
-            MessageBox.Show("Trade.", "Trade", MessageBoxButtons.OK, MessageBoxIcon.Information)     'Error message to handle no save file
+            frmTrade.Show()
             tmrPause1.Enabled = False
         End If
     End Sub

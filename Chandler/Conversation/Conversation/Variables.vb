@@ -64,6 +64,7 @@
         Public Shared fileNumber As Integer 'The file number to read and write to files
         Public Shared followers As Integer ' Number of followers you have ammassed
         Public Shared charTag As String ' Tags to cheat behavior
+        Public Shared item1 As String = "" : Public Shared item2 As String = "" : Public Shared item3 As String = "" : Public Shared item4 As String = "" : Public Shared item5 As String = ""
 
     End Structure
 
@@ -87,6 +88,26 @@
             Variables.Overall.charTag = tag
 
             Return 0
+        End Function
+
+        Public Shared Function type() As Integer
+            Dim rng As Integer
+
+            Randomize()
+            rng = (Int((4 * Rnd()) + 1))
+
+            Select Case rng
+                Case 1
+                    Variables.Convo.Type = 1
+                Case 2
+                    Variables.Convo.Type = 2
+                Case 3
+                    Variables.Convo.Type = 3
+                Case 4
+                    Variables.Convo.Type = 4
+            End Select
+
+
         End Function
 
         Public Shared Function fairChance() As Boolean
@@ -122,6 +143,31 @@
 
             Return answer
 
+        End Function
+
+        Public Shared Function merch() As String
+            Dim rng As Integer
+            Dim answer As String = ""
+
+            Randomize()
+            rng = (Int((6 * Rnd()) + 1))
+
+            Select Case rng
+                Case 1
+                    answer = ""
+                Case 2
+                    answer = "Small Health Potion"
+                Case 3
+                    answer = "Large Health Potion"
+                Case 4
+                    answer = "Plate Armor"
+                Case 5
+                    answer = "Two Handed Sword"
+                Case 6
+                    answer = "Chain Mail"
+            End Select
+
+            Return answer
         End Function
     End Structure
 End Class
