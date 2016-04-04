@@ -20,5 +20,25 @@
         chkMerch4.Text = Variables.Functions.merch()
         chkMerch5.Text = Variables.Functions.merch()
 
+        If chkMerch1.Text = chkMerch2.Text Or chkMerch3.Text Or chkMerch4.Text Or chkMerch5.Text Then
+            Variables.Functions.merch()
+        End If
+        If chkMerch2.Text = chkMerch1.Text Or chkMerch3.Text Or chkMerch4.Text Or chkMerch5.Text Then
+            Variables.Functions.merch()
+        End If
+        If chkMerch3.Text = chkMerch2.Text Or chkMerch1.Text Or chkMerch4.Text Or chkMerch5.Text Then
+            Variables.Functions.merch()
+        End If
+        If chkMerch4.Text = chkMerch2.Text Or chkMerch3.Text Or chkMerch1.Text Or chkMerch5.Text Then
+            Variables.Functions.merch()
+        End If
+        If chkMerch5.Text = chkMerch2.Text Or chkMerch3.Text Or chkMerch4.Text Or chkMerch1.Text Then
+            Variables.Functions.merch()
+        End If
+
+    End Sub
+
+    Private Sub btnBuySell_Click(sender As Object, e As EventArgs) Handles btnBuySell.Click
+
     End Sub
 End Class

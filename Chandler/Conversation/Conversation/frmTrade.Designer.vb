@@ -23,18 +23,18 @@ Partial Class frmTrade
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.lblInventory = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.chkItem1 = New System.Windows.Forms.CheckBox()
-        Me.chkItem2 = New System.Windows.Forms.CheckBox()
-        Me.chkItem3 = New System.Windows.Forms.CheckBox()
-        Me.chkItem4 = New System.Windows.Forms.CheckBox()
         Me.chkItem5 = New System.Windows.Forms.CheckBox()
-        Me.chkMerch1 = New System.Windows.Forms.CheckBox()
-        Me.chkMerch2 = New System.Windows.Forms.CheckBox()
-        Me.chkMerch3 = New System.Windows.Forms.CheckBox()
-        Me.chkMerch4 = New System.Windows.Forms.CheckBox()
+        Me.chkItem4 = New System.Windows.Forms.CheckBox()
+        Me.chkItem3 = New System.Windows.Forms.CheckBox()
+        Me.chkItem2 = New System.Windows.Forms.CheckBox()
+        Me.chkItem1 = New System.Windows.Forms.CheckBox()
+        Me.lblInventory = New System.Windows.Forms.Label()
         Me.chkMerch5 = New System.Windows.Forms.CheckBox()
+        Me.chkMerch4 = New System.Windows.Forms.CheckBox()
+        Me.chkMerch3 = New System.Windows.Forms.CheckBox()
+        Me.chkMerch2 = New System.Windows.Forms.CheckBox()
+        Me.chkMerch1 = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnBuySell = New System.Windows.Forms.Button()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
@@ -68,55 +68,15 @@ Partial Class frmTrade
         Me.SplitContainer1.SplitterDistance = 191
         Me.SplitContainer1.TabIndex = 0
         '
-        'lblInventory
+        'chkItem5
         '
-        Me.lblInventory.AutoSize = True
-        Me.lblInventory.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInventory.Location = New System.Drawing.Point(12, 9)
-        Me.lblInventory.Name = "lblInventory"
-        Me.lblInventory.Size = New System.Drawing.Size(102, 18)
-        Me.lblInventory.TabIndex = 0
-        Me.lblInventory.Text = "Your Inventory"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(15, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 18)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Shop"
-        '
-        'chkItem1
-        '
-        Me.chkItem1.AutoSize = True
-        Me.chkItem1.Location = New System.Drawing.Point(12, 55)
-        Me.chkItem1.Name = "chkItem1"
-        Me.chkItem1.Size = New System.Drawing.Size(81, 17)
-        Me.chkItem1.TabIndex = 1
-        Me.chkItem1.Text = "CheckBox1"
-        Me.chkItem1.UseVisualStyleBackColor = True
-        '
-        'chkItem2
-        '
-        Me.chkItem2.AutoSize = True
-        Me.chkItem2.Location = New System.Drawing.Point(12, 91)
-        Me.chkItem2.Name = "chkItem2"
-        Me.chkItem2.Size = New System.Drawing.Size(81, 17)
-        Me.chkItem2.TabIndex = 2
-        Me.chkItem2.Text = "CheckBox2"
-        Me.chkItem2.UseVisualStyleBackColor = True
-        '
-        'chkItem3
-        '
-        Me.chkItem3.AutoSize = True
-        Me.chkItem3.Location = New System.Drawing.Point(12, 127)
-        Me.chkItem3.Name = "chkItem3"
-        Me.chkItem3.Size = New System.Drawing.Size(81, 17)
-        Me.chkItem3.TabIndex = 3
-        Me.chkItem3.Text = "CheckBox3"
-        Me.chkItem3.UseVisualStyleBackColor = True
+        Me.chkItem5.AutoSize = True
+        Me.chkItem5.Location = New System.Drawing.Point(12, 199)
+        Me.chkItem5.Name = "chkItem5"
+        Me.chkItem5.Size = New System.Drawing.Size(81, 17)
+        Me.chkItem5.TabIndex = 5
+        Me.chkItem5.Text = "CheckBox5"
+        Me.chkItem5.UseVisualStyleBackColor = True
         '
         'chkItem4
         '
@@ -128,45 +88,55 @@ Partial Class frmTrade
         Me.chkItem4.Text = "CheckBox4"
         Me.chkItem4.UseVisualStyleBackColor = True
         '
-        'chkItem5
+        'chkItem3
         '
-        Me.chkItem5.AutoSize = True
-        Me.chkItem5.Location = New System.Drawing.Point(12, 199)
-        Me.chkItem5.Name = "chkItem5"
-        Me.chkItem5.Size = New System.Drawing.Size(81, 17)
-        Me.chkItem5.TabIndex = 5
-        Me.chkItem5.Text = "CheckBox5"
-        Me.chkItem5.UseVisualStyleBackColor = True
+        Me.chkItem3.AutoSize = True
+        Me.chkItem3.Location = New System.Drawing.Point(12, 127)
+        Me.chkItem3.Name = "chkItem3"
+        Me.chkItem3.Size = New System.Drawing.Size(81, 17)
+        Me.chkItem3.TabIndex = 3
+        Me.chkItem3.Text = "CheckBox3"
+        Me.chkItem3.UseVisualStyleBackColor = True
         '
-        'chkMerch1
+        'chkItem2
         '
-        Me.chkMerch1.AutoSize = True
-        Me.chkMerch1.Location = New System.Drawing.Point(18, 55)
-        Me.chkMerch1.Name = "chkMerch1"
-        Me.chkMerch1.Size = New System.Drawing.Size(87, 17)
-        Me.chkMerch1.TabIndex = 12
-        Me.chkMerch1.Text = "CheckBox12"
-        Me.chkMerch1.UseVisualStyleBackColor = True
+        Me.chkItem2.AutoSize = True
+        Me.chkItem2.Location = New System.Drawing.Point(12, 91)
+        Me.chkItem2.Name = "chkItem2"
+        Me.chkItem2.Size = New System.Drawing.Size(81, 17)
+        Me.chkItem2.TabIndex = 2
+        Me.chkItem2.Text = "CheckBox2"
+        Me.chkItem2.UseVisualStyleBackColor = True
         '
-        'chkMerch2
+        'chkItem1
         '
-        Me.chkMerch2.AutoSize = True
-        Me.chkMerch2.Location = New System.Drawing.Point(18, 91)
-        Me.chkMerch2.Name = "chkMerch2"
-        Me.chkMerch2.Size = New System.Drawing.Size(87, 17)
-        Me.chkMerch2.TabIndex = 12
-        Me.chkMerch2.Text = "CheckBox13"
-        Me.chkMerch2.UseVisualStyleBackColor = True
+        Me.chkItem1.AutoSize = True
+        Me.chkItem1.Location = New System.Drawing.Point(12, 55)
+        Me.chkItem1.Name = "chkItem1"
+        Me.chkItem1.Size = New System.Drawing.Size(81, 17)
+        Me.chkItem1.TabIndex = 1
+        Me.chkItem1.Text = "CheckBox1"
+        Me.chkItem1.UseVisualStyleBackColor = True
         '
-        'chkMerch3
+        'lblInventory
         '
-        Me.chkMerch3.AutoSize = True
-        Me.chkMerch3.Location = New System.Drawing.Point(18, 127)
-        Me.chkMerch3.Name = "chkMerch3"
-        Me.chkMerch3.Size = New System.Drawing.Size(87, 17)
-        Me.chkMerch3.TabIndex = 13
-        Me.chkMerch3.Text = "CheckBox14"
-        Me.chkMerch3.UseVisualStyleBackColor = True
+        Me.lblInventory.AutoSize = True
+        Me.lblInventory.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInventory.Location = New System.Drawing.Point(12, 9)
+        Me.lblInventory.Name = "lblInventory"
+        Me.lblInventory.Size = New System.Drawing.Size(102, 18)
+        Me.lblInventory.TabIndex = 0
+        Me.lblInventory.Text = "Your Inventory"
+        '
+        'chkMerch5
+        '
+        Me.chkMerch5.AutoSize = True
+        Me.chkMerch5.Location = New System.Drawing.Point(18, 199)
+        Me.chkMerch5.Name = "chkMerch5"
+        Me.chkMerch5.Size = New System.Drawing.Size(87, 17)
+        Me.chkMerch5.TabIndex = 15
+        Me.chkMerch5.Text = "CheckBox16"
+        Me.chkMerch5.UseVisualStyleBackColor = True
         '
         'chkMerch4
         '
@@ -178,15 +148,45 @@ Partial Class frmTrade
         Me.chkMerch4.Text = "CheckBox15"
         Me.chkMerch4.UseVisualStyleBackColor = True
         '
-        'chkMerch5
+        'chkMerch3
         '
-        Me.chkMerch5.AutoSize = True
-        Me.chkMerch5.Location = New System.Drawing.Point(18, 199)
-        Me.chkMerch5.Name = "chkMerch5"
-        Me.chkMerch5.Size = New System.Drawing.Size(87, 17)
-        Me.chkMerch5.TabIndex = 15
-        Me.chkMerch5.Text = "CheckBox16"
-        Me.chkMerch5.UseVisualStyleBackColor = True
+        Me.chkMerch3.AutoSize = True
+        Me.chkMerch3.Location = New System.Drawing.Point(18, 127)
+        Me.chkMerch3.Name = "chkMerch3"
+        Me.chkMerch3.Size = New System.Drawing.Size(87, 17)
+        Me.chkMerch3.TabIndex = 13
+        Me.chkMerch3.Text = "CheckBox14"
+        Me.chkMerch3.UseVisualStyleBackColor = True
+        '
+        'chkMerch2
+        '
+        Me.chkMerch2.AutoSize = True
+        Me.chkMerch2.Location = New System.Drawing.Point(18, 91)
+        Me.chkMerch2.Name = "chkMerch2"
+        Me.chkMerch2.Size = New System.Drawing.Size(87, 17)
+        Me.chkMerch2.TabIndex = 12
+        Me.chkMerch2.Text = "CheckBox13"
+        Me.chkMerch2.UseVisualStyleBackColor = True
+        '
+        'chkMerch1
+        '
+        Me.chkMerch1.AutoSize = True
+        Me.chkMerch1.Location = New System.Drawing.Point(18, 55)
+        Me.chkMerch1.Name = "chkMerch1"
+        Me.chkMerch1.Size = New System.Drawing.Size(87, 17)
+        Me.chkMerch1.TabIndex = 12
+        Me.chkMerch1.Text = "CheckBox12"
+        Me.chkMerch1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(15, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(43, 18)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Shop"
         '
         'btnBuySell
         '
