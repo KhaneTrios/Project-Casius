@@ -9,3 +9,14 @@
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.exe
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.xml
 \\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.pdb
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\bin\Debug\SkillTest2.exe.config
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.exe
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.xml
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.pdb
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\bin\Debug\SkillTest2.exe
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\bin\Debug\SkillTest2.pdb
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\bin\Debug\SkillTest2.xml
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.vbprojResolveAssemblyReference.cache
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.Form1.resources
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.Resources.resources
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\SkillTest2\SkillTest2\obj\Debug\SkillTest2.vbproj.GenerateResource.Cache

@@ -8,15 +8,22 @@
             Variables.Fight.skill = 9999
             Fight.className.Text = "God damned Owl"
         End If
-        Button4.Visible = False
-        Button25.Visible = False
-        Button3.Visible = False
+        'Button4.Visible = False
+        'Button25.Visible = False
+        'Button3.Visible = False
+
+        Button5.Enabled = False
+        Button6.Enabled = False
+        Button7.Enabled = False
+        Button8.Enabled = False
 
         If Variables.Skills.activeOnce = True Then 'if player goes thru one fight gets access to main menu
             Button3.Visible = True
         End If
 
-
+        Variables.Skills.skillPoint = 0
+        skillPoints.Text = Variables.Skills.skillPoint
+        Variables.Skills.skillpointreset = False
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
@@ -24,20 +31,27 @@
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        Variables.Fight.skill += 1
-        Button25.Visible = True
+
+        Variables.Skills.skillpointreset = True
+        If Variables.Skills.skillpointreset = True Then
+            Variables.Skills.skillPoint += 1
+        End If
+
         Button2.Visible = False
+
+        'Button25.Visible = True
+        'Button2.Visible = False
     End Sub
 
     Public Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Updater.Tick
-        skillPoints.Text = Variables.Fight.skill
+        'This is the updater
 
-        If Variables.Fight.charWarr = 1 And Variables.Fight.skillOneBought Then
-            lblAquired.Text = "Skills Aquired: " & Variables.Skills.warrCharge
+        If Variables.Skills.skillPoint = 1 Then
+            Button5.Enabled = True
         End If
-        If Variables.Fight.charWarr = 1 And Variables.Fight.skillTwoBought Then
-            lblAquired.Text = "Skills Aquired: " & Variables.Skills.warrBackwards
-        End If
+
+        skillPoints.Text = Variables.Skills.skillPoint
+
 
         If Variables.Fight.charWarr = True Then
             Label3.Text = "Warrior"
@@ -78,6 +92,12 @@
             Button7.Text = Variables.Skills.unboWild
             Button8.Text = Variables.Skills.unboRedemption
         End If
+
+        'If Variables.Skills.skillPoint = 1 Then
+        'Button5.Enabled = True
+        'End If
+
+
 
     End Sub
 

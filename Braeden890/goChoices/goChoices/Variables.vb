@@ -59,6 +59,10 @@
         Public Shared playerHX As Integer               'Min Hit Range
         Public Shared playerHY As Integer               'Max Hit Range
         Public Shared PlayerDmg As Integer              'Base Player Damage
+        '\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+        Public Shared playerXP = 0              'Player experience value
+        Public Shared playerLevel = 0              'Level of player
+        Public Shared exptimerStop As Boolean = False
     End Structure
 
     Structure Skills
@@ -72,6 +76,9 @@
         Public Shared playerHY As Integer 'Max Hit Range
         Public Shared PlayerDmg As Integer 'Base Player Damage
         Public Shared activeOnce As Boolean = False 'Variable for finishing the first fight and getting access to the main menu
+
+        Public Shared skillPoint As Integer 'Number of skill points you have
+        Public Shared skillpointreset As Boolean
         '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
         'All actual skills
         Public Shared warrCharge = "Charge"

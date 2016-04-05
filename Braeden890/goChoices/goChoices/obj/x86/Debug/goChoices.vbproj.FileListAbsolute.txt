@@ -49,3 +49,5 @@ C:\Users\Renegademason\Documents\GitHub\Project-Casius\Braeden890\goChoices\goCh
 C:\Users\Renegademason\Documents\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Debug\goChoices.vbproj.GenerateResource.Cache
 \\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Debug\goChoices.vbprojResolveAssemblyReference.cache
 \\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Debug\goChoices.mainMenu.resources
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Debug\goChoices.mainMenu.resources
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Braeden890\goChoices\goChoices\obj\x86\Debug\goChoices.youWin.resources

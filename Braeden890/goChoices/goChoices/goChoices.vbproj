@@ -122,6 +122,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Variables.vb" />
+    <Compile Include="youWin.Designer.vb">
+      <DependentUpon>youWin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="youWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="begin.resx">
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="youWin.resx">
+      <DependentUpon>youWin.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

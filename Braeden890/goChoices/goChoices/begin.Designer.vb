@@ -75,7 +75,7 @@ Partial Class begin
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(282, 437)
+        Me.Button1.Location = New System.Drawing.Point(186, 438)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(83, 46)
         Me.Button1.TabIndex = 6
@@ -93,7 +93,7 @@ Partial Class begin
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(186, 437)
+        Me.Button2.Location = New System.Drawing.Point(275, 438)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(90, 46)
         Me.Button2.TabIndex = 8
@@ -128,9 +128,9 @@ Partial Class begin
         '
         Me.lblAquired.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblAquired.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAquired.Location = New System.Drawing.Point(9, 398)
+        Me.lblAquired.Location = New System.Drawing.Point(9, 382)
         Me.lblAquired.Name = "lblAquired"
-        Me.lblAquired.Size = New System.Drawing.Size(171, 82)
+        Me.lblAquired.Size = New System.Drawing.Size(171, 98)
         Me.lblAquired.TabIndex = 34
         Me.lblAquired.Text = "Label3"
         '
@@ -140,9 +140,9 @@ Partial Class begin
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(186, 386)
+        Me.Button3.Location = New System.Drawing.Point(186, 382)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(179, 46)
+        Me.Button3.Size = New System.Drawing.Size(179, 50)
         Me.Button3.TabIndex = 35
         Me.Button3.Text = "Main Menu" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Button3.UseVisualStyleBackColor = True

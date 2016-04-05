@@ -135,6 +135,10 @@
         'If ProgressBar2.Value = 0 Then
         'MessageBox.Show("You have won!", "Opponent Slain!")
         'End If
+
+
+
+
     End Sub
 
     Private Sub Updater_Tick(sender As System.Object, e As System.EventArgs) Handles Updater.Tick
@@ -169,9 +173,9 @@
         Variables.Fight.Plug += 1
         RandomizerV2.Enabled = False
         If RandomizerV2.Enabled = False And Variables.Fight.EHC >= 51 And Variables.Fight.EHC <= 101 Then
-            ProgressBar1.Value = ProgressBar1.Value - 10
-            If ProgressBar1.Value < 0 Then
-                ProgressBar1.Value = 0
+            ProgressBar2.Value = ProgressBar2.Value - 10
+            If ProgressBar2.Value < 0 Then
+                ProgressBar2.Value = 0
             End If
         End If
         If RandomizerV2.Enabled = False And Variables.Fight.HC >= Variables.Fight.playerHX And Variables.Fight.HC <= Variables.Fight.playerHY Then
@@ -188,6 +192,10 @@
             RandomizerV2.Enabled = True
             PluggerV2.Enabled = False
             Variables.Fight.Plug = 0
+        End If
+
+        If ProgressBar2.Value = 0 Then
+            youWin.Show()
         End If
     End Sub
 
