@@ -1,0 +1,11 @@
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\bin\Debug\ExpTest.exe.config
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\bin\Debug\ExpTest.exe
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\bin\Debug\ExpTest.pdb
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\bin\Debug\ExpTest.xml
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\obj\Debug\ExpTest.vbprojResolveAssemblyReference.cache
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\obj\Debug\ExpTest.Form1.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\obj\Debug\ExpTest.Resources.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\obj\Debug\ExpTest.vbproj.GenerateResource.Cache
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\obj\Debug\ExpTest.exe
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\obj\Debug\ExpTest.xml
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\ExpTest\ExpTest\obj\Debug\ExpTest.pdb
