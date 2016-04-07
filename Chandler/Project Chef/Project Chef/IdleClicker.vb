@@ -571,7 +571,7 @@
                 btnCheat.Enabled = True
                 btnCheat.Visible = True
             Case Keys.Oemtilde
-                DevConsole.Show()
+                DevConsole2.Show()
                 Me.Close()
         End Select
     End Sub
@@ -615,5 +615,13 @@
     Private Sub btnUp3_Hover(sender As System.Object, e As System.EventArgs) Handles btnUp3.MouseHover
         ' Dynamic tooltip text appearing if the mouse hovers over the button. The text changes with the Variables.
         ToolTip.SetToolTip(Me.btnUp3, " | Cost: " & Variables.Auto.up3Cost & " | Gain Per Click: " & Variables.Auto.up3Val & " |")
+    End Sub
+
+    Private Sub lblCity1_Click(sender As Object, e As EventArgs) Handles lblCity1.Click
+
+    End Sub
+
+    Private Sub tabRebuild_Click(sender As Object, e As EventArgs) Handles tabRebuild.Click
+
     End Sub
 End Class

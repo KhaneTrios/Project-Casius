@@ -34,7 +34,75 @@
         Public Shared up1On As Boolean = False : Public Shared up2On As Boolean = False : Public Shared up3On As Boolean = False
     End Structure
     Structure Fight
+        '\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+        'Classes in fight screen
+        Public Shared charWarr As Integer             'If you pick the warrior class
+        Public Shared charTact As Integer       'You're a tactician, Harry
+        Public Shared charMage As Integer       'You're a wizard, Harry
+        Public Shared charRogu As Integer       'You're a rogue, Harry
+        Public Shared charUnbo As Integer        'You're a staircase child, Harry
+        '\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+        Public Shared skill As Integer                  'Actual number of skills you have
+        Public Shared skillOneBought As Boolean = False 'First skill button on fight screen
+        Public Shared skillTwoBought As Boolean = False 'Second skill button on fight screen
+        Public Shared asdfmod As String                 'Player name
+        Public Shared AttackGen As New Random           'Self Explanatory
+        Public Shared opponentName As New Random        'Random opponent class above opponent picture
+        Public Shared HC As Integer                     'Player Hit chance
+        Public Shared Plug As Integer                   'Stops randomizer
+        Public Shared EHC As Integer                    'Enemy Hit chance
+        Public Shared Jerkwad As String                 'Enemy Type (aka Name)
+        Public Shared Choices As Integer                'Choice for classes
+        Public Shared EHealth As Integer                'Enemy health
+        Public Shared plyrDmg As Integer                'Damage being dealt to player
+        Public Shared PHealth As Integer                'Player health
+        Public Shared eDmg As Integer                   'damage being dealth to enemy
+        Public Shared playerHX As Integer               'Min Hit Range
+        Public Shared playerHY As Integer               'Max Hit Range
+        Public Shared PlayerDmg As Integer              'Base Player Damage
+        '\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+        Public Shared playerXP = 0              'Player experience value
+        Public Shared playerLevel = 0              'Level of player
+        Public Shared exptimerStop As Boolean = False
+    End Structure
 
+    Structure Skills
+        Public Shared Str As Integer 'Arms Warrior: Pow!
+        Public Shared Agi As Integer 'Dodge dodge  dodge  dodge  dodge  dodge  dodge  dodge  dodge  dodge  dodge  dodge  dodge.
+        Public Shared Con As Integer 'If you were shot in the shoulder; the higher the better.
+        Public Shared Lck As Integer '5 shots or 6?
+        Public Shared Int As Integer 'Are you going to read a book, or are you dun did gonna learn yerself a book?
+        Public Shared Roflmaolol As Integer 'Dat Reset Timer Variable though
+        Public Shared playerHX As Integer 'Min Hit Range
+        Public Shared playerHY As Integer 'Max Hit Range
+        Public Shared PlayerDmg As Integer 'Base Player Damage
+        Public Shared activeOnce As Boolean = False 'Variable for finishing the first fight and getting access to the main menu
+
+        Public Shared skillPoint As Integer 'Number of skill points you have
+        Public Shared skillpointreset As Boolean
+        '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+        'All actual skills
+        Public Shared warrCharge = "Charge"
+        Public Shared warrBackwards = "Backwards Lash"
+        Public Shared warrEnrage = "Enrage"
+        Public Shared warrCore = "Core Slam"
+        Public Shared tactScout = "Scout"
+        Public Shared tactCaltrop = "Caltop Launch"
+        Public Shared tactOver = "Over Plan"
+        Public Shared tactPoison = "Poison Barrage"
+        Public Shared mageShards = "Shards of Ice"
+        Public Shared mageLightning = "Lightning Wave"
+        Public Shared mageFire = "Fire Cage"
+        Public Shared mageArcane = "Arcane Whirlwind"
+        Public Shared roguBackstab = "Backstab"
+        Public Shared roguParry = "Parry"
+        Public Shared roguInvisible = "Invisible"
+        Public Shared roguShadow = "Shadow Strike"
+        Public Shared unboBurden = "Burden"
+        Public Shared unboCraze = "Craze"
+        Public Shared unboWild = "Wild"
+        Public Shared unboRedemption = "Redemption"
+        '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
     End Structure
 
     Structure Movement
@@ -64,6 +132,11 @@
         Public Shared fileNumber As Integer 'The file number to read and write to files
         Public Shared followers As Integer ' Number of followers you have ammassed
         Public Shared charTag As String ' Tags to cheat behavior
+        Public Shared item1 As String = "" : Public Shared item2 As String = "" : Public Shared item3 As String = "" : Public Shared item4 As String = "" : Public Shared item5 As String = ""
+        Public Shared num As Integer
+        Public Shared saveLoad As Integer
+        Public Shared save1 As String : Public Shared save2 As String : Public Shared save3 As String
+        Public Shared oneWritten As Boolean = False : Public Shared twoWritten As Boolean = False : Public Shared threeWritten As Boolean = False
 
     End Structure
 
@@ -87,6 +160,26 @@
             Variables.Overall.charTag = tag
 
             Return 0
+        End Function
+
+        Public Shared Function type() As Integer
+            Dim rng As Integer
+
+            Randomize()
+            rng = (Int((4 * Rnd()) + 1))
+
+            Select Case rng
+                Case 1
+                    Variables.Convo.Type = 1
+                Case 2
+                    Variables.Convo.Type = 2
+                Case 3
+                    Variables.Convo.Type = 3
+                Case 4
+                    Variables.Convo.Type = 4
+            End Select
+
+
         End Function
 
         Public Shared Function fairChance() As Boolean
@@ -122,6 +215,31 @@
 
             Return answer
 
+        End Function
+
+        Public Shared Function merch() As String
+            Dim rng As Integer
+            Dim answer As String = ""
+
+            Randomize()
+            rng = (Int((6 * Rnd()) + 1))
+
+            Select Case rng
+                Case 1
+                    answer = ""
+                Case 2
+                    answer = "Small Health Potion"
+                Case 3
+                    answer = "Large Health Potion"
+                Case 4
+                    answer = "Plate Armor"
+                Case 5
+                    answer = "Two Handed Sword"
+                Case 6
+                    answer = "Chain Mail"
+            End Select
+
+            Return answer
         End Function
     End Structure
 End Class

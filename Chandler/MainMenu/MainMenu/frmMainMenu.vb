@@ -1,5 +1,6 @@
 ﻿Public Class frmMainMenu
     Dim fileNumber As Integer
+    Dim Idle As New Project_Chef.frmIdle
 
     Private Sub frmMainMenu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
@@ -8,7 +9,6 @@
     Private Sub btnClick_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
         Select Case e.KeyCode
             Case Keys.Oemtilde
-
         End Select
     End Sub
 
@@ -51,6 +51,7 @@
     Private Sub btnLoadGame_Click(sender As System.Object, e As System.EventArgs) Handles btnLoadGame.Click
         Variables.Overall.saveLoad = 2
         frmSaves.Show()
+        Idle.Show()
     End Sub
 
     Private Sub btnNewGame_Click(sender As System.Object, e As System.EventArgs) Handles btnNewGame.Click
@@ -64,7 +65,7 @@
     End Sub
 
     Private Sub btnCreds_Click(sender As Object, e As EventArgs) Handles btnCreds.Click
-
+        Idle.Show()
 
         Dim toggle As Integer = 0
         lbltoggle.Text = toggle

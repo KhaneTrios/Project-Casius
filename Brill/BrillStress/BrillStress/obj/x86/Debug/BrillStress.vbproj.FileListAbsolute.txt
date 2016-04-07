@@ -1,0 +1,16 @@
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\bin\Debug\BrillStress.exe
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\bin\Debug\BrillStress.pdb
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\bin\Debug\BrillStress.xml
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.Resources.resources
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.vbproj.GenerateResource.Cache
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.exe
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.xml
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.pdb
+\\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.exe
+\\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.xml
+\\stcfs2\Student_Data\mackerethb\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.pdb
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.vbprojResolveAssemblyReference.cache
+\\stcfs2\Student_Data\brillbr\Desktop\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.Form1.resources
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.exe
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.xml
+C:\Users\Renegademason\Documents\GitHub\Project-Casius\Brill\BrillStress\BrillStress\obj\x86\Debug\BrillStress.pdb

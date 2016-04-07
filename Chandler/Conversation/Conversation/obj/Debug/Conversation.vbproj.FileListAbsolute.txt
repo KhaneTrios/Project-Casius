@@ -35,3 +35,5 @@ C:\files\github\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conv
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.frmConvo.resources
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.Resources.resources
 \\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.vbproj.GenerateResource.Cache
+C:\Users\thedr\Documents\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.frmTrade.resources
+\\stcfs2\Student_Data\davisc\Desktop\GitHub\Project-Casius\Chandler\Conversation\Conversation\obj\Debug\Conversation.frmTrade.resources
