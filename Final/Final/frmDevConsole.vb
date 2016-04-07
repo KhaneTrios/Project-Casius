@@ -1,0 +1,74 @@
+﻿Public Class frmDevConsole
+
+    Private Sub btnLoad_Click(sender As System.Object, e As System.EventArgs) Handles btnLoad.Click
+        Select Case chkSeg.SelectedItem
+            Case "Fight"
+                'frmFight.Show()
+                'Me.Close()
+            Case "Rebuild"
+                frmIdle.Show()
+                Me.Close()
+            Case "Main Menu"
+                frmMainMenu.Show()
+                Me.Close()
+            Case "Movement"
+                frmMovement.Show()
+                Me.Close()
+            Case "Conversation"
+                frmConvo.Show()
+                Me.Close()
+            Case Else
+                MessageBox.Show("You must set the game segment.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Select
+
+        Select Case Variables.Convo.Type
+            Case 1, 2, 3, 4, 5
+            Case Else
+                MessageBox.Show("You must set the city size to 1, 2, 3, 4, or 5.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Select
+    End Sub
+
+    Private Sub btnEnd_Click(sender As System.Object, e As System.EventArgs) Handles btnEnd.Click
+        End
+    End Sub
+
+    Private Sub DevConsole_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btnSet_Click(sender As System.Object, e As System.EventArgs) Handles btnSet.Click
+        Variables.Convo.Type = cmboType.Text
+    End Sub
+
+    Private Sub txtSet_TextChanged(sender As System.Object, e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Label1_Click(sender As System.Object, e As System.EventArgs)
+
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkComplete.CheckedChanged
+
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles chkRecruit.CheckedChanged
+
+    End Sub
+
+    Private Sub cmboSize_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cmboType.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmboTag_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmboTag.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub btnTagSet_Click(sender As Object, e As EventArgs) Handles btnTagSet.Click
+        Variables.Convo.charTag = cmboTag.Text
+    End Sub
+
+    Private Sub btnRand_Click(sender As Object, e As EventArgs) Handles btnRand.Click
+        Variables.Functions.genTag()
+    End Sub
+End Class

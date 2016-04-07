@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EFE5772-9171-4746-81EF-DB5F2AB97D2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Final.My.MyApplication</StartupObject>
+    <RootNamespace>Final</RootNamespace>
+    <AssemblyName>Final</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMovement.designer.vb">
+      <DependentUpon>frmMovement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChoice.Designer.vb">
+      <DependentUpon>frmChoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevConsole.designer.vb">
+      <DependentUpon>frmDevConsole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevConsole2.Designer.vb">
+      <DependentUpon>DevConsole2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DevConsole2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvo.Designer.vb">
+      <DependentUpon>frmConvo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConvo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFollowers.Designer.vb">
+      <DependentUpon>frmFollowers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFollowers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.vb">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaves.Designer.vb">
+      <DependentUpon>frmSaves.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaves.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrade.designer.vb">
+      <DependentUpon>frmTrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIdleClicker.Designer.vb">
+      <DependentUpon>frmIdleClicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIdleClicker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmRecruit.Designer.vb">
+      <DependentUpon>frmRecruit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecruit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Variables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmMovement.resx">
+      <DependentUpon>frmMovement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChoice.resx">
+      <DependentUpon>frmChoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDevConsole.resx">
+      <DependentUpon>frmDevConsole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevConsole2.resx">
+      <DependentUpon>DevConsole2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvo.resx">
+      <DependentUpon>frmConvo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFollowers.resx">
+      <DependentUpon>frmFollowers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaves.resx">
+      <DependentUpon>frmSaves.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrade.resx">
+      <DependentUpon>frmTrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIdleClicker.resx">
+      <DependentUpon>frmIdleClicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecruit.resx">
+      <DependentUpon>frmRecruit.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\FILE01.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\FILE02.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\FILE03.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

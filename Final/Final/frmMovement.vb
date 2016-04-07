@@ -2,51 +2,19 @@
 'This is the real shit, Kid.
 'Smash that mofo star button if you think this isn't cancerous.
 
-Public Class Form1
+Public Class frmMovement
 
     'Declare variables for the player's current and former coordinates.
     Dim playerx As Integer : Dim playerbx As Integer
     Dim playery As Integer : Dim playerby As Integer
-
     'Variables for town spawns.
     Dim spawnTown As Integer 'Tells the program whether the town's coordinates have been spawned yet.
     Dim town1x As Integer : Dim town1y As Integer
-
     'Merchant spawns
     Dim merchantx As Integer
     Dim merchanty As Integer
-
     'Scenery spawns
-    Dim numberOfRocks As Integer
-    Dim numberOfTrees As Integer
-
-    Dim brock0x As Integer : Dim brock0y As Integer
-    Dim brock1x As Integer : Dim brock1y As Integer
-    Dim brock2x As Integer : Dim brock2y As Integer
-    Dim brock3x As Integer : Dim brock3y As Integer
-    Dim brock4x As Integer : Dim brock4y As Integer
-    Dim brock5x As Integer : Dim brock5y As Integer
-    Dim brock6x As Integer : Dim brock6y As Integer
-    Dim brock7x As Integer : Dim brock7y As Integer
-    Dim brock8x As Integer : Dim brock8y As Integer
-    Dim brock9x As Integer : Dim brock9y As Integer
-    Dim brock10x As Integer : Dim brock10y As Integer
-    Dim brock11x As Integer : Dim brock11y As Integer
-    Dim brock12x As Integer : Dim brock12y As Integer
-    'cuck
-    Dim tree0x As Integer : Dim tree0y As Integer
-    Dim tree1x As Integer : Dim tree1y As Integer
-    Dim tree2x As Integer : Dim tree2y As Integer
-    Dim tree3x As Integer : Dim tree3y As Integer
-    Dim tree4x As Integer : Dim tree4y As Integer
-    Dim tree5x As Integer : Dim tree5y As Integer
-    Dim tree6x As Integer : Dim tree6y As Integer
-    Dim tree7x As Integer : Dim tree7y As Integer
-    Dim tree8x As Integer : Dim tree8y As Integer
-    Dim tree9x As Integer : Dim tree9y As Integer
-    Dim tree10x As Integer : Dim tree10y As Integer
-    Dim tree11x As Integer : Dim tree11y As Integer
-    Dim tree12x As Integer : Dim tree12y As Integer
+    Dim brockx As Integer : Dim brocky As Integer
 
     'When a button is pressed. (Movement)
     Private Sub Form1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
@@ -99,20 +67,9 @@ Public Class Form1
         showPlayerCoordinate()
 
         'Triggered
-        If playerx = town1x And playery = town1y Then
-
+        If playerx = merchantx And playery = merchanty Then
+            'Do shit in here.
         End If
-
-        If playerx = 9 And playery = 11 Then
-            Variables.Convo.Type = 5
-            Variables.Convo.charTag = "a"
-        End If
-
-        'Save that stuff
-        Variables.Movement.cordx = playerx
-        Variables.Movement.cordy = playery
-        Variables.Movement.cordbx = playerbx
-        Variables.Movement.cordby = playerby
 
     End Sub 'End movement sub
 
@@ -973,16 +930,12 @@ Public Class Form1
         Return 0
     End Function
 
-    'Functions for showing scenery.
-    Public Function showBrocks() As Boolean
+    'Function for showing scenery.
+    Public Function showBrock() As Boolean
 
     End Function
 
-    Public Function showTrees() As Boolean
-
-    End Function
-
-    'Function for showing the player's coordinate. 
+    'Function for showing the player's coordinate.
     Public Function showPlayerCoordinate() As Boolean
         If playerx = 0 And playery = 0 Then
             clearCoordinates()
@@ -1752,7 +1705,7 @@ Public Class Form1
             showTown1Coordinate()
         End If
 
-        If playerx = 9 And playery = 11 Then 'inside job
+        If playerx = 9 And playery = 11 Then
             clearCoordinates()
             x9y11.Image = player.Image
             showTown1Coordinate()
@@ -2005,23 +1958,13 @@ Public Class Form1
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
         Randomize()
-		If Variables.Movement.spawned = False
-			'Load the town coordinates.
-			town1x = CInt(Int((12 * Rnd()) + 0))
-			town1y = CInt(Int((12 * Rnd()) + 0))
-			Variables.Movement.town1Cordx = town1x
-			Variables.Movement.town1Cordy = town1y
-        End If
+        'Load the town coordinates.
+        town1x = CInt(Int((12 * Rnd()) + 0))
+        town1y = CInt(Int((12 * Rnd()) + 0))
 
-        If Variables.Movement.spawned = True Then
-            town1x = Variables.Movement.town1Cordx
-            town1y = Variables.Movement.town1Cordy
-        End If
-
-
-        'Load the number of rocks and trees
-        numberOfRocks = CInt(Int((12 * Rnd()) + 0))
-        numberOfTrees = CInt(Int((12 * Rnd()) + 0))
+        'Load the scenery coordinates.
+        brockx = CInt(Int((12 * Rnd()) + 0))
+        brocky = CInt(Int((12 * Rnd()) + 0))
 
         'Update the town's variable labels
         townLabelx.Text = town1x
@@ -2030,7 +1973,11 @@ Public Class Form1
         'Load the player's current coordinates.
         showPlayerCoordinate()
 
-        'Load the 
     End Sub 'end form load sub
+
+    'Serves as a start button
+    Private Sub town_Click(sender As System.Object, e As System.EventArgs) Handles town.Click
+        Button1.Enabled = False
+    End Sub
 
 End Class 'End main class

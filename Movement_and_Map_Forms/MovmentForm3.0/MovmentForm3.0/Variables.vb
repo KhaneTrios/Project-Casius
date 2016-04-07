@@ -26,29 +26,36 @@
         Public Shared combatXp As Integer : Public Shared magicXp As Integer : Public Shared slayerXp As Integer : Public Shared gamblingXp As Integer : Public Shared craftingXp As Integer
         Public Shared gamble As Integer
     End Structure
-
     Structure Fight
 
     End Structure
-
     Structure Convo
-
+        'Types: 1 (Friendly NPC), 2 (Hostile NPC), 3 (Neutral NPC), 4 (Shopkeeper), 5 (Plot)
+        Public Shared Type As Integer
+        Public Shared NPCName As String
+        Public Shared money As Integer
+        Public Shared canTrade As Boolean = False
+        Public Shared haggle As Boolean
+        Public Shared counter As Integer = 0
+        Public Shared intimidate As Boolean
+        Public Shared charTag As String
     End Structure
+
 
     Structure Movement
         Public Shared cordx As Integer = 0 'player x coordinate
         Public Shared cordy As Integer = 0 'player y coordinate
         Public Shared cordbx As Integer = 0 'player's last x coordinate
         Public Shared cordby As Integer = 0 'player's last y coordinate
-		
-		Public Shared town1Cordx As Integer
-		Public Shared town1Cordy As Integer
+
+        Public Shared town1Cordx As Integer
+        Public Shared town1Cordy As Integer
         Public Shared town1Name As String 'Town name
         Public Shared town1Size As Integer 'Town size
-		
+
         Public Shared spawned As Boolean = False 'whether everything has been spawned
-    
-	End Structure
+
+    End Structure
 
     Structure Overall
 

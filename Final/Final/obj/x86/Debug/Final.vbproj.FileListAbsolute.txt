@@ -1,0 +1,38 @@
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.frmChoice.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.DevConsole.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.Movement.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.frmConvo.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.frmCredits.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.frmFollowers.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.frmMainMenu.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.frmSaves.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.frmTrade.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.frmIdle.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.Resources.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.Recruit.resources
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.vbproj.GenerateResource.Cache
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\bin\Debug\Final.exe
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\bin\Debug\Final.pdb
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\bin\Debug\Final.xml
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.exe
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.xml
+C:\Users\davisc\AppData\Local\Temporary Projects\Final\obj\x86\Debug\Final.pdb
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.exe
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.xml
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.pdb
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\bin\Debug\Final.exe
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\bin\Debug\Final.pdb
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\bin\Debug\Final.xml
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmChoice.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmConvo.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmFollowers.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmMainMenu.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmSaves.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmTrade.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmIdle.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.Resources.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.vbproj.GenerateResource.Cache
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmDevConsole.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.DevConsole2.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmMovement.resources
+\\stcfs2\Student_Data\davisc\Desktop\Final\Final\obj\x86\Debug\Final.frmRecruit.resources
