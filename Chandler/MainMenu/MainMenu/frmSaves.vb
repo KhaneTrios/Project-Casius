@@ -1,4 +1,5 @@
 ﻿Public Class frmSaves
+    Dim Idle As New Project_Chef.frmIdle
 
     Private Sub btnSave1_Click(sender As System.Object, e As System.EventArgs) Handles btnSave1.Click
         Select Case Variables.Overall.saveLoad                                          'Variable that shows whether you are performing a save or load 1 being save, 2 being load
@@ -23,6 +24,7 @@
                     Me.Close()
                 Else : MessageBox.Show("No save file detected.", "No save file", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
+
 
         End Select
     End Sub

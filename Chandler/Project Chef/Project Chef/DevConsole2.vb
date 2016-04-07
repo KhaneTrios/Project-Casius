@@ -1,4 +1,4 @@
-﻿Public Class DevConsole
+﻿Public Class DevConsole2
 
     Private Sub btnLoad_Click(sender As System.Object, e As System.EventArgs) Handles btnLoad.Click
         Select Case Variables.Movement.townSize
