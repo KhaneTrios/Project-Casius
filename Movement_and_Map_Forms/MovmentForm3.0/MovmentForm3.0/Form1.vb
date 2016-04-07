@@ -99,9 +99,15 @@ Public Class Form1
         showPlayerCoordinate()
 
         'Triggered
-        If playerx = merchantx And playery = merchanty Then
-            'Do shit in here.
+        If playerx = town1x And playery = town1y Then
+
         End If
+
+        'Save that stuff
+        Variables.Movement.cordx = playerx
+        Variables.Movement.cordy = playery
+        Variables.Movement.cordbx = playerbx
+        Variables.Movement.cordby = playerby
 
     End Sub 'End movement sub
 
@@ -962,7 +968,7 @@ Public Class Form1
         Return 0
     End Function
 
-    'Function for showing scenery.
+    'Functions for showing scenery.
     Public Function showBrocks() As Boolean
 
     End Function
@@ -1994,9 +2000,19 @@ Public Class Form1
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
         Randomize()
-        'Load the town coordinates.
-        town1x = CInt(Int((12 * Rnd()) + 0))
-        town1y = CInt(Int((12 * Rnd()) + 0))
+		If Variables.Movement.spawned = False
+			'Load the town coordinates.
+			town1x = CInt(Int((12 * Rnd()) + 0))
+			town1y = CInt(Int((12 * Rnd()) + 0))
+			Variables.Movement.town1Cordx = town1x
+			Variables.Movement.town1Cordy = town1y
+        End If
+
+        If Variables.Movement.spawned = True Then
+            town1x = Variables.Movement.town1Cordx
+            town1y = Variables.Movement.town1Cordy
+        End If
+
 
         'Load the number of rocks and trees
         numberOfRocks = CInt(Int((12 * Rnd()) + 0))
@@ -2009,11 +2025,7 @@ Public Class Form1
         'Load the player's current coordinates.
         showPlayerCoordinate()
 
+        'Load the 
     End Sub 'end form load sub
-
-    'Serves as a start button
-    Private Sub town_Click(sender As System.Object, e As System.EventArgs) Handles town.Click
-        Button1.Enabled = False
-    End Sub
 
 End Class 'End main class
