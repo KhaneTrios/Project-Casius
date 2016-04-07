@@ -33,7 +33,7 @@ Public Class Form1
     Dim brock10x As Integer : Dim brock10y As Integer
     Dim brock11x As Integer : Dim brock11y As Integer
     Dim brock12x As Integer : Dim brock12y As Integer
-
+    'cuck
     Dim tree0x As Integer : Dim tree0y As Integer
     Dim tree1x As Integer : Dim tree1y As Integer
     Dim tree2x As Integer : Dim tree2y As Integer
@@ -101,6 +101,10 @@ Public Class Form1
         'Triggered
         If playerx = town1x And playery = town1y Then
 
+        End If
+
+        If playerx = 9 And playery = 11 Then
+            Variables.Convo.Type = 5
         End If
 
         'Save that stuff
