@@ -41,6 +41,7 @@
         Public Shared town1Name As String 'Town name
         Public Shared town1Size As Integer 'Town size
 		
+        Public Shared spawned As Boolean = False 'whether everything has been spawned
     
 	End Structure
 
