@@ -26,7 +26,12 @@
         Public Shared combatXp As Integer : Public Shared magicXp As Integer : Public Shared slayerXp As Integer : Public Shared gamblingXp As Integer : Public Shared craftingXp As Integer
         Public Shared gamble As Integer
     End Structure
+
     Structure Fight
+
+    End Structure
+
+    Structure Convo
 
     End Structure
 

@@ -104,7 +104,7 @@ Public Class Form1
         End If
 
         If playerx = 9 And playery = 11 Then
-            Variables.Convo.Type = 5
+
         End If
 
         'Save that stuff
