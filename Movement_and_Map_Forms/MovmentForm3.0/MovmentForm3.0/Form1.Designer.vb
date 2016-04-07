@@ -142,7 +142,6 @@ Partial Class Form1
         Me.x8y11 = New System.Windows.Forms.PictureBox()
         Me.x8y10 = New System.Windows.Forms.PictureBox()
         Me.x7y10 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.x9y11 = New System.Windows.Forms.PictureBox()
         Me.x11y9 = New System.Windows.Forms.PictureBox()
         Me.x10y11 = New System.Windows.Forms.PictureBox()
@@ -1342,15 +1341,6 @@ Partial Class Form1
         Me.x7y10.TabIndex = 137
         Me.x7y10.TabStop = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(454, 29)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 155
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'x9y11
         '
         Me.x9y11.Location = New System.Drawing.Point(410, 99)
@@ -1915,7 +1905,6 @@ Partial Class Form1
         Me.Controls.Add(Me.x11y2)
         Me.Controls.Add(Me.x11y1)
         Me.Controls.Add(Me.x10y1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.x6y11)
         Me.Controls.Add(Me.x8y9)
         Me.Controls.Add(Me.x7y11)
@@ -2331,7 +2320,6 @@ Partial Class Form1
     Friend WithEvents x8y11 As System.Windows.Forms.PictureBox
     Friend WithEvents x8y10 As System.Windows.Forms.PictureBox
     Friend WithEvents x7y10 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents x2y4 As System.Windows.Forms.PictureBox
     Private WithEvents x2y9 As System.Windows.Forms.PictureBox
     Friend WithEvents x9y11 As PictureBox
