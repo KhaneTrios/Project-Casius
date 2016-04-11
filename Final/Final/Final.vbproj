@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCharName.Designer.vb">
+      <DependentUpon>frmCharName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCharName.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMovement.designer.vb">
       <DependentUpon>frmMovement.vb</DependentUpon>
     </Compile>
@@ -156,6 +162,9 @@
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCharName.resx">
+      <DependentUpon>frmCharName.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMovement.resx">
       <DependentUpon>frmMovement.vb</DependentUpon>
     </EmbeddedResource>

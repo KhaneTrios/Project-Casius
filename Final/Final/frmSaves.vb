@@ -50,6 +50,8 @@
                     Me.Close()
                 Else : MessageBox.Show("No save file detected.", "No save file", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
+
+                frmMovement.Show()
         End Select
     End Sub
 
@@ -75,6 +77,8 @@
                     Me.Close()
                 Else : MessageBox.Show("No save file detected.", "No save file", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
+
+                frmMovement.Show()
         End Select
     End Sub
 
@@ -114,6 +118,7 @@
             btnSave3.Text = Variables.Overall.save3
         Else : btnSave3.Text = "Save Slot 3" : FileClose(Variables.Overall.fileNumber)
         End If
+
 
     End Sub
 
