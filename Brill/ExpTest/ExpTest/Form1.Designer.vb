@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -34,6 +34,13 @@ Partial Class Form1
         Me.exptot = New System.Windows.Forms.Label()
         Me.exp = New System.Windows.Forms.Timer(Me.components)
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -116,7 +123,7 @@ Partial Class Form1
         'exp
         '
         Me.exp.Enabled = True
-        Me.exp.Interval = 10
+        Me.exp.Interval = 500
         '
         'CheckBox1
         '
@@ -126,15 +133,92 @@ Partial Class Form1
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(68, 17)
         Me.CheckBox1.TabIndex = 8
-        Me.CheckBox1.Text = "Exp + 15"
+        Me.CheckBox1.Text = "Exp + 20"
         Me.CheckBox1.UseVisualStyleBackColor = True
         Me.CheckBox1.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(162, 39)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(31, 13)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Total"
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(112, 99)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(79, 17)
+        Me.CheckBox2.TabIndex = 10
+        Me.CheckBox2.Text = "Boss Mob?"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(60, 145)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "Label4"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(146, 144)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "Label5"
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(202, 75)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(68, 17)
+        Me.CheckBox3.TabIndex = 13
+        Me.CheckBox3.Text = "Exp + 45"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.CheckBox3.Visible = False
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(277, 75)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(68, 17)
+        Me.CheckBox4.TabIndex = 14
+        Me.CheckBox4.Text = "Exp + 80"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.CheckBox4.Visible = False
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Location = New System.Drawing.Point(352, 75)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(71, 17)
+        Me.CheckBox5.TabIndex = 15
+        Me.CheckBox5.Text = "Exp +360"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.CheckBox5.Visible = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(251, 96)
+        Me.ClientSize = New System.Drawing.Size(458, 184)
+        Me.Controls.Add(Me.CheckBox5)
+        Me.Controls.Add(Me.CheckBox4)
+        Me.Controls.Add(Me.CheckBox3)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.exptot)
         Me.Controls.Add(Me.TotLvl)
@@ -163,4 +247,11 @@ Partial Class Form1
     Friend WithEvents exptot As Label
     Friend WithEvents exp As Timer
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents CheckBox5 As CheckBox
 End Class
